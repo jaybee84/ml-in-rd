@@ -1,11 +1,11 @@
+---
 title: "Machine learning with limited data: challenges and opportunities in rare diseases"
 keywords:
   - rare disease
   - machine learning
   - transfer learning
 lang: en-US
-authors:
-# this is a randomised order of authors. The author order will be decided through discussion and mutual consent
+authors: # this is a randomised order of authors. The author order will be decided through discussion and mutual consent
   -
     github: jaybee84
     name: Jineta Banerjee
@@ -39,8 +39,7 @@ authors:
     orcid: XXXX-XXXX-XXXX-XXXX
     email: greenescientist@gmail.com
     affiliations:
-      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine,
-University of Pennsylvania
+      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
  -
    github: ---
