@@ -1,27 +1,52 @@
 ---
-title: "Manuscript Title"
+title: "Machine learning with limited data- challenges and opportunities in rare diseases"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - rare disease
+  - machine learning
+  - transfer learning
 lang: en-US
-authors:
+authors: # this is a randomised order of authors. The author order will be decided through discussion and mutual consent
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
+    github: jaybee84
+    name: Jineta Banerjee
+    initials: JB
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    #twitter: johndoe
+    email: jineta.banerjee@sagebionetworks.org
     affiliations:
-      - Department of Something, University of Whatever
+      - Sage Bionetworks
     funders: Grant XXXXXXXX
   -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
+    github: allawayr
+    name: Robert J Allaway
+    initials: RJA
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: robert.allaway@sagebionetworks.org
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Sage Bionetworks
+  -
+    github: taroni
+    name: Jaclyn N Taroni
+    initials: JNT
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jaclyn.n.taroni@gmail.com
+    affiliations:
+      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+ -
+   github: ---
+    name: Casey Greene
+    initials: CG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: greenescientist@gmail.com
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
+      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+ -
+   github: ---
+    name: Justin Guinney
+    initials: JG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: justin.guinney@sagebionetworks.org
+    affiliations:
+      - Sage Bionetworks
+
