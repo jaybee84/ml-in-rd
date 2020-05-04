@@ -1,5 +1,5 @@
 ---
-title: "Machine learning with limited data- challenges and opportunities in rare diseases"
+title: "Machine learning with limited data challenges and opportunities in rare diseases"
 keywords:
   - rare disease
   - machine learning
@@ -32,7 +32,7 @@ authors: # this is a randomised order of authors. The author order will be decid
     email: jaclyn.n.taroni@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
- -
+  -
    github: ---
     name: Casey Greene
     initials: CG
@@ -41,11 +41,11 @@ authors: # this is a randomised order of authors. The author order will be decid
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
- -
+  -
    github: ---
     name: Justin Guinney
     initials: JG
     orcid: XXXX-XXXX-XXXX-XXXX
     email: justin.guinney@sagebionetworks.org
     affiliations:
-      - Sage Bionetworks
+      - Sage Bionet-works
