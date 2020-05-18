@@ -2,10 +2,10 @@ name: Manubot
 on:
   push:
     branches:
-      - draft-branch
+      - master
   pull_request:
     branches:
-      - draft-branch
+      - master
 jobs:
   manubot:
     name: Manubot
