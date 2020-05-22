@@ -5,7 +5,7 @@ keywords:
   - machine learning
   - transfer learning
 lang: en-US
-authors: # this is a randomised order of authors. The author order will be decided through discussion and mutual consent
+authors:  Below is a randomised order of authors. The author order will be decided through discussion and mutual consent
   -
     github: jaybee84
     name: Jineta Banerjee
@@ -17,7 +17,7 @@ authors: # this is a randomised order of authors. The author order will be decid
       - Sage Bionetworks
     funders: Grant XXXXXXXX
   -
-    github: allawayr
+    github: allaway
     name: Robert J Allaway
     initials: RJA
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -25,7 +25,7 @@ authors: # this is a randomised order of authors. The author order will be decid
     affiliations:
       - Sage Bionetworks
   -
-    github: taroni
+    github: jaclyn-taroni
     name: Jaclyn N Taroni
     initials: JNT
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -33,7 +33,7 @@ authors: # this is a randomised order of authors. The author order will be decid
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
   -
-    github: ---
+    github: cgreene
     name: Casey Greene
     initials: CG
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -48,4 +48,4 @@ authors: # this is a randomised order of authors. The author order will be decid
     orcid: XXXX-XXXX-XXXX-XXXX
     email: justin.guinney@sagebionetworks.org
     affiliations:
-      - Sage Bionet-works
+      - Sage Bionetworks
