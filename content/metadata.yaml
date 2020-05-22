@@ -5,7 +5,7 @@ keywords:
   - machine learning
   - transfer learning
 lang: en-US
-authors: # this is a randomised order of authors. The author order will be decided through discussion and mutual consent
+authors: this is a randomised order of authors. The author order will be decided through discussion and mutual consent
   -
     github: jaybee84
     name: Jineta Banerjee
@@ -17,7 +17,7 @@ authors: # this is a randomised order of authors. The author order will be decid
       - Sage Bionetworks
     funders: Grant XXXXXXXX
   -
-    github: allawayr
+    github: allaway
     name: Robert J Allaway
     initials: RJA
     orcid: XXXX-XXXX-XXXX-XXXX
