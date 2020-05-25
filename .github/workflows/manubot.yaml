@@ -49,11 +49,17 @@ jobs:
           name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
           path: output
       - name: Deploy Manuscript
-        if: github.ref == 'refs/heads/draft-branch' && github.event_name == 'push' && !github.event.repository.fork
+        if: github.event_name == 'push' && !github.event.repository.fork
         env:
           MANUBOT_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
           CI_BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
           CI_JOB_WEB_URL: https://github.com/${{ github.repository }}/runs/${{ github.run_id }}
+          GITHUB_REF: ${{ github.ref }}
         shell: bash --login {0}
-        run: bash ci/deploy.sh
+        run: |
+          # log for debugging
+          echo Current ref: $GITHUB_REF
+          if [ "$GITHUB_REF" = "refs/heads/draft-branch" ]; then
+            bash ci/deploy.sh
+          fi
