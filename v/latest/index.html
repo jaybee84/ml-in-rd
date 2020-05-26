@@ -11,7 +11,7 @@
   <meta name="author" content="Justin Guinney" />
   <meta name="dcterms.date" content="2020-05-26" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
-  <title>Machine learning methods for rare diseases</title>
+  <title>Machine learning with limited data challenges and opportunities in rare diseases</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,10 +28,10 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Machine learning methods for rare diseases" />
-  <meta name="citation_title" content="Machine learning methods for rare diseases" />
-  <meta property="og:title" content="Machine learning methods for rare diseases" />
-  <meta property="twitter:title" content="Machine learning methods for rare diseases" />
+  <meta name="dc.title" content="Machine learning with limited data challenges and opportunities in rare diseases" />
+  <meta name="citation_title" content="Machine learning with limited data challenges and opportunities in rare diseases" />
+  <meta property="og:title" content="Machine learning with limited data challenges and opportunities in rare diseases" />
+  <meta property="twitter:title" content="Machine learning with limited data challenges and opportunities in rare diseases" />
   <meta name="dc.date" content="2020-05-26" />
   <meta name="citation_publication_date" content="2020-05-26" />
   <meta name="dc.language" content="en-US" />
@@ -42,30 +42,29 @@
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Jineta Banerjee" />
   <meta name="citation_author_institution" content="Sage Bionetworks" />
-  <meta name="citation_author_orcid" content="0000-0002-1775-3645" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Robert J Allaway" />
   <meta name="citation_author_institution" content="Sage Bionetworks" />
-  <meta name="citation_author_orcid" content="0000-0003-3573-3565" />
-  <meta name="twitter:creator" content="@allawayr" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Jaclyn N Taroni" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation" />
-  <meta name="citation_author_orcid" content="0000-0003-4734-4508" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Casey Greene" />
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania" />
   <meta name="citation_author_institution" content="Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation" />
-  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Justin Guinney" />
-  <meta name="citation_author_institution" content="Sage Bionetworks" />
-  <meta name="citation_author_orcid" content="0000-0003-1477-1888" />
+  <meta name="citation_author_institution" content="Sage Bionet-works" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://jaybee84.github.io/ml-in-rd/" />
   <meta property="og:url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta property="twitter:url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/df9d4a7239de9e7e1b3cff41bc412442ab6568ba/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/df9d4a7239de9e7e1b3cff41bc412442ab6568ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/df9d4a7239de9e7e1b3cff41bc412442ab6568ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/5dfb75a1cd1af94e2f57ea2d2205941c44d60c66/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/5dfb75a1cd1af94e2f57ea2d2205941c44d60c66/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/5dfb75a1cd1af94e2f57ea2d2205941c44d60c66/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,95 +74,60 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Machine learning methods for rare diseases</h1>
+<h1 class="title">Machine learning with limited data challenges and opportunities in rare diseases</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/df9d4a7239de9e7e1b3cff41bc412442ab6568ba/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/5dfb75a1cd1af94e2f57ea2d2205941c44d60c66/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/df9d4a7239de9e7e1b3cff41bc412442ab6568ba">jaybee84/ml-in-rd@df9d4a7</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/5dfb75a1cd1af94e2f57ea2d2205941c44d60c66">jaybee84/ml-in-rd@5dfb75a</a>
 on May 26, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Jineta Banerjee</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0002-1775-3645">0000-0002-1775-3645</a>
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/jaybee84">jaybee84</a><br>
 <small>
 Sage Bionetworks
-· Funded by [‘Neurofibromatosis Therapeutic Acceleration Program’, “Children’s Tumor Foundation”]
+· Funded by Grant XXXXXXXX
 </small></p></li>
 <li><p><strong>Robert J Allaway</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0003-3573-3565">0000-0003-3573-3565</a>
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/allaway">allaway</a>
-· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
-<a href="https://twitter.com/allawayr">allawayr</a><br>
+<a href="https://github.com/allaway">allaway</a><br>
 <small>
 Sage Bionetworks
-· Funded by [‘Neurofibromatosis Therapeutic Acceleration Program’, “Children’s Tumor Foundation”]
 </small></p></li>
 <li><p><strong>Jaclyn N Taroni</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0003-4734-4508">0000-0003-4734-4508</a>
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/jaclyn-taroni">jaclyn-taroni</a><br>
+<a href="https://github.com/taroni">taroni</a><br>
 <small>
 Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
 </small></p></li>
 <li><p><strong>Casey Greene</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a>
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/cgreene">cgreene</a><br>
+<a href="https://github.com/---">—</a><br>
 <small>
 Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania; Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
 </small></p></li>
 <li><p><strong>Justin Guinney</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/0000-0003-1477-1888">0000-0003-1477-1888</a>
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/jguinney">jguinney</a><br>
+<a href="https://github.com/---">—</a><br>
 <small>
-Sage Bionetworks
-· Funded by [‘Neurofibromatosis Therapeutic Acceleration Program’, “Children’s Tumor Foundation”]
+Sage Bionet-works
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>Substantial technological advances have dramatically changed biomedicine by making deep characterization of patient samples routine.
-These technologies provide a rich portrait of genes, cellular pathways, and cell types involved in complex phenotypes.
-Machine learning is often a perfect fit for the types of data now being generated, and Nature Methods routinely has reports of machine learning methods that extract disease-relevant patterns from these high dimensional datasets.
-Often, these methods require a large number of samples to identify reproducible and biologically meaningful patterns.
-With rare diseases, biological specimens and consequently data, are limited due to the rarity of the condition.
-In this perspective, we outline the challenges and emerging solutions for using machine learning in these settings.
-We aim to spur the development of powerful machine learning techniques for rare diseases.
-We also note that precision medicine presents a similar challenge, in which a common disease is partitioned into small subsets of patients with shared etiologies and treatment strategies.
-Advances from rare disease research are likely to be highly informative for other applications as well.</p>
-<h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>This is an introductory section…</p>
-<h3 id="techniques-that-build-on-prior-knowledge-and-indirectly-related-data-are-necessary-for-many-rare-disease-applications">Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications</h3>
-<blockquote>
-<p>This section will highlight promising approaches for analyzing rare disease data to extract biological insights.
-We will discuss techniques like transfer learning, representation learning, cascade learning, integrative analysis, and knowledge-graph creation and use that leverage other knowledge and data sources to construct testable hypotheses from rare diseases datasets with limited sample sizes 1–8.</p>
-</blockquote>
-<h3 id="techniques-and-procedures-must-be-implemented-to-manage-model-complexity-without-sacrificing-the-value-of-machine-learning">Techniques and procedures must be implemented to manage model complexity without sacrificing the value of machine learning</h3>
-<blockquote>
-<p>Inherent challenges posed by low sample numbers in rare diseases are further aggravated by disease heterogeneity, poorly defined disease phenotypes, and often a lack of control (i.e. normal) data.
-Machine learning approaches must be carefully designed to address these challenges.
-We discuss how to implement methodological solutions like bootstrapping sample data, regularization methods for deep learning, and hyper-ensemble techniques to minimize misinterpretation of the data9,10.</p>
-</blockquote>
-<h3 id="techniques-to-manage-disparities-in-data-generation-are-required-to-power-robust-analyses-in-rare-diseases">Techniques to manage disparities in data generation are required to power robust analyses in rare diseases</h3>
-<blockquote>
-<p>Rarity of patients leads to heterogeneity in sample collection, causing disparities in the data.
-We will discuss how rigorous normalization and methodologies capturing sample-wise gene-set level information can help appropriate integration of disparate data points to power machine learning approaches11–13.</p>
-</blockquote>
-<h3 id="conclusions">Conclusions</h3>
-<blockquote>
-<p>We will conclude by discussing the potential of the above-mentioned approaches in rare diseases and other biomedical areas where data is scarce.</p>
-</blockquote>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
