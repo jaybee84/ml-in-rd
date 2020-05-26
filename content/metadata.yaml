@@ -1,51 +1,60 @@
 ---
-title: "Machine learning with limited data challenges and opportunities in rare diseases"
+title: "Machine learning methods for rare diseases"
 keywords:
   - rare disease
   - machine learning
   - transfer learning
 lang: en-US
-authors: #this is a randomised order of authors. The author order will be decided through discussion and mutual consent
+authors:  #Below is a randomised order of authors. The author order will be decided through discussion and mutual consent
   -
     github: jaybee84
     name: Jineta Banerjee
     initials: JB
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-1775-3645
     #twitter: johndoe
     email: jineta.banerjee@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
-    funders: Grant XXXXXXXX
+    funders: 
+      - Neurofibromatosis Therapeutic Acceleration Program
+      - Children's Tumor Foundation
   -
     github: allaway
     name: Robert J Allaway
     initials: RJA
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-3573-3565
+    twitter: allawayr
     email: robert.allaway@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
+    funders: 
+      - Neurofibromatosis Therapeutic Acceleration Program
+      - Children's Tumor Foundation
   -
-    github: taroni
+    github: jaclyn-taroni
     name: Jaclyn N Taroni
     initials: JNT
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-4734-4508
     email: jaclyn.n.taroni@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
   -
-    github: ---
+    github: cgreene
     name: Casey Greene
     initials: CG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0001-8713-9213
     email: greenescientist@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
   -
-    github: ---
+    github: jguinney
     name: Justin Guinney
     initials: JG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-1477-1888
     email: justin.guinney@sagebionetworks.org
     affiliations:
-      - Sage Bionet-works
+      - Sage Bionetworks
+    funders: 
+      - Neurofibromatosis Therapeutic Acceleration Program
+      - Children's Tumor Foundation

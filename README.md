@@ -5,7 +5,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jaybee84.github.io/ml-in-rd/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jaybee84.github.io/ml-in-rd/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/jaybee84/ml-in-rd/workflows/Manubot/badge.svg)](https://github.com/jaybee84/ml-in-rd/actions)
-[![Travis Build Status](https://travis-ci.com/jaybee84/ml-in-rd.svg?branch=master)](https://travis-ci.com/jaybee84/ml-in-rd)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
