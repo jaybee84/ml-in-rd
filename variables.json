@@ -1,6 +1,6 @@
 {
   "pandoc": {
-    "title": "Machine learning with limited data challenges and opportunities in rare diseases",
+    "title": "Machine learning methods for rare diseases",
     "keywords": [
       "rare disease",
       "machine learning",
@@ -15,7 +15,7 @@
       "Casey Greene",
       "Justin Guinney"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning with limited data challenges and opportunities in rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning with limited data challenges and opportunities in rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning with limited data challenges and opportunities in rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning with limited data challenges and opportunities in rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-05-26\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-26\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionet-works\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/7fa20659ad7e8ea36678b50020d50f18b048c8bf/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/7fa20659ad7e8ea36678b50020d50f18b048c8bf/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/7fa20659ad7e8ea36678b50020d50f18b048c8bf/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-05-26\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-26\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/ffe9862537c38b96b5097371ebc3efe6b1fe2634/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/ffe9862537c38b96b5097371ebc3efe6b1fe2634/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/ffe9862537c38b96b5097371ebc3efe6b1fe2634/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -31,12 +31,15 @@
         "github": "jaybee84",
         "name": "Jineta Banerjee",
         "initials": "JB",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "0000-0002-1775-3645",
         "email": "jineta.banerjee@sagebionetworks.org",
         "affiliations": [
           "Sage Bionetworks"
         ],
-        "funders": "Grant XXXXXXXX",
+        "funders": [
+          "Neurofibromatosis Therapeutic Acceleration Program",
+          "Children's Tumor Foundation"
+        ],
         "affiliation_numbers": [
           1
         ]
@@ -45,20 +48,25 @@
         "github": "allaway",
         "name": "Robert J Allaway",
         "initials": "RJA",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "0000-0003-3573-3565",
+        "twitter": "allawayr",
         "email": "robert.allaway@sagebionetworks.org",
         "affiliations": [
           "Sage Bionetworks"
+        ],
+        "funders": [
+          "Neurofibromatosis Therapeutic Acceleration Program",
+          "Children's Tumor Foundation"
         ],
         "affiliation_numbers": [
           1
         ]
       },
       {
-        "github": "taroni",
+        "github": "jaclyn-taroni",
         "name": "Jaclyn N Taroni",
         "initials": "JNT",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "0000-0003-4734-4508",
         "email": "jaclyn.n.taroni@gmail.com",
         "affiliations": [
           "Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation"
@@ -68,10 +76,10 @@
         ]
       },
       {
-        "github": "---",
+        "github": "cgreene",
         "name": "Casey Greene",
         "initials": "CG",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "0000-0001-8713-9213",
         "email": "greenescientist@gmail.com",
         "affiliations": [
           "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania",
@@ -83,16 +91,20 @@
         ]
       },
       {
-        "github": "---",
+        "github": "jguinney",
         "name": "Justin Guinney",
         "initials": "JG",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "orcid": "0000-0003-1477-1888",
         "email": "justin.guinney@sagebionetworks.org",
         "affiliations": [
-          "Sage Bionet-works"
+          "Sage Bionetworks"
+        ],
+        "funders": [
+          "Neurofibromatosis Therapeutic Acceleration Program",
+          "Children's Tumor Foundation"
         ],
         "affiliation_numbers": [
-          4
+          1
         ]
       }
     ],
@@ -108,10 +120,6 @@
       {
         "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania",
         "affiliation_number": 3
-      },
-      {
-        "affiliation": "Sage Bionet-works",
-        "affiliation_number": 4
       }
     ],
     "ci_source": {
@@ -119,19 +127,19 @@
       "repo_slug": "jaybee84/ml-in-rd",
       "repo_owner": "jaybee84",
       "repo_name": "ml-in-rd",
-      "commit": "7fa20659ad7e8ea36678b50020d50f18b048c8bf",
-      "triggering_commit": "7fa20659ad7e8ea36678b50020d50f18b048c8bf",
-      "build_url": "https://github.com/jaybee84/ml-in-rd/commit/7fa20659ad7e8ea36678b50020d50f18b048c8bf/checks",
+      "commit": "ffe9862537c38b96b5097371ebc3efe6b1fe2634",
+      "triggering_commit": "ffe9862537c38b96b5097371ebc3efe6b1fe2634",
+      "build_url": "https://github.com/jaybee84/ml-in-rd/commit/ffe9862537c38b96b5097371ebc3efe6b1fe2634/checks",
       "job_url": "https://github.com/jaybee84/ml-in-rd/runs/run2"
     },
     "html_url": "https://jaybee84.github.io/ml-in-rd/",
     "pdf_url": "https://jaybee84.github.io/ml-in-rd/manuscript.pdf",
-    "html_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/7fa20659ad7e8ea36678b50020d50f18b048c8bf/",
-    "pdf_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/7fa20659ad7e8ea36678b50020d50f18b048c8bf/manuscript.pdf",
+    "html_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/ffe9862537c38b96b5097371ebc3efe6b1fe2634/",
+    "pdf_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/ffe9862537c38b96b5097371ebc3efe6b1fe2634/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "7c0f9c30fe03a6e264e19d08f2337266a4ea3e3e",
     "manuscript_stats": {
-      "word_count": 243
+      "word_count": 660
     }
   }
 }
