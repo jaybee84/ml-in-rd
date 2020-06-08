@@ -15,7 +15,7 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     email: jineta.banerjee@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
-    funders: 
+    funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
   -
@@ -27,7 +27,7 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     email: robert.allaway@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
-    funders: 
+    funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
   -
@@ -55,6 +55,6 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     email: justin.guinney@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
-    funders: 
+    funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
