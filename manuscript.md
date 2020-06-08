@@ -7,8 +7,8 @@ author-meta:
 - Justin Guinney
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-26'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-05-26\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-26\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/35944804e7bb6a8fe2808b7cc504d68dfc862b95/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/35944804e7bb6a8fe2808b7cc504d68dfc862b95/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/35944804e7bb6a8fe2808b7cc504d68dfc862b95/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-06-08'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-06-08\" />\n<meta name=\"citation_publication_date\" content=\"2020-06-08\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/f7c19442c914db7f724f5d23d7cb12c789f5d2f5/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/f7c19442c914db7f724f5d23d7cb12c789f5d2f5/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/f7c19442c914db7f724f5d23d7cb12c789f5d2f5/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - rare disease
 - machine learning
@@ -28,10 +28,10 @@ title: Machine learning methods for rare diseases
 
 <small><em>
 This manuscript
-([permalink](https://jaybee84.github.io/ml-in-rd/v/35944804e7bb6a8fe2808b7cc504d68dfc862b95/))
+([permalink](https://jaybee84.github.io/ml-in-rd/v/f7c19442c914db7f724f5d23d7cb12c789f5d2f5/))
 was automatically generated
-from [jaybee84/ml-in-rd@3594480](https://github.com/jaybee84/ml-in-rd/tree/35944804e7bb6a8fe2808b7cc504d68dfc862b95)
-on May 26, 2020.
+from [jaybee84/ml-in-rd@f7c1944](https://github.com/jaybee84/ml-in-rd/tree/f7c19442c914db7f724f5d23d7cb12c789f5d2f5)
+on June 8, 2020.
 </em></small>
 
 ## Authors
@@ -45,7 +45,7 @@ on May 26, 2020.
     [jaybee84](https://github.com/jaybee84)<br>
   <small>
      Sage Bionetworks
-     · Funded by ['Neurofibromatosis Therapeutic Acceleration Program', "Children's Tumor Foundation"]
+     · Funded by Neurofibromatosis Therapeutic Acceleration Program; Children's Tumor Foundation
   </small>
 
 + **Robert J Allaway**<br>
@@ -57,7 +57,7 @@ on May 26, 2020.
     [allawayr](https://twitter.com/allawayr)<br>
   <small>
      Sage Bionetworks
-     · Funded by ['Neurofibromatosis Therapeutic Acceleration Program', "Children's Tumor Foundation"]
+     · Funded by Neurofibromatosis Therapeutic Acceleration Program; Children's Tumor Foundation
   </small>
 
 + **Jaclyn N Taroni**<br>
@@ -85,7 +85,7 @@ on May 26, 2020.
     [jguinney](https://github.com/jguinney)<br>
   <small>
      Sage Bionetworks
-     · Funded by ['Neurofibromatosis Therapeutic Acceleration Program', "Children's Tumor Foundation"]
+     · Funded by Neurofibromatosis Therapeutic Acceleration Program; Children's Tumor Foundation
   </small>
 
 
