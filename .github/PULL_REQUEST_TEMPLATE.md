@@ -23,4 +23,4 @@ Unless otherwise noted above, this PR will be considered ready for review when a
 - [ ] All citations follow the [Manubot citation instructions](https://github.com/jaybee84/ml-in-rd/blob/draft-branch/USAGE.md#citations)
 - [ ] All changes or additions to tables follow the [Manubot table instructions](https://github.com/jaybee84/ml-in-rd/blob/draft-branch/USAGE.md#tables)
 - [ ] All figures follow the [Manubot figure instructions](https://github.com/jaybee84/ml-in-rd/blob/draft-branch/USAGE.md#figures)
-- [ ] The section contains a list of terms that need to be added to glossary box
+- [ ] All terms that need to be added to glossary have been added to #50 
