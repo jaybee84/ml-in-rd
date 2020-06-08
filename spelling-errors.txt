@@ -1,4 +1,4 @@
-allaway
+Allaway
 allawayr
 Banerjee
 biomedicine
@@ -11,5 +11,5 @@ jguinney
 Jineta
 Neurofibromatosis
 phenotypes
-taroni
+Taroni
 Translational
