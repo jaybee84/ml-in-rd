@@ -35,7 +35,7 @@ Pull requests from `draft-branch` to `master` should consist of entire sections 
 
 ### Spellcheck as part of pull requests
 
-We have spellcheck enabled as part of an AppVeyor workflow.
+We have [spellcheck](USAGE.md#spellchecking) enabled as part of an AppVeyor workflow.
 The dictionary used for spellchecking can be updated.
 Edit the file in `build/assets/custom-dictionary.txt` by adding new entries to the end.
 You do not need to change anything else.
