@@ -1,4 +1,4 @@
-personal_ws-1.1 en 22
+personal_ws-1.1 en 40 utf-8
 al
 doi
 eq
@@ -21,3 +21,21 @@ svgs
 tbl
 unicode
 wikidata
+biomedicine
+biospecimen
+cytometry
+dataset
+datasets
+dimensionality
+genomic
+heterogeneity
+heterogeneous
+MDS
+Neurofibromatosis
+omic
+PCA
+phenotypes
+transcriptomic
+translational
+t-SNE
+UMAP
