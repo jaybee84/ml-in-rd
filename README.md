@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# Machine learning in rare disease
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
