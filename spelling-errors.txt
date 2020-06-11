@@ -9,7 +9,7 @@ cgreene
 cytometry
 dataset
 datasets
-Dimensionality
+dimensionality
 genomic
 Guinney
 heterogenity
@@ -22,7 +22,7 @@ neurofibromatosis
 omic
 PCA
 phenotypes
-Taroni
+taroni
 transcriptomic
 Translational
 tSNE
