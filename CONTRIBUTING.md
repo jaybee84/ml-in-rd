@@ -33,3 +33,16 @@ Pull requests to `draft-branch` should be small and focused enough in scope such
 
 Pull requests from `draft-branch` to `master` should consist of entire sections of the manuscript.
 
+### Spellcheck as part of pull requests
+
+We have [spellcheck](USAGE.md#spellchecking) enabled as part of an AppVeyor workflow.
+The dictionary used for spellchecking can be updated.
+Edit the file in `build/assets/custom-dictionary.txt` by adding new entries to the end.
+You do not need to change anything else.
+However, if you want to update the first line to have an accurate count of words and you want to remove non-unique ones, run the following command from within `build/assets` on your favorite OS X or Linux machine:
+
+```
+(( len = $(awk '!a[$0]++' < custom-dictionary.txt | wc -l ) - 1 )); tmpfile="$(mktemp)"; echo "personal_ws-1.1 en $len utf-8" > $tmpfile; tail -n +2 custom-dictionary.txt | awk '!a[$0]++' >> $tmpfile; mv $tmpfile custom-dictionary.txt
+```
+
+_[Adapted from OpenPBTA manuscript](https://github.com/AlexsLemonade/OpenPBTA-manuscript/blob/master/.github/PULL_REQUEST_TEMPLATE.md#spellcheck-step)_

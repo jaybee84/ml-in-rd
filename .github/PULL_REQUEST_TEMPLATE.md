@@ -24,3 +24,4 @@ Unless otherwise noted above, this PR will be considered ready for review when a
 - [ ] All changes or additions to tables follow the [Manubot table instructions](https://github.com/jaybee84/ml-in-rd/blob/draft-branch/USAGE.md#tables)
 - [ ] All figures follow the [Manubot figure instructions](https://github.com/jaybee84/ml-in-rd/blob/draft-branch/USAGE.md#figures)
 - [ ] All terms that need to be added to glossary have been added to #50 
+- [ ] There are no new spelling errors identified by the Manubot spellchecker
