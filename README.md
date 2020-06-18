@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/jaybee84/ml-in-rd/tree/gh-pages) branch hosts the contents of this directory at <https://jaybee84.github.io/ml-in-rd/>.
-The permalink for this webpage version is <https://jaybee84.github.io/ml-in-rd/v/776dab95eaeff289e3e741a591b411fe93265cb5/>.
+The permalink for this webpage version is <https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://jaybee84.github.io/ml-in-rd/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`776dab95eaeff289e3e741a591b411fe93265cb5`](https://github.com/jaybee84/ml-in-rd/commit/776dab95eaeff289e3e741a591b411fe93265cb5).
+[`0d71a20efe1d636dd89569a27f22e3115708e572`](https://github.com/jaybee84/ml-in-rd/commit/0d71a20efe1d636dd89569a27f22e3115708e572).
