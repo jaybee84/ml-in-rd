@@ -6,7 +6,7 @@ content/04.model-complexity.md:2:phenotypes
 content/04.model-complexity.regularization.md:3:dataset
 content/04.model-complexity.regularization.md:4:dataset
 content/04.model-complexity.regularization.md:4:pre
-content/04.model-complexity.regularization.md:8:overfitted
+content/04.model-complexity.regularization.md:8:overfit
 content/04.model-complexity.regularization.md:9:Overfitting
 content/04.model-complexity.regularization.md:10:overfitting
 content/04.model-complexity.regularization.md:11:dependance

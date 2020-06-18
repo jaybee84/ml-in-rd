@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/8cd8ab7d0a0f778273dd105f8014f9aeba9fbed7/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/8cd8ab7d0a0f778273dd105f8014f9aeba9fbed7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/8cd8ab7d0a0f778273dd105f8014f9aeba9fbed7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/8cd8ab7d0a0f778273dd105f8014f9aeba9fbed7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/0d71a20efe1d636dd89569a27f22e3115708e572">jaybee84/ml-in-rd@0d71a20</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/8cd8ab7d0a0f778273dd105f8014f9aeba9fbed7">jaybee84/ml-in-rd@8cd8ab7</a>
 on June 18, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -161,7 +161,7 @@ Given a limited dataset with strong pre-existing technical differences between g
 For example, in a set of 1000 samples where 700 samples are from one healthcare site and 300 from another, it is likely that there will remain site-specific differences between them even after normalization of the samples.
 If the site-specific differences are more pronounced than the underlying patterns differentiating the samples, any machine learning model trained with these data will preferentially learn the site-specific differences to classify the samples, and rank them higher than the underlying patterns leading to a model showing high prediction accuracy of training data (termed low bias in model).
 When new test data points are introduced to the model, possibly coming from a third site, the model is unable to locate the earlier differences in the new data points and fails to classify them accurately causing a significant drop in accuracy of the model (termed high variance in model prediction).
-Such a model is termed “overfitted” to its training data.
+Such a model is termed “overfit” to its training data.
 Overfitting can lead to misinterpretation of the site-specific differences as true patterns in the limited data points and thus needs to be minimized.
 Minimization of overfitting can be accomplished by cross-validation and regularization methodologies.
 While cross-validation aims to reduce the variance in prediction, regularization adds a small amount of bias to the initial model to minimize its dependance and sensitivity to training data.

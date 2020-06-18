@@ -13,7 +13,7 @@ cytometry
 dataset
 datasets
 dependance
-dimensionality
+Dimensionality
 eg
 genomic
 Guinney
@@ -29,13 +29,13 @@ microarray
 Neurofibromatosis
 occurrance
 omic
-overfitted
+overfit
 overfitting
 PCA
 phenotypes
 pre
 SNP
-Taroni
+taroni
 transcriptomic
 Translational
 tSNE
