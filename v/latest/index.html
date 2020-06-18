@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/018b39536cd77a441b18fe679e14196b203b42e6/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/018b39536cd77a441b18fe679e14196b203b42e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/018b39536cd77a441b18fe679e14196b203b42e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/018b39536cd77a441b18fe679e14196b203b42e6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/640507869baf8bcf6f65ff2e356d02484391fbef">jaybee84/ml-in-rd@6405078</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/018b39536cd77a441b18fe679e14196b203b42e6">jaybee84/ml-in-rd@018b395</a>
 on June 18, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -165,14 +165,14 @@ Such a model is termed “overfit” to its training data.
 Overfitting can lead to misinterpretation of the site-specific differences as true patterns in the limited data points and thus needs to be minimized.
 Minimization of overfitting can be accomplished by cross-validation and regularization methodologies.
 While cross-validation aims to reduce the variance in prediction, regularization adds a small amount of bias to the initial model to minimize its dependance and sensitivity to training data.
-Regularization makes models less reliant on training data by adding a penalty (determined by crossvalidation), and then minimizes the error between the model’s prediction and ground truth of the test data.
+Regularization makes models less reliant on training data by adding a penalty (determined by cross-validation), and then minimizes the error between the model’s prediction and ground truth of the test data.
 Regularization can not only minimize overfitting but can additionally help in predicting outcomes using a limited number of samples.</p>
 <p>Regularization can be of three main types, each with their particular strengths and weaknesses.
 (1) Ridge regression aims to minimize the magnitude of the features, but in models that try to select the most important features for accurate prediction of sample labels, ridge regression shrinks all features equally, but cannot completely remove unimportant features.
-Thus in presence of many correlated parameters (eg. gene expression networks), ridge regression may not be ideal in reducing the feature space.
+Thus in presence of many correlated parameters (e.g. gene expression networks), ridge regression may not be ideal in reducing the feature space.
 (2) LASSO or least absolute shrinkage and selection operator regression on the other hand works well for selecting few important features since its effect can minimize the magnitude of some features more than the others.
 Thus it helps in selecting most important features while the magnitude of irrelevant features are shrunk to 0 and eventually removed.
-This selection attribute of LASSO (in a sample set of size “n”, LASSO can select “n” features for the model) may be an advantage in reducing model complexity, but a disadvantage in cases where identification of all possible collinear features is important (eg. all biomarkers correlating to a particular disease phenotype) <span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">2</a>]</span>.
+This selection attribute of LASSO (in a sample set of size “n”, LASSO can select “n” features for the model) may be an advantage in reducing model complexity, but a disadvantage in cases where identification of all possible collinear features is important (e.g. all biomarkers correlating to a particular disease phenotype) <span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">2</a>]</span>.
 (3) Elastic-Net regression is a combination of LASSO and ridge regression<span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">3</a>]</span>.
 Both of the methodologies when applied together helps to select most useful features, specially where there are a lot of correlated features.
 In this setup, LASSO leads to selection of one of the correlated features and reduces the others to 0 (grouping of features), and the magnitude of the selected features are then minimized through ridge regression.</p>
@@ -183,7 +183,7 @@ Many deleterious genomic variants can be extremely rare due to the constant sele
 Since the frequency of a rare variant is so low (less than 1%) applying routine statistical procedures that were extensively developed for common variant association, to analyze a low minor allele frequency (MAF) seem inappropriate <span class="citation" data-cites="2gwD58B">[<a href="#ref-2gwD58B" role="doc-biblioref">4</a>]</span>.
 For its feature selection attribute, LASSO has been widely applied in microarray and GWAS data for common variants.
 But since LASSO by itself is too stringent for rare variants, it has been employed along with group penalties to help identify rare variants/ low frequency predictors <span class="citation" data-cites="IX9EQ5gX">[<a href="#ref-IX9EQ5gX" role="doc-biblioref">5</a>]</span>.
-Variations of LASSO have also been implemented to aggregate or group the occurrance of rare variants together by gene or chromosome location <span class="citation" data-cites="1GnDOsTEh 8gYUCqoH s907ofL2">[<a href="#ref-1GnDOsTEh" role="doc-biblioref">6</a>,<a href="#ref-8gYUCqoH" role="doc-biblioref">7</a>,<a href="#ref-s907ofL2" role="doc-biblioref">8</a>]</span>.
+Variations of LASSO have also been implemented to aggregate or group the occurrence of rare variants together by gene or chromosome location <span class="citation" data-cites="1GnDOsTEh 8gYUCqoH s907ofL2">[<a href="#ref-1GnDOsTEh" role="doc-biblioref">6</a>,<a href="#ref-8gYUCqoH" role="doc-biblioref">7</a>,<a href="#ref-s907ofL2" role="doc-biblioref">8</a>]</span>.
 In this strategy, a 0–1 dummy variable was created for each SNP based on the presence or absence of the rare variant.
 Then linear combinations of the selected dummy variables were considered by using the LASSO procedure.
 Even though most of the dummy variables were 0, their linear combination was more likely to be nonzero thus leading to increased signal to noise ratio for the rare variants.
