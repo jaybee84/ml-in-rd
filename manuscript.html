@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/64f49d6b667a6101be47da940afe7fb08ccb0a17/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/64f49d6b667a6101be47da940afe7fb08ccb0a17/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/64f49d6b667a6101be47da940afe7fb08ccb0a17/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/64f49d6b667a6101be47da940afe7fb08ccb0a17/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/640507869baf8bcf6f65ff2e356d02484391fbef/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/64f49d6b667a6101be47da940afe7fb08ccb0a17">jaybee84/ml-in-rd@64f49d6</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/640507869baf8bcf6f65ff2e356d02484391fbef">jaybee84/ml-in-rd@6405078</a>
 on June 18, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -203,9 +203,9 @@ techniques in deep learning eg.
 Deep and shallow architecture:
 https://ieeexplore.ieee.org/document/7863293</p>
 <h3 id="techniques-to-manage-disparities-in-data-generation-are-required-to-power-robust-analyses-in-rare-diseases">Techniques to manage disparities in data generation are required to power robust analyses in rare diseases</h3>
-<p>As with common diseases, genomic and transcriptomic data from rare diseases can suffer from artifacts introduced by batch, processing methodology, sequencing platform, or other non-biological phenomena.
-The consequences of these non-biological artifacts are amplified in rare diseases which often have few samples and heterogenous phenotypes.
-Furthermore, because datasets are many times pieced together from multiple small studies, disease phenotype or other important biological characteristics are often confounded by the previously mentioned “batch” factors.
+<p>As with common diseases, genomic and transcriptomic data from rare diseases can suffer from artifacts introduced by batch, processing methodology, sequencing platform, specimen/data quality or other non-biological phenomena.
+The consequences of these non-biological artifacts are amplified in rare diseases which often have few samples and heterogeneous phenotypes.
+Furthermore, because datasets are many times pieced together from multiple small studies, in which disease phenotypes or other important biological characteristics are often confounded by the previously mentioned “batch” factors.
 A key consideration here is, if possible, active dialogue with the data generators or experts in the field who may have unexpected insights into potential sources of variation.
 One example of the value of this, experienced by the authors, occurred when studying tumors associated with the disease neurofibromatosis type 1.
 These datasets were, unbeknownst to the computational biologists, generated from samples obtained with vastly different surgical techniques (laser ablation and excision vs standard excision), resulting in substantial biological differences that are a consequence of process, not reality.
@@ -213,12 +213,13 @@ One might expect, in this example, that this technical decision would result in 
 Consequently, careful assessment of confounding factors and implementation of normalization methods is important to identifying biologically meaningful features within a dataset.
 Assessment of confounding factors and heterogeneity in rare disease datasets is perhaps most easily performed using unsupervised learning approaches such as clustering and dimensionality reduction.
 Clustering methods like k-means clustering or hierarchical clustering can be used to characterize the structure present in many different types of data such as genomic or imaging data. <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">16</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">17</a>]</span>.
-Similarly, a variety of dimensionality reduction methods are can be used to visualize sample heterogeneity and potential confounding variables, including multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (tSNE), and uniform manifold approximation and projection (UMAP), among many others. <span class="citation" data-cites="wBDkzWlg qRi1wkz4 c46n3STN 157h5hA34">[<a href="#ref-wBDkzWlg" role="doc-biblioref">18</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">19</a>,<a href="#ref-c46n3STN" role="doc-biblioref">20</a>,<a href="#ref-157h5hA34" role="doc-biblioref">21</a>]</span>
-All of these methods can be effectively used to identify batch effects and other structure in the data (cite), though some, like tSNE and UMAP, have parameters, such as perplexity (number of nearest neighbors), that can substantially affect the output, and thus the interpretation, of the analysis <span class="citation" data-cites="Lby4PmSX 157h5hA34">[<a href="#ref-157h5hA34" role="doc-biblioref">21</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">22</a>]</span>.
+Similarly, a variety of dimensionality reduction methods are can be used to visualize sample heterogeneity and potential confounding variables, including multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP), among many others. <span class="citation" data-cites="wBDkzWlg qRi1wkz4 c46n3STN 157h5hA34">[<a href="#ref-wBDkzWlg" role="doc-biblioref">18</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">19</a>,<a href="#ref-c46n3STN" role="doc-biblioref">20</a>,<a href="#ref-157h5hA34" role="doc-biblioref">21</a>]</span>
+All of these methods can be effectively used to identify batch effects and other structure in the data, though some, like t-SNE and UMAP, have parameters, such as perplexity (number of nearest neighbors), that can substantially affect the output, and thus the interpretation, of the analysis <span class="citation" data-cites="Lby4PmSX 157h5hA34">[<a href="#ref-157h5hA34" role="doc-biblioref">21</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">22</a>]</span>.
 Therefore, successful application of these methods requires a sufficient understanding of the underlying method and parameter sweeping to get a clear picture of the structure of the underlying data.
-Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogenity of imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">23</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">24</a>]</span>, and others.
+Another important consideration is that, as discussed by Way, et. al. <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">23</a>]</span>, a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; testing multiple methods may result in a more comprehensive portrait of the data
+Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogeneity of imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">24</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">25</a>]</span>, and others.
 Once the nature of the non-biological heterogeneity has been established, different techniques can be used to correct the differences.
-Common approaches to ameliorate non-biological effects include reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">25</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">26</a>]</span>, normalization of raw values (e.g. z-scores, trimmed mean of M-values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">27</a>]</span>).
+Common approaches to ameliorate non-biological effects include the assessment of data quality using robust metrics, reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">26</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">27</a>]</span>, normalization of raw values (e.g. z-scores, trimmed mean of M-values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">28</a>]</span>).
 It can also be helpful to be fatalistic, in some sense, when working with rare disease data.
 For various reasons including ethical considerations, limited funding, and limited biospecimen availability, experimental design and the resulting data will be less-than-ideal - for example - when batch variables and biological variables are confounded.
 In these cases, it may be prudent to take a step back, re-evaluate the data, and identify methods that can operate within these constraints.</p>
@@ -361,32 +362,38 @@ Martin Wattenberg, Fernanda Viégas, Ian Johnson<br />
 <em>Distill</em> (2016-10-13) <a href="https://doi.org/gffk7g">https://doi.org/gffk7g</a><br />
 DOI: <a href="https://doi.org/10.23915/distill.00002">10.23915/distill.00002</a></p>
 </div>
+<div id="ref-NsW0qxZF">
+<p>23. <strong>Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations</strong><br />
+Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene<br />
+<em>Genome Biology</em> (2020-05-11) <a href="https://doi.org/gg2mjh">https://doi.org/gg2mjh</a><br />
+DOI: <a href="https://doi.org/10.1186/s13059-020-02021-3">10.1186/s13059-020-02021-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32393369">32393369</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7212571">PMC7212571</a></p>
+</div>
 <div id="ref-1Ak4JFhvU">
-<p>23. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong><br />
+<p>24. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong><br />
 Gwenolé Quellec, Mathieu Lamard, Pierre-Henri Conze, Pascale Massin, Béatrice Cochener<br />
 <em>Medical Image Analysis</em> (2020-04) <a href="https://doi.org/ggsrc7">https://doi.org/ggsrc7</a><br />
 DOI: <a href="https://doi.org/10.1016/j.media.2020.101660">10.1016/j.media.2020.101660</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32028213">32028213</a></p>
 </div>
 <div id="ref-gqTS2Uy7">
-<p>24. <strong>Sensitive detection of rare disease-associated cell subsets via representation learning</strong><br />
+<p>25. <strong>Sensitive detection of rare disease-associated cell subsets via representation learning</strong><br />
 Eirini Arvaniti, Manfred Claassen<br />
 <em>Nature Communications</em> (2017-04-06) <a href="https://doi.org/gf9t7w">https://doi.org/gf9t7w</a><br />
 DOI: <a href="https://doi.org/10.1038/ncomms14825">10.1038/ncomms14825</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28382969">28382969</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5384229">PMC5384229</a></p>
 </div>
 <div id="ref-1HahRBkyb">
-<p>25. <strong>Adjusting batch effects in microarray expression data using empirical Bayes methods</strong><br />
+<p>26. <strong>Adjusting batch effects in microarray expression data using empirical Bayes methods</strong><br />
 W. Evan Johnson, Cheng Li, Ariel Rabinovic<br />
 <em>Biostatistics</em> (2007-01) <a href="https://doi.org/dsf386">https://doi.org/dsf386</a><br />
 DOI: <a href="https://doi.org/10.1093/biostatistics/kxj037">10.1093/biostatistics/kxj037</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16632515">16632515</a></p>
 </div>
 <div id="ref-XJiH4M02">
-<p>26. <strong>svaseq: removing batch effects and other unwanted noise from sequencing data</strong><br />
+<p>27. <strong>svaseq: removing batch effects and other unwanted noise from sequencing data</strong><br />
 Jeffrey T. Leek<br />
 <em>Nucleic Acids Research</em> (2014-12-01) <a href="https://doi.org/f8k8kf">https://doi.org/f8k8kf</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gku864">10.1093/nar/gku864</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25294822">25294822</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4245966">PMC4245966</a></p>
 </div>
 <div id="ref-19neBSN5B">
-<p>27. <strong>A scaling normalization method for differential expression analysis of RNA-seq data</strong><br />
+<p>28. <strong>A scaling normalization method for differential expression analysis of RNA-seq data</strong><br />
 Mark D Robinson, Alicia Oshlack<br />
 <em>Genome Biology</em> (2010) <a href="https://doi.org/cq6f8b">https://doi.org/cq6f8b</a><br />
 DOI: <a href="https://doi.org/10.1186/gb-2010-11-3-r25">10.1186/gb-2010-11-3-r25</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20196867">20196867</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2864565">PMC2864565</a></p>
