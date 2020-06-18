@@ -38,5 +38,6 @@ phenotypes
 pre
 transcriptomic
 translational
-t-SNE
+t
+SNE
 UMAP
