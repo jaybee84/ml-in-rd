@@ -21,6 +21,7 @@ svgs
 tbl
 unicode
 wikidata
+Allaway
 allawayr
 arXiv
 Banerjee
