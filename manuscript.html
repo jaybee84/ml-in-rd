@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-06-11" />
+  <meta name="dcterms.date" content="2020-06-18" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-06-11" />
-  <meta name="citation_publication_date" content="2020-06-11" />
+  <meta name="dc.date" content="2020-06-18" />
+  <meta name="citation_publication_date" content="2020-06-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/776dab95eaeff289e3e741a591b411fe93265cb5/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/776dab95eaeff289e3e741a591b411fe93265cb5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/776dab95eaeff289e3e741a591b411fe93265cb5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/776dab95eaeff289e3e741a591b411fe93265cb5/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/0d71a20efe1d636dd89569a27f22e3115708e572/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/776dab95eaeff289e3e741a591b411fe93265cb5">jaybee84/ml-in-rd@776dab9</a>
-on June 11, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/0d71a20efe1d636dd89569a27f22e3115708e572">jaybee84/ml-in-rd@0d71a20</a>
+on June 18, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -216,7 +216,7 @@ Clustering methods like k-means clustering or hierarchical clustering can be use
 Similarly, a variety of dimensionality reduction methods are can be used to visualize sample heterogeneity and potential confounding variables, including multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (tSNE), and uniform manifold approximation and projection (UMAP), among many others. <span class="citation" data-cites="wBDkzWlg qRi1wkz4 c46n3STN 157h5hA34">[<a href="#ref-wBDkzWlg" role="doc-biblioref">18</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">19</a>,<a href="#ref-c46n3STN" role="doc-biblioref">20</a>,<a href="#ref-157h5hA34" role="doc-biblioref">21</a>]</span>
 All of these methods can be effectively used to identify batch effects and other structure in the data (cite), though some, like tSNE and UMAP, have parameters, such as perplexity (number of nearest neighbors), that can substantially affect the output, and thus the interpretation, of the analysis <span class="citation" data-cites="Lby4PmSX 157h5hA34">[<a href="#ref-157h5hA34" role="doc-biblioref">21</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">22</a>]</span>.
 Therefore, successful application of these methods requires a sufficient understanding of the underlying method and parameter sweeping to get a clear picture of the structure of the underlying data.
-Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogenity of imaging data <span class="citation" data-cites="pJvM5eU4">[<a href="#ref-pJvM5eU4" role="doc-biblioref">23</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">24</a>]</span>, and others.
+Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogenity of imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">23</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">24</a>]</span>, and others.
 Once the nature of the non-biological heterogeneity has been established, different techniques can be used to correct the differences.
 Common approaches to ameliorate non-biological effects include reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">25</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">26</a>]</span>, normalization of raw values (e.g. z-scores, trimmed mean of M-values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">27</a>]</span>).
 It can also be helpful to be fatalistic, in some sense, when working with rare disease data.
@@ -361,11 +361,11 @@ Martin Wattenberg, Fernanda Viégas, Ian Johnson<br />
 <em>Distill</em> (2016-10-13) <a href="https://doi.org/gffk7g">https://doi.org/gffk7g</a><br />
 DOI: <a href="https://doi.org/10.23915/distill.00002">10.23915/distill.00002</a></p>
 </div>
-<div id="ref-pJvM5eU4">
-<p>23. <strong>dSNE: a visualization approach for use with decentralized data</strong><br />
-D. K. Saha, V. D. Calhoun, Y. Du, Z. Fu, S. R. Panta, S. M. Plis<br />
-<em>bioRxiv</em> (2020-04-06) <a href="https://doi.org/ggzp52">https://doi.org/ggzp52</a><br />
-DOI: <a href="https://doi.org/10.1101/826974">10.1101/826974</a></p>
+<div id="ref-1Ak4JFhvU">
+<p>23. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong><br />
+Gwenolé Quellec, Mathieu Lamard, Pierre-Henri Conze, Pascale Massin, Béatrice Cochener<br />
+<em>Medical Image Analysis</em> (2020-04) <a href="https://doi.org/ggsrc7">https://doi.org/ggsrc7</a><br />
+DOI: <a href="https://doi.org/10.1016/j.media.2020.101660">10.1016/j.media.2020.101660</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32028213">32028213</a></p>
 </div>
 <div id="ref-gqTS2Uy7">
 <p>24. <strong>Sensitive detection of rare disease-associated cell subsets via representation learning</strong><br />

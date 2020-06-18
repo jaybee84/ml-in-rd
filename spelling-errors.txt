@@ -26,7 +26,7 @@ Jineta
 MAF
 MDS
 microarray
-neurofibromatosis
+Neurofibromatosis
 occurrance
 omic
 overfitted
@@ -35,7 +35,7 @@ PCA
 phenotypes
 pre
 SNP
-taroni
+Taroni
 transcriptomic
 Translational
 tSNE
