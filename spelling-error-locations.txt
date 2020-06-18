@@ -1,6 +1,2 @@
 content/04.model-complexity.regularization.md:11:dependance
-content/04.model-complexity.regularization.md:12:crossvalidation
-content/04.model-complexity.regularization.md:17:eg
-content/04.model-complexity.regularization.md:20:eg
-content/04.model-complexity.regularization.md:32:occurrance
 content/04.model-complexity.regularization.md:52:eg

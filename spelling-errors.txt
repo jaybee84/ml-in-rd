@@ -1,5 +1,3 @@
-allaway
-crossvalidation
+Allaway
 dependance
 eg
-occurrance
