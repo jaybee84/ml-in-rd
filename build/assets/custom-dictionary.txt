@@ -60,6 +60,3 @@ t
 SNE
 UMAP
 Xu
-Adaboost
-triaging
-multi-class
