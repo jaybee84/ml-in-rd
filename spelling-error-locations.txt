@@ -1,2 +1,0 @@
-content/04.model-complexity.regularization.md:11:dependance
-content/04.model-complexity.regularization.md:52:eg
