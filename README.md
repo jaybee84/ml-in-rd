@@ -24,7 +24,7 @@ Inherent challenges posed by low sample numbers in rare diseases are further agg
 ### Techniques to manage disparities in data generation are required to power robust analyses in rare diseases.
 Rarity of patients leads to heterogeneity in sample collection, causing disparities in the data. We will discuss how rigorous normalization and methodologies capturing sample-wise gene-set level information can help appropriate integration of disparate data points to power machine learning approaches. 
 
-We will conclude by discussing the potential of the above-mentioned approaches in rare diseases, as well as in precision medicine and other biomedical areas where data is scarce.
+We will conclude by discussing the potential of the above-mentioned approaches in rare diseases, as well as in precision medicine and other biomedical areas where data is scarce. 
 
 
 ## Manubot
