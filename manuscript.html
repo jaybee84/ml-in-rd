@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-07-21" />
+  <meta name="dcterms.date" content="2020-07-23" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-07-21" />
-  <meta name="citation_publication_date" content="2020-07-21" />
+  <meta name="dc.date" content="2020-07-23" />
+  <meta name="citation_publication_date" content="2020-07-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/725062072d216e8be76dbbd02c84f181c823a6ab/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/725062072d216e8be76dbbd02c84f181c823a6ab/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/725062072d216e8be76dbbd02c84f181c823a6ab/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/1158a43a912b573cce2b326e6b6921c68a11c1f9/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/1158a43a912b573cce2b326e6b6921c68a11c1f9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/1158a43a912b573cce2b326e6b6921c68a11c1f9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/725062072d216e8be76dbbd02c84f181c823a6ab/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/1158a43a912b573cce2b326e6b6921c68a11c1f9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/725062072d216e8be76dbbd02c84f181c823a6ab">jaybee84/ml-in-rd@7250620</a>
-on July 21, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/1158a43a912b573cce2b326e6b6921c68a11c1f9">jaybee84/ml-in-rd@1158a43</a>
+on July 23, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -143,7 +143,16 @@ We aim to spur the development of powerful machine learning techniques for rare 
 We also note that precision medicine presents a similar challenge, in which a common disease is partitioned into small subsets of patients with shared etiologies and treatment strategies.
 Advances from rare disease research are likely to be highly informative for other applications as well.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>This is an introductory section…</p>
+<p>Machine learning is gaining momentum in biomedical data analysis as data collection is increasingly high-throughput and algorithms or approaches become more transparent and interpretable.</p>
+<p>Application of machine learning to any dataset poses challenges, but the application to biomedical data and subsequent interpretation requires depth of knowledge not only in the biomedical domain but also a clear understanding of the methods and their underlying assumptions.</p>
+<p>Rare disease research has not yet significantly benefited from machine learning applications for various reasons, including lack of statistical power in dataset size, heterogeneity in available data, and sensitivity of machine learning methods to misinterpretation in view of small datasets.
+We anticipate higher occurrence of such applications in the near future and aim to highlight the current state-of-art in this perspective.
+However recent advances in the methodologies to accomodate rarity of samples and increased transparency in model outputs have encouraged application of machine learning in rare disease.</p>
+<p>Application of machine learning to any kind of data consists of the following major steps: (1) data evaluation and question formulation, (2) selection of normalization/dimension reduction to mitigate technical differences, (3) selection of appropriate algorithms which select features to answer the formulated question, (4) evaluation of the answers generated by the algorithm.
+Each of these steps require the practitioner to choose from a variety of methodologies to apply.
+The selection of the methodologies at each of these steps need to be based upon robust reasoning to ensure stability of the results.
+Moreover, in the context of rare diseases, special considerations need to be made at each of the above mentioned steps to safeguard against misinterpretation of data.
+Such considerations include incorporation of techniques that build upon prior domain-specific knowledge, methods that are resilient to challenges posed by small datasets, and methods that can mitigate technical disparities in the data.</p>
 <h3 id="techniques-that-build-on-prior-knowledge-and-indirectly-related-data-are-necessary-for-many-rare-disease-applications">Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications</h3>
 <blockquote>
 <p>This section will highlight promising approaches for analyzing rare disease data to extract biological insights.
