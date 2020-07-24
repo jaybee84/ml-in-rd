@@ -1,2 +1,4 @@
 content/02.intro.md:3:interpretable
 content/02.intro.md:9:accomodate
+content/04.model-complexity.bootstrapping.md:3:resampling
+content/04.model-complexity.bootstrapping.md:5:resampling

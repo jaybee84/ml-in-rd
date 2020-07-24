@@ -1,2 +1,3 @@
 accomodate
 interpretable
+resampling
