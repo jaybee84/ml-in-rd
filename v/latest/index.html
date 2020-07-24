@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/d718139a5ba79ced3602f932a59fe97cf6183c2e/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d718139a5ba79ced3602f932a59fe97cf6183c2e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d718139a5ba79ced3602f932a59fe97cf6183c2e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/61852996e3e180744fd58e70b3cd27cd4f888879/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/61852996e3e180744fd58e70b3cd27cd4f888879/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/61852996e3e180744fd58e70b3cd27cd4f888879/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/d718139a5ba79ced3602f932a59fe97cf6183c2e/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/61852996e3e180744fd58e70b3cd27cd4f888879/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/d718139a5ba79ced3602f932a59fe97cf6183c2e">jaybee84/ml-in-rd@d718139</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/61852996e3e180744fd58e70b3cd27cd4f888879">jaybee84/ml-in-rd@6185299</a>
 on July 24, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -158,7 +158,11 @@ Such considerations include incorporation of techniques that build upon prior do
 <p>This section will highlight promising approaches for analyzing rare disease data to extract biological insights.
 We will discuss techniques like transfer learning, representation learning, cascade learning, integrative analysis, and knowledge-graph creation and use that leverage other knowledge and data sources to construct testable hypotheses from rare diseases datasets with limited sample sizes 1–8.</p>
 </blockquote>
-<h2 class="page_break_before" id="bootstrapping">Bootstrapping</h2>
+<h3 id="techniques-and-procedures-must-be-implemented-to-manage-model-complexity-without-sacrificing-the-value-of-machine-learning">Techniques and procedures must be implemented to manage model complexity without sacrificing the value of machine learning</h3>
+<p>Inherent challenges posed by low sample numbers in rare diseases are further aggravated by disease heterogeneity, poorly defined disease phenotypes, and often a lack of control (i.e. normal) data.
+Machine learning approaches must be carefully designed to address these challenges.
+We discuss how to implement methodological solutions like bootstrapping sample data, regularization methods for deep learning, and hyper-ensemble techniques to minimize misinterpretation of the data.</p>
+<h4 id="bootstrapping">Bootstrapping</h4>
 <p>Bootstrap or resampling computation is a powerful statistical technique that can be used for estimating population values from datasets of limited sample size <span class="citation" data-cites="9EM1Mzod">[<a href="#ref-9EM1Mzod" role="doc-biblioref">1</a>]</span>.
 The technique utilizes random sampling of data points from a dataset of limited sample size with replacement to approximate a larger population and estimate various population statistics (e.g. mean).
 Subsequent iterations of resampling generates a distribution of the statistical value (mean) which minimizes the error of the estimate.
@@ -166,10 +170,6 @@ Bootstrap based techniques are used in conjunction with various learning methods
 <p>While most datasets in practice are of finite sample size and can benefit from bootstrapping, rare disease datasets with limited number of samples necessitate the use of bootstrap to form an informative dataset in addition to model selection <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">7</a>]</span>.
 In this study, bootstrapping the training sample without replacement simulated formation of different incomplete datasets that helped expose the learning models (in this case random forests) to the incompleteness of the data.
 Such additional bootstrapping of the training data helped create confidence intervals for the predictions and the important predictors originating from unstable ensemble models run on the incomplete training data.</p>
-<h3 id="techniques-and-procedures-must-be-implemented-to-manage-model-complexity-without-sacrificing-the-value-of-machine-learning">Techniques and procedures must be implemented to manage model complexity without sacrificing the value of machine learning</h3>
-<p>Inherent challenges posed by low sample numbers in rare diseases are further aggravated by disease heterogeneity, poorly defined disease phenotypes, and often a lack of control (i.e. normal) data.
-Machine learning approaches must be carefully designed to address these challenges.
-We discuss how to implement methodological solutions like bootstrapping sample data, regularization methods for deep learning, and hyper-ensemble techniques to minimize misinterpretation of the data.</p>
 <h2 class="page_break_before" id="regularization">Regularization</h2>
 <p>Machine learning algorithms are optimized to find patterns among data points and prioritizes the strongest patterns that exist in a dataset.
 Given a limited dataset with strong pre-existing technical differences between groups of samples, this optimization may lead to the model learning technical differences thus lowering its predictive accuracy <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">8</a>]</span>.
