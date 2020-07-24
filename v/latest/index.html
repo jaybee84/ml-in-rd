@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/8f98c1b599333c1409ca02d94881d735cd68ee96/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/8f98c1b599333c1409ca02d94881d735cd68ee96/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/8f98c1b599333c1409ca02d94881d735cd68ee96/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/e61a484d4c7f5bb022ef900d8272679aa4dc6e7e/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e61a484d4c7f5bb022ef900d8272679aa4dc6e7e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e61a484d4c7f5bb022ef900d8272679aa4dc6e7e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/8f98c1b599333c1409ca02d94881d735cd68ee96/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/e61a484d4c7f5bb022ef900d8272679aa4dc6e7e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/8f98c1b599333c1409ca02d94881d735cd68ee96">jaybee84/ml-in-rd@8f98c1b</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/e61a484d4c7f5bb022ef900d8272679aa4dc6e7e">jaybee84/ml-in-rd@e61a484</a>
 on July 24, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -170,7 +170,7 @@ Bootstrap based techniques are used in conjunction with various learning methods
 <p>While most datasets in practice are of finite sample size and can benefit from bootstrapping, rare disease datasets with limited number of samples necessitate the use of bootstrap to form an informative dataset in addition to model selection <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">7</a>]</span>.
 In this study, bootstrapping the training sample without replacement simulated formation of different incomplete datasets that helped expose the learning models (in this case random forests) to the incompleteness of the data.
 Such additional bootstrapping of the training data helped create confidence intervals for the predictions and the important predictors originating from unstable ensemble models run on the incomplete training data</p>
-<h2 class="page_break_before" id="regularization">Regularization</h2>
+<h4 id="regularization">Regularization</h4>
 <p>Machine learning algorithms are optimized to find patterns among data points and prioritizes the strongest patterns that exist in a dataset.
 Given a limited dataset with strong pre-existing technical differences between groups of samples, this optimization may lead to the model learning technical differences thus lowering its predictive accuracy <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">8</a>]</span>.
 For example, in a set of 1000 samples where 700 samples are from one healthcare site and 300 from another, it is likely that there will remain site-specific differences between them even after normalization of the samples.
