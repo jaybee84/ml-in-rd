@@ -1,6 +1,6 @@
 content/02.intro.md:3:interpretable
 content/02.intro.md:9:accomodate
-content/03.prior-knowledge.cascadelearning.md:10:AdaBoost
-content/03.prior-knowledge.cascadelearning.md:19:triaging
+content/03.prior-knowledge.cascadelearning.md:14:AdaBoost
+content/03.prior-knowledge.cascadelearning.md:23:triaging
 content/04.model-complexity.bootstrapping.md:9:resampling
 content/04.model-complexity.bootstrapping.md:11:resampling

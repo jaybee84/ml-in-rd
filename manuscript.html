@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/00482daa09838645b675f87045f75aa85e83ebb9/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/00482daa09838645b675f87045f75aa85e83ebb9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/00482daa09838645b675f87045f75aa85e83ebb9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/588fdd3a3b08c7eb95fbdbec57375cb331a972f6/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/588fdd3a3b08c7eb95fbdbec57375cb331a972f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/588fdd3a3b08c7eb95fbdbec57375cb331a972f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/00482daa09838645b675f87045f75aa85e83ebb9/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/588fdd3a3b08c7eb95fbdbec57375cb331a972f6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/00482daa09838645b675f87045f75aa85e83ebb9">jaybee84/ml-in-rd@00482da</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/588fdd3a3b08c7eb95fbdbec57375cb331a972f6">jaybee84/ml-in-rd@588fdd3</a>
 on July 27, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -153,7 +153,10 @@ Each of these steps require the practitioner to choose from a variety of methodo
 The selection of the methodologies at each of these steps need to be based upon robust reasoning to ensure stability of the results.
 Moreover, in the context of rare diseases, special considerations need to be made at each of the above mentioned steps to safeguard against misinterpretation of data.
 Such considerations include incorporation of techniques that build upon prior domain-specific knowledge, methods that are resilient to challenges posed by small datasets, and methods that can mitigate technical disparities in the data.</p>
-<h2 class="page_break_before" id="ensemble-learning">Ensemble Learning</h2>
+<h3 class="page_break_before" id="techniques-that-build-on-prior-knowledge-and-indirectly-related-data-are-necessary-for-many-rare-disease-applications">Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications</h3>
+<p>This section will highlight promising approaches for analyzing rare disease data to extract biological insights.
+We will discuss techniques like transfer learning, representation learning, cascade learning, integrative analysis, and knowledge-graph creation and use that leverage other knowledge and data sources to construct testable hypotheses from rare diseases datasets with limited sample sizes.</p>
+<h4 id="ensemble-learning">Ensemble Learning</h4>
 <p>Implementing machine learning on data with low sample size and high label uncertainty can lead to unstable predictions.
 In such cases where single predictors fail, various machine learning methods together or <em>ensemble learning</em> may help increase accuracy of prediction.
 <em>Ensemble learning</em> methods like random forests use bootstrap aggregation (or <em>bagging</em>) of independent decision trees that use similar parameters but different paths for the selection of features to form a consensus about the important predictive features<span class="citation" data-cites="14J3u9pnR">[<a href="#ref-14J3u9pnR" role="doc-biblioref">1</a>]</span>.
