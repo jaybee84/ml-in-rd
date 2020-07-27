@@ -1,3 +1,7 @@
 accomodate
+AdaBoost
+btzfh
 interpretable
 resampling
+triaging
+vec
