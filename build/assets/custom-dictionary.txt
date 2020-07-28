@@ -25,6 +25,7 @@ Allaway
 allawayr
 arXiv
 Banerjee
+Boehringer 
 biomarkers
 biomedicine
 Bionetworks
@@ -35,6 +36,7 @@ cytometry
 dataset
 datasets
 dimensionality
+DrugBankPlus
 genomic
 genotype
 Guinney
@@ -42,6 +44,7 @@ GWAS
 heterogeneity
 heterogeneous
 hetionet
+Ingelheim
 jaybee
 jguinney
 Jineta
