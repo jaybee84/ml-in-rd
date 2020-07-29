@@ -1,9 +1,3 @@
 accomodate
-AdaBoost
 btzfh
-interpretable
-repurpose
-repurposing
-resampling
-triaging
 vec
