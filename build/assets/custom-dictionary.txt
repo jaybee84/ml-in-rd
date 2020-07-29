@@ -21,6 +21,7 @@ svgs
 tbl
 unicode
 wikidata
+AdaBoost
 Allaway
 allawayr
 arXiv
@@ -45,6 +46,7 @@ heterogeneity
 heterogeneous
 hetionet
 Ingelheim
+interpretable
 jaybee
 jguinney
 Jineta
@@ -60,8 +62,12 @@ PCA
 phenotypes
 PheKnowLator
 pre
+resampling
+repurpose
+repurposing
 transcriptomic
 translational
+triaging
 taroni
 t
 SNE
