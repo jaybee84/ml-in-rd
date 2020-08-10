@@ -1,4 +1,4 @@
-personal_ws-1.1 en 92 utf-8
+personal_ws-1.1 en 94 utf-8
 al
 doi
 eq
@@ -91,3 +91,5 @@ VAE
 variational
 vasculitis
 vitro
+Dincer
+encodings
