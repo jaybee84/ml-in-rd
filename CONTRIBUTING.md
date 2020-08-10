@@ -33,6 +33,20 @@ Pull requests to `draft-branch` should be small and focused enough in scope such
 
 Pull requests from `draft-branch` to `master` should consist of entire sections of the manuscript.
 
+#### Editing previously added sections
+
+In the initial draft of the manuscript, we used a convention where each section was added to its own Markdown file, e.g., `content/03.prior-knowledge.cascadelearning.md` and `content/03.prior-knowledge.knowledge-graphs.md`.
+In the process of consolidating and smoothing sections, we will likely need to rename files _and_ make text changes such as rewording or removal of sentences.
+If renaming and text changes take place in the same PR, the diff will show all text as newly added.
+This may mask the text changes, some of which may have been added in response to earlier review.
+
+To make sure we have visibility into smaller changes, we should divide pull requests of this nature into two pull requests:
+
+1. Any text changes such as changes to the wording of sentences and removing unnecessary sentences.
+2. Any filename changes.
+
+The first pull request allows reviewers to see the substantive changes; the second pull request will likely be a quick approval.
+
 ### Spellcheck as part of pull requests
 
 We have [spellcheck](USAGE.md#spellchecking) enabled as part of an AppVeyor workflow.
