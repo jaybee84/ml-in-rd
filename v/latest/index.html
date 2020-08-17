@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-08-13" />
+  <meta name="dcterms.date" content="2020-08-17" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-08-13" />
-  <meta name="citation_publication_date" content="2020-08-13" />
+  <meta name="dc.date" content="2020-08-17" />
+  <meta name="citation_publication_date" content="2020-08-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/216af17069b0c246c2d9e686e99b32be8134b174/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/216af17069b0c246c2d9e686e99b32be8134b174/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/216af17069b0c246c2d9e686e99b32be8134b174/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/49e30225013fda88db9ae039fa160c34736f458d/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/49e30225013fda88db9ae039fa160c34736f458d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/49e30225013fda88db9ae039fa160c34736f458d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/216af17069b0c246c2d9e686e99b32be8134b174/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/49e30225013fda88db9ae039fa160c34736f458d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/216af17069b0c246c2d9e686e99b32be8134b174">jaybee84/ml-in-rd@216af17</a>
-on August 13, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/49e30225013fda88db9ae039fa160c34736f458d">jaybee84/ml-in-rd@49e3022</a>
+on August 17, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -298,27 +298,26 @@ The second step generated gene signatures for individual cell types using select
 techniques in deep learning e.g.
 Deep and shallow architecture:
 https://ieeexplore.ieee.org/document/7863293</p>
-<h3 id="techniques-to-manage-disparities-in-data-generation-are-required-to-power-robust-analyses-in-rare-diseases">Techniques to manage disparities in data generation are required to power robust analyses in rare diseases</h3>
-<p>As with common diseases, genomic and transcriptomic data from rare diseases can suffer from artifacts introduced by batch, processing methodology, sequencing platform, specimen/data quality or other non-biological phenomena.
-The consequences of these non-biological artifacts are amplified in rare diseases which often have few samples and heterogeneous phenotypes.
-Furthermore, because datasets are many times pieced together from multiple small studies, in which disease phenotypes or other important biological characteristics are often confounded by the previously mentioned “batch” factors.
-A key consideration here is, if possible, active dialogue with the data generators or experts in the field who may have unexpected insights into potential sources of variation.
-One example of the value of this, experienced by the authors, occurred when studying tumors associated with the disease neurofibromatosis type 1.
-These datasets were, unbeknownst to the computational biologists, generated from samples obtained with vastly different surgical techniques (laser ablation and excision vs standard excision), resulting in substantial biological differences that are a consequence of process, not reality.
-One might expect, in this example, that this technical decision would result in profound changes in the underlying biology, such as the activation of heat shock protein related pathways, unfolded protein responses, and so on.
-Consequently, careful assessment of confounding factors and implementation of normalization methods is important to identifying biologically meaningful features within a dataset.
-Assessment of confounding factors and heterogeneity in rare disease datasets is perhaps most easily performed using unsupervised learning approaches such as clustering and dimensionality reduction.
-Clustering methods like k-means clustering or hierarchical clustering can be used to characterize the structure present in many different types of data such as genomic or imaging data. <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">56</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">57</a>]</span>.
-Similarly, a variety of dimensionality reduction methods are can be used to visualize sample heterogeneity and potential confounding variables, including multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP), among many others. <span class="citation" data-cites="wBDkzWlg qRi1wkz4 c46n3STN 157h5hA34">[<a href="#ref-wBDkzWlg" role="doc-biblioref">58</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">59</a>,<a href="#ref-c46n3STN" role="doc-biblioref">60</a>,<a href="#ref-157h5hA34" role="doc-biblioref">61</a>]</span>
-All of these methods can be effectively used to identify batch effects and other structure in the data, though some, like t-SNE and UMAP, have parameters, such as perplexity (number of nearest neighbors), that can substantially affect the output, and thus the interpretation, of the analysis <span class="citation" data-cites="Lby4PmSX 157h5hA34">[<a href="#ref-157h5hA34" role="doc-biblioref">61</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">62</a>]</span>.
-Therefore, successful application of these methods requires a sufficient understanding of the underlying method and parameter sweeping to get a clear picture of the structure of the underlying data.
-Another important consideration is that, as discussed by Way, et. al. <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">22</a>]</span>, a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; testing multiple methods may result in a more comprehensive portrait of the data
-Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogeneity of imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">63</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">64</a>]</span>, and others.
-Once the nature of the non-biological heterogeneity has been established, different techniques can be used to correct the differences.
-Common approaches to ameliorate non-biological effects include the assessment of data quality using robust metrics, reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">65</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">66</a>]</span>, normalization of raw values (e.g. z-scores, trimmed mean of M-values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">67</a>]</span>).
-It can also be helpful to be fatalistic, in some sense, when working with rare disease data.
-For various reasons including ethical considerations, limited funding, and limited biospecimen availability, experimental design and the resulting data will be less-than-ideal - for example - when batch variables and biological variables are confounded.
-In these cases, it may be prudent to take a step back, re-evaluate the data, and identify methods that can operate within these constraints.</p>
+<h3 id="managing-disparities-in-data-generation-is-required-for-robust-rare-disease-analyses">Managing disparities in data generation is required for robust rare disease analyses</h3>
+<p>Rare disease data from can suffer from artifacts introduced by batch, assay platform, specimen quality or other non-biological phenomena.
+The consequences of these artifacts are amplified in rare diseases which often have few samples and heterogeneous phenotypes.
+Furthermore, datasets are often pieced together from multiple small studies where biological characteristics are confounded by technical variables.
+Collaboration with data generators or domain experts may result in unexpected insight into potential sources of variation.
+The authors experienced this when studying neurofibromatosis type 1 (NF1).
+The NF1 datasets were comprised of samples obtained with different surgical techniques, resulting in biological differences that were a consequence of sample collection, rather than …
+Consequently, careful assessment of and accounting for confounding factors is critical to identifying biologically meaningful features within a dataset.</p>
+<p>Assessment of confounding factors and heterogeneity is perhaps most easily performed using unsupervised learning approaches.
+K-means clustering or hierarchical clustering can be used to characterize the structure present in genomic or imaging data. <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">56</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">57</a>]</span>.
+Similarly, dimensionality reduction methods can be used to visualize heterogeneity and confounders, including multidimensional scaling, principal components analysis, t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP), among others. <span class="citation" data-cites="wBDkzWlg qRi1wkz4 c46n3STN 157h5hA34">[<a href="#ref-wBDkzWlg" role="doc-biblioref">58</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">59</a>,<a href="#ref-c46n3STN" role="doc-biblioref">60</a>,<a href="#ref-157h5hA34" role="doc-biblioref">61</a>]</span>
+All of these methods can be used to identify batch effects and other structure in the data, though some (like t-SNE and UMAP) require parameters that can affect the output and it’s interpretation <span class="citation" data-cites="Lby4PmSX 157h5hA34">[<a href="#ref-157h5hA34" role="doc-biblioref">61</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">62</a>]</span>.
+Therefore, obtaining a clear interpretation from these methods requires understanding the underlying approach and parameters.<br />
+Another important consideration is discussed by Way, et. al. <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">22</a>]</span>: a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; testing multiple methods may result in a more comprehensive portrait of the data.
+Dimensionality reduction techniques are not restricted to ‘omic’ data - they can also be used in rare disease applications to characterize the structure and heterogeneity of imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">63</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">64</a>]</span>, and others.</p>
+<p>Once the nature of the non-biological heterogeneity has been established, different techniques can be used to correct the differences.
+Common approaches include reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">65</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">66</a>]</span>, and normalization of raw values<span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">67</a>]</span>.
+It is also important to be realistic when working with rare disease data.
+For various reasons including ethics, funding, and limited biospecimens, experimental design and the resulting data will often be less-than-ideal.
+In these cases, it may be prudent to take a step back, re-evaluate the data, and identify methods that can operate within the constraints of the data.</p>
 <h3 id="conclusions">Conclusions</h3>
 <blockquote>
 <p>We will conclude by discussing the potential of the above-mentioned approaches in rare diseases and other biomedical areas where data is scarce.</p>
