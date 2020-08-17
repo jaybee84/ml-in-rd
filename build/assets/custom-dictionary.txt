@@ -1,4 +1,4 @@
-personal_ws-1.1 en 94 utf-8
+personal_ws-1.1 en 95 utf-8
 al
 doi
 eq
@@ -31,7 +31,9 @@ biomarkers
 biomedicine
 Bionetworks
 biospecimen
+biospecimens
 collinear
+confounders
 cgreene
 cytometry
 dataset
@@ -93,4 +95,4 @@ vasculitis
 vitro
 Dincer
 encodings
-KGs
+compendia
