@@ -7,8 +7,8 @@ author-meta:
 - Justin Guinney
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-17'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-08-17\" />\n<meta name=\"citation_publication_date\" content=\"2020-08-17\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/b17781920799027526a7c6613957da934cfa7044/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/b17781920799027526a7c6613957da934cfa7044/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/b17781920799027526a7c6613957da934cfa7044/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-08-19'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-08-19\" />\n<meta name=\"citation_publication_date\" content=\"2020-08-19\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/097352b0d4cdfd84cc0d18fdacb15ee5e615a209/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/097352b0d4cdfd84cc0d18fdacb15ee5e615a209/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/097352b0d4cdfd84cc0d18fdacb15ee5e615a209/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - rare disease
 - machine learning
@@ -28,10 +28,10 @@ title: Machine learning methods for rare diseases
 
 <small><em>
 This manuscript
-([permalink](https://jaybee84.github.io/ml-in-rd/v/b17781920799027526a7c6613957da934cfa7044/))
+([permalink](https://jaybee84.github.io/ml-in-rd/v/097352b0d4cdfd84cc0d18fdacb15ee5e615a209/))
 was automatically generated
-from [jaybee84/ml-in-rd@b177819](https://github.com/jaybee84/ml-in-rd/tree/b17781920799027526a7c6613957da934cfa7044)
-on August 17, 2020.
+from [jaybee84/ml-in-rd@097352b](https://github.com/jaybee84/ml-in-rd/tree/097352b0d4cdfd84cc0d18fdacb15ee5e615a209)
+on August 19, 2020.
 </em></small>
 
 ## Authors
@@ -123,38 +123,6 @@ Moreover, in the context of rare diseases, special considerations need to be mad
 Such considerations include incorporation of techniques that build upon prior domain-specific knowledge, methods that are resilient to challenges posed by small datasets, and methods that can mitigate technical disparities in the data.
 
 
-### Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications {.page_break_before}
-This section will highlight promising approaches for analyzing rare disease data to extract biological insights. 
-We will discuss techniques like transfer learning, representation learning, cascade learning, integrative analysis, and knowledge-graph creation and use that leverage other knowledge and data sources to construct testable hypotheses from rare diseases datasets with limited sample sizes.
-
-#### Ensemble Learning 
-
-Implementing machine learning on data with low sample size and high label uncertainty can lead to unstable predictions. 
-In such cases where single predictors fail, various machine learning methods together or _ensemble learning_ may help increase accuracy of prediction.
-_Ensemble learning_ methods like random forests use bootstrap aggregation (or _bagging_) of independent decision trees that use similar parameters but different paths for the selection of features to form a consensus about the important predictive features[@doi:10.1186/1472-6947-13-134, @doi:10.1023/A:1010933404324, @doi:10.1214/aos/1031689014, @doi:10.1177/2045894019890549, @doi:10/btzfh6].
-However, successful application of consensus based ensemble learning requires "gold standard" data where the diagnosis or label of a data point in the training dataset has very little uncertainty (or "label-noise") associated with it [@doi:10.1093/jamia/ocw028]. 
-In most cases of rare disease, due to the inherent nature of being less defined, the symptoms as well as any underlying biology comes with a reasonable amount of uncertainty (or "label-noise") leading to a _silver standard_ dataset[@doi:10.1109/TNNLS.2013.2292894, @doi:10.1093/jamia/ocw028].
-In such cases, ensemble learning with multiple methods leveraging distinct underlying assumptions are used in tandem to capture stable patterns existing in the _silver standard_ data and reduce uncertainty.
-Such _cascade learning_ classifiers have been widely used in image recognition where initially a small subset of image features are used to classify images (e.g. features identifying a face like eyes, nose, mouth). 
-The initial classification is then augmented by more complex features and algorithms like AdaBoost ( _boosting_ ) that weight the various features implemented to detect the content of the image (e.g. features identifying a human face like relative distance between eyes etc.)[@doi:10.1109/CVPR.2001.990537, @doi:10.1007/978-3-540-75175-5_16, @doi:10.1109/ICPR.2004.1334680].
-
-In rare diseases, a variant of _cascade learning_ that showed robustness in view of uncertainty in the data was implemented to identify rare disease patients from electronic health records from the general population [@pmid:30815073].
-This implementation consisted of three steps each employing a different independent learning algorithm: (1) feature extraction to assign text words (from Pubmed literature) to diagnosis using word2vec [@arXiv:1301.3781v3], (2) preliminary prediction using an ensemble of decision trees with penalization for excessive tree-depth, (3) prediction refinement using similarity of data points to resolve sample labels and reiterating step (2).
-In this implementation the algorithm was able to identify rare disease patients due to the robustness conferred by the independence of the feature extraction step and the prediction refinement step from the preliminary classification of the labeled dataset.
-The classification step capitalized upon the information learned by the label prediction step preceding it and the prediction refinement step following it, and was able to perform better over other ensemble methods when implemented on silver standard data.
-
-Most cascade classifiers follow _one-classifier-at-a-time_ approach where algorithms at each level predict all classes involved.
-But scenarios where the need for high prediction accuracy for one class outweighs other classes (e.g. malignant tumor-types, or severe psychiatric cases) require further modification of the cascade learning efforts.
-An example of this was seen implemented for triaging psychiatric patients where the identification of one class of psychiatric patients ("severe") far outweighed the need for optimized overall classification accuracy[@pmid:30380082].
-Due to the requirements of the problem, they developed a _one-class-at-a-time_ approach for cascade learning, where at each stage a binary classifier is used to predict a specific class against all others.
-The final model implemented all models together each identifying one class sequentially and the final prediction was the union of the predictions at all the different models.
-The cascade classifiers using the _one-class-at-a-time_ approach were found to perform better than multi-class ensemble classifiers in most cases.
-
-Thus ensemble learning can be helpful in producing stable predictions from data that is limited in quality or quantity, where single algorithms would otherwise produce unstable predictions.
-However, the choice of using _bagging_, _boosting_, independent algorithmic steps, or _one-class-at-a-time_ approach would strictly depend on the nature of the prediction problem.
-In most cases involving rare disease data, it seems that _bagging_ has had limited success, which has necessitated various modifications of the approaches as discussed above.
-
-
 ### Knowledge graphs 
 An intrinsic constraint in studying rare diseases is the lack of large, normalized datasets, which limits our ability to study key attributes of rare diseases. 
 A potentially powerful strategy for evaluating genotype-phenotype relationships or repurposing drugs when large datasets are scarce is to use knowledge graphs.
@@ -172,6 +140,29 @@ Beyond the aforementioned studies, there are few examples of studies in the publ
 Private entities (e.g. healx, Boehringer Ingelheim, DrugBankPlus) are performing an undisclosed amount of work to create proprietary rare disease knowledge graphs for ML-based drug discovery applications.  
 The existence of private companies pursuing this idea, as well as the availability of several public knowledge graphs with relevance to rare disease, suggests to us that this is a likely fruitful and untapped area of rare disease research in the public sphere. 
 More work needs to be done to assess 1) which graphs and graph features capture the salient information about rare diseases, 2) the utility of ML methods to obtain actionable insights about rare diseases and 3) which problems - like drug discovery, identification of novel rare diseases, or assessment of genotype-phenotype relationships - can be interrogated using ML of knowledge graphs.
+
+
+### Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications {.page_break_before}
+
+#### Wisdom of the crowd: rare disease applications of ensemble methods
+Implementing machine learning on data with low sample size and high label uncertainty can lead to unstable predictions. 
+In such cases various machine learning methods together (also called _ensemble learning_) can help increase accuracy and stability of the predictions.
+Ensemble learning can use multiple similar approaches stitched together to reach a consensus, or can be a collection of different approaches that perform better compared to any single algorithm.
+For example, ensemble learning methods like random forests use bootstrap aggregation (or _bagging_) of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features hidden in the dataset [@doi:10.1186/1472-6947-13-134, @doi:10.1023/A:1010933404324, @doi:10.1214/aos/1031689014, @doi:10.1177/2045894019890549, @doi:10/btzfh6].
+However, successful application of consensus based ensemble learning requires "gold standard" data where the diagnosis or label of a data point in the training dataset has very little uncertainty (or "label-noise") associated with it [@doi:10.1093/jamia/ocw028]. 
+In most cases of rare disease, due to the inherent nature of being less defined, the symptoms as well as any underlying biology comes with a reasonable amount label-noise leading to a _silver standard_ dataset[@doi:10.1109/TNNLS.2013.2292894, @doi:10.1093/jamia/ocw028].
+In such datasets, the limited success of the _bagging_ approach has led to the use of ensemble learning or _cascade learning_, where multiple methods leveraging distinct underlying assumptions are used in tandem and augmented with algorithms like AdaBoost (_boosting_) to capture stable patterns existing in the silver standard data and reduce uncertainty [@doi:10.1109/CVPR.2001.990537, @doi:10.1007/978-3-540-75175-5_16, @doi:10.1109/ICPR.2004.1334680].
+A variation of cascade learning implemented to identify rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using word2vec [@arXiv:1301.3781v3]), preliminary prediction (ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) [@pmid:30815073].
+This cascade learner benefited from the independence of the feature extraction step and the prediction refinement step from the preliminary classification of the labeled dataset to find stable patterns and perform better than other ensemble methods when implemented on this silver standard dataset.
+
+In datasets with multiple classes, most cascade classifiers follow a _one-classifier-at-a-time_ approach where algorithms at each level predict all classes involved.
+But instances where the need for high prediction accuracy for one class outweighs other classes, further modification of the cascade learning efforts is required.
+An example of such modification was implemented for triaging psychiatric patients where the identification of one class of psychiatric patients ("severe") far outweighed the need for optimized overall classification accuracy [@pmid:30380082].
+Due to the requirements of the problem, a _one-class-at-a-time_ cascade learning approach was adopted, where at each stage a binary classifier was used to predict a specific class against all others.
+The final model implemented all models together each identifying one class sequentially and the union of the predictions of all the different models as the final prediction.
+The cascade classifiers using the one-class-at-a-time approach were found to perform better than multi-class ensemble classifiers in most cases.
+
+Thus ensemble learning can be helpful in producing stable predictions from rare disease data, but the choice of using bagging, boosting, independent algorithmic steps, or one-class-at-a-time approach depends on the nature of the prediction question.
 
 
 #### Representation learning
@@ -233,74 +224,36 @@ Inherent challenges posed by low sample numbers in rare diseases are further agg
 Machine learning approaches must be carefully designed to address these challenges. 
 We discuss how to implement methodological solutions like bootstrapping sample data, regularization methods for deep learning, and hyper-ensemble techniques to minimize misinterpretation of the data. 
 
-
 #### Bootstrapping
 
-Bootstrap or resampling computation is a powerful statistical technique that can be used for estimating population values from datasets of limited sample size [@doi:10.1080/01621459.1997.10474007].
-The technique utilizes random sampling of data points from a dataset of limited sample size with replacement to approximate a larger population and estimate various population statistics (e.g. mean).
-Subsequent iterations of resampling generates a distribution of the statistical value (mean) which minimizes the error of the estimate.
+Bootstrap (resampling) computation is a powerful statistical technique that can be used to estimate population values from datasets of limited sample size by resampling the data to generate an estimated distribution of the population statistic and minimize estimation error [@doi:10.1080/01621459.1997.10474007].
 Bootstrap based techniques are used in conjunction with various learning methods to find the most informative models given a specific dataset (e.g. bootstrap aggregating or bagging used in random forests [@doi:10.1023/A:1010933404324; @doi:10.1198/0003130043277], bootstrap in neural networks [@doi:10/c8xpqz], or regression models [@doi:10.1016/j.neucom.2004.11.017; @doi:10.1002/sim.4780111607]).
-
-While most datasets in practice are of finite sample size and can benefit from bootstrapping, rare disease datasets with limited number of samples necessitate the use of bootstrap to form an informative dataset in addition to model selection [@doi:10.3390/genes11020226].
-In this study, bootstrapping the training sample without replacement simulated formation of different incomplete datasets that helped expose the learning models (in this case random forests) to the incompleteness of the data.
-Such additional bootstrapping of the training data helped create confidence intervals for the predictions and the important predictors originating from unstable ensemble models run on the incomplete training data
-
+In addition to model selection, bootstrap can be used to enhance information content of rare disease datasets and generate confidence intervals for the model predictions [@doi:10.3390/genes11020226].
+In this study, bootstrapping the training sample without replacement simulated generation of separate datasets that helped expose the learning models (in this case random forests) to the incomplete nature of the data.
+Such bootstrapping of the training data in addition to that included in the model (bagging) helped generate a distribution (and confidence intervals) of the importance scores of the predictive features selected by the model.
 
 #### Regularization
 
-Machine learning algorithms are optimized to find patterns among data points and prioritizes the strongest patterns that exist in a dataset.
-Given a limited dataset with strong pre-existing technical differences between groups of samples, this optimization may lead to the model learning technical differences thus lowering its predictive accuracy [@doi:10.1073/pnas.1900654116].
-For example, in a set of 1000 samples where 700 samples are from one healthcare site and 300 from another, it is likely that there will remain site-specific differences between them even after normalization of the samples. 
-If the site-specific differences are more pronounced than the underlying patterns differentiating the samples, any machine learning model trained with these data will preferentially learn the site-specific differences to classify the samples, and rank them higher than the underlying patterns leading to a model showing high prediction accuracy of training data (termed low bias in model). 
-When new test data points are introduced to the model, possibly coming from a third site, the model is unable to locate the earlier differences in the new data points and fails to classify them accurately causing a significant drop in accuracy of the model (termed high variance in model prediction).
-Such a model is termed "overfit" to its training data.
-Overfitting can lead to misinterpretation of the site-specific differences as true patterns in the limited data points and thus needs to be minimized. 
-Minimization of overfitting can be accomplished by cross-validation and regularization methodologies. 
+A common strategy for handling the paucity of data in rare disease is to aggregate data from multiple studies or time points to produce a more comprehensive dataset. 
+Given a dataset with strong preexisting study-specific technical differences between groups of samples, machine learning methods may model dataset-specific features instead of true biology, leading to high prediction accuracy for training data but poor performance in new test data (an "overfit" model) [@doi:10.1073/pnas.1900654116].
+Minimization of overfitting can be accomplished by cross-validation (to reduce variance in predictions) and regularization (to reduce low bias in models) methodologies. 
+Regularization makes models less reliant on training data by adding a small penalty (determined by cross-validation), and can not only minimize overfitting but can additionally help in predicting outcomes using a limited number of samples. 
 
-While cross-validation aims to reduce the variance in prediction, regularization adds a small amount of bias to the initial model to minimize its dependence and sensitivity to training data. 
-Regularization makes models less reliant on training data by adding a penalty (determined by cross-validation), and then minimizes the error between the model's prediction and ground truth of the test data.
-Regularization can not only minimize overfitting but can additionally help in predicting outcomes using a limited number of samples. 
+ML models can be regularized using 3 main methods, each with their particular strengths and weaknesses. 
+Ridge regression aims to minimize the magnitude of the features, but cannot completely remove unimportant features and thus may not be ideal for reducing the feature space. 
+Another method, LASSO or Least Absolute Shrinkage and Selection Operator regression, works well for selecting few important features since it can minimize the magnitude of some features more than the others[@doi:10.1038/nmeth.4014]. 
+Elastic-net regression is a combination of LASSO and ridge regression[@doi:10.1111/j.1467-9868.2005.00503.x], and helps to select most useful features, especially in presence of large number of correlated features. 
 
-Regularization can be of three main types, each with their particular strengths and weaknesses. 
-(1) Ridge regression aims to minimize the magnitude of the features, but in models that try to select the most important features for accurate prediction of sample labels, ridge regression shrinks all features equally, but cannot completely remove unimportant features. 
-Thus in presence of many correlated parameters (e.g. gene expression networks), ridge regression may not be ideal in reducing the feature space. 
-(2) LASSO or least absolute shrinkage and selection operator regression on the other hand works well for selecting few important features since its effect can minimize the magnitude of some features more than the others. 
-Thus it helps in selecting most important features while the magnitude of irrelevant features are shrunk to 0 and eventually removed.
-This selection attribute of LASSO (in a sample set of size "n", LASSO can select "n" features for the model) may be an advantage in reducing model complexity, but a disadvantage in cases where identification of all possible collinear features is important (e.g. all biomarkers correlating to a particular disease phenotype) [@doi:10.1038/nmeth.4014]. 
-(3) Elastic-Net regression is a combination of LASSO and ridge regression[@doi:10.1111/j.1467-9868.2005.00503.x]. 
-Both of the methodologies when applied together helps to select most useful features, specially where there are a lot of correlated features. 
-In this setup, LASSO leads to selection of one of the correlated features and reduces the others to 0 (grouping of features), and the magnitude of the selected features are then minimized through ridge regression. 
+While regression based regularization has not been used extensively in rare disease, examples of combinations of above strategies implemented in rare variant discovery and immune cell signature discovery can provide an insight into their possible use in rare disease.
+In rare variant discovery, adaptive ridge regression was utilized to combine rare variants into a single score to increase the signal of rare variants[@doi:10.1371/journal.pone.0044173], while LASSO was implemented along with group penalties to identify rare variants/ low frequency predictors [@doi:10.1038/nrg2867; @doi:10.1093/bioinformatics/btq448]. 
+Hybrid approaches of LASSO including boosting the signal of rare variants by capturing linear combinations of variants by gene or chromosome location in 5% of subjects [@doi:10.1002/gepi.21746; @doi:10.1186/1753-6561-5-S9-S100; @doi:10.1016/j.ajhg.2008.06.024; @doi:10.1186/1753-6561-5-S9-S113; @doi:10.1186/1753-6561-5-S9-S100], integration with the probabilistic logistic bayesian approach [@doi:10.4137/CIN.S17290], and combining feature selection methods with a generalized pooling strategy [@doi:10.1371/journal.pone.0041694] have also been tested in rare variant discovery.
+Another interesting approach which incorporated prior knowledge into the regularization (called sparse-group LASSO) worked well to select the driver genes in a pathway of interest where only few genes in a pathway were true predictors of a phenotype [@doi:10.1080/10618600.2012.681250]. 
 
-Any supervised learning implementation in rare disease would require robustness towards feature selection from a small number of samples, i.e. the features selected by a model as important should be stable in view of new data points added to a dataset, even though their relative importance may change due to additional evidence.
-This robustness is mostly acquired through the combination of various regression strategies. 
-Since machine learning applications in rare disease are infrequent, combination strategies used for rare variant discovery and immune cell signature discovery can serve as good case studies to examine. 
-Many deleterious genomic variants can be extremely rare due to the constant selection pressure working against them. 
-Since the frequency of a rare variant is so low (less than 1%) applying routine statistical procedures that were extensively developed for common variant association, to analyze a low minor allele frequency (MAF) seem inappropriate [@doi:10.1038/nrg2867]. 
-For its feature selection attribute, LASSO has been widely applied in microarray and GWAS data for common variants. 
-But since LASSO by itself is too stringent for rare variants, it has been employed along with group penalties to help identify rare variants/ low frequency predictors [@doi:10.1093/bioinformatics/btq448]. 
-Variations of LASSO have also been implemented to aggregate or group the occurrence of rare variants together by gene or chromosome location [@doi:10.1002/gepi.21746; @doi:10.1186/1753-6561-5-S9-S100; @doi:10.1016/j.ajhg.2008.06.024]. 
-In this strategy, a 0–1 dummy variable was created for each SNP based on the presence or absence of the rare variant. 
-Then linear combinations of the selected dummy variables were considered by using the LASSO procedure. 
-Even though most of the dummy variables were 0, their linear combination was more likely to be nonzero thus leading to increased signal to noise ratio for the rare variants. 
-Only those linear combinations that were non-zero in at least 5% of the subjects were then included to ensure that the new markers were not rare [@doi:10.1186/1753-6561-5-S9-S113; @doi:10.1186/1753-6561-5-S9-S100]. 
-While ridge regression is not usually utilized for feature selection, adaptive ridge regression has been utilized to help combine rare variants into a single score analogous to feature engineering for increasing the signal of rare variants[@doi:10.1371/journal.pone.0044173]. 
-Another variation of LASSO included its integration with the probabilistic logistic bayesian approach to identify a protective rare variant in lung cancer[@doi:10.4137/CIN.S17290]. 
-Xu et al. on the other hand combined the feature selection methods with a generalized pooling strategy, and evaluated the performance of these hybrid approaches for detection of rare genetic variants[@doi:10.1371/journal.pone.0041694]. 
-Another interesting approach is the sparse-group LASSO approach which incorporates prior knowledge into the regularization[@doi:10.1080/10618600.2012.681250]. 
-This approach works well for a scenario where only few genes in a pathway are true predictors of a phenotype, where it helps select the driving genes in a pathway of interest. 
+In immune cell signature discovery, elastic-net regression (a combination of LASSO and ridge regression) has been used to reduce the feature space and was found to outperform the other regression approaches [@doi:10.1016/j.compbiomed.2015.10.008; @doi:10.1186/1471-2105-14-198; @doi:10.1111/j.1467-9868.2005.00503.x]. 
+A variation of elastic-net, where a two-step regularized logistic regression was used to pre-select an optimal number of genes before implementing elastic-net regularization for gene selection, identified immune cell signatures in an RNA-seq dataset where the number of cells sampled were far fewer than number of genes profiled [@doi: 10.1186/s12859-019-2994-z].  
+Thus robust regularizations methods like LASSO or elastic-net have been methods of choice where the the profiled feature space have outnumbered the number of samples or patients by a magnitude and should be explored while working with rare disease datasets.
 
-Alternatively, Elastic-net regression (a combination of LASSO and ridge regression) has also been used to reduce the feature space in various types of cancer datasets [@doi:10.1016/j.compbiomed.2015.10.008; @doi:10.1186/1471-2105-14-198]. 
-In cases where the number of features were far greater than the number of samples, elastic-net has usually been found to outperform the other regression approaches [@doi:10.1111/j.1467-9868.2005.00503.x]. 
-A variation of the elastic-net regression was used for identifying immune cell signatures in an RNA-seq dataset where the number of cells sampled were far fewer than number of genes profiled [@doi: 10.1186/s12859-019-2994-z]. 
-This two-step regularized logistic regression technique included a pre-filtering phase to select the optimal number of genes and then implemented elastic-net regularization for gene selection. 
-The second step generated gene signatures for individual cell types using selected genes from first step and then implemented a binary regularized logistic regression for each cell type against all other samples
-
-
-
-Still to add: 
-techniques in deep learning e.g.
-Deep and shallow architecture:
-https://ieeexplore.ieee.org/document/7863293
+#### Hyperensemble
 
 
 ### Managing disparities in data generation is required for robust rare disease analyses
@@ -330,6 +283,9 @@ In these cases, it may be prudent to take a step back, re-evaluate the data, and
 
 ### Conclusions
 >We will conclude by discussing the potential of the above-mentioned approaches in rare diseases and other biomedical areas where data is scarce.
+
+
+### Outlook
 
 
 ## References {.page_break_before}
