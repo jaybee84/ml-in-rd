@@ -4,6 +4,7 @@ doi
 eq
 et
 github
+Hyperensemble
 isbn
 latex
 manubot
@@ -14,6 +15,7 @@ pmcid
 pmid
 pubmed
 rootstock
+regularizations
 s
 strikethrough
 svg
