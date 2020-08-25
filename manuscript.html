@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-08-22" />
+  <meta name="dcterms.date" content="2020-08-25" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-08-22" />
-  <meta name="citation_publication_date" content="2020-08-22" />
+  <meta name="dc.date" content="2020-08-25" />
+  <meta name="citation_publication_date" content="2020-08-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/86bc54155c5fee44050c49a7a3d68c3610f6732a/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/86bc54155c5fee44050c49a7a3d68c3610f6732a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/86bc54155c5fee44050c49a7a3d68c3610f6732a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/f8c2023d0cd5c575c71dbb4cb6c3b694a05c06c7/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/f8c2023d0cd5c575c71dbb4cb6c3b694a05c06c7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/f8c2023d0cd5c575c71dbb4cb6c3b694a05c06c7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/86bc54155c5fee44050c49a7a3d68c3610f6732a/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/f8c2023d0cd5c575c71dbb4cb6c3b694a05c06c7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/86bc54155c5fee44050c49a7a3d68c3610f6732a">jaybee84/ml-in-rd@86bc541</a>
-on August 22, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/f8c2023d0cd5c575c71dbb4cb6c3b694a05c06c7">jaybee84/ml-in-rd@f8c2023</a>
+on August 25, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -202,7 +202,7 @@ A variation of elastic-net, where a two-step regularized logistic regression was
 Thus robust regularizations methods like LASSO or elastic-net have been methods of choice where the the profiled feature space have outnumbered the number of samples or patients by a magnitude and should be explored while working with rare disease datasets.</p>
 <h4 id="hyperensemble">Hyperensemble</h4>
 <h3 class="page_break_before" id="techniques-that-build-on-prior-knowledge-and-indirectly-related-data-are-necessary-for-many-rare-disease-applications">Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications</h3>
-<h3 id="knowledge-graphs">Knowledge graphs</h3>
+<h4 id="knowledge-graphs">Knowledge graphs</h4>
 <p>An intrinsic constraint in studying rare diseases is the lack of large, normalized datasets, which limits our ability to study key attributes of rare diseases.
 A potentially powerful strategy for evaluating genotype-phenotype relationships or repurposing drugs when large datasets are scarce is to use knowledge graphs.
 Knowledge graphs integrate related-but-different data types, creating a rich data source.
@@ -225,7 +225,7 @@ For example, ensemble learning methods like random forests use bootstrap aggrega
 However, successful application of consensus based ensemble learning requires “gold standard” data where the diagnosis or label of a data point in the training dataset has very little uncertainty (or “label-noise”) associated with it <span class="citation" data-cites="G5HC64pk">[<a href="#ref-G5HC64pk" role="doc-biblioref">47</a>]</span>.
 In most cases of rare disease, due to the inherent nature of being less defined, the symptoms as well as any underlying biology comes with a reasonable amount label-noise leading to a <em>silver standard</em> dataset<span class="citation" data-cites="16kfJJap4">[<a href="#ref-16kfJJap4" role="doc-biblioref">48</a>]</span>.
 In such datasets, the limited success of the <em>bagging</em> approach has led to the use of ensemble learning or <em>cascade learning</em>, where multiple methods leveraging distinct underlying assumptions are used in tandem and augmented with algorithms like AdaBoost (<em>boosting</em>) to capture stable patterns existing in the silver standard data and reduce uncertainty <span class="citation" data-cites="Q25GV92r">[<a href="#ref-Q25GV92r" role="doc-biblioref">49</a>]</span>.
-A variation of cascade learning implemented to identify rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using word2vec <span class="citation" data-cites="1BgjerMFj">[<a href="#ref-1BgjerMFj" role="doc-biblioref">52</a>]</span>), preliminary prediction (ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">53</a>]</span>.
+A variation of cascade learning implemented to identify rare disease patients from electronic health records (EHR) from the general population utilized independent steps for feature extraction (using word2vec <span class="citation" data-cites="1BgjerMFj">[<a href="#ref-1BgjerMFj" role="doc-biblioref">52</a>]</span>), preliminary prediction (ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">53</a>]</span>.
 This cascade learner benefited from the independence of the feature extraction step and the prediction refinement step from the preliminary classification of the labeled dataset to find stable patterns and perform better than other ensemble methods when implemented on this silver standard dataset.</p>
 <p>In datasets with multiple classes, most cascade classifiers follow a <em>one-classifier-at-a-time</em> approach where algorithms at each level predict all classes involved.
 But instances where the need for high prediction accuracy for one class outweighs other classes, further modification of the cascade learning efforts is required.
@@ -276,6 +276,25 @@ MultiPLIER has additional attributes that make it practical for studying rare di
 In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">66</a>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
 In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.</p>
+<h5 id="multitask-and-few-shot-learning">Multitask and few-shot learning</h5>
+<p>Where transfer learning can be supervised or unsupervised, the related approaches multitask and few-shot learning are forms of supervised learning that generally rely on deep neural networks.
+Multitask learning is an approach where classifiers are learned for <em>related tasks</em> at the same time using a shared representation <span class="citation" data-cites="9k4OKrXL">[<a href="#ref-9k4OKrXL" role="doc-biblioref">67</a>]</span>, where task refers to an individual prediction being made.
+Few-shot learning is the generalization of a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease).</p>
+<p>Multitask neural networks that predict multiple tasks simultaneously are generally thought to improve performance over models that make predictions for a single task by learning a shared representation and effectively being exposed to more training data than the single task case <span class="citation" data-cites="9k4OKrXL arxiv:1606.08793">[<span class="citeproc-not-found" data-reference-id="arxiv:1606.08793"><strong>???</strong></span>,<a href="#ref-9k4OKrXL" role="doc-biblioref">67</a>]</span>.
+Kearnes, Goldman, and Pande set out to examine the effects of dataset size and task relatedness on multitask learning performance improvements (“multitask effect”) in drug discovery–an area that also suffers from insufficient data <span class="citation" data-cites="arxiv:1606.08793">[<span class="citeproc-not-found" data-reference-id="arxiv:1606.08793"><strong>???</strong></span>]</span>.
+The authors found that the multitask performance gains were highly dataset-specific: smaller datasets tended to benefit most from multitask learning and the addition of more training data did not guarantee improved performance for multitask models.
+In predicting phenotypes from EHR data, Ding et al. demonstrated that multitask neural networks outperformed single-task networks for predicting complex rare phenotypes but not common phenotypes <span class="citation" data-cites="arxiv:1808.03331">[<span class="citeproc-not-found" data-reference-id="arxiv:1808.03331"><strong>???</strong></span>]</span>.
+Liu et al. developed a method to train long short-term memory networks, a type of recurrent neural network, to predict mortality in rare diseases using EHR data as input <span class="citation" data-cites="1GzvgiAka">[<a href="#ref-1GzvgiAka" role="doc-biblioref">68</a>]</span>.
+Their method, Ada-SiT (Adaptation to Similar Tasks), was specifically designed for many tasks with insufficient data and allowed for task similarity to be measured during training.</p>
+<p>In contrast, one-shot or few-shot learning relies on using prior knowledge to generalize to new prediction tasks where there are a low number of examples <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">69</a>]</span>, where a distance metric is learned from input data and used to compare new examples for prediction <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">70</a>]</span>.
+Altae-Tran et al. developed a method for predicting small molecule activity that learned a meaningful distance metric over the properties of various compounds <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">70</a>]</span>.
+However, the authors’ results suggested underperformance of one-shot learning methods relative to baseline random forest models when structural similarity could not be exploited and did not show support for generalization of models trained on very different contexts from the target task.
+Quellec et al. presented a few-shot learning approach for detecting rare pathologies in fundus photographs <span class="citation" data-cites="R8nGOGPc">[<a href="#ref-R8nGOGPc" role="doc-biblioref">71</a>]</span>.
+The authors trained a convolutional neural network (CNN) to predict common pathologies, which tended to cluster similar conditions in feature space.
+The learned feature space was then used to train a probabilistic model for each rare pathology.
+This approach outperformed multitask learning, which suggests few-shot learning provides an advantage in contexts where predicting common conditions simultaneously results in a loss of performance <span class="citation" data-cites="R8nGOGPc">[<a href="#ref-R8nGOGPc" role="doc-biblioref">71</a>]</span>.</p>
+<p>Multitask and few-shot learning are comprised of a variety of approaches and architectures that are beyond this scope of this work (see <span class="citation" data-cites="arxiv:1706.05098 G4tqVVQF">[<span class="citeproc-not-found" data-reference-id="arxiv:1706.05098"><strong>???</strong></span>,<a href="#ref-G4tqVVQF" role="doc-biblioref">72</a>]</span> and <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">69</a>]</span> for an overview).
+As with transfer learning, the utility of these approaches to rare disease research is an open question and is likely to be highly dependent on dataset availability and research goals.</p>
 <h3 id="conclusions">Conclusions</h3>
 <blockquote>
 <p>We will conclude by discussing the potential of the above-mentioned approaches in rare diseases and other biomedical areas where data is scarce.</p>
@@ -673,6 +692,41 @@ DOI: <a href="https://doi.org/10.1002/art.27398">10.1002/art.27398</a> · PMID: 
 <p>66. <strong>How transferable are features in deep neural networks?</strong><br />
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson<br />
 <em>arXiv</em> (2014-12-09) <a href="https://arxiv.org/abs/1411.1792">https://arxiv.org/abs/1411.1792</a></p>
+</div>
+<div id="ref-9k4OKrXL">
+<p>67.<strong>:{unav)</strong><br />
+Rich Caruana<br />
+<em>Machine Learning</em> (1997) <a href="https://doi.org/d3gsgj">https://doi.org/d3gsgj</a><br />
+DOI: <a href="https://doi.org/10.1023/a:1007379606734">10.1023/a:1007379606734</a></p>
+</div>
+<div id="ref-1GzvgiAka">
+<p>68. <strong>Multi-task Learning via Adaptation to Similar Tasks for Mortality
+Prediction of Diverse Rare Diseases</strong><br />
+Luchen Liu, Zequn Liu, Haoxian Wu, Zichang Wang, Jianhao Shen, Yiping Song, Ming Zhang<br />
+<em>arXiv</em> (2020-04-11) <a href="https://arxiv.org/abs/2004.05318v2">https://arxiv.org/abs/2004.05318v2</a></p>
+</div>
+<div id="ref-BJx3FEyX">
+<p>69. <strong>Generalizing from a Few Examples: A Survey on Few-Shot Learning</strong><br />
+Yaqing Wang, Quanming Yao, James Kwok, Lionel M. Ni<br />
+<em>arXiv</em> (2019-04-10) <a href="https://arxiv.org/abs/1904.05046v3">https://arxiv.org/abs/1904.05046v3</a></p>
+</div>
+<div id="ref-P4ixsM8i">
+<p>70. <strong>Low Data Drug Discovery with One-Shot Learning</strong><br />
+Han Altae-Tran, Bharath Ramsundar, Aneesh S. Pappu, Vijay Pande<br />
+<em>ACS Central Science</em> (2017-04-03) <a href="https://doi.org/f95dnd">https://doi.org/f95dnd</a><br />
+DOI: <a href="https://doi.org/10.1021/acscentsci.6b00367">10.1021/acscentsci.6b00367</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28470045">28470045</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408335">PMC5408335</a></p>
+</div>
+<div id="ref-R8nGOGPc">
+<p>71. <strong>Automatic detection of rare pathologies in fundus photographs using
+few-shot learning</strong><br />
+Gwenolé Quellec, Mathieu Lamard, Pierre-Henri Conze, Pascale Massin, Béatrice Cochener<br />
+<em>arXiv</em> (2019-07-22) <a href="https://arxiv.org/abs/1907.09449v3">https://arxiv.org/abs/1907.09449v3</a><br />
+DOI: <a href="https://doi.org/10.1016/j.media.2020.101660">10.1016/j.media.2020.101660</a></p>
+</div>
+<div id="ref-G4tqVVQF">
+<p>72. <strong>A Survey on Multi-Task Learning</strong><br />
+Yu Zhang, Qiang Yang<br />
+<em>arXiv</em> (2017-07-25) <a href="https://arxiv.org/abs/1707.08114v2">https://arxiv.org/abs/1707.08114v2</a></p>
 </div>
 </div>
 <!-- default theme -->
