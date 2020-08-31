@@ -50,6 +50,7 @@ GWAS
 heterogeneity
 heterogeneous
 hetionet
+histopathology
 Ingelheim
 interpretable
 jaybee
@@ -62,6 +63,7 @@ Neurofibromatosis
 omic
 overfit
 overfitting
+omics
 SNP
 PCA
 phenotypes
