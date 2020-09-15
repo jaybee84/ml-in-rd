@@ -7,8 +7,8 @@ author-meta:
 - Justin Guinney
 bibliography:
 - content/manual-references.json
-date-meta: '2020-09-08'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-09-08\" />\n<meta name=\"citation_publication_date\" content=\"2020-09-08\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/975727fca3e25f8e2f5c117a06fb4f6dca8d769b/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/975727fca3e25f8e2f5c117a06fb4f6dca8d769b/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/975727fca3e25f8e2f5c117a06fb4f6dca8d769b/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-09-15'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2020-09-15\" />\n<meta name=\"citation_publication_date\" content=\"2020-09-15\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - rare disease
 - machine learning
@@ -28,10 +28,10 @@ title: Machine learning methods for rare diseases
 
 <small><em>
 This manuscript
-([permalink](https://jaybee84.github.io/ml-in-rd/v/975727fca3e25f8e2f5c117a06fb4f6dca8d769b/))
+([permalink](https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/))
 was automatically generated
-from [jaybee84/ml-in-rd@975727f](https://github.com/jaybee84/ml-in-rd/tree/975727fca3e25f8e2f5c117a06fb4f6dca8d769b)
-on September 8, 2020.
+from [jaybee84/ml-in-rd@b99c61e](https://github.com/jaybee84/ml-in-rd/tree/b99c61edc6bdb3baf0e58c79407eacec3dd739ac)
+on September 15, 2020.
 </em></small>
 
 ## Authors
@@ -127,7 +127,44 @@ Often, this will require techniques that build upon prior domain-specific knowle
 In this perspective, we discuss techniques for understanding the nature of rare disease data, including those that address or better tolerate the limitations of these data.
 
 
-### Managing disparities in data generation is required for robust analysis
+<!--TODO: I don't know about this title, but I think "there are too many dang dimensions" would be even worse; that's what I think this section should be mostly about, with assessing heterogeneity as a specific use case -->
+
+### Characterizing structure in high-dimensional rare disease data
+
+<!-- TODO: Talk about curse of dimensionality, etc. or even how interpreting many features for biological discovery can be somewhat challenging. -->
+<!-- TODO: If we talk about *feature selection* in addition to feature/representation learning, that might set up model complexity nicely! --> 
+
+#### Dimensionality reduction and representation learning
+
+<!-- TODO: Use the bits about dimensionality reduction that were in this section originally to talk about dimensionality reduction in general. Readers who are new practicioners might be familiar with or have used PCA - that's ML, too! -->
+
+<!-- TODO: What is dimensionality reduction? -->
+
+<!-- This is the section on dimensionality reduction that was here before when this was only about heterogeneity, largely unaltered. -->
+
+Dimensionality reduction methods can be used to visualize heterogeneity and confounders, including multidimensional scaling, principal components analysis, t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP), among others. [@doi:10.1007/978-3-540-33037-0_14; @doi:10.1098/rsta.2015.0202; @https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf; @arXiv:1802.03426]
+Dimensionality reduction techniques are not restricted to 'omic' data - they can also be used in rare disease applications to characterize the structure and heterogeneity of imaging data [@doi:10.1016/j.media.2020.101660], mass cytometry data [@doi:10.1038/ncomms14825], and others.
+All of these methods can be used to identify batch effects and other structure in the data, though some (like t-SNE and UMAP) require parameters that can affect the output [@doi:10.23915/distill.00002;@arXiv:1802.03426].
+Therefore, obtaining a clear interpretation from these methods requires understanding the underlying approach and parameters.
+Another important consideration is discussed by Way, et. al. [@doi:10.1186/s13059-020-02021-3]: a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; testing multiple methods may result in a more comprehensive portrait of the data.
+
+<!-- This is the representation learning section that was previously in the prior knowledge section with the in-depth discussion of Dincer et al. removed. It should be adapted to reflect that some of the methods described above are forms of representation learning and probably revised because I just took out the most compelling part to save for later, in my opinion. -->
+
+Representation learning, also called feature learning, is the process of learning features from raw data, where a feature is an individual variable.
+An algorithm or approach will construct features as part of training and, in a supervised application, use those features to predict labels on input data.
+Using an example from transcriptomics, an unsupervised method such as matrix factorization can be used to extract a low-dimensional representation of the gene-level data, learning features that are a combination of input genes' expression levels [@doi:10.1093/bioinformatics/btq503; @doi:10.1186/s13059-020-02021-3].
+Low-dimensional representations trained on a collection of transcriptomic data can then be used as input to supervised machine learning methods [@doi:10.1186/s12859-020-3427-8].
+Supervised neural networks used in medical imaging studies [@doi:10.1016/j.procs.2016.07.014] (reviewed in [@doi:10.1098/rsif.2017.0387]), which are trained to predict labels or classes, are also an example of representation learning.
+Learned features in the medical imaging domain may be a series of edges representing a blood vessel formation that discriminates between disease states.
+Features learned from transcriptomic data could be coordinated sets of genes involved in a biological process that are descriptive in some way [@doi:10.1038/s41467-020-14666-6].
+Representation learning tends to be data-intensive; many samples are required.
+In later sections, we will introduce methods that can leverage data that do not directly assay a rare disease of interest; representation learning underlies many of time.
+
+#### Visualization and correction of technical effects
+
+<!-- TODO: Use the section above to introduce this (assessment of batch effects, etc.) as a specific use case/motivation for the methods introduced above that is perhaps exacerbated in rare diseases. -->
+
+<!-- There can be structure in our data that is not related to what we want to study... -->
 
 <!-- TODO: Refs! -->
 Rare disease data often suffers from artifacts introduced by non-biological phenomena such as batch or assay platform.[@doi:10.1016/j.cels.2019.04.003, @doi:10.1186/s13023-020-01376-x, @doi:10.1038/s41591-019-0457-8]
@@ -139,19 +176,13 @@ The NF1 datasets were comprised of samples obtained with different surgical tech
 Consequently, careful assessment of and accounting for confounding factors is critical to identifying meaningful features within a dataset.
 
 Assessment of confounding factors and heterogeneity is perhaps most easily performed using unsupervised learning approaches.
-K-means clustering or hierarchical clustering can be used to characterize the structure present in genomic or imaging data. [@doi:10.1186/1471-2105-9-497;@doi:10.1109/JBHI.2013.2276766]
-Similarly, dimensionality reduction methods can be used to visualize heterogeneity and confounders, including multidimensional scaling, principal components analysis, t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP), among others. [@doi:10.1007/978-3-540-33037-0_14; @doi:10.1098/rsta.2015.0202; @https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf; @arXiv:1802.03426]
-Dimensionality reduction techniques are not restricted to 'omic' data - they can also be used in rare disease applications to characterize the structure and heterogeneity of imaging data [@doi:10.1016/j.media.2020.101660], mass cytometry data [@doi:10.1038/ncomms14825], and others.
-All of these methods can be used to identify batch effects and other structure in the data, though some (like t-SNE and UMAP) require parameters that can affect the output [@doi:10.23915/distill.00002;@arXiv:1802.03426].
-Therefore, obtaining a clear interpretation from these methods requires understanding the underlying approach and parameters.
-Another important consideration is discussed by Way, et. al. [@doi:10.1186/s13059-020-02021-3]: a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; testing multiple methods may result in a more comprehensive portrait of the data.
+K-means clustering or hierarchical clustering can be used to characterize the structure present in genomic or imaging data. [@doi:10.1186/1471-2105-9-497;@doi:10.1109/JBHI.2013.2276766] <!-- TODO: Make reference to the dimensionality reduction section above -->
 
 Once the nature of the non-biological heterogeneity has been established, different techniques can be used to correct the differences.
 Common approaches include reprocessing the raw data using a single analysis pipeline if the data are obtained from different sources, application of batch correction methods [@doi:10.1093/biostatistics/kxj037; @doi:10.1093/nar/gku864], and normalization of raw values[@doi:10.1186/gb-2010-11-3-r25].
 It is also important to be realistic when working with rare disease data.
 For various reasons including ethical constraints, funding, and limited biospecimens, experimental design and the resulting data will often be less-than-ideal.
 In these cases, it may be prudent to take a step back, re-evaluate the data, and identify methods that can operate within the constraints of the data, rather than expecting the data to conform to a method of choice.
-
 
 ### Techniques and procedures must be implemented to manage model complexity without sacrificing the value of machine learning
 
@@ -232,25 +263,6 @@ Private entities (e.g. healx, Boehringer Ingelheim), however, are performing an 
 The existence of private companies pursuing this idea, as well as the availability of public biomedical knowledge graphs, suggests that this may be a fruitful untapped area of rare disease research in the public arena.
 More work needs to be done to assess 1) which graphs and graph features capture the salient information about rare diseases, 2) the utility of ML methods to obtain actionable insights about rare diseases and 3) which problems - like drug discovery, identification of novel rare diseases, or assessment of genotype-phenotype relationships - can be interrogated using ML of knowledge graphs.
 
-#### Representation learning
-
-Representation learning, also called feature learning, is the process of learning features from raw data, where a feature is an individual variable.
-An algorithm or approach will construct features as part of training and, in a supervised application, use those features to predict labels on input data.
-Using an example from transcriptomics, an unsupervised method such as matrix factorization can be used to extract a low-dimensional representation of the gene-level data, learning features that are a combination of input genes' expression levels [@doi:10.1093/bioinformatics/btq503; @doi:10.1186/s13059-020-02021-3].
-Low-dimensional representations trained on a collection of transcriptomic data can then be used as input to supervised machine learning methods [@doi:10.1186/s12859-020-3427-8].
-Supervised neural networks used in medical imaging studies [@doi:10.1016/j.procs.2016.07.014] (reviewed in [@doi:10.1098/rsif.2017.0387]), which are trained to predict labels or classes, are also an example of representation learning.
-Learned features in the medical imaging domain may be a series of edges representing a blood vessel formation that discriminates between disease states.
-Features learned from transcriptomic data could be coordinated sets of genes involved in a biological process that are descriptive in some way [@doi:10.1038/s41467-020-14666-6].
-
-In the rare disease domain, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of _in vitro_ drug responses [@doi:10.1101/278739].
-The authors trained a variational autoencoder (an unsupervised neural network that learns a series of representations from data), or VAE, on AML data that had been collected over time without the desired phenotypic information (drug response).
-The authors used the learned attributes to encode a low-dimensional representation of held-out AML data with phenotype labels of interest, and used this representation as input to a classifier that predicted _in vitro_ drug response.
-
-Representation learning tends to be data-intensive; many samples are required.
-Though there were over 6500 AML samples from many different studies used as part of the training set in Dincer et al. [@doi:10.1101/278739], we expect that in other rare diseases considerably fewer samples will be available or may be from different tissues in systemic diseases.
-The study by Dincer and colleagues highlights another challenge: samples collected as part of multiple studies may not be associated with the deep phenotypic information that would maximize their scientific value.
-In the next section, we will introduce methods or approaches that may be more broadly useful in rare diseases; representation learning underlies many of them.
-
 <!-- TODO: Is this header level right? I can't tell if this is supposed to be a subsection or its own section. The strategies discussed here might either be considered bringing both statistical + prior knowledge & data together or another part of using prior knowledge + data. I think I favor the former, though it would require putting a brief transfer and multi-task blurb in the prior/related data section. -->
 
 #### Transfer, multitask, and few-shot learning
@@ -260,37 +272,17 @@ Instead, we can build on prior knowledge and large volumes of data that do not d
 We can leverage shared features, whether they are normal developmental processes that are aberrant in disease or an imaging anomaly present in rare and common diseases, for advancing our understanding.
 Methods that leverage shared features include transfer learning, multitask learning, and few-shot learning approaches.
 
-##### Transfer learning
-
 Transfer learning is an approach where a model trained for one task or domain (source domain) is applied to another, typically related task or domain (target domain).
 Transfer learning can be supervised (one or both of the source and target domains have labels), or unsupervised (both domains are unlabeled).
-Though there are multiple types of transfer learning, we will focus on feature-representation-transfer [@doi:10.1109/TKDE.2009.191] here.
+Though there are multiple types of transfer learning, in a later section we will focus on feature-representation-transfer [@doi:10.1109/TKDE.2009.191].
 Feature-representation-transfer approaches learn representations from the source domain and apply them to a target domain [@doi:10.1109/TKDE.2009.191].
-This concept is embodied in Dincer et al., where features are learned from unlabeled AML data and then used to encode a low-dimensional representation of AML data with _in vitro_ drug response labels [@doi:10.1101/278739].
-The authors then used this low-dimensional representation as input to predict drug response labels–a supervised example.
-
-<!-- TODO: This is also ap oint to note prior's regularization approach if we go with the framing of these approaches bring things together. -->
-In an unsupervised case, Taroni et al. trained a Pathway-Level Information ExtractoR (PLIER) [@doi:10.1038/s41592-019-0456-1] on a large generic collection of human transcriptomic data (recount2 [@doi:10.1038/nbt.3838]) and used the latent variables learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER [@doi:10.1016/j.cels.2019.04.003].
-(Here "unseen" refers to the fact that these diseases were not in the training set.)
-PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input; some latent variables learned by the model will align with input gene sets  [@doi:10.1038/s41592-019-0456-1].
-Training on larger collections of randomly selected samples produced models that captured a larger proportion of input gene sets and better distinguished closely related signals, which suggests that larger training sets produced models that are more suitable for biological discovery [@doi:10.1016/j.cels.2019.04.003].
-
-Though models trained on generic compendia had appealing properties, we need to also examine the relevance of learned features to the disease under study.
-In Taroni et al., we found that the expression of latent variables that could be matched between the MultiPLIER model and a dataset-specific model were well-correlated, particularly when latent variables were associated with input gene sets [@doi:10.1016/j.cels.2019.04.003].
-Despite the absence of AAV from the training set, MultiPLIER was able to learn a latent variable where the genes with the highest contributions encode antigens that the ANCA form against in AAV and with higher expression in more severe disease [@doi:10.1002/art.27398].
-The utility of this approach stems from the fact that biological processes are often _shared_ between conditions–the same ANCA antigen genes are components of neutrophilic granule development that is likely captured or assayed in the collection of transcriptomic data used for training.
-MultiPLIER has additional attributes that make it practical for studying rare diseases: latent variables that are not associated with input gene sets may capture technical noise separately from biological signal and we can use one model to describe multiple datasets instead of reconciling output from multiple models (see _03.heterogeneity.md_).
-
-Taken together, DeepProfile [@doi:10.1101/278739] and MultiPLIER [@doi:10.1016/j.cels.2019.04.003] suggest transfer learning can be beneficial for studying rare diseases.
-In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks [@arxiv:1411.1792].
-The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
-In the authors' opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.
-
-##### Multitask and few-shot learning
+<!-- TODO: Add a motivating example that's not DeepProfile or MultiPLIER and ties into the first section that I propose to be about dimensionality reduction, etc. :D -->
 
 Where transfer learning can be supervised or unsupervised, the related approaches multitask and few-shot learning are forms of supervised learning that generally rely on deep neural networks.
 Multitask learning is an approach where classifiers are learned for _related tasks_ at the same time using a shared representation [@doi:10.1023/A:1007379606734], where task refers to an individual prediction being made.
 Few-shot learning is the generalization of a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease).
+
+<!-- TODO: Shorten considerably -->
 
 Multitask neural networks that predict multiple tasks simultaneously are generally thought to improve performance over models that make predictions for a single task by learning a shared representation and effectively being exposed to more training data than the single task case [@doi:10.1023/A:1007379606734; @arxiv:1606.08793].
 Kearnes, Goldman, and Pande set out to examine the effects of dataset size and task relatedness on multitask learning performance improvements ("multitask effect") in drug discovery–an area that also suffers from insufficient data [@arxiv:1606.08793].
@@ -309,6 +301,44 @@ This approach outperformed multitask learning, which suggests few-shot learning 
 
 Multitask and few-shot learning are comprised of a variety of approaches and architectures that are beyond this scope of this work (see [@arxiv:1706.05098; @arxiv:1707.08114v2] and [@arxiv:1904.05046v3] for an overview).
 As with transfer learning, the utility of these approaches to rare disease research is an open question and is likely to be highly dependent on dataset availability and research goals.
+
+
+#### Multiple approaches are required 
+
+<!-- aka "Putting it all together" -->
+
+<!-- TODO: This needs to explicitly hit regularization, other data, and prior knowledge points!--> 
+
+<!-- From representation learning -->
+
+In the rare disease domain, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of _in vitro_ drug responses [@doi:10.1101/278739].
+The authors trained a variational autoencoder (an unsupervised neural network that learns a series of representations from data), or VAE, on AML data that had been collected over time without the desired phenotypic information (drug response).
+The authors used the learned attributes to encode a low-dimensional representation of held-out AML data with phenotype labels of interest, and used this representation as input to a classifier that predicted _in vitro_ drug response.
+
+
+Though there were over 6500 AML samples from many different studies used as part of the training set in Dincer et al. [@doi:10.1101/278739], we expect that in other rare diseases considerably fewer samples will be available or may be from different tissues in systemic diseases.
+The study by Dincer and colleagues highlights another challenge: samples collected as part of multiple studies may not be associated with the deep phenotypic information that would maximize their scientific value.
+
+
+<!-- From transfer learning -->
+
+Feature-representation-transfer is embodied in Dincer et al., where features are learned from unlabeled AML data and then used to encode a low-dimensional representation of AML data with in vitro drug response labels [@doi:10.1101/278739]. 
+The authors then used this low-dimensional representation as input to predict drug response labels–a supervised example.
+
+In an unsupervised case, Taroni et al. trained Pathway-Level Information ExtractoR (PLIER) [@doi:10.1038/s41592-019-0456-1] on a large generic collection of human transcriptomic data (recount2 [@doi:10.1038/nbt.3838]) and used the latent variables learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER [@doi:10.1016/j.cels.2019.04.003]. 
+(Here "unseen" refers to the fact that these diseases were not in the training set.) 
+PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input; some latent variables learned by the model will align with input gene sets [@doi:10.1038/s41592-019-0456-1]. 
+Training on larger collections of randomly selected samples produced models that captured a larger proportion of input gene sets and better distinguished closely related signals, which suggests that larger training sets produced models that are more suitable for biological discovery [@doi:10.1016/j.cels.2019.04.003].
+
+Though models trained on generic compendia had appealing properties, we need to also examine the relevance of learned features to the disease under study. 
+In Taroni et al., we found that the expression of latent variables that could be matched between the MultiPLIER model and a dataset-specific model were well-correlated, particularly when latent variables were associated with input gene sets [@doi:10.1016/j.cels.2019.04.003]. Despite the absence of AAV from the training set, MultiPLIER was able to learn a latent variable where the genes with the highest contributions encode antigens that the ANCA form against in AAV and with higher expression in more severe disease [@doi:10.1002/art.27398]. 
+The utility of this approach stems from the fact that biological processes are often shared between conditions–the same ANCA antigen genes are components of neutrophilic granule development that is likely captured or assayed in the collection of transcriptomic data used for training. 
+MultiPLIER has additional attributes that make it practical for studying rare diseases: latent variables that are not associated with input gene sets may capture technical noise separately from biological signal and we can use one model to describe multiple datasets instead of reconciling output from multiple models (see 03.heterogeneity.md).
+
+Taken together, DeepProfile [@doi:10.1101/278739] and MultiPLIER [@doi:10.1016/j.cels.2019.04.003] suggest transfer learning can be beneficial for studying rare diseases. 
+In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks [@arxiv:1411.1792]. 
+The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions. 
+In the authors' opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.
 
 
 ### Conclusions
