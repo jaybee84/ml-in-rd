@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-09-15" />
+  <meta name="dcterms.date" content="2020-10-07" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-09-15" />
-  <meta name="citation_publication_date" content="2020-09-15" />
+  <meta name="dc.date" content="2020-10-07" />
+  <meta name="citation_publication_date" content="2020-10-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/b99c61edc6bdb3baf0e58c79407eacec3dd739ac/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/b99c61edc6bdb3baf0e58c79407eacec3dd739ac">jaybee84/ml-in-rd@b99c61e</a>
-on September 15, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/d94e90a3c8e1e29f6505727126a524d6cd67150c">jaybee84/ml-in-rd@d94e90a</a>
+on October 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -270,50 +270,48 @@ We can leverage shared features, whether they are normal developmental processes
 Methods that leverage shared features include transfer learning, multitask learning, and few-shot learning approaches.</p>
 <p>Transfer learning is an approach where a model trained for one task or domain (source domain) is applied to another, typically related task or domain (target domain).
 Transfer learning can be supervised (one or both of the source and target domains have labels), or unsupervised (both domains are unlabeled).
-Though there are multiple types of transfer learning, in a later section we will focus on feature-representation-transfer <span class="citation" data-cites="12JtL2o6T">[<a href="#ref-12JtL2o6T" role="doc-biblioref">63</a>]</span>.
+Though there are multiple types of transfer learning, in a later section we will focus in-depth on feature-representation-transfer.
 Feature-representation-transfer approaches learn representations from the source domain and apply them to a target domain <span class="citation" data-cites="12JtL2o6T">[<a href="#ref-12JtL2o6T" role="doc-biblioref">63</a>]</span>.
-<!-- TODO: Add a motivating example that's not DeepProfile or MultiPLIER and ties into the first section that I propose to be about dimensionality reduction, etc. :D --></p>
-<p>Where transfer learning can be supervised or unsupervised, the related approaches multitask and few-shot learning are forms of supervised learning that generally rely on deep neural networks.
-Multitask learning is an approach where classifiers are learned for <em>related tasks</em> at the same time using a shared representation <span class="citation" data-cites="9k4OKrXL">[<a href="#ref-9k4OKrXL" role="doc-biblioref">64</a>]</span>, where task refers to an individual prediction being made.
-Few-shot learning is the generalization of a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease).</p>
-<!-- TODO: Shorten considerably -->
-<p>Multitask neural networks that predict multiple tasks simultaneously are generally thought to improve performance over models that make predictions for a single task by learning a shared representation and effectively being exposed to more training data than the single task case <span class="citation" data-cites="9k4OKrXL uP7SgBVd">[<a href="#ref-9k4OKrXL" role="doc-biblioref">64</a>,<a href="#ref-uP7SgBVd" role="doc-biblioref">65</a>]</span>.
-Kearnes, Goldman, and Pande set out to examine the effects of dataset size and task relatedness on multitask learning performance improvements (“multitask effect”) in drug discovery–an area that also suffers from insufficient data <span class="citation" data-cites="uP7SgBVd">[<a href="#ref-uP7SgBVd" role="doc-biblioref">65</a>]</span>.
+For example, low-dimensional representations can be learned from tumor transcriptomic data and transferred to describe patterns associated with genetic alterations in cell line data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">11</a>]</span>.<br />
+<!--TODO: anything need to be added/revised here once the dimensionality reduction section is rewritten to be more general? --></p>
+<p>Whereas transfer learning can be supervised or unsupervised, the related approaches multitask and few-shot learning are forms of supervised learning that generally rely on deep neural networks.
+Multitask learning is an approach where classifiers are learned for <em>related individual predictions</em> (tasks) at the same time using a shared representation <span class="citation" data-cites="9k4OKrXL">[<a href="#ref-9k4OKrXL" role="doc-biblioref">64</a>]</span>.
+Few-shot learning is the generalization of a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease).
+Multitask and few-shot learning are comprised of a variety of approaches and architectures that are beyond this scope of this work (see <span class="citation" data-cites="DKDxhmok G4tqVVQF">[<a href="#ref-DKDxhmok" role="doc-biblioref">65</a>,<a href="#ref-G4tqVVQF" role="doc-biblioref">66</a>]</span> and <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">67</a>]</span> for an overview).
+We include brief descriptions of selected studies to illustrate potential uses and limitations of these approaches below.</p>
+<p>Multitask neural networks (which predict multiple tasks simultaneously) are thought to improve performance over single task models by learning a shared representation, effectively being exposed to more training data than single task models <span class="citation" data-cites="9k4OKrXL uP7SgBVd">[<a href="#ref-9k4OKrXL" role="doc-biblioref">64</a>,<a href="#ref-uP7SgBVd" role="doc-biblioref">68</a>]</span>.
+Kearnes, Goldman, and Pande set out to examine the effects of dataset size and task relatedness on multitask learning performance improvements (“multitask effect”) in drug discovery–an area that also suffers from insufficient data <span class="citation" data-cites="uP7SgBVd">[<a href="#ref-uP7SgBVd" role="doc-biblioref">68</a>]</span>.
 The authors found that the multitask performance gains were highly dataset-specific: smaller datasets tended to benefit most from multitask learning and the addition of more training data did not guarantee improved performance for multitask models.
-In predicting phenotypes from EHR data, Ding et al. demonstrated that multitask neural networks outperformed single-task networks for predicting complex rare phenotypes but not common phenotypes <span class="citation" data-cites="VlwBWUCG">[<a href="#ref-VlwBWUCG" role="doc-biblioref">66</a>]</span>.
-Liu et al. developed a method to train long short-term memory networks, a type of recurrent neural network, to predict mortality in rare diseases using EHR data as input <span class="citation" data-cites="1GzvgiAka">[<a href="#ref-1GzvgiAka" role="doc-biblioref">67</a>]</span>.
-Their method, Ada-SiT (Adaptation to Similar Tasks), was specifically designed for many tasks with insufficient data and allowed for task similarity to be measured during training.</p>
-<p>In contrast, one-shot or few-shot learning relies on using prior knowledge to generalize to new prediction tasks where there are a low number of examples <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">68</a>]</span>, where a distance metric is learned from input data and used to compare new examples for prediction <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">69</a>]</span>.
-Altae-Tran et al. developed a method for predicting small molecule activity that learned a meaningful distance metric over the properties of various compounds <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">69</a>]</span>.
-However, the authors’ results suggested underperformance of one-shot learning methods relative to baseline random forest models when structural similarity could not be exploited and did not show support for generalization of models trained on very different contexts from the target task.
-Quellec et al. presented a few-shot learning approach for detecting rare pathologies in fundus photographs <span class="citation" data-cites="R8nGOGPc">[<a href="#ref-R8nGOGPc" role="doc-biblioref">70</a>]</span>.
-The authors trained a convolutional neural network (CNN) to predict common pathologies, which tended to cluster similar conditions in feature space.
-The learned feature space was then used to train a probabilistic model for each rare pathology.
-This approach outperformed multitask learning, which suggests few-shot learning provides an advantage in contexts where predicting common conditions simultaneously results in a loss of performance <span class="citation" data-cites="R8nGOGPc">[<a href="#ref-R8nGOGPc" role="doc-biblioref">70</a>]</span>.</p>
-<p>Multitask and few-shot learning are comprised of a variety of approaches and architectures that are beyond this scope of this work (see <span class="citation" data-cites="DKDxhmok G4tqVVQF">[<a href="#ref-DKDxhmok" role="doc-biblioref">71</a>,<a href="#ref-G4tqVVQF" role="doc-biblioref">72</a>]</span> and <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">68</a>]</span> for an overview).
-As with transfer learning, the utility of these approaches to rare disease research is an open question and is likely to be highly dependent on dataset availability and research goals.</p>
+Ding et al. also demonstrated that performance gains were context-dependent; multitask neural networks outperformed single-task networks for predicting complex rare phenotypes from EHR data, but not common phenotypes <span class="citation" data-cites="VlwBWUCG">[<a href="#ref-VlwBWUCG" role="doc-biblioref">69</a>]</span>.</p>
+<p>In contrast, one-shot or few-shot learning relies on using prior knowledge to generalize to new prediction tasks where there are a low number of examples <span class="citation" data-cites="BJx3FEyX">[<a href="#ref-BJx3FEyX" role="doc-biblioref">67</a>]</span>, where a distance metric is learned from input data and used to compare new examples for prediction <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">70</a>]</span>.
+Altae-Tran et al. developed a method for predicting small molecule activity that learned a meaningful distance metric over the properties of various compounds <span class="citation" data-cites="P4ixsM8i">[<a href="#ref-P4ixsM8i" role="doc-biblioref">70</a>]</span>.
+The authors’ results suggested that when structural similarity could not be exploited, one-shot learning methods underperform relative to baseline random forest models, and that models trained on very different contexts from the target task did not generalize well.
+Quellec et al. presented a few-shot learning approach for detecting rare pathologies in fundus photographs that outperformed multitask learning, suggesting that few-shot learning provides an advantage in contexts where predicting common conditions simultaneously results in a loss of performance <span class="citation" data-cites="R8nGOGPc">[<a href="#ref-R8nGOGPc" role="doc-biblioref">71</a>]</span>.</p>
+<p>Transfer, multi-task, and few-shot learning are appealing for the study of rare diseases, conditions, or phenotypes, but their limits and potential utility are open research questions.
+We expect that the benefit will be highly dependent on the dataset and research question at hand as was the case in the studies outlined above.
+In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.</p>
 <h4 id="multiple-approaches-are-required">Multiple approaches are required</h4>
 <!-- aka "Putting it all together" -->
 <!-- TODO: This needs to explicitly hit regularization, other data, and prior knowledge points!-->
 <!-- From representation learning -->
-<p>In the rare disease domain, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of <em>in vitro</em> drug responses <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">73</a>]</span>.
+<p>In the rare disease domain, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of <em>in vitro</em> drug responses <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">72</a>]</span>.
 The authors trained a variational autoencoder (an unsupervised neural network that learns a series of representations from data), or VAE, on AML data that had been collected over time without the desired phenotypic information (drug response).
 The authors used the learned attributes to encode a low-dimensional representation of held-out AML data with phenotype labels of interest, and used this representation as input to a classifier that predicted <em>in vitro</em> drug response.</p>
-<p>Though there were over 6500 AML samples from many different studies used as part of the training set in Dincer et al. <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">73</a>]</span>, we expect that in other rare diseases considerably fewer samples will be available or may be from different tissues in systemic diseases.
+<p>Though there were over 6500 AML samples from many different studies used as part of the training set in Dincer et al. <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">72</a>]</span>, we expect that in other rare diseases considerably fewer samples will be available or may be from different tissues in systemic diseases.
 The study by Dincer and colleagues highlights another challenge: samples collected as part of multiple studies may not be associated with the deep phenotypic information that would maximize their scientific value.</p>
 <!-- From transfer learning -->
-<p>Feature-representation-transfer is embodied in Dincer et al., where features are learned from unlabeled AML data and then used to encode a low-dimensional representation of AML data with in vitro drug response labels <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">73</a>]</span>.
+<p>Feature-representation-transfer is embodied in Dincer et al., where features are learned from unlabeled AML data and then used to encode a low-dimensional representation of AML data with in vitro drug response labels <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">72</a>]</span>.
 The authors then used this low-dimensional representation as input to predict drug response labels–a supervised example.</p>
-<p>In an unsupervised case, Taroni et al. trained Pathway-Level Information ExtractoR (PLIER) <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">74</a>]</span> on a large generic collection of human transcriptomic data (recount2 <span class="citation" data-cites="6SPTvFXq">[<a href="#ref-6SPTvFXq" role="doc-biblioref">75</a>]</span>) and used the latent variables learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span>.
+<p>In an unsupervised case, Taroni et al. trained Pathway-Level Information ExtractoR (PLIER) <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">73</a>]</span> on a large generic collection of human transcriptomic data (recount2 <span class="citation" data-cites="6SPTvFXq">[<a href="#ref-6SPTvFXq" role="doc-biblioref">74</a>]</span>) and used the latent variables learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span>.
 (Here “unseen” refers to the fact that these diseases were not in the training set.)
-PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input; some latent variables learned by the model will align with input gene sets <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">74</a>]</span>.
+PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input; some latent variables learned by the model will align with input gene sets <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">73</a>]</span>.
 Training on larger collections of randomly selected samples produced models that captured a larger proportion of input gene sets and better distinguished closely related signals, which suggests that larger training sets produced models that are more suitable for biological discovery <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span>.</p>
 <p>Though models trained on generic compendia had appealing properties, we need to also examine the relevance of learned features to the disease under study.
-In Taroni et al., we found that the expression of latent variables that could be matched between the MultiPLIER model and a dataset-specific model were well-correlated, particularly when latent variables were associated with input gene sets <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span>. Despite the absence of AAV from the training set, MultiPLIER was able to learn a latent variable where the genes with the highest contributions encode antigens that the ANCA form against in AAV and with higher expression in more severe disease <span class="citation" data-cites="359v381d">[<a href="#ref-359v381d" role="doc-biblioref">76</a>]</span>.
+In Taroni et al., we found that the expression of latent variables that could be matched between the MultiPLIER model and a dataset-specific model were well-correlated, particularly when latent variables were associated with input gene sets <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span>. Despite the absence of AAV from the training set, MultiPLIER was able to learn a latent variable where the genes with the highest contributions encode antigens that the ANCA form against in AAV and with higher expression in more severe disease <span class="citation" data-cites="359v381d">[<a href="#ref-359v381d" role="doc-biblioref">75</a>]</span>.
 The utility of this approach stems from the fact that biological processes are often shared between conditions–the same ANCA antigen genes are components of neutrophilic granule development that is likely captured or assayed in the collection of transcriptomic data used for training.
 MultiPLIER has additional attributes that make it practical for studying rare diseases: latent variables that are not associated with input gene sets may capture technical noise separately from biological signal and we can use one model to describe multiple datasets instead of reconciling output from multiple models (see 03.heterogeneity.md).</p>
-<p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">73</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span> suggest transfer learning can be beneficial for studying rare diseases.
-In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">77</a>]</span>.
+<p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">72</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">17</a>]</span> suggest transfer learning can be beneficial for studying rare diseases.
+In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">76</a>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
 In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.</p>
 <h3 id="conclusions">Conclusions</h3>
@@ -359,7 +357,7 @@ DOI: <a href="https://doi.org/10.1098/rsta.2015.0202">10.1098/rsta.2015.0202</a>
 <div id="ref-157h5hA34">
 <p>7. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong><br />
 Leland McInnes, John Healy, James Melville<br />
-<em>arXiv</em> (2018-12-07) <a href="https://arxiv.org/abs/1802.03426">https://arxiv.org/abs/1802.03426</a></p>
+<em>arXiv</em> (2020-09-21) <a href="https://arxiv.org/abs/1802.03426">https://arxiv.org/abs/1802.03426</a></p>
 </div>
 <div id="ref-1Ak4JFhvU">
 <p>8. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong><br />
@@ -616,7 +614,7 @@ DOI: <a href="https://doi.org/10.1016/s0031-3203(02)00169-3">10.1016/s0031-3203(
 <div id="ref-Q25GV92r">
 <p>50. <strong>Component-based face detection</strong><br />
 B. Heiselet, T. Serre, M. Pontil, T. Poggio<br />
-<em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-25) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a><br />
+<em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-24) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a><br />
 DOI: <a href="https://doi.org/10.1109/cvpr.2001.990537">10.1109/cvpr.2001.990537</a></p>
 </div>
 <div id="ref-ThoSnmu3">
@@ -702,76 +700,70 @@ Rich Caruana<br />
 <em>Machine Learning</em> (1997) <a href="https://doi.org/d3gsgj">https://doi.org/d3gsgj</a><br />
 DOI: <a href="https://doi.org/10.1023/a:1007379606734">10.1023/a:1007379606734</a></p>
 </div>
+<div id="ref-DKDxhmok">
+<p>65. <strong>An Overview of Multi-Task Learning in Deep Neural Networks</strong><br />
+Sebastian Ruder<br />
+<em>arXiv</em> (2017-06-19) <a href="https://arxiv.org/abs/1706.05098">https://arxiv.org/abs/1706.05098</a></p>
+</div>
+<div id="ref-G4tqVVQF">
+<p>66. <strong>A Survey on Multi-Task Learning</strong><br />
+Yu Zhang, Qiang Yang<br />
+<em>arXiv</em> (2017-07-25) <a href="https://arxiv.org/abs/1707.08114v2">https://arxiv.org/abs/1707.08114v2</a></p>
+</div>
+<div id="ref-BJx3FEyX">
+<p>67. <strong>Generalizing from a Few Examples: A Survey on Few-Shot Learning</strong><br />
+Yaqing Wang, Quanming Yao, James Kwok, Lionel M. Ni<br />
+<em>arXiv</em> (2019-04-10) <a href="https://arxiv.org/abs/1904.05046v3">https://arxiv.org/abs/1904.05046v3</a></p>
+</div>
 <div id="ref-uP7SgBVd">
-<p>65. <strong>Modeling Industrial ADMET Data with Multitask Networks</strong><br />
+<p>68. <strong>Modeling Industrial ADMET Data with Multitask Networks</strong><br />
 Steven Kearnes, Brian Goldman, Vijay Pande<br />
 <em>arXiv</em> (2017-01-16) <a href="https://arxiv.org/abs/1606.08793">https://arxiv.org/abs/1606.08793</a></p>
 </div>
 <div id="ref-VlwBWUCG">
-<p>66. <strong>The Effectiveness of Multitask Learning for Phenotyping with Electronic Health Records Data</strong><br />
+<p>69. <strong>The Effectiveness of Multitask Learning for Phenotyping with Electronic Health Records Data</strong><br />
 Daisy Yi Ding, Chloé Simpson, Stephen Pfohl, Dave C. Kale, Kenneth Jung, Nigam H. Shah<br />
 <em>arXiv</em> (2019-01-08) <a href="https://arxiv.org/abs/1808.03331">https://arxiv.org/abs/1808.03331</a></p>
 </div>
-<div id="ref-1GzvgiAka">
-<p>67. <strong>Multi-task Learning via Adaptation to Similar Tasks for Mortality
-Prediction of Diverse Rare Diseases</strong><br />
-Luchen Liu, Zequn Liu, Haoxian Wu, Zichang Wang, Jianhao Shen, Yiping Song, Ming Zhang<br />
-<em>arXiv</em> (2020-04-11) <a href="https://arxiv.org/abs/2004.05318v2">https://arxiv.org/abs/2004.05318v2</a></p>
-</div>
-<div id="ref-BJx3FEyX">
-<p>68. <strong>Generalizing from a Few Examples: A Survey on Few-Shot Learning</strong><br />
-Yaqing Wang, Quanming Yao, James Kwok, Lionel M. Ni<br />
-<em>arXiv</em> (2019-04-10) <a href="https://arxiv.org/abs/1904.05046v3">https://arxiv.org/abs/1904.05046v3</a></p>
-</div>
 <div id="ref-P4ixsM8i">
-<p>69. <strong>Low Data Drug Discovery with One-Shot Learning</strong><br />
+<p>70. <strong>Low Data Drug Discovery with One-Shot Learning</strong><br />
 Han Altae-Tran, Bharath Ramsundar, Aneesh S. Pappu, Vijay Pande<br />
 <em>ACS Central Science</em> (2017-04-03) <a href="https://doi.org/f95dnd">https://doi.org/f95dnd</a><br />
 DOI: <a href="https://doi.org/10.1021/acscentsci.6b00367">10.1021/acscentsci.6b00367</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28470045">28470045</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408335">PMC5408335</a></p>
 </div>
 <div id="ref-R8nGOGPc">
-<p>70. <strong>Automatic detection of rare pathologies in fundus photographs using
+<p>71. <strong>Automatic detection of rare pathologies in fundus photographs using
 few-shot learning</strong><br />
 Gwenolé Quellec, Mathieu Lamard, Pierre-Henri Conze, Pascale Massin, Béatrice Cochener<br />
 <em>arXiv</em> (2019-07-22) <a href="https://arxiv.org/abs/1907.09449v3">https://arxiv.org/abs/1907.09449v3</a><br />
 DOI: <a href="https://doi.org/10.1016/j.media.2020.101660">10.1016/j.media.2020.101660</a></p>
 </div>
-<div id="ref-DKDxhmok">
-<p>71. <strong>An Overview of Multi-Task Learning in Deep Neural Networks</strong><br />
-Sebastian Ruder<br />
-<em>arXiv</em> (2017-06-19) <a href="https://arxiv.org/abs/1706.05098">https://arxiv.org/abs/1706.05098</a></p>
-</div>
-<div id="ref-G4tqVVQF">
-<p>72. <strong>A Survey on Multi-Task Learning</strong><br />
-Yu Zhang, Qiang Yang<br />
-<em>arXiv</em> (2017-07-25) <a href="https://arxiv.org/abs/1707.08114v2">https://arxiv.org/abs/1707.08114v2</a></p>
-</div>
 <div id="ref-17HK9o457">
-<p>73. <strong>DeepProfile: Deep learning of cancer molecular profiles for precision medicine</strong><br />
+<p>72. <strong>DeepProfile: Deep learning of cancer molecular profiles for precision medicine</strong><br />
 Ayse Berceste Dincer, Safiye Celik, Naozumi Hiranuma, Su-In Lee<br />
 <em>bioRxiv</em> (2018-05-26) <a href="https://doi.org/gdj2j4">https://doi.org/gdj2j4</a><br />
 DOI: <a href="https://doi.org/10.1101/278739">10.1101/278739</a></p>
 </div>
 <div id="ref-Ki2ij7zE">
-<p>74. <strong>Pathway-level information extractor (PLIER) for gene expression data</strong><br />
+<p>73. <strong>Pathway-level information extractor (PLIER) for gene expression data</strong><br />
 Weiguang Mao, Elena Zaslavsky, Boris M. Hartmann, Stuart C. Sealfon, Maria Chikina<br />
 <em>Nature Methods</em> (2019-06-27) <a href="https://doi.org/gf75g6">https://doi.org/gf75g6</a><br />
 DOI: <a href="https://doi.org/10.1038/s41592-019-0456-1">10.1038/s41592-019-0456-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31249421">31249421</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7262669">PMC7262669</a></p>
 </div>
 <div id="ref-6SPTvFXq">
-<p>75. <strong>Reproducible RNA-seq analysis using recount2</strong><br />
+<p>74. <strong>Reproducible RNA-seq analysis using recount2</strong><br />
 Leonardo Collado-Torres, Abhinav Nellore, Kai Kammers, Shannon E Ellis, Margaret A Taub, Kasper D Hansen, Andrew E Jaffe, Ben Langmead, Jeffrey T Leek<br />
 <em>Nature Biotechnology</em> (2017-04-01) <a href="https://doi.org/gf75hp">https://doi.org/gf75hp</a><br />
 DOI: <a href="https://doi.org/10.1038/nbt.3838">10.1038/nbt.3838</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28398307">28398307</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6742427">PMC6742427</a></p>
 </div>
 <div id="ref-359v381d">
-<p>76. <strong>Transcription of proteinase 3 and related myelopoiesis genes in peripheral blood mononuclear cells of patients with active Wegener’s granulomatosis</strong><br />
+<p>75. <strong>Transcription of proteinase 3 and related myelopoiesis genes in peripheral blood mononuclear cells of patients with active Wegener’s granulomatosis</strong><br />
 Chris Cheadle, Alan E. Berger, Felipe Andrade, Regina James, Kristen Johnson, Tonya Watkins, Jin Kyun Park, Yu-Chi Chen, Eva Ehrlich, Marissa Mullins, … Stuart M. Levine<br />
 <em>Arthritis &amp; Rheumatism</em> (2010-02-12) <a href="https://doi.org/chfbtv">https://doi.org/chfbtv</a><br />
 DOI: <a href="https://doi.org/10.1002/art.27398">10.1002/art.27398</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20155833">20155833</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2887718">PMC2887718</a></p>
 </div>
 <div id="ref-G61OY6xj">
-<p>77. <strong>How transferable are features in deep neural networks?</strong><br />
+<p>76. <strong>How transferable are features in deep neural networks?</strong><br />
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson<br />
 <em>arXiv</em> (2014-12-09) <a href="https://arxiv.org/abs/1411.1792">https://arxiv.org/abs/1411.1792</a></p>
 </div>
