@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-10-07" />
+  <meta name="dcterms.date" content="2020-10-08" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-10-07" />
-  <meta name="citation_publication_date" content="2020-10-07" />
+  <meta name="dc.date" content="2020-10-08" />
+  <meta name="citation_publication_date" content="2020-10-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/2723d66543f99c41e39ff162546163be067f6f37/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/2723d66543f99c41e39ff162546163be067f6f37/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/2723d66543f99c41e39ff162546163be067f6f37/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/d94e90a3c8e1e29f6505727126a524d6cd67150c/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/2723d66543f99c41e39ff162546163be067f6f37/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/d94e90a3c8e1e29f6505727126a524d6cd67150c">jaybee84/ml-in-rd@d94e90a</a>
-on October 7, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/2723d66543f99c41e39ff162546163be067f6f37">jaybee84/ml-in-rd@2723d66</a>
+on October 8, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -202,50 +202,43 @@ Common approaches include reprocessing the raw data using a single analysis pipe
 It is also important to be realistic when working with rare disease data.
 For various reasons including ethical constraints, funding, and limited biospecimens, experimental design and the resulting data will often be less-than-ideal.
 In these cases, it may be prudent to take a step back, re-evaluate the data, and identify methods that can operate within the constraints of the data, rather than expecting the data to conform to a method of choice.</p>
-<h3 id="techniques-and-procedures-must-be-implemented-to-manage-model-complexity-without-sacrificing-the-value-of-machine-learning">Techniques and procedures must be implemented to manage model complexity without sacrificing the value of machine learning</h3>
-<p>In addition to improving the input data, methodological considerations can also help address the challenges posed by small datasets with high label-uncertainty in rare diseases.
-Below, we describe some examples, including bootstrapping sample data, regularization methods to protect from overfitting, and ensembling techniques to minimize misinterpretation of the data.</p>
+<h3 id="manage-model-complexity-without-sacrificing-the-value-of-machine-learning">Manage model complexity without sacrificing the value of machine learning</h3>
+<p>Machine learning is a useful tool to capture complex patterns that underlie a dataset.
+However, for fruitful translation of patterns extracted using machine learning into testable hypotheses, there are a few pre-requisites: the models need to be a) stable i.e. the same predicted features should surface from the data if the model is run multiple times and, b) simple to improve interpretability and avoid misinterpretation due to technical artifacts.
+Fulfilling these pre-requisites become even more important in case of rare disease dataset where there is high label-uncertainty (i.e. where the label given to a data point may not be correct due to imperfect understanding of the disease).
+In this section we highlight few techniques which can help improve the stability and simplicity of ML models.</p>
+<p>Techniques like bootstrapping and ensemble learning can increase stability in machine learning predictions.</p>
 <h4 id="bootstrapping">Bootstrapping</h4>
-<p>Bootstrapping is a powerful statistical technique that can be used to estimate population values from datasets of limited sample size by resampling the data <span class="citation" data-cites="9EM1Mzod">[<a href="#ref-9EM1Mzod" role="doc-biblioref">25</a>]</span>.
-Bootstrap based techniques are used in conjunction with various learning methods to find the most informative models given a specific dataset (e.g. bootstrap aggregating or <em>bagging</em> used in random forests <span class="citation" data-cites="Uy4oESDl SS9DjYHO">[<a href="#ref-Uy4oESDl" role="doc-biblioref">26</a>,<a href="#ref-SS9DjYHO" role="doc-biblioref">27</a>]</span>, bootstrap in neural networks <span class="citation" data-cites="RhxfHs3z">[<a href="#ref-RhxfHs3z" role="doc-biblioref">28</a>]</span>, or regression models <span class="citation" data-cites="17mzOREgU ADEtV1CD">[<a href="#ref-17mzOREgU" role="doc-biblioref">29</a>,<a href="#ref-ADEtV1CD" role="doc-biblioref">30</a>]</span>).
-Bootstrapping can also be used to enhance the information content of rare disease datasets and generate confidence intervals for the model predictions <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">31</a>]</span>.
-<!-- TODO: I would remove the following two sentences. It wasn't clear to me how it went above and beyond what was already stated here.
-In this study, bootstrapping the training sample without replacement simulated generation of separate datasets that helped expose the learning models (random forests) to the incomplete nature of the data.
-Such bootstrapping of the training data in addition to that included in the model (bagging) helped generate a distribution (and confidence intervals) of the importance scores of the predictive features selected by the model. --></p>
-<h4 id="regularization">Regularization</h4>
-<!-- TODO: I think of regularization as a way to get simpler models. I'm not sure if the properties described in the first paragraph of this section are things that would be improved by simpler models. It feels like these are more like technical biases that simpler models might be just as good at picking up on. -->
-<p>Another common strategy for handling the paucity of data in rare disease is to aggregate data from multiple studies or time points to produce a more comprehensive dataset.
-Given a dataset with strong preexisting study-specific technical differences between groups of samples, ML methods may model dataset-specific features instead of true biology, leading to high prediction accuracy for training data but poor performance in new test data (an “overfit” model) <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">32</a>]</span>.
-Minimization of overfitting can be accomplished by cross-validation (to reduce variance in predictions) and regularization (to reduce low bias in models).
-Regularization makes models less reliant on training data by adding a small penalty (determined by cross-validation), and can minimize overfitting while improving feature selection.</p>
-<!-- TODO: What about dropout, etc in neural networks. Is it necessary to explain lasso, ridge, etc? If so, should we name drop other techniques too? Is LASSO or ridge more appropriate for rare disease questions? Why or why not? -->
-<p>ML models can be regularized using 3 main methods, each with strengths and weaknesses.
-Ridge regression aims to minimize the magnitude of the features, but cannot remove unimportant features and thus may not be ideal for reducing the feature space.
-Another method, LASSO regression, works well for selecting few important features since it can minimize the magnitude of some features more than the others<span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">33</a>]</span>.
-Elastic-net regression is a combination of LASSO and ridge regression <span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">34</a>]</span>, and helps to select the most useful features, especially in presence of large number of correlated features.</p>
-<p>While regression based regularization has not been used extensively in rare disease, examples in rare variant discovery and immune cell signature discovery provide insights into their possible application in rare disease.
-In rare variant discovery, ridge regression has been utilized to combine rare variants into a single score to increase the signal of rare variants <span class="citation" data-cites="E0Iw45aG">[<a href="#ref-E0Iw45aG" role="doc-biblioref">35</a>]</span>, while LASSO was implemented along with group penalties to identify rare variants/low frequency predictors <span class="citation" data-cites="2gwD58B IX9EQ5gX">[<a href="#ref-2gwD58B" role="doc-biblioref">36</a>,<a href="#ref-IX9EQ5gX" role="doc-biblioref">37</a>]</span>.
-Hybrid applications of LASSO have also been tested in rare variant discovery, including boosting the signal of rare variants by capturing combinations of variants <span class="citation" data-cites="s907ofL2 fPp30wsy">[<a href="#ref-s907ofL2" role="doc-biblioref">38</a>,<a href="#ref-fPp30wsy" role="doc-biblioref">39</a>]</span>, integration with a probabilistic logistic Bayesian approach <span class="citation" data-cites="XCL2dRoS">[<a href="#ref-XCL2dRoS" role="doc-biblioref">40</a>]</span>, combining feature selection methods with a generalized pooling strategy <span class="citation" data-cites="5Zx90ly9">[<a href="#ref-5Zx90ly9" role="doc-biblioref">41</a>]</span>, and incorporating prior knowledge into the regularization step to select driver genes in a pathway of interest <span class="citation" data-cites="13q9A5a95">[<a href="#ref-13q9A5a95" role="doc-biblioref">42</a>]</span>.</p>
-<p>In immune cell signature discovery, elastic-net regression has been used to reduce the feature space and was found to outperform other regression approaches <span class="citation" data-cites="lXiw1iso 1nCs3tvD JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">34</a>,<a href="#ref-lXiw1iso" role="doc-biblioref">43</a>,<a href="#ref-1nCs3tvD" role="doc-biblioref">44</a>]</span>.
-A variation of elastic-net, where a two-step regularized logistic regression was used to pre-select an optimal number of genes before implementing elastic-net regularization for gene selection, identified immune cell signatures in an RNA-seq dataset where the number of cells sampled were far fewer than number of genes profiled <span class="citation" data-cites="JkWXgEgV">[<a href="#ref-JkWXgEgV" role="doc-biblioref">45</a>]</span>.
-Thus, regularization methods like LASSO or elastic-net have been methods of choice where the profiled feature space is substantially larger than the number of samples; these methods should be explored while working with rare disease datasets.</p>
+<p>Bootstrapping is a powerful statistical technique where resampling the data with replacements can help estimate population values from datasets of limited sample size <span class="citation" data-cites="9EM1Mzod">[<a href="#ref-9EM1Mzod" role="doc-biblioref">25</a>]</span>.
+Such resampling with replacement is used in various learning methods to find the most informative models (e.g. bootstrap aggregating or <em>bagging</em> used in random forests <span class="citation" data-cites="Uy4oESDl SS9DjYHO">[<a href="#ref-Uy4oESDl" role="doc-biblioref">26</a>,<a href="#ref-SS9DjYHO" role="doc-biblioref">27</a>]</span>, bootstrap in neural networks <span class="citation" data-cites="RhxfHs3z">[<a href="#ref-RhxfHs3z" role="doc-biblioref">28</a>]</span>, or regression models <span class="citation" data-cites="17mzOREgU ADEtV1CD">[<a href="#ref-17mzOREgU" role="doc-biblioref">29</a>,<a href="#ref-ADEtV1CD" role="doc-biblioref">30</a>]</span>).
+A variation where resampling of a rare disease dataset was done <em>without replacement</em>, generated confidence intervals for the model predictions as they were exposed to incomplete datasets (mimicking the real life case where most rare disease datasets are incomplete) <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">31</a>]</span>.</p>
 <h4 id="ensemble-learning">Ensemble learning</h4>
-<p>Rare disease datasets not only present limited data points but, due to inadequate understanding of the diseases, the labels associated with the data points also carry high levels of uncertainty.
-Training ML models using data points with high label-uncertainty (i.e. a silver standard dataset) can lead to unstable predictions.
-In such cases, combining various machine learning methods together (<em>ensemble learning</em>) can increase accuracy and stability of the predictions.
-For example, ensemble learning methods like random forests use bagging of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features hidden in the dataset <span class="citation" data-cites="14J3u9pnR Uy4oESDl 7ueKyz71 eFWTLOhH mQ50J5fV">[<a href="#ref-Uy4oESDl" role="doc-biblioref">26</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">46</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">47</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">48</a>,<a href="#ref-mQ50J5fV" role="doc-biblioref">49</a>]</span>.
-In silver standard datasets, the limited success of the bagging approach has led to the use of ensemble learning or <em>cascade learning</em>, where multiple methods leveraging distinct underlying assumptions are used in tandem and augmented with algorithms like AdaBoost (<em>boosting</em>), to capture stable patterns existing in the silver standard data and reduce uncertainty <span class="citation" data-cites="Q25GV92r ThoSnmu3 QEQ0NTvv">[<a href="#ref-Q25GV92r" role="doc-biblioref">50</a>,<a href="#ref-ThoSnmu3" role="doc-biblioref">51</a>,<a href="#ref-QEQ0NTvv" role="doc-biblioref">52</a>]</span>.
-A variation of cascade learning implemented to identify rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using word2vec <span class="citation" data-cites="1BgjerMFj">[<a href="#ref-1BgjerMFj" role="doc-biblioref">53</a>]</span>), preliminary prediction (ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">54</a>]</span>.
+<p>Stability in predictions can also be achieved by combining various machine learning methods together (<em>ensemble learning</em>).
+Ensemble learning methods like random forests use bagging of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features <span class="citation" data-cites="14J3u9pnR Uy4oESDl 7ueKyz71 eFWTLOhH mQ50J5fV">[<a href="#ref-Uy4oESDl" role="doc-biblioref">26</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">32</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">33</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">34</a>,<a href="#ref-mQ50J5fV" role="doc-biblioref">35</a>]</span>.
+But such methods have shown limited success in rare disease datasets where the label-uncertainty can be high due to imperfect understanding of the disease (i.e.silver standard datasets).
+This has led to the adoption of cascade learning, where multiple methods leveraging distinct underlying assumptions are used in tandem.
+The methods are augmented with algorithms like AdaBoost (<em>boosting</em>) to capture stable patterns existing in the silver standard data <span class="citation" data-cites="Q25GV92r ThoSnmu3 QEQ0NTvv">[<a href="#ref-Q25GV92r" role="doc-biblioref">36</a>,<a href="#ref-ThoSnmu3" role="doc-biblioref">37</a>,<a href="#ref-QEQ0NTvv" role="doc-biblioref">38</a>]</span>.
+A variation of cascade learning implemented to identify rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using word2vec <span class="citation" data-cites="1BgjerMFj">[<a href="#ref-1BgjerMFj" role="doc-biblioref">39</a>]</span>), preliminary prediction (ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">40</a>]</span>.
 Combining these three methods resulted in better performance than other methods when implemented on the silver standard dataset in isolation.</p>
+<p>Techniques like regularization and binary predictions can help simplify models by making the feature space proportionate with the sample space.</p>
+<h4 id="regularization">Regularization</h4>
+<p>Regularization can not only protect ML models from <em>overfitting</em> (where the model performs well for the training data but poorly for new test data) <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">41</a>]</span>, but also help reduce the feature space to help build simpler models using limited datasets.
+The three main methods of regularization include ridge regression, LASSO, and elastic-net.
+While ridge regression can minimize the magnitude of the features, it cannot remove unimportant features.
+LASSO regression, on the other hand, works well for selecting few important features since it can minimize the magnitude of some features more than the others<span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">42</a>]</span>.
+A combination of LASSO and ridge, elastic-net regression<span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">43</a>]</span> efficiently selects the most useful features, especially in presence of large number of correlated features.</p>
+<p>While regularization has not been used extensively in rare disease yet, examples in rare variant discovery and immune cell signature discovery can provide insights into their possible application in rare disease.
+In rare variant discovery, ridge regression has been utilized to combine rare variants into a single score to increase the signal of rare variants <span class="citation" data-cites="E0Iw45aG">[<a href="#ref-E0Iw45aG" role="doc-biblioref">44</a>]</span>, while LASSO was implemented along with group penalties to identify rare variants/low frequency predictors <span class="citation" data-cites="2gwD58B IX9EQ5gX">[<a href="#ref-2gwD58B" role="doc-biblioref">45</a>,<a href="#ref-IX9EQ5gX" role="doc-biblioref">46</a>]</span>.
+Hybrid applications of LASSO have also been tested in rare variant discovery, including boosting the signal of rare variants by capturing combinations of variants <span class="citation" data-cites="s907ofL2 fPp30wsy">[<a href="#ref-s907ofL2" role="doc-biblioref">47</a>,<a href="#ref-fPp30wsy" role="doc-biblioref">48</a>]</span>, integration with a probabilistic logistic Bayesian approach <span class="citation" data-cites="XCL2dRoS">[<a href="#ref-XCL2dRoS" role="doc-biblioref">49</a>]</span>, combining feature selection methods with a generalized pooling strategy <span class="citation" data-cites="5Zx90ly9">[<a href="#ref-5Zx90ly9" role="doc-biblioref">50</a>]</span>, and incorporating prior knowledge into the regularization step to select driver genes in a pathway of interest <span class="citation" data-cites="13q9A5a95">[<a href="#ref-13q9A5a95" role="doc-biblioref">51</a>]</span>.
+In immune cell signature discovery, elastic-net regression has been used to reduce the feature space and was found to outperform other regression approaches <span class="citation" data-cites="lXiw1iso 1nCs3tvD JZNkB8d7 JkWXgEgV">[<a href="#ref-JZNkB8d7" role="doc-biblioref">43</a>,<a href="#ref-lXiw1iso" role="doc-biblioref">52</a>,<a href="#ref-1nCs3tvD" role="doc-biblioref">53</a>,<a href="#ref-JkWXgEgV" role="doc-biblioref">54</a>]</span>.
+Regularization methods like LASSO or elastic-net have been methods of choice for making models simpler by reducing the feature space; these methods should be explored while working with rare disease datasets.</p>
 <h4 id="one-class-at-a-time-classification">One-class-at-a-time classification</h4>
 <p>In rare diseases like neurofibromatosis, the presence of more than one phenotype (or class) further decreases the number of data-points per class and introduces additional label-uncertainty due to related phenotypes.
-In datasets with multiple classes, most ensemble or cascade classifiers follow a <em>one-classifier-at-a-time</em> approach where algorithms at each level predict all classes involved.
-But instances where the need for high prediction accuracy for one class outweighs other classes, further modification of the cascade learning efforts is required.
-An example of such modification was implemented for triaging psychiatric patients where the identification of one class of psychiatric patients (“severe”) far outweighed the need for optimized overall classification accuracy <span class="citation" data-cites="mbKBDhJ0">[<a href="#ref-mbKBDhJ0" role="doc-biblioref">55</a>]</span>.
-Due to the requirements of the problem, a <em>one-class-at-a-time</em> cascade learning approach was adopted, where at each stage a binary classifier was used to predict a specific class against all others.
-The final model implemented all models together each identifying one class sequentially and the union of the predictions of all the different models as the final prediction.
+In datasets with multiple classes, the classical ensemble or cascade classifiers approach follows a <em>one-classifier-at-a-time</em> approach where algorithms at each level predict all classes involved.
+But instances where the need for high prediction accuracy for one class outweighs other classes, modification of the cascade learning method into a <em>one-class-at-a-time</em> approach (where at each stage a binary classifier predicts a specific class against all others) has proved to be beneficial <span class="citation" data-cites="mbKBDhJ0">[<a href="#ref-mbKBDhJ0" role="doc-biblioref">55</a>]</span>.
+In this instance, the final model implemented all models together each identifying one class sequentially and then reporting the union of the predictions of all the different models as the final prediction.
 The cascade classifiers using the one-class-at-a-time approach were found to perform better than multi-class ensemble classifiers in most cases.</p>
-<!-- TODO: I think this sentence should be dropped. If not, I don't understand how it fits into its current subsection. -->
+<p>By employing bootstrapping, ensemble learning, and regularization methods, researchers may be able to better generate stable, simple models that identify reliable biological phenomena in rare diseases.</p>
 <h3 class="page_break_before" id="techniques-that-build-on-prior-knowledge-and-indirectly-related-data-are-necessary-for-many-rare-disease-applications">Techniques that build on prior knowledge and indirectly related data are necessary for many rare disease applications</h3>
 <h4 id="knowledge-graphs">Knowledge graphs</h4>
 <p>Rare diseases lack large, normalized datasets, limiting our ability to study key attributes of these diseases.
@@ -503,142 +496,142 @@ Jineta Banerjee, Robert J Allaway, Jaclyn N Taroni, Aaron Baker, Xiaochun Zhang,
 <em>Genes</em> (2020-02-21) <a href="https://doi.org/gg4rbj">https://doi.org/gg4rbj</a><br />
 DOI: <a href="https://doi.org/10.3390/genes11020226">10.3390/genes11020226</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32098059">32098059</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7073563">PMC7073563</a></p>
 </div>
-<div id="ref-186cKBcbp">
-<p>32. <strong>Definitions, methods, and applications in interpretable machine learning</strong><br />
-W. James Murdoch, Chandan Singh, Karl Kumbier, Reza Abbasi-Asl, Bin Yu<br />
-<em>Proceedings of the National Academy of Sciences</em> (2019-10-29) <a href="https://doi.org/ggbhmq">https://doi.org/ggbhmq</a><br />
-DOI: <a href="https://doi.org/10.1073/pnas.1900654116">10.1073/pnas.1900654116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31619572">31619572</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6825274">PMC6825274</a></p>
-</div>
-<div id="ref-deMgWtfc">
-<p>33. <strong>Regularization</strong><br />
-Jake Lever, Martin Krzywinski, Naomi Altman<br />
-<em>Nature Methods</em> (2016-09-29) <a href="https://doi.org/gf3zrr">https://doi.org/gf3zrr</a><br />
-DOI: <a href="https://doi.org/10.1038/nmeth.4014">10.1038/nmeth.4014</a></p>
-</div>
-<div id="ref-JZNkB8d7">
-<p>34. <strong>Regularization and variable selection via the elastic net</strong><br />
-Hui Zou, Trevor Hastie<br />
-<em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> (2005-04) <a href="https://doi.org/b8cwwr">https://doi.org/b8cwwr</a><br />
-DOI: <a href="https://doi.org/10.1111/j.1467-9868.2005.00503.x">10.1111/j.1467-9868.2005.00503.x</a></p>
-</div>
-<div id="ref-E0Iw45aG">
-<p>35. <strong>Adaptive Ridge Regression for Rare Variant Detection</strong><br />
-Haimao Zhan, Shizhong Xu<br />
-<em>PLoS ONE</em> (2012-08-28) <a href="https://doi.org/f36tm5">https://doi.org/f36tm5</a><br />
-DOI: <a href="https://doi.org/10.1371/journal.pone.0044173">10.1371/journal.pone.0044173</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22952918">22952918</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3429469">PMC3429469</a></p>
-</div>
-<div id="ref-2gwD58B">
-<p>36. <strong>Statistical analysis strategies for association studies involving rare variants</strong><br />
-Vikas Bansal, Ondrej Libiger, Ali Torkamani, Nicholas J. Schork<br />
-<em>Nature Reviews Genetics</em> (2010-10-13) <a href="https://doi.org/dn4jtz">https://doi.org/dn4jtz</a><br />
-DOI: <a href="https://doi.org/10.1038/nrg2867">10.1038/nrg2867</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20940738">20940738</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3743540">PMC3743540</a></p>
-</div>
-<div id="ref-IX9EQ5gX">
-<p>37. <strong>Association screening of common and rare genetic variants by penalized regression</strong><br />
-H. Zhou, M. E. Sehl, J. S. Sinsheimer, K. Lange<br />
-<em>Bioinformatics</em> (2010-08-06) <a href="https://doi.org/c7ndkx">https://doi.org/c7ndkx</a><br />
-DOI: <a href="https://doi.org/10.1093/bioinformatics/btq448">10.1093/bioinformatics/btq448</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20693321">20693321</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3025646">PMC3025646</a></p>
-</div>
-<div id="ref-s907ofL2">
-<p>38. <strong>Methods for Detecting Associations with Rare Variants for Common Diseases: Application to Analysis of Sequence Data</strong><br />
-Bingshan Li, Suzanne M. Leal<br />
-<em>The American Journal of Human Genetics</em> (2008-09) <a href="https://doi.org/d4jpcb">https://doi.org/d4jpcb</a><br />
-DOI: <a href="https://doi.org/10.1016/j.ajhg.2008.06.024">10.1016/j.ajhg.2008.06.024</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18691683">18691683</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2842185">PMC2842185</a></p>
-</div>
-<div id="ref-fPp30wsy">
-<p>39. <strong>Comparison of statistical approaches to rare variant analysis for quantitative traits</strong><br />
-Han Chen, Audrey E Hendricks, Yansong Cheng, Adrienne L Cupples, Josée Dupuis, Ching-Ti Liu<br />
-<em>BMC Proceedings</em> (2011-11-29) <a href="https://doi.org/b9mf4x">https://doi.org/b9mf4x</a><br />
-DOI: <a href="https://doi.org/10.1186/1753-6561-5-s9-s113">10.1186/1753-6561-5-s9-s113</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22373209">22373209</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3287837">PMC3287837</a></p>
-</div>
-<div id="ref-XCL2dRoS">
-<p>40. <strong>An Improved Version of Logistic Bayesian LASSO for Detecting Rare Haplotype-Environment Interactions with Application to Lung Cancer</strong><br />
-Yuan Zhang, Swati Biswas<br />
-<em>Cancer Informatics</em> (2015-02-09) <a href="https://doi.org/ggxxfp">https://doi.org/ggxxfp</a><br />
-DOI: <a href="https://doi.org/10.4137/cin.s17290">10.4137/cin.s17290</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25733797">25733797</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4332044">PMC4332044</a></p>
-</div>
-<div id="ref-5Zx90ly9">
-<p>41. <strong>Multiple Regression Methods Show Great Potential for Rare Variant Association Tests</strong><br />
-ChangJiang Xu, Martin Ladouceur, Zari Dastani, J. Brent Richards, Antonio Ciampi, Celia M. T. Greenwood<br />
-<em>PLoS ONE</em> (2012-08-08) <a href="https://doi.org/f35726">https://doi.org/f35726</a><br />
-DOI: <a href="https://doi.org/10.1371/journal.pone.0041694">10.1371/journal.pone.0041694</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22916111">22916111</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3420665">PMC3420665</a></p>
-</div>
-<div id="ref-13q9A5a95">
-<p>42. <strong>A Sparse-Group Lasso</strong><br />
-Noah Simon, Jerome Friedman, Trevor Hastie, Robert Tibshirani<br />
-<em>Journal of Computational and Graphical Statistics</em> (2013-04) <a href="https://doi.org/gcvjw8">https://doi.org/gcvjw8</a><br />
-DOI: <a href="https://doi.org/10.1080/10618600.2012.681250">10.1080/10618600.2012.681250</a></p>
-</div>
-<div id="ref-lXiw1iso">
-<p>43. <strong>Regularized logistic regression with adjusted adaptive elastic net for gene selection in high dimensional cancer classification</strong><br />
-Zakariya Yahya Algamal, Muhammad Hisyam Lee<br />
-<em>Computers in Biology and Medicine</em> (2015-12) <a href="https://doi.org/f73xvj">https://doi.org/f73xvj</a><br />
-DOI: <a href="https://doi.org/10.1016/j.compbiomed.2015.10.008">10.1016/j.compbiomed.2015.10.008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26520484">26520484</a></p>
-</div>
-<div id="ref-1nCs3tvD">
-<p>44. <strong>Sparse logistic regression with a L1/2 penalty for gene selection in cancer classification</strong><br />
-Yong Liang, Cheng Liu, Xin-Ze Luan, Kwong-Sak Leung, Tak-Ming Chan, Zong-Ben Xu, Hai Zhang<br />
-<em>BMC Bioinformatics</em> (2013-06-19) <a href="https://doi.org/gb8v2x">https://doi.org/gb8v2x</a><br />
-DOI: <a href="https://doi.org/10.1186/1471-2105-14-198">10.1186/1471-2105-14-198</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23777239">23777239</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3718705">PMC3718705</a></p>
-</div>
-<div id="ref-JkWXgEgV">
-<p>45. <strong>An elastic-net logistic regression approach to generate classifiers and gene signatures for types of immune cells and T helper cell subsets</strong><br />
-Arezo Torang, Paraag Gupta, David J. Klinke<br />
-<em>BMC Bioinformatics</em> (2019-08-22) <a href="https://doi.org/gg5hmj">https://doi.org/gg5hmj</a><br />
-DOI: <a href="https://doi.org/10.1186/s12859-019-2994-z">10.1186/s12859-019-2994-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31438843">31438843</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6704630">PMC6704630</a></p>
-</div>
 <div id="ref-14J3u9pnR">
-<p>46. <strong>Evaluating predictive modeling algorithms to assess patient eligibility for clinical trials from routine data</strong><br />
+<p>32. <strong>Evaluating predictive modeling algorithms to assess patient eligibility for clinical trials from routine data</strong><br />
 Felix Köpcke, Dorota Lubgan, Rainer Fietkau, Axel Scholler, Carla Nau, Michael Stürzl, Roland Croner, Hans-Ulrich Prokosch, Dennis Toddenroth<br />
 <em>BMC Medical Informatics and Decision Making</em> (2013-12-09) <a href="https://doi.org/f5jqvh">https://doi.org/f5jqvh</a><br />
 DOI: <a href="https://doi.org/10.1186/1472-6947-13-134">10.1186/1472-6947-13-134</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24321610">24321610</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4029400">PMC4029400</a></p>
 </div>
 <div id="ref-7ueKyz71">
-<p>47. <strong>Analyzing bagging</strong><br />
+<p>33. <strong>Analyzing bagging</strong><br />
 Peter Bühlmann, Bin Yu<br />
 <em>The Annals of Statistics</em> (2002-08) <a href="https://doi.org/btmtjp">https://doi.org/btmtjp</a><br />
 DOI: <a href="https://doi.org/10.1214/aos/1031689014">10.1214/aos/1031689014</a></p>
 </div>
 <div id="ref-eFWTLOhH">
-<p>48. <strong>Utilising artificial intelligence to determine patients at risk of a rare disease: idiopathic pulmonary arterial hypertension</strong><br />
+<p>34. <strong>Utilising artificial intelligence to determine patients at risk of a rare disease: idiopathic pulmonary arterial hypertension</strong><br />
 David G. Kiely, Orla Doyle, Edmund Drage, Harvey Jenner, Valentina Salvatelli, Flora A. Daniels, John Rigg, Claude Schmitt, Yevgeniy Samyshkin, Allan Lawrie, Rito Bergemann<br />
 <em>Pulmonary Circulation</em> (2019-11-20) <a href="https://doi.org/gg4jc7">https://doi.org/gg4jc7</a><br />
 DOI: <a href="https://doi.org/10.1177/2045894019890549">10.1177/2045894019890549</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31798836">31798836</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6868581">PMC6868581</a></p>
 </div>
 <div id="ref-mQ50J5fV">
-<p>49. <strong>Double-bagging: combining classifiers by bootstrap aggregation</strong><br />
+<p>35. <strong>Double-bagging: combining classifiers by bootstrap aggregation</strong><br />
 Torsten Hothorn, Berthold Lausen<br />
 <em>Pattern Recognition</em> (2003-06) <a href="https://doi.org/btzfh6">https://doi.org/btzfh6</a><br />
 DOI: <a href="https://doi.org/10.1016/s0031-3203(02)00169-3">10.1016/s0031-3203(02)00169-3</a></p>
 </div>
 <div id="ref-Q25GV92r">
-<p>50. <strong>Component-based face detection</strong><br />
+<p>36. <strong>Component-based face detection</strong><br />
 B. Heiselet, T. Serre, M. Pontil, T. Poggio<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-24) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a><br />
 DOI: <a href="https://doi.org/10.1109/cvpr.2001.990537">10.1109/cvpr.2001.990537</a></p>
 </div>
 <div id="ref-ThoSnmu3">
-<p>51. <strong>The Architecture of the Face and Eyes Detection System Based on Cascade Classifiers</strong><br />
+<p>37. <strong>The Architecture of the Face and Eyes Detection System Based on Cascade Classifiers</strong><br />
 Andrzej Kasinski, Adam Schmidt<br />
 <em>Advances in Soft Computing</em> (2007) <a href="https://doi.org/cbzq9n">https://doi.org/cbzq9n</a><br />
 DOI: <a href="https://doi.org/10.1007/978-3-540-75175-5_16">10.1007/978-3-540-75175-5_16</a></p>
 </div>
 <div id="ref-QEQ0NTvv">
-<p>52. <strong>Real time facial expression recognition with AdaBoost</strong><br />
+<p>38. <strong>Real time facial expression recognition with AdaBoost</strong><br />
 Yubo Wang, Haizhou Ai, Bo Wu, Chang Huang<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2004) <a href="https://doi.org/crv3sq">https://doi.org/crv3sq</a><br />
 DOI: <a href="https://doi.org/10.1109/icpr.2004.1334680">10.1109/icpr.2004.1334680</a></p>
 </div>
 <div id="ref-1BgjerMFj">
-<p>53. <strong>Efficient Estimation of Word Representations in Vector Space</strong><br />
+<p>39. <strong>Efficient Estimation of Word Representations in Vector Space</strong><br />
 Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean<br />
 <em>arXiv</em> (2013-01-16) <a href="https://arxiv.org/abs/1301.3781v3">https://arxiv.org/abs/1301.3781v3</a></p>
 </div>
 <div id="ref-HWIKCkVI">
-<p>54. <strong>Learning to Identify Rare Disease Patients from Electronic Health Records.</strong><br />
+<p>40. <strong>Learning to Identify Rare Disease Patients from Electronic Health Records.</strong><br />
 Rich Colbaugh, Kristin Glass, Christopher Rudolf, Mike Tremblay Volv Global Lausanne Switzerland<br />
 <em>AMIA … Annual Symposium proceedings. AMIA Symposium</em> (2018-12-05) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30815073">https://www.ncbi.nlm.nih.gov/pubmed/30815073</a><br />
 PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30815073">30815073</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371307">PMC6371307</a></p>
+</div>
+<div id="ref-186cKBcbp">
+<p>41. <strong>Definitions, methods, and applications in interpretable machine learning</strong><br />
+W. James Murdoch, Chandan Singh, Karl Kumbier, Reza Abbasi-Asl, Bin Yu<br />
+<em>Proceedings of the National Academy of Sciences</em> (2019-10-29) <a href="https://doi.org/ggbhmq">https://doi.org/ggbhmq</a><br />
+DOI: <a href="https://doi.org/10.1073/pnas.1900654116">10.1073/pnas.1900654116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31619572">31619572</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6825274">PMC6825274</a></p>
+</div>
+<div id="ref-deMgWtfc">
+<p>42. <strong>Regularization</strong><br />
+Jake Lever, Martin Krzywinski, Naomi Altman<br />
+<em>Nature Methods</em> (2016-09-29) <a href="https://doi.org/gf3zrr">https://doi.org/gf3zrr</a><br />
+DOI: <a href="https://doi.org/10.1038/nmeth.4014">10.1038/nmeth.4014</a></p>
+</div>
+<div id="ref-JZNkB8d7">
+<p>43. <strong>Regularization and variable selection via the elastic net</strong><br />
+Hui Zou, Trevor Hastie<br />
+<em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> (2005-04) <a href="https://doi.org/b8cwwr">https://doi.org/b8cwwr</a><br />
+DOI: <a href="https://doi.org/10.1111/j.1467-9868.2005.00503.x">10.1111/j.1467-9868.2005.00503.x</a></p>
+</div>
+<div id="ref-E0Iw45aG">
+<p>44. <strong>Adaptive Ridge Regression for Rare Variant Detection</strong><br />
+Haimao Zhan, Shizhong Xu<br />
+<em>PLoS ONE</em> (2012-08-28) <a href="https://doi.org/f36tm5">https://doi.org/f36tm5</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pone.0044173">10.1371/journal.pone.0044173</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22952918">22952918</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3429469">PMC3429469</a></p>
+</div>
+<div id="ref-2gwD58B">
+<p>45. <strong>Statistical analysis strategies for association studies involving rare variants</strong><br />
+Vikas Bansal, Ondrej Libiger, Ali Torkamani, Nicholas J. Schork<br />
+<em>Nature Reviews Genetics</em> (2010-10-13) <a href="https://doi.org/dn4jtz">https://doi.org/dn4jtz</a><br />
+DOI: <a href="https://doi.org/10.1038/nrg2867">10.1038/nrg2867</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20940738">20940738</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3743540">PMC3743540</a></p>
+</div>
+<div id="ref-IX9EQ5gX">
+<p>46. <strong>Association screening of common and rare genetic variants by penalized regression</strong><br />
+H. Zhou, M. E. Sehl, J. S. Sinsheimer, K. Lange<br />
+<em>Bioinformatics</em> (2010-08-06) <a href="https://doi.org/c7ndkx">https://doi.org/c7ndkx</a><br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/btq448">10.1093/bioinformatics/btq448</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20693321">20693321</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3025646">PMC3025646</a></p>
+</div>
+<div id="ref-s907ofL2">
+<p>47. <strong>Methods for Detecting Associations with Rare Variants for Common Diseases: Application to Analysis of Sequence Data</strong><br />
+Bingshan Li, Suzanne M. Leal<br />
+<em>The American Journal of Human Genetics</em> (2008-09) <a href="https://doi.org/d4jpcb">https://doi.org/d4jpcb</a><br />
+DOI: <a href="https://doi.org/10.1016/j.ajhg.2008.06.024">10.1016/j.ajhg.2008.06.024</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18691683">18691683</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2842185">PMC2842185</a></p>
+</div>
+<div id="ref-fPp30wsy">
+<p>48. <strong>Comparison of statistical approaches to rare variant analysis for quantitative traits</strong><br />
+Han Chen, Audrey E Hendricks, Yansong Cheng, Adrienne L Cupples, Josée Dupuis, Ching-Ti Liu<br />
+<em>BMC Proceedings</em> (2011-11-29) <a href="https://doi.org/b9mf4x">https://doi.org/b9mf4x</a><br />
+DOI: <a href="https://doi.org/10.1186/1753-6561-5-s9-s113">10.1186/1753-6561-5-s9-s113</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22373209">22373209</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3287837">PMC3287837</a></p>
+</div>
+<div id="ref-XCL2dRoS">
+<p>49. <strong>An Improved Version of Logistic Bayesian LASSO for Detecting Rare Haplotype-Environment Interactions with Application to Lung Cancer</strong><br />
+Yuan Zhang, Swati Biswas<br />
+<em>Cancer Informatics</em> (2015-02-09) <a href="https://doi.org/ggxxfp">https://doi.org/ggxxfp</a><br />
+DOI: <a href="https://doi.org/10.4137/cin.s17290">10.4137/cin.s17290</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25733797">25733797</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4332044">PMC4332044</a></p>
+</div>
+<div id="ref-5Zx90ly9">
+<p>50. <strong>Multiple Regression Methods Show Great Potential for Rare Variant Association Tests</strong><br />
+ChangJiang Xu, Martin Ladouceur, Zari Dastani, J. Brent Richards, Antonio Ciampi, Celia M. T. Greenwood<br />
+<em>PLoS ONE</em> (2012-08-08) <a href="https://doi.org/f35726">https://doi.org/f35726</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pone.0041694">10.1371/journal.pone.0041694</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22916111">22916111</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3420665">PMC3420665</a></p>
+</div>
+<div id="ref-13q9A5a95">
+<p>51. <strong>A Sparse-Group Lasso</strong><br />
+Noah Simon, Jerome Friedman, Trevor Hastie, Robert Tibshirani<br />
+<em>Journal of Computational and Graphical Statistics</em> (2013-04) <a href="https://doi.org/gcvjw8">https://doi.org/gcvjw8</a><br />
+DOI: <a href="https://doi.org/10.1080/10618600.2012.681250">10.1080/10618600.2012.681250</a></p>
+</div>
+<div id="ref-lXiw1iso">
+<p>52. <strong>Regularized logistic regression with adjusted adaptive elastic net for gene selection in high dimensional cancer classification</strong><br />
+Zakariya Yahya Algamal, Muhammad Hisyam Lee<br />
+<em>Computers in Biology and Medicine</em> (2015-12) <a href="https://doi.org/f73xvj">https://doi.org/f73xvj</a><br />
+DOI: <a href="https://doi.org/10.1016/j.compbiomed.2015.10.008">10.1016/j.compbiomed.2015.10.008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26520484">26520484</a></p>
+</div>
+<div id="ref-1nCs3tvD">
+<p>53. <strong>Sparse logistic regression with a L1/2 penalty for gene selection in cancer classification</strong><br />
+Yong Liang, Cheng Liu, Xin-Ze Luan, Kwong-Sak Leung, Tak-Ming Chan, Zong-Ben Xu, Hai Zhang<br />
+<em>BMC Bioinformatics</em> (2013-06-19) <a href="https://doi.org/gb8v2x">https://doi.org/gb8v2x</a><br />
+DOI: <a href="https://doi.org/10.1186/1471-2105-14-198">10.1186/1471-2105-14-198</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23777239">23777239</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3718705">PMC3718705</a></p>
+</div>
+<div id="ref-JkWXgEgV">
+<p>54. <strong>An elastic-net logistic regression approach to generate classifiers and gene signatures for types of immune cells and T helper cell subsets</strong><br />
+Arezo Torang, Paraag Gupta, David J. Klinke<br />
+<em>BMC Bioinformatics</em> (2019-08-22) <a href="https://doi.org/gg5hmj">https://doi.org/gg5hmj</a><br />
+DOI: <a href="https://doi.org/10.1186/s12859-019-2994-z">10.1186/s12859-019-2994-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31438843">31438843</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6704630">PMC6704630</a></p>
 </div>
 <div id="ref-mbKBDhJ0">
 <p>55. <strong>Machine learning for psychiatric patient triaging: an investigation of cascading classifiers.</strong><br />
