@@ -52,6 +52,7 @@ heterogeneous
 hetionet
 Ingelheim
 interpretable
+interpretability
 jaybee
 jguinney
 Jineta
