@@ -43,6 +43,7 @@ datasets
 dimensionality
 DrugBankPlus
 ensembling
+generalizability
 genomic
 genotype
 Guinney
@@ -53,6 +54,7 @@ hetionet
 Ingelheim
 interpretable
 interpretability
+iteratively
 jaybee
 jguinney
 Jineta
@@ -61,6 +63,7 @@ MDS
 microarray
 Neurofibromatosis
 omic
+omics
 overfit
 overfitting
 SNP
@@ -90,6 +93,7 @@ intepretability
 medulloblastoma
 myeloid
 neutrophilic
+pharma
 phenotypic
 PLIER
 transferability
