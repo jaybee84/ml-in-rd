@@ -62,6 +62,7 @@ MAF
 MDS
 microarray
 Neurofibromatosis
+omic
 omics
 overfit
 overfitting
