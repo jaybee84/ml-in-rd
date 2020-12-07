@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: Set Environment Variables
         run: |
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
           TRIGGERING_SHA_7=${TRIGGERING_SHA::7}
           echo "::set-env name=TRIGGERING_SHA_7::$TRIGGERING_SHA_7"
