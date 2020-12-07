@@ -27,8 +27,7 @@ AdaBoost
 Allaway
 allawayr
 arXiv
-Autoencoder
-autoencoder
+Autoencoders
 Banerjee
 Boehringer
 biomarkers
@@ -88,6 +87,7 @@ translational
 triaging
 taroni
 t
+tSNE
 SNE
 UMAP
 Xu
@@ -106,6 +106,7 @@ phenotypic
 PLIER
 transferability
 VAE
+VAEs
 variational
 vasculitis
 vec
