@@ -27,6 +27,8 @@ AdaBoost
 Allaway
 allawayr
 arXiv
+Autoencoder
+autoencoder
 Banerjee
 Boehringer
 biomarkers
