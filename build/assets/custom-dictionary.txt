@@ -34,9 +34,12 @@ biomedicine
 Bionetworks
 biospecimen
 biospecimens
+Chemogenomic
 collinear
 confounders
+comorbidities
 cgreene
+CTD
 cytometry
 dataset
 datasets
@@ -51,6 +54,7 @@ GWAS
 heterogeneity
 heterogeneous
 hetionet
+hyperparameters
 Ingelheim
 interpretable
 interpretability
@@ -58,12 +62,14 @@ iteratively
 jaybee
 jguinney
 Jineta
+KGs
 MAF
 MDS
 microarray
 Neurofibromatosis
 omic
 omics
+Orphanet
 overfit
 overfitting
 SNP
@@ -80,6 +86,7 @@ translational
 triaging
 taroni
 t
+TODO
 SNE
 UMAP
 Xu
