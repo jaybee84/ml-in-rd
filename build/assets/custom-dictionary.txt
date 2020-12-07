@@ -107,6 +107,7 @@ transferability
 VAE
 variational
 vasculitis
+vec
 vitro
 Dincer
 encodings
