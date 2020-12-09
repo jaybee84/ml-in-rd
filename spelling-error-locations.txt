@@ -1,0 +1,2 @@
+content/06.multiple-approaches-required.md:15:autoencoders
+content/06.multiple-approaches-required.md:15:VAEs
