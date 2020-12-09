@@ -87,7 +87,6 @@ translational
 triaging
 taroni
 t
-t-SNE
 SNE
 UMAP
 Xu
