@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-12-07" />
+  <meta name="dcterms.date" content="2020-12-09" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-12-07" />
-  <meta name="citation_publication_date" content="2020-12-07" />
+  <meta name="dc.date" content="2020-12-09" />
+  <meta name="citation_publication_date" content="2020-12-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/e854206ff467a63b1bbded39565fa7c7587d58b5/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e854206ff467a63b1bbded39565fa7c7587d58b5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e854206ff467a63b1bbded39565fa7c7587d58b5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/89cc1320828dfb948dd26e7deadcda75475728b5/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/89cc1320828dfb948dd26e7deadcda75475728b5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/89cc1320828dfb948dd26e7deadcda75475728b5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/e854206ff467a63b1bbded39565fa7c7587d58b5/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/89cc1320828dfb948dd26e7deadcda75475728b5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/e854206ff467a63b1bbded39565fa7c7587d58b5">jaybee84/ml-in-rd@e854206</a>
-on December 7, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/89cc1320828dfb948dd26e7deadcda75475728b5">jaybee84/ml-in-rd@89cc132</a>
+on December 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -272,29 +272,30 @@ Moreover, few-shot learning approaches outperform multitask learning in contexts
 <p>Thus transfer, multi-task, and few-shot learning are appealing for the study of rare diseases, conditions, or phenotypes, but their limits and potential utility are still open research questions.
 Nevertheless, selecting an appropriate model for a given task and evaluations that are well-aligned with a research question are crucial for applying these approaches in rare diseases.</p>
 <h4 id="multiple-approaches-are-required">Multiple approaches are required</h4>
-<!-- aka "Putting it all together" -->
-<!-- TODO: This needs to explicitly hit regularization, other data, and prior knowledge points!-->
-<!-- From representation learning -->
-<p>In the rare disease domain, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of <em>in vitro</em> drug responses <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span>.
+<p>We have described multiple approaches for maximizing the success of machine learning applications in rare disease research throughout.
+In practice, it is rarely sufficient to use one of these techniques in isolation.
+In this section, we will discuss two recent works – one supervised and one unsupervised – in the rare disease domain that draw on multiple concepts covered here.
+Feature-representation-transfer, which incorporates representation learning and prior data, and regularization underlie both approaches.</p>
+<p>As discussed in the previous section, feature-representation-transfer is an approach wherein a model learns a representation of a collection of data, and those features are then applied or transferred to a target domain.
+This is a powerful tool where the model can utilize related datasets in the absence of available rare disease samples.
+Whether our research goal is biological discovery or prediction, we want the representation that a model learns to be <em>useful</em>.
+In addition to reducing model complexity as discussed earlier, regularization can aid in useful representations by putting some constraints on what is learned by a model.</p>
+<p>In a method termed DeepProfile, Dincer et al. leveraged publicly available acute myeloid leukemia (AML) gene expression data to improve the prediction of <em>in vitro</em> drug responses <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span>.
 The authors trained a variational autoencoder (an unsupervised neural network that learns a series of representations from data), or VAE, on AML data that had been collected over time without the desired phenotypic information (drug response).
-The authors used the learned attributes to encode a low-dimensional representation of held-out AML data with phenotype labels of interest, and used this representation as input to a classifier that predicted <em>in vitro</em> drug response.</p>
-<p>Though there were over 6500 AML samples from many different studies used as part of the training set in Dincer et al. <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span>, we expect that in other rare diseases considerably fewer samples will be available or may be from different tissues in systemic diseases.
-The study by Dincer and colleagues highlights another challenge: samples collected as part of multiple studies may not be associated with the deep phenotypic information that would maximize their scientific value.</p>
-<!-- From transfer learning -->
-<p>Feature-representation-transfer is embodied in Dincer et al., where features are learned from unlabeled AML data and then used to encode a low-dimensional representation of AML data with in vitro drug response labels <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span>.
-The authors then used this low-dimensional representation as input to predict drug response labels–a supervised example.</p>
+VAEs are distinct from other autoencoders in that the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.
+Dincer et al. used the learned attributes to encode a low-dimensional representation of held-out AML data with phenotype labels of interest, and used this representation as input to a classifier that predicted <em>in vitro</em> drug response, which outperformed using the original features.
+The study by Dincer and colleagues highlights another challenge: samples collected as part of multiple studies may not be associated with the deep phenotypic information that would maximize their scientific value, but this does not preclude the use of these samples in learning representations.</p>
 <p>In an unsupervised case, Taroni et al. trained Pathway-Level Information ExtractoR (PLIER) <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">79</a>]</span> on a large generic collection of human transcriptomic data (recount2 <span class="citation" data-cites="6SPTvFXq">[<a href="#ref-6SPTvFXq" role="doc-biblioref">80</a>]</span>) and used the latent variables learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">22</a>]</span>.
 (Here “unseen” refers to the fact that these diseases were not in the training set.)
-PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input; some latent variables learned by the model will align with input gene sets <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">79</a>]</span>.
-Training on larger collections of randomly selected samples produced models that captured a larger proportion of input gene sets and better distinguished closely related signals, which suggests that larger training sets produced models that are more suitable for biological discovery <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">22</a>]</span>.</p>
-<p>Though models trained on generic compendia had appealing properties, we need to also examine the relevance of learned features to the disease under study.
-In Taroni et al., we found that the expression of latent variables that could be matched between the MultiPLIER model and a dataset-specific model were well-correlated, particularly when latent variables were associated with input gene sets <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">22</a>]</span>. Despite the absence of AAV from the training set, MultiPLIER was able to learn a latent variable where the genes with the highest contributions encode antigens that the ANCA form against in AAV and with higher expression in more severe disease <span class="citation" data-cites="359v381d">[<a href="#ref-359v381d" role="doc-biblioref">81</a>]</span>.
-The utility of this approach stems from the fact that biological processes are often shared between conditions–the same ANCA antigen genes are components of neutrophilic granule development that is likely captured or assayed in the collection of transcriptomic data used for training.
-MultiPLIER has additional attributes that make it practical for studying rare diseases: latent variables that are not associated with input gene sets may capture technical noise separately from biological signal and we can use one model to describe multiple datasets instead of reconciling output from multiple models (see 03.heterogeneity.md).</p>
-<p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">22</a>]</span> suggest transfer learning can be beneficial for studying rare diseases.
-In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">82</a>]</span>.
+PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input.
+PLIER includes constraints (regularization) such that some latent variables learned by the model will align with input gene sets and ideally latent variables will only be associated with a low number of related gene sets <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">79</a>]</span>, which make it suitable for biological discovery or description of rare disease data.
+MultiPLIER allows us to use one model to describe multiple datasets instead of reconciling output from multiple models, which is highly beneficial when identifying commonalities among disease manifestations or affected tissues is a research goal.</p>
+<p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">78</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">22</a>]</span> suggest a combination of the techniques discussed throughout this article can be capitalized on for rare disease research.
+In cases where we have few samples from our disease of interest with the required phenotypic labels, we can leverage existing collections of data and knowledge if we select the models with the <em>right attributes</em>.
+The utility of DeepProfile and MultiPLIER stem from the fact that biological processes can be shared between biological contexts and that the methods underlying the approaches can effectively learn about those processes.
+In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">81</a>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
-In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases.</p>
+In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases .</p>
 <h3 id="conclusions">Conclusions</h3>
 <blockquote>
 <p>We will conclude by discussing the potential of the above-mentioned approaches in rare diseases and other biomedical areas where data is scarce.</p>
@@ -770,14 +771,8 @@ Leonardo Collado-Torres, Abhinav Nellore, Kai Kammers, Shannon E Ellis, Margaret
 <em>Nature Biotechnology</em> (2017-04-11) <a href="https://doi.org/gf75hp">https://doi.org/gf75hp</a> <br />
 DOI: <a href="https://doi.org/10.1038/nbt.3838">10.1038/nbt.3838</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28398307">28398307</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6742427">PMC6742427</a></p>
 </div>
-<div id="ref-359v381d">
-<p>81. <strong>Transcription of proteinase 3 and related myelopoiesis genes in peripheral blood mononuclear cells of patients with active Wegener’s granulomatosis</strong> <br />
-Chris Cheadle, Alan E. Berger, Felipe Andrade, Regina James, Kristen Johnson, Tonya Watkins, Jin Kyun Park, Yu-Chi Chen, Eva Ehrlich, Marissa Mullins, … Stuart M. Levine<br />
-<em>Arthritis &amp; Rheumatism</em> (2010-02-12) <a href="https://doi.org/chfbtv">https://doi.org/chfbtv</a> <br />
-DOI: <a href="https://doi.org/10.1002/art.27398">10.1002/art.27398</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20155833">20155833</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2887718">PMC2887718</a></p>
-</div>
 <div id="ref-G61OY6xj">
-<p>82. <strong>How transferable are features in deep neural networks?</strong> <br />
+<p>81. <strong>How transferable are features in deep neural networks?</strong> <br />
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson<br />
 <em>arXiv</em> (2014-12-09) <a href="https://arxiv.org/abs/1411.1792">https://arxiv.org/abs/1411.1792</a></p>
 </div>
