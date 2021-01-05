@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2020-12-10" />
+  <meta name="dcterms.date" content="2021-01-05" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2020-12-10" />
-  <meta name="citation_publication_date" content="2020-12-10" />
+  <meta name="dc.date" content="2021-01-05" />
+  <meta name="citation_publication_date" content="2021-01-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/b5a35c9e431e31535a21cbed2fe3b5fd21b39ae6/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b5a35c9e431e31535a21cbed2fe3b5fd21b39ae6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b5a35c9e431e31535a21cbed2fe3b5fd21b39ae6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/4bbf51827bd4a586ef78d49c2616be38a25c9bcb/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/4bbf51827bd4a586ef78d49c2616be38a25c9bcb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/4bbf51827bd4a586ef78d49c2616be38a25c9bcb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/b5a35c9e431e31535a21cbed2fe3b5fd21b39ae6/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/4bbf51827bd4a586ef78d49c2616be38a25c9bcb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/b5a35c9e431e31535a21cbed2fe3b5fd21b39ae6">jaybee84/ml-in-rd@b5a35c9</a>
-on December 10, 2020.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/4bbf51827bd4a586ef78d49c2616be38a25c9bcb">jaybee84/ml-in-rd@4bbf518</a>
+on January 5, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -134,38 +134,39 @@ Sage Bionetworks
 </ul>
 <h2 class="page_break_before" id="synopsis">Synopsis</h2>
 <p>(Instructions: Describe the background, basic structure of the article, list material to be covered indicating depth of coverage, how they are logically arranged, include recent pubs in the area, 300-500 words)</p>
-<p>Substantial technological advances have dramatically changed biomedicine by making deep characterization of patient samples routine.
-<!-- TODO: What about basic research? We probably need to address that somewhere too. -->
+<p>Substantial technological advances have dramatically changed biomedicine by making deep characterization of patient samples routine and accelerating basic research.
 These technologies provide a rich portrait of genes, cellular pathways, and cell types involved in complex phenotypes.
 Machine learning is often a perfect fit to extract disease-relevant patterns from these high dimensional datasets.
 Often, these methods require many samples to identify reproducible and biologically meaningful patterns.
 With rare diseases, biological specimens and consequently data, are limited due to the rarity of the condition.
-In this perspective, we outline the challenges and emerging solutions for using machine learning in these settings.
+In this perspective, we outline the challenges and emerging solutions for using machine learning in rare disease settings.
 We aim to spur the development of powerful machine learning techniques for rare diseases.
 We also note that precision medicine presents a similar challenge, in which a common disease is partitioned into small subsets of patients with shared etiologies and treatment strategies.
 Advances from rare disease research are likely to be highly informative for other applications as well.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>Rare disease research is increasingly becoming dependent on high-throughput profiling of samples and would greatly benefit from applications of machine learning (ML) in their analysis.
-Analyzing such high dimensional data from rare samples (fewer than 200,000 cases in the United States <span class="citation" data-cites="wwF0mDld">[<a href="#ref-wwF0mDld" role="doc-biblioref">1</a>]</span>) is challenging.
-It requires specialized computational methods that can learn from sparse yet rich data such that the learned patterns can be generalized to newly acquired data <span class="citation" data-cites="Zoj0hKzb">[<a href="#ref-Zoj0hKzb" role="doc-biblioref">2</a>]</span>.
-Rare disease research has substantial constraints to consider when using ML methods, including lack of statistical power due to small dataset size (typically ranging from 20 to 99 for a rare disease) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">3</a>]</span>, heterogeneity in available data, and sensitivity of ML methods to misinterpretation and unstable performance in view of small datasets.
+<p>Rare disease research is increasingly dependent on high-throughput profiling of samples and would greatly benefit from applications of machine learning (ML) in their analysis.
+Analyzing such high dimensional data from rare diseases (fewer than 200,000 cases in the United States <span class="citation" data-cites="wwF0mDld">[<a href="#ref-wwF0mDld" role="doc-biblioref">1</a>]</span>) is challenging, as datasets typically range from 20 to 99 samples <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">2</a>]</span>.
+Specialized computational methods that can learn patterns from small datasets that can be generalized to newly acquired data are required <span class="citation" data-cites="Zoj0hKzb">[<a href="#ref-Zoj0hKzb" role="doc-biblioref">3</a>]</span>.
+Lack of statistical power and the susceptibility of ML methods to misinterpretation and unstable performance pose challenges when datasets are small.
+Heterogeneity in available data creates additional difficulties.
 For example, successful training of ML models require training datasets made of “gold standard” data where the diagnosis or label of a data point has very little uncertainty (or “label-noise”) associated with it <span class="citation" data-cites="G5HC64pk">[<a href="#ref-G5HC64pk" role="doc-biblioref">4</a>]</span>.
 Due to the limited understanding of the biology of rare diseases, the symptoms or disease labels often come with a reasonable amount label-noise leading to a silver standard dataset <span class="citation" data-cites="16kfJJap4">[<a href="#ref-16kfJJap4" role="doc-biblioref">5</a>]</span>.
-A systematic review of application of ML in rare disease in the last 10 years unveiled 211 human data studies in 74 different rare diseases employing ensemble methods (36.0%), support vector machines (32.2%) and artificial neural networks (31.8%).
-The review also showed that most studies used ML for diagnosis (40.8%) or prognosis (38.4%), but studies aiming to improve treatment were infrequent (4.7%) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">3</a>]</span>.
+A systematic review of application of ML in rare disease in the last 10 years uncovered 211 human data studies in 74 different rare diseases employing ensemble methods (36.0%), support vector machines (32.2%) and artificial neural networks (31.8%) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">2</a>]</span>.
+The review also showed that most studies used ML for diagnosis (40.8%) or prognosis (38.4%), but studies aiming to improve treatment were infrequent (4.7%) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">2</a>]</span>.
 Moreover, in the context of rare disease, special considerations need to be made to safeguard against misinterpretation of results.
 Rare disease datasets are often limited in size and/or assembled from combining data from multiple institutions from differently processed specimens collected with geographical and chronological disparity.
-Consequently, data analysis techniques must be resilient to challenges posed by small sample sizes, as well as technical artifacts present in aggregated data. In this perspective, we discuss techniques for understanding the nature of rare disease data, including those that address or better tolerate the limitations of these data.</p>
+Consequently, data analysis techniques must be robust to challenges posed by small sample sizes, as well as technical artifacts present in aggregated data. In this perspective, we discuss techniques for understanding the nature of rare disease data, including those that address or better tolerate the limitations of these data.</p>
 <h3 id="manage-complex-high-dimensional-rare-disease-data">Manage complex high-dimensional rare disease data</h3>
-<p>In rare diseases, the ability to get an enormous number of measurements from a vanishingly small number of samples using high-throughput methods is both the upside and the downfall of these methods. These ‘omic’ methods generate highly dimensional data - that is, data with many features (e.g. all of the mRNA transcripts in a sample).
-However, statistical interrogation of this large number of measurements requires an abundance of samples or observations, which is often not the case in rare disease. The sparsity of samples in rare diseases gives rise to the “curse of dimensionality” (i.e. few samples but many features), which can be a major impediment in analyzing feature-rich data in sample-deficient contexts <span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">6</a>]</span> [TODO: Clarify further why this can be an impediment].
-This problem is further aggravated by the presence of highly correlated features that relate to disease relevant information. Furthermore, rare disease data collection and aggregation methods can add to these challenges by introducing technical variability into the data at hand.
+<p>In rare diseases, the ability to get an enormous number of measurements from a vanishingly small number of samples using high-throughput methods is both the upside and the downfall of these methods. These ‘omic’ methods generate highly dimensional data - that is, data with many features (e.g., all of the mRNA transcripts in a sample).
+However, statistical interrogation of this large number of measurements requires an abundance of samples or observations, which is often not the case in rare disease. The sparsity of samples in rare diseases gives rise to the “curse of dimensionality” (i.e., few samples but many features), which can be a major impediment in analyzing feature-rich data in sample-deficient contexts <span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">6</a>]</span> [TODO: Clarify further why this can be an impediment].
+This problem is further aggravated by the presence of highly correlated features that relate to disease relevant information. Furthermore, rare disease data collection and aggregation methods can add to these challenges by introducing technical variability into the data at hand [TODO: Update “This problem” to be more specific once the above TODO is addressed].
 In this section, we will discuss strategies like simplifying data and addressing technical artifacts through dimension reduction which can help mitigate these challenges.
 Dimensionality reduction methods including unsupervised approaches like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">7</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">8</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>]</span> can help ‘compress’ information from a large number of features into a smaller number of features.
-These techniques can be applied to characterize imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">12</a>]</span>, ‘omics data, and others. These methods not only help in reducing the number of features, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">13</a>]</span>), define subgroups within data (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">14</a>]</span>, or for feature selection/extraction during application of specific machine learning models<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">15</a>]</span>.</p>
+These techniques can be applied to characterize imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">12</a>]</span>, ‘omics data, and others.
+These methods not only help in reducing the number of features, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">13</a>]</span>), define subgroups within data (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">14</a>]</span>, or for feature selection/extraction during application of specific machine learning models<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">15</a>]</span>.</p>
 <p>Rare disease datasets, like many other scenarios, can contain structure unrelated to the biology of the disease; e.g. structure related to batch, sample preparation methodology, or sequencing platform <span class="citation" data-cites="Lby4PmSX">[<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
 The consequences of these artifacts are amplified when samples are rare and the cohort contains several phenotypes. Furthermore, datasets are often combined from multiple small studies where biological characteristics are confounded by technical variables.
-We can leverage dimensionality reduction methods like PCA, MDS, t-SNE, and UMAP to identify the effect of these variables on the data. All of these methods can be used to identify batch effects and other structures in the data, though some (like t-SNE and UMAP) may require tuning of hyperparameters that affect the output <span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
+We can leverage dimensionality reduction methods like PCA, MDS, t-SNE, and UMAP to identify the effect of these variables on the data. All of these methods can be used to identify batch effects and other structures in the data, though some like t-SNE and UMAP may require tuning of hyperparameters that affect the output <span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
 Way, et. al. <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>]</span> further suggests that a single dimensionality reduction method alone may not be sufficient to reveal all of the technical or biological heterogeneity; thus testing multiple methods may result in a more comprehensive portrait of the data.
 Additional important considerations for using dimensionality reduction methods such as criteria for selecting a dimensionality reduction method and interpretation of results are discussed in detail by Nguyen and Holmes.<span class="citation" data-cites="Pyg7FNxd">[<a href="#ref-Pyg7FNxd" role="doc-biblioref">18</a>]</span></p>
 <p>Beyond dimensionality reduction, unsupervised learning approaches such as k-means clustering or hierarchical clustering have also been used to characterize the structure present in genomic or imaging data. <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">19</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">20</a>]</span>
@@ -179,13 +180,15 @@ Low-dimensional representations trained on a collection of transcriptomic data c
 But it can be a powerful tool to learn low-dimensional patterns from large datasets and then find those patterns in smaller, related datasets.
 In the later sections of this perspective, we will discuss this method of leveraging large datasets to reduce dimensionality in smaller datasets, also known as feature-representation-transfer.</p>
 <h3 id="manage-model-complexity-while-preserving-the-value-of-machine-learning">Manage model complexity while preserving the value of machine learning</h3>
-<p>Fruitful translation of patterns extracted from a rare disease dataset using machine learning into testable hypotheses requires the applied models to be a) stable i.e. the same predicted features should surface from the data if the model is run multiple times and, b) simple to improve interpretability and avoid misinterpretation due to technical challenges. Fulfilling these prerequisites is challenging in rare disease datasets where there is high label-uncertainty (i.e. where the label given to a data point may not be correct due to imperfect understanding of the disease).
+<p>Translating machine learning findings into testable hypotheses requires the applied models to be a) stable – the same predicted features should surface from the data if the model is run multiple times – and b) simple, as simple models guard against misinterpretation due to technical challenges.
+Meeting these requirements is challenging in rare disease datasets where there is high label-uncertainty (i.e., where the label given to a data point may not be correct due to imperfect understanding of the disease).
 In this section we highlight a few common ML techniques that can help improve the stability and simplicity of ML models applied to rare disease data.
-Techniques like bootstrapping and ensemble learning can increase stability in machine learning predictions. Bootstrapping is a powerful statistical technique where resampling the data with replacements can help estimate population values from datasets of limited sample size <span class="citation" data-cites="9EM1Mzod">[<a href="#ref-9EM1Mzod" role="doc-biblioref">29</a>]</span>.
+Techniques like bootstrapping and ensemble learning can increase stability in machine learning predictions.
+Bootstrapping is a powerful statistical technique where resampling the data with replacements can help estimate population values from datasets of limited sample size <span class="citation" data-cites="9EM1Mzod">[<a href="#ref-9EM1Mzod" role="doc-biblioref">29</a>]</span>.
 While resampling with replacement is commonly used to find models that are robust to overfitting (<span class="citation" data-cites="Uy4oESDl SS9DjYHO doi:10.1016/s0925-2312 17mzOREgU ADEtV1CD">[<span class="citeproc-not-found" data-reference-id="doi:10.1016/s0925-2312"><strong>???</strong></span>,<a href="#ref-Uy4oESDl" role="doc-biblioref">30</a>,<a href="#ref-SS9DjYHO" role="doc-biblioref">31</a>,<a href="#ref-17mzOREgU" role="doc-biblioref">32</a>,<a href="#ref-ADEtV1CD" role="doc-biblioref">33</a>]</span>); resampling without replacement, when applied to rare disease data generated confidence intervals for the model predictions by iteratively exposing the models to incomplete datasets (mimicking real world cases where most rare disease datasets are incomplete) <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">34</a>]</span>.</p>
 <p>Stability in predictions can also be achieved by combining various ML methods together (ensemble learning).
 Ensemble learning methods like random forests use bagging of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features <span class="citation" data-cites="Uy4oESDl 14J3u9pnR 7ueKyz71 eFWTLOhH doi:10.1016/s0031-3203">[<span class="citeproc-not-found" data-reference-id="doi:10.1016/s0031-3203"><strong>???</strong></span>,<a href="#ref-Uy4oESDl" role="doc-biblioref">30</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">35</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">36</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">37</a>]</span>.
-But such methods have shown limited success in rare disease datasets where the label-uncertainty can be high due to imperfect understanding of the disease (i.e. silver standard datasets).
+But such methods have shown limited success in rare disease datasets where the label-uncertainty can be high due to imperfect understanding of the disease (i.e., silver standard datasets).
 This has led to the adoption of cascade learning, where multiple methods leveraging distinct underlying assumptions are used in tandem. The methods may be augmented with algorithms like AdaBoost (boosting) to capture stable patterns existing in the silver standard data <span class="citation" data-cites="Q25GV92r ThoSnmu3 QEQ0NTvv">[<a href="#ref-Q25GV92r" role="doc-biblioref">38</a>,<a href="#ref-ThoSnmu3" role="doc-biblioref">39</a>,<a href="#ref-QEQ0NTvv" role="doc-biblioref">40</a>]</span>.
 Cascade learning implemented to identify rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using natural language processing based word2vec <span class="citation" data-cites="Q9kdxmQd">[<a href="#ref-Q9kdxmQd" role="doc-biblioref">41</a>]</span>), preliminary prediction (using an ensemble of decision trees with penalization for excessive tree-depth), and prediction refinement (using similarity of data points to resolve sample labels) <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">42</a>]</span>.
 Combining these three methods resulted in better performance than other methods when implemented on the silver standard dataset in isolation.
@@ -193,10 +196,12 @@ The presence of multiple phenotypes (or classes) in rare disease datasets furthe
 In such cases, a one-class-at-a-time cascade learning approach (where at each stage a binary classifier predicts a specific class against all others) has been found to produce simpler models that perform better compared to multi-class ensemble classifiers <span class="citation" data-cites="1DliWuO93">[<a href="#ref-1DliWuO93" role="doc-biblioref">43</a>]</span>.</p>
 <p>Simplification of models by making the feature space proportionate with the sample space can also be achieved through regularization.
 Regularization can not only protect ML models from poor generalizability that results from overfitting (where the model performs well for the training data but poorly for new test data) <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">44</a>]</span>, but also help penalize model complexity and reduce the feature space to build simpler models using limited datasets.
-Three popular regularized methods include ridge regression, LASSO, and elastic-net. Ridge regression can minimize the magnitude of the features, but cannot remove unimportant features.
+Three popular regularized methods include ridge regression, LASSO, and elastic-net.
+Ridge regression can minimize the magnitude of the features, but cannot remove unimportant features.
 LASSO regression, on the other hand, works well for selecting few important features since it can minimize the magnitude of some features more than the others <span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">45</a>]</span>.
-A combination of LASSO and ridge, elastic-net regression <span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>]</span> selects the most useful features, especially in presence of a large number of correlated features.
-Studies leveraging regularization in rare variant discovery and immune cell signature discovery can provide important insights into its possible application in rare disease.
+A combination of LASSO and ridge, elastic-net regression <span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>]</span> selects the most useful features, especially in presence of a large number of correlated features.</p>
+<p>Rare variant discovery and immune cell signature discovery studies, like rare diseases, face challenges of the sparsity of observations (e.g. rare variants, or rare immune cells).
+Studies leveraging regularization in these problems can provide important insights into its possible application in rare disease.<br />
 In rare variant discovery, ridge regression has been utilized to combine rare variants into a single score to increase the signal of rare variants <span class="citation" data-cites="E0Iw45aG">[<a href="#ref-E0Iw45aG" role="doc-biblioref">47</a>]</span>, while LASSO was implemented along with group penalties to identify rare variants/low frequency predictors <span class="citation" data-cites="2gwD58B IX9EQ5gX">[<a href="#ref-2gwD58B" role="doc-biblioref">48</a>,<a href="#ref-IX9EQ5gX" role="doc-biblioref">49</a>]</span>.
 Hybrid applications of LASSO have also been tested in rare variant discovery, including boosting the signal of rare variants by capturing combinations of variants <span class="citation" data-cites="s907ofL2 fPp30wsy">[<a href="#ref-s907ofL2" role="doc-biblioref">50</a>,<a href="#ref-fPp30wsy" role="doc-biblioref">51</a>]</span>, integration with a probabilistic logistic Bayesian approach <span class="citation" data-cites="XCL2dRoS">[<a href="#ref-XCL2dRoS" role="doc-biblioref">52</a>]</span>, combining feature selection methods with a generalized pooling strategy <span class="citation" data-cites="5Zx90ly9">[<a href="#ref-5Zx90ly9" role="doc-biblioref">53</a>]</span>, and incorporating prior knowledge into the regularization step to select driver genes in a pathway of interest <span class="citation" data-cites="13q9A5a95">[<a href="#ref-13q9A5a95" role="doc-biblioref">54</a>]</span>.
 In immune cell signature discovery, elastic-net regression has been used to reduce the feature space and was found to outperform other regression approaches <span class="citation" data-cites="JZNkB8d7 lXiw1iso 1nCs3tvD JkWXgEgV">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>,<a href="#ref-lXiw1iso" role="doc-biblioref">55</a>,<a href="#ref-1nCs3tvD" role="doc-biblioref">56</a>,<a href="#ref-JkWXgEgV" role="doc-biblioref">57</a>]</span>.
@@ -244,7 +249,7 @@ MultiPLIER allows us to use one model to describe multiple datasets instead of r
 <p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">74</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">77</a>]</span> suggest a combination of the techniques discussed throughout this article can be capitalized on for rare disease research.
 In cases where we have few samples from our disease of interest with the required phenotypic labels, we can leverage existing collections of data and knowledge if we select the models with the right attributes.</p>
 <p>The utility of DeepProfile and MultiPLIER stem from the fact that biological processes can be shared between biological contexts and that the methods underlying the approaches can effectively learn about those processes.
-In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">78</a>]</span>.
+In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="arxiv:1411.1792">[<span class="citeproc-not-found" data-reference-id="arxiv:1411.1792"><strong>???</strong></span>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
 In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases .</p>
 <h2 class="page_break_before" id="definitions">Definitions</h2>
@@ -265,17 +270,17 @@ VAEs are distinct from other autoencoders since the distribution of the encoding
 Potomac Publishing<br />
 (2018-10-08) <a href="https://www.fda.gov/media/99546/download">https://www.fda.gov/media/99546/download</a></p>
 </div>
-<div id="ref-Zoj0hKzb">
-<p>2. <strong>Looking beyond the hype: Applied AI and machine learning in translational medicine</strong> <br />
-Tzen S. Toh, Frank Dondelinger, Dennis Wang<br />
-<em>EBioMedicine</em> (2019-09) <a href="https://doi.org/gg9dcx">https://doi.org/gg9dcx</a> <br />
-DOI: <a href="https://doi.org/10.1016/j.ebiom.2019.08.027">10.1016/j.ebiom.2019.08.027</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31466916">31466916</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6796516">PMC6796516</a></p>
-</div>
 <div id="ref-12bOkHKJU">
-<p>3. <strong>The use of machine learning in rare diseases: a scoping review</strong> <br />
+<p>2. <strong>The use of machine learning in rare diseases: a scoping review</strong> <br />
 Julia Schaefer, Moritz Lehne, Josef Schepers, Fabian Prasser, Sylvia Thun<br />
 <em>Orphanet Journal of Rare Diseases</em> (2020-06-09) <a href="https://doi.org/ghb3wx">https://doi.org/ghb3wx</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13023-020-01424-6">10.1186/s13023-020-01424-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32517778">32517778</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7285453">PMC7285453</a></p>
+</div>
+<div id="ref-Zoj0hKzb">
+<p>3. <strong>Looking beyond the hype: Applied AI and machine learning in translational medicine</strong> <br />
+Tzen S. Toh, Frank Dondelinger, Dennis Wang<br />
+<em>EBioMedicine</em> (2019-09) <a href="https://doi.org/gg9dcx">https://doi.org/gg9dcx</a> <br />
+DOI: <a href="https://doi.org/10.1016/j.ebiom.2019.08.027">10.1016/j.ebiom.2019.08.027</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31466916">31466916</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6796516">PMC6796516</a></p>
 </div>
 <div id="ref-G5HC64pk">
 <p>4. <strong>Learning statistical models of phenotypes using noisy labeled training data</strong> <br />
@@ -310,7 +315,7 @@ DOI: <a href="https://doi.org/10.1098/rsta.2015.0202">10.1098/rsta.2015.0202</a>
 <div id="ref-BsfyICXU">
 <p>9. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong> <br />
 Leland McInnes, John Healy, James Melville<br />
-<em>arXiv:1802.03426 [cs, stat]</em> (2020-09-17) <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
+(2018-02-09) <a href="https://arxiv.org/abs/1802.03426v3">https://arxiv.org/abs/1802.03426v3</a></p>
 </div>
 <div id="ref-c46n3STN">
 <p>10. (2020-06-01) <a href="https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf">https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf</a></p>
@@ -480,7 +485,7 @@ DOI: <a href="https://doi.org/10.1177/2045894019890549">10.1177/2045894019890549
 <div id="ref-Q25GV92r">
 <p>38. <strong>Component-based face detection</strong> <br />
 B. Heiselet, T. Serre, M. Pontil, T. Poggio<br />
-<em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-24) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a> <br />
+<em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-25) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a> <br />
 DOI: <a href="https://doi.org/10.1109/cvpr.2001.990537">10.1109/cvpr.2001.990537</a></p>
 </div>
 <div id="ref-ThoSnmu3">
@@ -654,27 +659,27 @@ DOI: <a href="https://doi.org/10.1023/a:1007379606734">10.1023/a:1007379606734</
 <div id="ref-1BROsCrcR">
 <p>68. <strong>An Overview of Multi-Task Learning in Deep Neural Networks</strong> <br />
 Sebastian Ruder<br />
-<em>arXiv:1706.05098 [cs, stat]</em> (2017-06-15) <a href="http://arxiv.org/abs/1706.05098">http://arxiv.org/abs/1706.05098</a></p>
+(2017-06-15) <a href="https://arxiv.org/abs/1706.05098v1">https://arxiv.org/abs/1706.05098v1</a></p>
 </div>
 <div id="ref-1BKt1nbeF">
 <p>69. <strong>A Survey on Multi-Task Learning</strong> <br />
 Yu Zhang, Qiang Yang<br />
-<em>arXiv:1707.08114 [cs]</em> (2018-07-26) <a href="http://arxiv.org/abs/1707.08114">http://arxiv.org/abs/1707.08114</a></p>
+(2017-07-25) <a href="https://arxiv.org/abs/1707.08114v2">https://arxiv.org/abs/1707.08114v2</a></p>
 </div>
 <div id="ref-3uj9giYH">
 <p>70. <strong>Generalizing from a Few Examples: A Survey on Few-Shot Learning</strong> <br />
 Yaqing Wang, Quanming Yao, James Kwok, Lionel M. Ni<br />
-<em>arXiv:1904.05046 [cs]</em> (2020-03-29) <a href="http://arxiv.org/abs/1904.05046">http://arxiv.org/abs/1904.05046</a></p>
+(2019-04-10) <a href="https://arxiv.org/abs/1904.05046v3">https://arxiv.org/abs/1904.05046v3</a></p>
 </div>
 <div id="ref-1JkwCtaO">
 <p>71. <strong>Modeling Industrial ADMET Data with Multitask Networks</strong> <br />
 Steven Kearnes, Brian Goldman, Vijay Pande<br />
-<em>arXiv:1606.08793 [stat]</em> (2017-01-12) <a href="http://arxiv.org/abs/1606.08793">http://arxiv.org/abs/1606.08793</a></p>
+(2016-06-28) <a href="https://arxiv.org/abs/1606.08793v3">https://arxiv.org/abs/1606.08793v3</a></p>
 </div>
 <div id="ref-Rp6PiLtV">
 <p>72. <strong>The Effectiveness of Multitask Learning for Phenotyping with Electronic Health Records Data</strong> <br />
 Daisy Yi Ding, Chloé Simpson, Stephen Pfohl, Dave C. Kale, Kenneth Jung, Nigam H. Shah<br />
-<em>arXiv:1808.03331 [cs, stat]</em> (2019-01-05) <a href="http://arxiv.org/abs/1808.03331">http://arxiv.org/abs/1808.03331</a></p>
+(2018-08-09) <a href="https://arxiv.org/abs/1808.03331v3">https://arxiv.org/abs/1808.03331v3</a></p>
 </div>
 <div id="ref-P4ixsM8i">
 <p>73. <strong>Low Data Drug Discovery with One-Shot Learning</strong> <br />
@@ -705,11 +710,6 @@ DOI: <a href="https://doi.org/10.1038/nbt.3838">10.1038/nbt.3838</a> · PMID: <a
 Jaclyn N. Taroni, Peter C. Grayson, Qiwen Hu, Sean Eddy, Matthias Kretzler, Peter A. Merkel, Casey S. Greene<br />
 <em>Cell Systems</em> (2019-05) <a href="https://doi.org/gf75g5">https://doi.org/gf75g5</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cels.2019.04.003">10.1016/j.cels.2019.04.003</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31121115">31121115</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6538307">PMC6538307</a></p>
-</div>
-<div id="ref-G61OY6xj">
-<p>78. <strong>How transferable are features in deep neural networks?</strong> <br />
-Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson<br />
-<em>arXiv</em> (2014-12-09) <a href="https://arxiv.org/abs/1411.1792">https://arxiv.org/abs/1411.1792</a></p>
 </div>
 </div>
 <!-- default theme -->
