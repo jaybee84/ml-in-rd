@@ -1,5 +1,6 @@
-content/01.synopsis.md:6:TODO
 content/03.heterogeneity.md:4:TODO
-content/03.heterogeneity.md:22:TODO
+content/03.heterogeneity.md:5:TODO
+content/03.heterogeneity.md:5:TODO
+content/03.heterogeneity.md:23:TODO
 content/05.prior-knowledge.md:25:TODO
 content/07.definitions.md:4:TODO
