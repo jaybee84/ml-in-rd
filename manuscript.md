@@ -7,8 +7,8 @@ author-meta:
 - Justin Guinney
 bibliography:
 - content/manual-references.json
-date-meta: '2021-01-11'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2021-01-11\" />\n<meta name=\"citation_publication_date\" content=\"2021-01-11\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2021-01-29'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"citation_title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"og:title\" content=\"Machine learning methods for rare diseases\" />\n<meta property=\"twitter:title\" content=\"Machine learning methods for rare diseases\" />\n<meta name=\"dc.date\" content=\"2021-01-29\" />\n<meta name=\"citation_publication_date\" content=\"2021-01-29\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - rare disease
 - machine learning
@@ -28,10 +28,10 @@ title: Machine learning methods for rare diseases
 
 <small><em>
 This manuscript
-([permalink](https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/))
+([permalink](https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/))
 was automatically generated
-from [jaybee84/ml-in-rd@9de9830](https://github.com/jaybee84/ml-in-rd/tree/9de983051ecdde5c9ccf007091545a1b9bec2328)
-on January 11, 2021.
+from [jaybee84/ml-in-rd@407b642](https://github.com/jaybee84/ml-in-rd/tree/407b6429e20bbb9e22673717fe97f4216a9dfedb)
+on January 29, 2021.
 </em></small>
 
 ## Authors
@@ -274,6 +274,51 @@ VAEs are distinct from other autoencoders since the distribution of the encoding
 
 
 ### Outlook
+
+Throughout this perspective, we have highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
+Scarcity of samples, while significant, is not the only roadblock towards application of ML in rare disease data.
+The high dimensionality of modern data requires creative approaches, such as learning new representations of the data, to manage the curse of dimensionality.
+It further requires leveraging prior knowledge and transfer learning methods to appropriately interpret data. 
+Additionally, anyone applying machine learning methods on rare disease data should use techniques that increase confidence (such as bootstrapping) and penalize complexity of the resultant models (such as regularization) to enhance the generalizability of their work. 
+
+All of the approaches highlighted in this perspective come with certain challenges or inadequacies that breed mistrust in using these powerful techniques in rare disease.
+We believe that the same challenges that are currently considered major pitfalls in applying ML to rare disease can be great opportunities for data generation as well as method development in moving the field forward.
+During our journey through the various challenges, we identified two major areas where mindful strategies can immeasurably enhance the power of machine learning in rare disease and move the field forward.
+
+_Emphasis on not just "more n" but "more meaningful n"_
+
+Mindful addition of data is key for powering the next generation of analysis in rare disease data.
+While there are many techniques to collate rare data from different sources, incorrect data generation may hurt the end goal even if it adds to the size of the dataset.
+In our experience collaboration with domain experts have proved to be critical in gaining insight into potential sources of variation in the datasets.
+As an example, an neurofibromatosis type 1 (NF1) dataset was found to contain samples collected using vastly different surgical techniques (laser ablation and excision vs standard excision). [@doi:10.3390/genes11020226] 
+While the integrative analysis in the study using transfer learning techniques was able to minimize technique related signals [@doi:10.1016/j.cels.2019.04.003], a more traditional analysis may have resulted in surfacing of substantial biological differences that are a consequence of process (e.g. activation of heat shock protein related pathways), not disease related biology. 
+Such instances underline the fact that continuous collaboration with domain experts is needed to generate robust datasets in the future.
+A few such collaborations are beginning to show promise in generating valuable datasets for future use.[@doi:10.1038/s41597-020-0508-5]
+
+
+In addition to sample scarcity, there is a dearth of comprehensive phenotypic-genotypic databases in rare disease.
+With the ubiquity of sequencing platforms, genomic data has been, relatively speaking, easy to gather for rare disease patients.[@doi:10.1038/nrg3555; @doi:10.1038/nrg.2017.116; @doi:10.1056/NEJMra1711801]
+An important next step is to develop comprehensive comprehensive genomics-driven genotype-phenotype databases that can fuel interpretation of features extracted using ML methods.
+Finally, mindful sharing of data with proper metadata and attribution to enable prompt data reuse is of utmost important in building datasets that can be of great value in rare disease. [@https://www.nature.com/articles/s41576-020-0257-5]
+
+
+_Development of methods that reliably support mechanistic interrogation of specific rare diseases_
+
+The majority of ML methods for rare disease that we have investigated are applied to classification tasks. 
+Conversely, we've found few examples of methodologies that interrogate biological mechanisms of rare diseases. 
+This is likely a consequence of a dearth of methods that can tolerate the constraints imposed by rare disease research such as phenotypic heterogeneity and limited data.
+An intentional push towards developing methods or analytical workflows that address this will be critical to apply machine learning approaches to rare disease data.
+
+Method development with rare disease applications in mind requires the developers to bear the responsibility of ensuring that the resulting model is _trustworthy_.
+The field of natural language processing has a few examples of how this can be achieved.[@https://www.aclweb.org/anthology/N16-3020.pdf, @https://www.aclweb.org/anthology/P19-1073.pdf]
+One way to increase trust in a developed model is by helping users understand the behavior of the developed model through providing explanations regarding why a certain model made certain predictions.[@https://www.aclweb.org/anthology/N16-3020.pdf]
+Another approach is to provide robust _error analysis_ for newly developed models to help users understand the strengths and weaknesses of a model.[@https://www.aclweb.org/anthology/P19-1073.pdf; @https://www.mitpressjournals.org/doi/abs/10.1162/COLI_a_00072; @doi:10.1093/bioinformatics/bth060]
+Adoption of these kind of approaches into biological data and analysis is still rare but is quickly becoming necessary as machine learning approaches become mainstream in biomedicine.
+
+Finally, methods that can reliably integrate disparate datasets will always remain a need of rare diseases.
+Moreover, combining data that originated from diverse modalities to create a complete picture of the disease related biology is increasingly becoming common.
+To facilitate such analyses in rare disease, methods that rely on finding structural correspondences between datasets ("anchors") may be able to transform the status-quo of using machine learning methods in rare disease.[@https://www.aclweb.org/anthology/W06-1615.pdf; @https://people.cs.umass.edu/~mahadeva/papers/IJCAI2011-DA.pdf; https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8]
+Overall, we speculate that this an important burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare disease.
 
 
 ## References {.page_break_before}

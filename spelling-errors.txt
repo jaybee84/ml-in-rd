@@ -1,3 +1,6 @@
+genotypic
 histopathology
+IJCAI
+mahadeva
 TODO
 VAE’s
