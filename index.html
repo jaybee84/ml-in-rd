@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/fccb1082662c74be27992f105b285bda47a527f8/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/fccb1082662c74be27992f105b285bda47a527f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/fccb1082662c74be27992f105b285bda47a527f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/10d9d2176e25c5529c8df37172a930f4eddb6ef6/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/10d9d2176e25c5529c8df37172a930f4eddb6ef6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/10d9d2176e25c5529c8df37172a930f4eddb6ef6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/fccb1082662c74be27992f105b285bda47a527f8/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/10d9d2176e25c5529c8df37172a930f4eddb6ef6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/fccb1082662c74be27992f105b285bda47a527f8">jaybee84/ml-in-rd@fccb108</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/10d9d2176e25c5529c8df37172a930f4eddb6ef6">jaybee84/ml-in-rd@10d9d21</a>
 on January 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -262,7 +262,7 @@ Feature-representation-transfer, which incorporates dimension reduction through 
 Not all of these samples include the most relevant clinical or phenotypic data such as drug response.
 However, these publicly available data include an <em>in vitro</em> experiment that examined the response to 160 drugs for 30 AML patient samples, measured using genome-wide arrays which have tens of thousands of features <span class="citation" data-cites="160WNxTq0">[<a href="#ref-160WNxTq0" role="doc-biblioref">77</a>]</span>.
 Training on this drug response dataset alone poses challenges raised throughout – many features combined with small sample size can result in ML models that are of limited utility and sample size can also be prohibitive when performing representation learning.
-Dincer et al. trained a variational autoencoder on over 6500 AML samples (VAE; see <a href="#definitions">definitions</a>) [TODO: link between sections?] to reduce the dimensionality of the test set in an approach termed DeepProfile <span class="citation" data-cites="RKTCW7RT">[<a href="#ref-RKTCW7RT" role="doc-biblioref">78</a>]</span>.
+Dincer et al. trained a variational autoencoder on over 6500 AML samples (VAE; see <a href="#definitions">definitions</a>) [TODO: link between sections?] to reduce the dimensionality of the test set in an approach termed DeepProfile <span class="citation" data-cites="RKTCW7RT">[<a href="#ref-RKTCW7RT" role="doc-biblioref">78</a>]</span>. (Figure[<a href="#fig:4">4</a>]a)
 The 30 AML test samples with drug response information were encoded using the VAE’s low-dimensional representation or <em>transferred</em>, reducing the number of features from thousands to eight.
 LASSO linear regression models that used encodings as features had better performance than models that used individual gene expression values as features on average.
 In addition, the low-dimensional representation learned by the VAE captured more biological pathways than PCA, which may be attributable to the constraints on encodings imposed during the training process <a href="#definitions">definitions</a> [TODO: link between sections or cite what is in definitions?].
@@ -274,7 +274,7 @@ The authors used the latent variables learned by the model to describe transcrip
 (Here “unseen” refers to the fact that these diseases were not in the training set).
 PLIER is a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways and gene expression data as input <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">79</a>]</span>.
 PLIER includes constraints (regularization) such that some latent variables learned by the model will align with input gene sets and ideally latent variables will only be associated with a low number of related gene sets <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">79</a>]</span>, which make it suitable for biological discovery or description of rare disease data.
-MultiPLIER allows us to use one model to describe multiple datasets instead of reconciling output from multiple models, which is highly beneficial when identifying commonalities among disease manifestations or affected tissues is a research goal.
+MultiPLIER allows us to use one model to describe multiple datasets instead of reconciling output from multiple models, which is highly beneficial when identifying commonalities among disease manifestations or affected tissues is a research goal.(Figure[<a href="#fig:4">4</a>]b)
 (This benefit extends to studying multiple cohorts with a different model.)
 The inclusion of a large number of samples from diverse biological conditions in the training set results in models with desirable features (e.g., similar pathways are disentangled or separated out in the learned representations).</p>
 <p>Taken together, DeepProfile <span class="citation" data-cites="doi:10.1101/278739v2">[<span class="citeproc-not-found" data-reference-id="doi:10.1101/278739v2"><strong>???</strong></span>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">81</a>]</span> suggest a combination of the techniques discussed throughout this article can be capitalized on for rare disease research.
@@ -283,6 +283,11 @@ The utility of DeepProfile and MultiPLIER stem from the fact that biological pro
 In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">82</a>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
 In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases .</p>
+<div id="fig:4" class="fignos">
+<figure>
+<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/multiplier-DeepProfile.pdf" /><figcaption><span>Figure 4:</span> Combining multiple strategies strengthens the performance of ML models in rare disease</figcaption>
+</figure>
+</div>
 <h3 id="outlook">Outlook</h3>
 <p>Throughout this perspective, we have highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
 Scarcity of samples, while significant, is not the only roadblock towards application of ML in rare disease data.
