@@ -1,4 +1,4 @@
-content/05.prior-knowledge.md:25:TODO
+content/05.prior-knowledge.md:26:TODO
 content/06.multiple-approaches-required.md:12:TODO
 content/06.multiple-approaches-required.md:13:VAE's
 content/06.multiple-approaches-required.md:15:TODO
