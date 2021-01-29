@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/43d2910607ff47efc9ff867a55dbcf5ef2226c5b/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/43d2910607ff47efc9ff867a55dbcf5ef2226c5b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/43d2910607ff47efc9ff867a55dbcf5ef2226c5b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/c857530392cbd0e99f728f623a9c8abfd90db947/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c857530392cbd0e99f728f623a9c8abfd90db947/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c857530392cbd0e99f728f623a9c8abfd90db947/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/43d2910607ff47efc9ff867a55dbcf5ef2226c5b/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/c857530392cbd0e99f728f623a9c8abfd90db947/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/43d2910607ff47efc9ff867a55dbcf5ef2226c5b">jaybee84/ml-in-rd@43d2910</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/c857530392cbd0e99f728f623a9c8abfd90db947">jaybee84/ml-in-rd@c857530</a>
 on January 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -167,7 +167,7 @@ Furthermore, rare disease data collection and aggregation methods can add to the
 In this section, we will discuss strategies like simplifying data and addressing technical artifacts through dimension reduction which can help mitigate these challenges.
 Dimensionality reduction methods including unsupervised approaches like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">8</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">9</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">10</a>]</span> can help ‘compress’ information from a large number of features into a smaller number of features.
 These techniques can be applied to characterize imaging data <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">12</a>]</span>, mass cytometry data <span class="citation" data-cites="gqTS2Uy7">[<a href="#ref-gqTS2Uy7" role="doc-biblioref">13</a>]</span>, ‘omics data, and others.
-These methods not only help in reducing the number of features, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">14</a>]</span>), define subgroups within data (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">15</a>]</span>, or for feature selection/extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">16</a>]</span></p>
+These methods not only help in reducing the number of features, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">14</a>]</span>), define subgroups within data (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">15</a>]</span>, or for feature selection/extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">16</a>]</span> (Figure <a href="#fig:1">1</a>)</p>
 <p>Rare disease datasets, like many other scenarios, can contain structure unrelated to the biology of the disease; e.g. structure related to batch, sample preparation methodology, or sequencing platform <span class="citation" data-cites="Lby4PmSX">[<a href="#ref-Lby4PmSX" role="doc-biblioref">17</a>]</span>.
 The consequences of these artifacts are amplified when samples are rare and the cohort contains several phenotypes. Furthermore, datasets are often combined from multiple small studies where biological characteristics are confounded by technical variables.
 We can leverage dimensionality reduction methods like PCA, MDS, t-SNE, and UMAP to identify the effect of these variables on the data. All of these methods can be used to identify batch effects and other structures in the data, though some like t-SNE and UMAP may require tuning of hyperparameters that affect the output.<span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">10</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">17</a>]</span>
@@ -183,6 +183,11 @@ Low-dimensional representations trained on a collection of transcriptomic data c
 <p>Representation learning generally requires many samples in complex biological systems and thus may appear to aggravate the curse of dimensionality.
 But it can be a powerful tool to learn low-dimensional patterns from large datasets and then find those patterns in smaller, related datasets.
 In the later sections of this perspective, we will discuss this method of leveraging large datasets to reduce dimensionality in smaller datasets, also known as feature-representation-transfer.</p>
+<div id="fig:1" class="fignos">
+<figure>
+<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/dimensionality-reduction.pdf" /><figcaption><span>Figure 1:</span> Dimension reduction can help manage the curse of dimensionality in rare disease data</figcaption>
+</figure>
+</div>
 <h3 id="manage-model-complexity-while-preserving-the-value-of-machine-learning">Manage model complexity while preserving the value of machine learning</h3>
 <p>Translating machine learning findings into testable hypotheses requires the applied models to be a) stable – the same predicted features should surface from the data if the model is run multiple times – and b) simple, as simple models guard against misinterpretation due to technical challenges.
 Meeting these requirements is challenging in rare disease datasets where there is high label-uncertainty (i.e., where the label given to a data point may not be correct due to imperfect understanding of the disease).
