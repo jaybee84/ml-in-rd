@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/2746b7cc5f93d7002672114407b0eb453fb339ed/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/2746b7cc5f93d7002672114407b0eb453fb339ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/2746b7cc5f93d7002672114407b0eb453fb339ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/43183ef77f5bfa71677a32287518e49ce2d78d62/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/43183ef77f5bfa71677a32287518e49ce2d78d62/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/43183ef77f5bfa71677a32287518e49ce2d78d62/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/2746b7cc5f93d7002672114407b0eb453fb339ed/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/43183ef77f5bfa71677a32287518e49ce2d78d62/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/2746b7cc5f93d7002672114407b0eb453fb339ed">jaybee84/ml-in-rd@2746b7c</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/43183ef77f5bfa71677a32287518e49ce2d78d62">jaybee84/ml-in-rd@43183ef</a>
 on January 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -267,15 +267,6 @@ The utility of DeepProfile and MultiPLIER stem from the fact that biological pro
 In the natural images field, researchers have demonstrated that the transferability of features depends on relatedness of tasks <span class="citation" data-cites="G61OY6xj">[<a href="#ref-G61OY6xj" role="doc-biblioref">82</a>]</span>.
 The limits of transfer learning for and the concept of relatedness in high-dimensional biomedical data assaying rare diseases are open research questions.
 In the authors’ opinion, selecting an appropriate model for a given task and evaluations that are well-aligned with a research goal are crucial for applying these approaches in rare diseases .</p>
-<h2 class="page_break_before" id="definitions">Definitions</h2>
-<h3 id="unsupervised-learning">Unsupervised learning:</h3>
-<p>Machine learning algorithms which can learn features from unlabeled training data (e.g. datasets where the samples do not have disease or phenotype labels) to predict the class or phenotype of new or unseen test data are part of unsupervised learning. Examples of unsupervised learning include principal component analyses, multidimensional scaling, UMAP, t-SNE, k-means clustering etc [TODO - add REFs].</p>
-<h3 id="supervised-learning">Supervised learning:</h3>
-<p>Machine learning algorithms that require training data with specific phenotype labels are part of supervised learning.
-Such algorithms learn correlations of features with the phenotype labels and use the learned correlations to predict the phenotype labels of unseen or new test data.</p>
-<h3 id="vae">VAE:</h3>
-<p>Variational Autoencoders or VAEs are unsupervised neural networks that use hidden layers to learn or encode representations from available data while mapping the input data to the output data.
-VAEs are distinct from other autoencoders since the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.</p>
 <h3 id="outlook">Outlook</h3>
 <p>Throughout this perspective, we have highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
 Scarcity of samples, while significant, is not the only roadblock towards application of ML in rare disease data.
@@ -311,6 +302,15 @@ Adoption of these kind of approaches into biological data and analysis is still 
 Moreover, combining data that originated from diverse modalities to create a complete picture of the disease related biology is increasingly becoming common.
 To facilitate such analyses in rare disease, methods that rely on finding structural correspondences between datasets (“anchors”) may be able to transform the status-quo of using machine learning methods in rare disease.[<span class="citation" data-cites="p9Zp4gOC"><a href="#ref-p9Zp4gOC" role="doc-biblioref">92</a></span>; <span class="citation" data-cites="E9WUYMxk"><a href="#ref-E9WUYMxk" role="doc-biblioref">93</a></span>/~mahadeva/papers/IJCAI2011-DA.pdf; https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8]
 Overall, we speculate that this an important burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare disease.</p>
+<h2 class="page_break_before" id="definitions">Definitions</h2>
+<h3 id="unsupervised-learning">Unsupervised learning:</h3>
+<p>Machine learning algorithms which can learn features from unlabeled training data (e.g. datasets where the samples do not have disease or phenotype labels) to predict the class or phenotype of new or unseen test data are part of unsupervised learning. Examples of unsupervised learning include principal component analyses, multidimensional scaling, UMAP, t-SNE, k-means clustering etc [TODO - add REFs].</p>
+<h3 id="supervised-learning">Supervised learning:</h3>
+<p>Machine learning algorithms that require training data with specific phenotype labels are part of supervised learning.
+Such algorithms learn correlations of features with the phenotype labels and use the learned correlations to predict the phenotype labels of unseen or new test data.</p>
+<h3 id="vae">VAE:</h3>
+<p>Variational Autoencoders or VAEs are unsupervised neural networks that use hidden layers to learn or encode representations from available data while mapping the input data to the output data.
+VAEs are distinct from other autoencoders since the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
