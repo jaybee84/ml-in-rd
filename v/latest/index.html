@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2021-01-11" />
+  <meta name="dcterms.date" content="2021-01-29" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2021-01-11" />
-  <meta name="citation_publication_date" content="2021-01-11" />
+  <meta name="dc.date" content="2021-01-29" />
+  <meta name="citation_publication_date" content="2021-01-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/9de983051ecdde5c9ccf007091545a1b9bec2328/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/407b6429e20bbb9e22673717fe97f4216a9dfedb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/9de983051ecdde5c9ccf007091545a1b9bec2328">jaybee84/ml-in-rd@9de9830</a>
-on January 11, 2021.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/407b6429e20bbb9e22673717fe97f4216a9dfedb">jaybee84/ml-in-rd@407b642</a>
+on January 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -277,6 +277,40 @@ Such algorithms learn correlations of features with the phenotype labels and use
 <p>Variational Autoencoders or VAEs are unsupervised neural networks that use hidden layers to learn or encode representations from available data while mapping the input data to the output data.
 VAEs are distinct from other autoencoders since the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.</p>
 <h3 id="outlook">Outlook</h3>
+<p>Throughout this perspective, we have highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
+Scarcity of samples, while significant, is not the only roadblock towards application of ML in rare disease data.
+The high dimensionality of modern data requires creative approaches, such as learning new representations of the data, to manage the curse of dimensionality.
+It further requires leveraging prior knowledge and transfer learning methods to appropriately interpret data.
+Additionally, anyone applying machine learning methods on rare disease data should use techniques that increase confidence (such as bootstrapping) and penalize complexity of the resultant models (such as regularization) to enhance the generalizability of their work.</p>
+<p>All of the approaches highlighted in this perspective come with certain challenges or inadequacies that breed mistrust in using these powerful techniques in rare disease.
+We believe that the same challenges that are currently considered major pitfalls in applying ML to rare disease can be great opportunities for data generation as well as method development in moving the field forward.
+During our journey through the various challenges, we identified two major areas where mindful strategies can immeasurably enhance the power of machine learning in rare disease and move the field forward.</p>
+<p><em>Emphasis on not just “more n” but “more meaningful n”</em></p>
+<p>Mindful addition of data is key for powering the next generation of analysis in rare disease data.
+While there are many techniques to collate rare data from different sources, incorrect data generation may hurt the end goal even if it adds to the size of the dataset.
+In our experience collaboration with domain experts have proved to be critical in gaining insight into potential sources of variation in the datasets.
+As an example, an neurofibromatosis type 1 (NF1) dataset was found to contain samples collected using vastly different surgical techniques (laser ablation and excision vs standard excision). <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">37</a>]</span>
+While the integrative analysis in the study using transfer learning techniques was able to minimize technique related signals <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">81</a>]</span>, a more traditional analysis may have resulted in surfacing of substantial biological differences that are a consequence of process (e.g. activation of heat shock protein related pathways), not disease related biology.
+Such instances underline the fact that continuous collaboration with domain experts is needed to generate robust datasets in the future.
+A few such collaborations are beginning to show promise in generating valuable datasets for future use.<span class="citation" data-cites="ZBisfR4Q">[<a href="#ref-ZBisfR4Q" role="doc-biblioref">83</a>]</span></p>
+<p>In addition to sample scarcity, there is a dearth of comprehensive phenotypic-genotypic databases in rare disease.
+With the ubiquity of sequencing platforms, genomic data has been, relatively speaking, easy to gather for rare disease patients.<span class="citation" data-cites="15UbILeOM LSggBya9 6lu5irln">[<a href="#ref-15UbILeOM" role="doc-biblioref">84</a>,<a href="#ref-LSggBya9" role="doc-biblioref">85</a>,<a href="#ref-6lu5irln" role="doc-biblioref">86</a>]</span>
+An important next step is to develop comprehensive comprehensive genomics-driven genotype-phenotype databases that can fuel interpretation of features extracted using ML methods.
+Finally, mindful sharing of data with proper metadata and attribution to enable prompt data reuse is of utmost important in building datasets that can be of great value in rare disease. <span class="citation" data-cites="6uid5yCL">[<a href="#ref-6uid5yCL" role="doc-biblioref">87</a>]</span></p>
+<p><em>Development of methods that reliably support mechanistic interrogation of specific rare diseases</em></p>
+<p>The majority of ML methods for rare disease that we have investigated are applied to classification tasks.
+Conversely, we’ve found few examples of methodologies that interrogate biological mechanisms of rare diseases.
+This is likely a consequence of a dearth of methods that can tolerate the constraints imposed by rare disease research such as phenotypic heterogeneity and limited data.
+An intentional push towards developing methods or analytical workflows that address this will be critical to apply machine learning approaches to rare disease data.</p>
+<p>Method development with rare disease applications in mind requires the developers to bear the responsibility of ensuring that the resulting model is <em>trustworthy</em>.
+The field of natural language processing has a few examples of how this can be achieved.<span class="citation" data-cites="8fgQiEzK">[<a href="#ref-8fgQiEzK" role="doc-biblioref">88</a>]</span>
+One way to increase trust in a developed model is by helping users understand the behavior of the developed model through providing explanations regarding why a certain model made certain predictions.<span class="citation" data-cites="8fgQiEzK">[<a href="#ref-8fgQiEzK" role="doc-biblioref">88</a>]</span>
+Another approach is to provide robust <em>error analysis</em> for newly developed models to help users understand the strengths and weaknesses of a model.<span class="citation" data-cites="aD6MDG21 sa8SP0BL uvZAopDf">[<a href="#ref-aD6MDG21" role="doc-biblioref">89</a>,<a href="#ref-sa8SP0BL" role="doc-biblioref">90</a>,<a href="#ref-uvZAopDf" role="doc-biblioref">91</a>]</span>
+Adoption of these kind of approaches into biological data and analysis is still rare but is quickly becoming necessary as machine learning approaches become mainstream in biomedicine.</p>
+<p>Finally, methods that can reliably integrate disparate datasets will always remain a need of rare diseases.
+Moreover, combining data that originated from diverse modalities to create a complete picture of the disease related biology is increasingly becoming common.
+To facilitate such analyses in rare disease, methods that rely on finding structural correspondences between datasets (“anchors”) may be able to transform the status-quo of using machine learning methods in rare disease.[<span class="citation" data-cites="p9Zp4gOC"><a href="#ref-p9Zp4gOC" role="doc-biblioref">92</a></span>; <span class="citation" data-cites="E9WUYMxk"><a href="#ref-E9WUYMxk" role="doc-biblioref">93</a></span>/~mahadeva/papers/IJCAI2011-DA.pdf; https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8]
+Overall, we speculate that this an important burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare disease.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
@@ -754,6 +788,62 @@ DOI: <a href="https://doi.org/10.1016/j.cels.2019.04.003">10.1016/j.cels.2019.04
 <p>82. <strong>How transferable are features in deep neural networks?</strong> <br />
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson<br />
 <em>arXiv</em> (2014-12-09) <a href="https://arxiv.org/abs/1411.1792">https://arxiv.org/abs/1411.1792</a></p>
+</div>
+<div id="ref-ZBisfR4Q">
+<p>83. <strong>A clinically and genomically annotated nerve sheath tumor biospecimen repository</strong> <br />
+Kai Pollard, Jineta Banerjee, Xengie Doan, Jiawan Wang, Xindi Guo, Robert Allaway, Shannon Langmead, Bronwyn Slobogean, Christian F. Meyer, David M. Loeb, … Christine A. Pratilas<br />
+<em>Scientific Data</em> (2020-06-19) <a href="https://doi.org/ghv6ch">https://doi.org/ghv6ch</a> <br />
+DOI: <a href="https://doi.org/10.1038/s41597-020-0508-5">10.1038/s41597-020-0508-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32561749">32561749</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7305302">PMC7305302</a></p>
+</div>
+<div id="ref-15UbILeOM">
+<p>84. <strong>Rare-disease genetics in the era of next-generation sequencing: discovery to translation</strong> <br />
+Kym M. Boycott, Megan R. Vanstone, Dennis E. Bulman, Alex E. MacKenzie<br />
+<em>Nature Reviews Genetics</em> (2013-09-03) <a href="https://doi.org/ghvhsd">https://doi.org/ghvhsd</a> <br />
+DOI: <a href="https://doi.org/10.1038/nrg3555">10.1038/nrg3555</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23999272">23999272</a></p>
+</div>
+<div id="ref-LSggBya9">
+<p>85. <strong>Paediatric genomics: diagnosing rare disease in children</strong> <br />
+Caroline F. Wright, David R. FitzPatrick, Helen V. Firth<br />
+<em>Nature Reviews Genetics</em> (2018-02-05) <a href="https://doi.org/gcxbr8">https://doi.org/gcxbr8</a> <br />
+DOI: <a href="https://doi.org/10.1038/nrg.2017.116">10.1038/nrg.2017.116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29398702">29398702</a></p>
+</div>
+<div id="ref-6lu5irln">
+<p>86. <strong>Next-Generation Sequencing to Diagnose Suspected Genetic Disorders</strong> <br />
+David R. Adams, Christine M. Eng<br />
+<em>New England Journal of Medicine</em> (2018-10-04) <a href="https://doi.org/gf49m7">https://doi.org/gf49m7</a> <br />
+DOI: <a href="https://doi.org/10.1056/nejmra1711801">10.1056/nejmra1711801</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30281996">30281996</a></p>
+</div>
+<div id="ref-6uid5yCL">
+<p>87. <strong>Responsible, practical genomic data sharing that accelerates research</strong> <br />
+James Brian Byrd, Anna C. Greene, Deepashree Venkatesh Prasad, Xiaoqian Jiang, Casey S. Greene<br />
+<em>Nature Reviews Genetics</em> (2020-10) <a href="https://www.nature.com/articles/s41576-020-0257-5">https://www.nature.com/articles/s41576-020-0257-5</a> <br />
+DOI: <a href="https://doi.org/10.1038/s41576-020-0257-5">10.1038/s41576-020-0257-5</a></p>
+</div>
+<div id="ref-8fgQiEzK">
+<p>88. (2016-06-16) <a href="https://www.aclweb.org/anthology/N16-3020.pdf">https://www.aclweb.org/anthology/N16-3020.pdf</a></p>
+</div>
+<div id="ref-aD6MDG21">
+<p>89. (2019-07-15) <a href="https://www.aclweb.org/anthology/P19-1073.pdf">https://www.aclweb.org/anthology/P19-1073.pdf</a></p>
+</div>
+<div id="ref-sa8SP0BL">
+<p>90. <strong>Towards Automatic Error Analysis of Machine Translation Output</strong> <br />
+Maja Popović, Hermann Ney<br />
+<em>Computational Linguistics</em> (2011-07-14) <a href="https://doi.org/10.1162/COLI_a_00072">https://doi.org/10.1162/COLI_a_00072</a> <br />
+DOI: <a href="https://doi.org/10.1162/COLI_a_00072">10.1162/coli_a_00072</a></p>
+</div>
+<div id="ref-uvZAopDf">
+<p>91. <strong>Recognizing names in biomedical texts: a machine learning approach</strong> <br />
+G. Zhou, J. Zhang, J. Su, D. Shen, C. Tan<br />
+<em>Bioinformatics</em> (2004-02-10) <a href="https://doi.org/bxts7r">https://doi.org/bxts7r</a> <br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/bth060">10.1093/bioinformatics/bth060</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14871877">14871877</a></p>
+</div>
+<div id="ref-p9Zp4gOC">
+<p>92. (2010-06-15) <a href="https://www.aclweb.org/anthology/W06-1615.pdf">https://www.aclweb.org/anthology/W06-1615.pdf</a></p>
+</div>
+<div id="ref-E9WUYMxk">
+<p>93. <strong>College of Information &amp; Computer Sciences</strong> <br />
+College of Information &amp; Computer Sciences<br />
+<a href="https://www.cics.umass.edu/">https://www.cics.umass.edu/</a></p>
 </div>
 </div>
 <!-- default theme -->
