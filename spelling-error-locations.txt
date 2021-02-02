@@ -1,8 +1,7 @@
-content/05.prior-knowledge.md:26:TODO
-content/06.multiple-approaches-required.md:12:TODO
-content/06.multiple-approaches-required.md:13:VAE's
-content/06.multiple-approaches-required.md:15:TODO
-content/06.multiple-approaches-required.md:16:histopathology
+content/02.intro.md:3:analytics
+content/04.model-complexity.md:26:benefecial
+content/05.prior-knowledge.md:20:TODO
+content/06.multiple-approaches-required.md:11:histopathology
 content/07.outlook.md:24:genotypic
 content/07.outlook.md:45:mahadeva
 content/08.definitions.md:4:TODO
