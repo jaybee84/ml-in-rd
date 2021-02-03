@@ -1,7 +1,2 @@
-analytics
-benefecial
-genotypic
-histopathology
 IJCAI
-mahadeva
 TODO
