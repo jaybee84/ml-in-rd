@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/af1a8916ce269d60d2950288e88af080f309da63/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/af1a8916ce269d60d2950288e88af080f309da63/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/af1a8916ce269d60d2950288e88af080f309da63/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/af1a8916ce269d60d2950288e88af080f309da63/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/140c9f87db500be8471656d6ae1978434ca7e622">jaybee84/ml-in-rd@140c9f8</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/af1a8916ce269d60d2950288e88af080f309da63">jaybee84/ml-in-rd@af1a891</a>
 on February 8, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -157,12 +157,12 @@ Thus, specialized computational methods that can learn patterns from small datas
 In this perspective, we first highlight ML approaches that address or better tolerate the limitations of rare disease data, and then discuss the future of ML applications in rare disease.</p>
 <h3 id="manage-complex-high-dimensional-rare-disease-data">Manage complex high-dimensional rare disease data</h3>
 <p>In rare diseases, the high throughput ‘omic’ methods generate highly dimensional data – data with many features, such as all of the mRNA transcripts in a sample – from a vanishingly small number of samples.
-A lack of samples gives rise to the “curse of dimensionality” (i.e., few samples but many features), which is an impediment in analyzing feature-rich data in sample-deficient contexts such as rare disease.<span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">5</a>]</span>
+A lack of samples gives rise to the “curse of dimensionality” (i.e., few samples but many features), which is an impediment in analyzing feature-rich data in sample-deficient contexts such as rare disease.<span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">5</a>]</span> (Figure <a href="#fig:1">1</a>A-B)
 In particular, increased numbers of features results in increased sparsity (missing observations), more dissimilarity between samples, and increased redundancy between individual features or combinations of features <span class="citation" data-cites="c6DKSPdm">[<a href="#ref-c6DKSPdm" role="doc-biblioref">6</a>]</span>, which creates a challenging prediction problem.
 Furthermore, rare disease data collection and aggregation methods can add to these challenges by introducing technical variability into the data at hand.
 In this section, we will discuss strategies for reducing the feature space and addressing technical artifacts through dimensionality reduction.</p>
-<p>Dimensionality reduction methods like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) can help ‘compress’ information from a large number of features into a smaller number of features in an unsupervised manner <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">7</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">8</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>]</span>.
-These methods not only help in reducing the number of features in various types of data <span class="citation" data-cites="1Ak4JFhvU gqTS2Uy7">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>,<a href="#ref-gqTS2Uy7" role="doc-biblioref">12</a>]</span>, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">13</a>]</span>), to define sample subgroups (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">14</a>]</span>, or for feature selection and extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">15</a>]</span> (Figure <a href="#fig:1">1</a>)</p>
+<p>Dimensionality reduction methods like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) can help ‘compress’ information from a large number of features into a smaller number of features in an unsupervised manner <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">7</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">8</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>]</span>. (Figure <a href="#fig:1">1</a>C)
+These methods not only help in reducing the number of features in various types of data <span class="citation" data-cites="1Ak4JFhvU gqTS2Uy7">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>,<a href="#ref-gqTS2Uy7" role="doc-biblioref">12</a>]</span>, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">13</a>]</span>), to define sample subgroups (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">14</a>]</span>, or for feature selection and extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">15</a>]</span> (Figure <a href="#fig:1">1</a>D)</p>
 <p>Rare disease datasets are often combined from multiple small studies leading to the confounding of biological characteristics with technical variables such as batch, sample preparation methodology, or sequencing platform <span class="citation" data-cites="Lby4PmSX">[<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
 Methods like PCA, MDS, t-SNE, and UMAP can successfully identify the effect of these variables on the original data, though t-SNE and UMAP may require tuning of hyperparameters that may effect the output <span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
 Furthermore, testing multiple dimensionality reduction methods, rather than a single method, may be necessary to obtain a more comprehensive portrait of the data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>]</span>.
