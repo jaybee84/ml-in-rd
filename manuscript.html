@@ -9,7 +9,7 @@
   <meta name="author" content="Jaclyn N Taroni" />
   <meta name="author" content="Casey Greene" />
   <meta name="author" content="Justin Guinney" />
-  <meta name="dcterms.date" content="2021-02-03" />
+  <meta name="dcterms.date" content="2021-02-08" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning methods for rare diseases</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Machine learning methods for rare diseases" />
   <meta property="og:title" content="Machine learning methods for rare diseases" />
   <meta property="twitter:title" content="Machine learning methods for rare diseases" />
-  <meta name="dc.date" content="2021-02-03" />
-  <meta name="citation_publication_date" content="2021-02-03" />
+  <meta name="dc.date" content="2021-02-08" />
+  <meta name="citation_publication_date" content="2021-02-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/4c1396e7b2456a2df64c43d1e76141f8e616ee69/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/4c1396e7b2456a2df64c43d1e76141f8e616ee69/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/4c1396e7b2456a2df64c43d1e76141f8e616ee69/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +79,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/4c1396e7b2456a2df64c43d1e76141f8e616ee69/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/140c9f87db500be8471656d6ae1978434ca7e622/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/4c1396e7b2456a2df64c43d1e76141f8e616ee69">jaybee84/ml-in-rd@4c1396e</a>
-on February 3, 2021.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/140c9f87db500be8471656d6ae1978434ca7e622">jaybee84/ml-in-rd@140c9f8</a>
+on February 8, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -134,99 +134,102 @@ Sage Bionetworks
 </ul>
 <h2 class="page_break_before" id="synopsis">Synopsis</h2>
 <p>(Instructions: Describe the background, basic structure of the article, list material to be covered indicating depth of coverage, how they are logically arranged, include recent pubs in the area, 300-500 words)</p>
-<p>Substantial technological advances have accelerated basic research and made deep characterization of patient samples routine [TODO: what do we mean by “technological advances” specifically?].
-These technologies provide a rich portrait of genes, cellular pathways, and cell types involved in complex phenotypes.
+<p>The advent of high-throughput profiling methods such as genomics, transcriptomics, and other technologies has accelerated basic research and made deep characterization of patient samples routine.
+These approaches provide a rich portrait of genes, cellular pathways, and cell types involved in complex phenotypes.
 Machine learning is often a perfect fit for extracting disease-relevant patterns from these high dimensional datasets.
 Often, machine learning methods require many samples to identify reproducible and biologically meaningful patterns.
 With rare diseases, biological specimens, and consequently data, are limited due to the rarity of the condition.
 In this perspective, we outline the challenges and emerging solutions for using machine learning in rare disease settings.
-We aim to spur the development of powerful machine learning techniques for rare diseases.
 We also note that precision medicine presents a similar challenge, in which a common disease is partitioned into small subsets of patients with shared etiologies and treatment strategies.
-Advances from rare disease research are likely to be highly informative for other applications as well.</p>
+Advances from rare disease research are likely to be highly informative for other applications as well, and we propose that the methods community should prioritize the development of machine learning techniques for rare disease research.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>Rare disease research is increasingly dependent on high-throughput profiling of samples and would greatly benefit from machine learning (ML) analytics.
-A systematic review of application of ML in rare disease in the last 10 years uncovered 211 human data studies in 74 different rare diseases employing ensemble methods (36.0%), support vector machines (32.2%) and artificial neural networks (31.8%) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>]</span>.
+<p>,
+Rare disease research projects, as with many other biomedical domains, are increasingly using high-throughput profiling methods to better understand the nature of the disease.
+These profiling methods, including RNA sequencing (RNA-seq, whole genome sequencing, imaging data, electronic health record data, among others, generate large and complex data.
+The analysis of such complex data from rare disease will likely increasingly leverage machine learning (ML)-based methodologies.
+Indeed, a systematic review of application of ML in rare disease in the last 10 years uncovered 211 human data studies in 74 different rare diseases employing ensemble methods (36.0%), support vector machines (32.2%) and artificial neural networks (31.8%) <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>]</span>.
 While the review points to the increasing popularity of using ML methods in rare disease, there are various hurdles that are inherent to such datasets.
-ML based methods benefit from using large datasets, but analyzing high dimensional data from rare diseases datasets that typically contain 20 to 99 samples is challenging <span class="citation" data-cites="wwF0mDld 12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>,<a href="#ref-wwF0mDld" role="doc-biblioref">2</a>]</span>.
+ML based methods benefit from using large datasets, but analyzing high dimensional data from rare diseases datasets that typically contain fewer than one hundred samples is challenging <span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>]</span>.
 Small datasets lead to a lack of statistical power and magnify the susceptibility of ML methods to misinterpretation and unstable performance.
-Additionally, successful training of ML models require training datasets made of “gold standard” data where the diagnosis or label of a data point has very little uncertainty (or “label-noise”) associated with it <span class="citation" data-cites="G5HC64pk">[<a href="#ref-G5HC64pk" role="doc-biblioref">3</a>]</span>.
-Due to limited understanding of the biology of rare diseases, the symptoms or disease labels often come with significant label-noise (a <em>silver standard</em> dataset) <span class="citation" data-cites="16kfJJap4">[<a href="#ref-16kfJJap4" role="doc-biblioref">4</a>]</span>. [TODO: we use “label-noise” and “high label-uncertainty” somewhat interchangeably, or drop “label-noise” altogether when we get to the model complexity section]
-Thus, specialized computational methods that can learn patterns from small datasets and can generalize to newly acquired data are required for rare disease applications <span class="citation" data-cites="Zoj0hKzb">[<a href="#ref-Zoj0hKzb" role="doc-biblioref">5</a>]</span>.
+Additionally, successful training of ML models require training datasets made of “gold standard” data where the diagnosis or label of a data point has very little uncertainty (or “label-noise”) associated with it <span class="citation" data-cites="G5HC64pk">[<a href="#ref-G5HC64pk" role="doc-biblioref">2</a>]</span>.
+Due to limited understanding of the biology of rare diseases, the symptoms or disease labels often come with significant label-noise (a <em>silver standard</em> dataset) <span class="citation" data-cites="16kfJJap4">[<a href="#ref-16kfJJap4" role="doc-biblioref">3</a>]</span>.
+Thus, specialized computational methods that can learn patterns from small datasets and can generalize to newly acquired data are required for rare disease applications <span class="citation" data-cites="Zoj0hKzb">[<a href="#ref-Zoj0hKzb" role="doc-biblioref">4</a>]</span>.
 In this perspective, we first highlight ML approaches that address or better tolerate the limitations of rare disease data, and then discuss the future of ML applications in rare disease.</p>
 <h3 id="manage-complex-high-dimensional-rare-disease-data">Manage complex high-dimensional rare disease data</h3>
-<p>In rare diseases, the high throughput ‘omic’ methods generate highly dimensional data – data with many features such as all of the mRNA transcripts in a sample – from a vanishingly small number of samples.
-A lack of samples gives rise to the “curse of dimensionality” (i.e., few samples but many features), which is an impediment in analyzing feature-rich data in sample-deficient contexts such as rare disease.<span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">6</a>]</span>
-In particular, increased numbers of features results in increased sparsity (missing observations), more dissimilarity between samples, and increased redundancy between individual features or combinations of features <span class="citation" data-cites="c6DKSPdm">[<a href="#ref-c6DKSPdm" role="doc-biblioref">7</a>]</span>, which creates a challenging prediction problem.
+<p>In rare diseases, the high throughput ‘omic’ methods generate highly dimensional data – data with many features, such as all of the mRNA transcripts in a sample – from a vanishingly small number of samples.
+A lack of samples gives rise to the “curse of dimensionality” (i.e., few samples but many features), which is an impediment in analyzing feature-rich data in sample-deficient contexts such as rare disease.<span class="citation" data-cites="KOD2gdVS">[<a href="#ref-KOD2gdVS" role="doc-biblioref">5</a>]</span>
+In particular, increased numbers of features results in increased sparsity (missing observations), more dissimilarity between samples, and increased redundancy between individual features or combinations of features <span class="citation" data-cites="c6DKSPdm">[<a href="#ref-c6DKSPdm" role="doc-biblioref">6</a>]</span>, which creates a challenging prediction problem.
 Furthermore, rare disease data collection and aggregation methods can add to these challenges by introducing technical variability into the data at hand.
 In this section, we will discuss strategies for reducing the feature space and addressing technical artifacts through dimensionality reduction.</p>
-<p>Dimensionality reduction methods like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) can help ‘compress’ information from a large number of features into a smaller number of features in an unsupervised manner <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">8</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">9</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">10</a>]</span> .
-These methods not only help in reducing the number of features in various types of data <span class="citation" data-cites="1Ak4JFhvU gqTS2Uy7">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">12</a>,<a href="#ref-gqTS2Uy7" role="doc-biblioref">13</a>]</span>, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">14</a>]</span>), define sample subgroups (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">15</a>]</span>, or for feature selection or extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">16</a>]</span> (Figure <a href="#fig:1">1</a>)</p>
-<p>Rare disease datasets are often combined from multiple small studies leading to the confounding of biological characteristics with technical variables such as batch, sample preparation methodology, or sequencing platform <span class="citation" data-cites="Lby4PmSX">[<a href="#ref-Lby4PmSX" role="doc-biblioref">17</a>]</span>.
-Methods like PCA, MDS, t-SNE, and UMAP can successfully identify the effect of these variables on the original data, though t-SNE and UMAP may require tuning of hyperparameters that may effect the output <span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">10</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">17</a>]</span>.
-Furthermore, testing multiple dimensionality reduction methods, rather than a single method, may be desirable to obtain a more comprehensive portrait of the data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.
-Nguyen and Holmes discuss additional important considerations for using dimensionality reduction methods such as criteria for selecting a dimensionality reduction method and interpretation of results in detail <span class="citation" data-cites="Pyg7FNxd">[<a href="#ref-Pyg7FNxd" role="doc-biblioref">19</a>]</span>.
-Beyond dimensionality reduction, unsupervised learning approaches such as k-means clustering or hierarchical clustering have been used to characterize the structure present in genomic or imaging data <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">20</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">21</a>]</span>.
-Other approaches like reprocessing the raw data using a single analysis pipeline (if the data are obtained from different sources), application of batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">22</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">23</a>]</span>, and normalization of raw values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">24</a>]</span> may be required to obtain value from these datasets.</p>
-<p>Dimensionality reduction, or more fundamentally representation learning, learns low-dimensional representations or composites of features from the raw data.
-For example, representation learning through matrix factorization can extract composite features from transcriptomics datasets that are made of combinations of gene expression levels found in the training data<span class="citation" data-cites="ChpTIk5j">[<a href="#ref-ChpTIk5j" role="doc-biblioref">25</a>]</span>, and then use them to interpret test input data <span class="citation" data-cites="1DrhKLdVp NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>,<a href="#ref-1DrhKLdVp" role="doc-biblioref">26</a>]</span>.
-To ensure that the learned representations are generalizable, the features learned by the model can be constrained through methods like regularization <span class="citation" data-cites="biC8xxbd">[<a href="#ref-biC8xxbd" role="doc-biblioref">27</a>]</span>.
-Representation learning generally requires many samples in complex biological systems and therefore may appear to aggravate the curse of dimensionality.
+<p>Dimensionality reduction methods like multidimensional scaling (MDS), principal components analysis (PCA), t-distributed stochastic neighbor embedding (t-SNE), and uniform manifold approximation and projection (UMAP) can help ‘compress’ information from a large number of features into a smaller number of features in an unsupervised manner <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">7</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">8</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>]</span>.
+These methods not only help in reducing the number of features in various types of data <span class="citation" data-cites="1Ak4JFhvU gqTS2Uy7">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>,<a href="#ref-gqTS2Uy7" role="doc-biblioref">12</a>]</span>, but can also be used to visualize structure or artifacts in the data (e.g. <span class="citation" data-cites="AZCOtvbC">[<a href="#ref-AZCOtvbC" role="doc-biblioref">13</a>]</span>), to define sample subgroups (e.g. <span class="citation" data-cites="12XiicejZ">[<a href="#ref-12XiicejZ" role="doc-biblioref">14</a>]</span>, or for feature selection and extraction during application of specific machine learning models.<span class="citation" data-cites="15yIhkDpY">[<a href="#ref-15yIhkDpY" role="doc-biblioref">15</a>]</span> (Figure <a href="#fig:1">1</a>)</p>
+<p>Rare disease datasets are often combined from multiple small studies leading to the confounding of biological characteristics with technical variables such as batch, sample preparation methodology, or sequencing platform <span class="citation" data-cites="Lby4PmSX">[<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
+Methods like PCA, MDS, t-SNE, and UMAP can successfully identify the effect of these variables on the original data, though t-SNE and UMAP may require tuning of hyperparameters that may effect the output <span class="citation" data-cites="BsfyICXU Lby4PmSX">[<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>,<a href="#ref-Lby4PmSX" role="doc-biblioref">16</a>]</span>.
+Furthermore, testing multiple dimensionality reduction methods, rather than a single method, may be necessary to obtain a more comprehensive portrait of the data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>]</span>.
+Nguyen and Holmes discuss additional important considerations for using dimensionality reduction methods such as selection criteria and interpretation of results <span class="citation" data-cites="Pyg7FNxd">[<a href="#ref-Pyg7FNxd" role="doc-biblioref">18</a>]</span>.
+Beyond dimensionality reduction, other unsupervised learning approaches such as k-means clustering or hierarchical clustering have been used to characterize the structure present in genomic or imaging data <span class="citation" data-cites="11QYztxcm U2RMvmE5">[<a href="#ref-11QYztxcm" role="doc-biblioref">19</a>,<a href="#ref-U2RMvmE5" role="doc-biblioref">20</a>]</span>.
+Other approaches like reprocessing the data using a single pipeline (when data are obtained from multiple sources), using batch correction methods <span class="citation" data-cites="1HahRBkyb XJiH4M02">[<a href="#ref-1HahRBkyb" role="doc-biblioref">21</a>,<a href="#ref-XJiH4M02" role="doc-biblioref">22</a>]</span>, and normalizing raw values <span class="citation" data-cites="19neBSN5B">[<a href="#ref-19neBSN5B" role="doc-biblioref">23</a>]</span> may be necessary to obtain meaningful insights from the data.</p>
+<p>Dimensionality reduction, or more fundamentally, representation learning, learns low-dimensional representations (composite features) from the raw data.
+For example, representation learning through matrix factorization can extract features from transcriptomics datasets that are made of combinations of gene expression values found in the training data <span class="citation" data-cites="ChpTIk5j">[<a href="#ref-ChpTIk5j" role="doc-biblioref">24</a>]</span>, and use them to interpret test data <span class="citation" data-cites="1DrhKLdVp NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>,<a href="#ref-1DrhKLdVp" role="doc-biblioref">25</a>]</span>.
+To ensure that the learned representations are generalizable to other data, the features learned by the model can be constrained through methods like regularization <span class="citation" data-cites="biC8xxbd">[<a href="#ref-biC8xxbd" role="doc-biblioref">26</a>]</span>.
+Representation learning generally requires many samples when applied to complex biological systems and therefore may appear to aggravate the curse of dimensionality.
 However, it can be a powerful tool to learn low-dimensional patterns from large datasets and then find those patterns in smaller, related datasets.
-In the later sections of this perspective, we will discuss this method of leveraging large datasets to reduce dimensionality in smaller datasets, also known as feature-representation-transfer.</p>
+In later sections, we will discuss this method of leveraging large datasets to reduce dimensionality in smaller datasets, also known as feature-representation-transfer learning.</p>
 <div id="fig:1" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/dimensionality-reduction.pdf" /><figcaption><span>Figure 1:</span> Dimension reduction can help manage the curse of dimensionality in rare disease data</figcaption>
+<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/dimensionality-reduction.pdf" /><figcaption><span>Figure 1:</span> Dimension reduction can help manage the curse of dimensionality in rare disease data. A) Multiple datasets (shapes) with multiple phenotypes (purple, green) are combined for an analysis. The data (e.g., transcriptomic data) are highly dimensional, having thousands of features (f1-f100000). B) Evaluating the features, it appears that a combination of features (e.g., expressed genes) partition the purple samples from the green samples. C) Applying a dimensionality reduction method (e.g., PCA) condenses these features into new features (e.g., New Feature 1, a combination of f1, f2 …. f100000, and New Feature 2, a different combination of f1, f2 …. f100000). New Feature 1 describes the difference in input dataset (shapes) while New Feature 2 describes the difference in phenotype (color). D) New features (F1-F1000) can be used to interrogate the biology of the input samples, develop classification models, or use other analytical techniques that would have been more difficult with the original dataset dimensions.</figcaption>
 </figure>
 </div>
 <h3 id="manage-model-complexity-while-preserving-the-value-of-machine-learning">Manage model complexity while preserving the value of machine learning</h3>
-<p>Translating machine learning findings into testable hypotheses requires the applied models to be a) stable – the same predicted features should surface from the data if the model is run multiple times – and b) simple, as simple models guard against misinterpretation.
-Meeting these requirements is challenging in rare disease datasets where there is high label-uncertainty.
+<p>Translating machine learning findings into testable hypotheses requires the ML models to be both stable – the same predicted features should surface from the data if the model is run multiple times – and simple, as simple models guard against misinterpretation.
+Meeting these requirements is challenging in rare disease datasets where label-noise is abundant.
 In this section we highlight a few common ML techniques that can help improve the stability and simplicity of ML models applied to rare disease data.</p>
-<p>Techniques like resampling, as well as by combining various ML methods together (ensemble learning) can help achieve stability in predictions (Figure[<a href="#fig:2">2</a>]A-B).
-Resampling without replacement can generate confidence intervals for the model predictions by iteratively exposing the models to incomplete datasets, mimicking real world cases where most rare disease datasets are incomplete <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">29</a>]</span>.
-Resampling with replacement, or bootstrapping, helps estimate population values from datasets of limited size, and is also commonly used to find robust models when multiple models are combined into an ensemble (<span class="citation" data-cites="9EM1Mzod Uy4oESDl SS9DjYHO doi:10.1016/s0925-2312 17mzOREgU ADEtV1CD">[<span class="citeproc-not-found" data-reference-id="doi:10.1016/s0925-2312"><strong>???</strong></span>,<a href="#ref-9EM1Mzod" role="doc-biblioref">30</a>,<a href="#ref-Uy4oESDl" role="doc-biblioref">31</a>,<a href="#ref-SS9DjYHO" role="doc-biblioref">32</a>,<a href="#ref-17mzOREgU" role="doc-biblioref">33</a>,<a href="#ref-ADEtV1CD" role="doc-biblioref">34</a>]</span>).
-Ensemble learning methods like random forests use <em>bagging</em> (bootstrap aggregation) of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features <span class="citation" data-cites="Uy4oESDl 14J3u9pnR 7ueKyz71 eFWTLOhH doi:10.1016/s0031-3203">[<span class="citeproc-not-found" data-reference-id="doi:10.1016/s0031-3203"><strong>???</strong></span>,<a href="#ref-Uy4oESDl" role="doc-biblioref">31</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">35</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">36</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">37</a>]</span>.
-Regular ensemble learning has shown limited success in rare disease datasets with substantial label-noise. [TODO: citation?]
-This has led to the adoption of cascade learning, a variant of ensemble learning, where multiple methods leveraging distinct underlying assumptions are used in tandem; and augmented with algorithms like AdaBoost (boosting) to capture stable patterns existing in the silver standard data <span class="citation" data-cites="Q25GV92r ThoSnmu3 QEQ0NTvv">[<a href="#ref-Q25GV92r" role="doc-biblioref">38</a>,<a href="#ref-ThoSnmu3" role="doc-biblioref">39</a>,<a href="#ref-QEQ0NTvv" role="doc-biblioref">40</a>]</span>.
-A cascade learning approach for identifying rare disease patients from electronic health records from the general population utilized independent steps for feature extraction (using natural language processing based word2vec <span class="citation" data-cites="Q9kdxmQd">[<a href="#ref-Q9kdxmQd" role="doc-biblioref">41</a>]</span>), preliminary prediction using an ensemble of decision trees, and prediction refinement using similarity of data points to resolve sample labels <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">42</a>]</span>.
+<p>Techniques like resampling and combining various ML methods together (ensemble learning) can help achieve stability in predictions (Figure[<a href="#fig:2">2</a>]A-B).
+Resampling without replacement can generate confidence intervals for the model predictions by iteratively exposing the models to incomplete datasets, mimicking real world cases where most rare disease datasets are incomplete <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">28</a>]</span>.
+Alternatively, resampling with replacement (bootstrapping) helps estimate population values from datasets of limited size, and is also commonly used to find robust models when multiple models are combined into an ensemble (<span class="citation" data-cites="9EM1Mzod 16uxtBBBG SS9DjYHO RhxfHs3z 17mzOREgU ADEtV1CD">[<a href="#ref-9EM1Mzod" role="doc-biblioref">29</a>,<a href="#ref-16uxtBBBG" role="doc-biblioref">30</a>,<a href="#ref-SS9DjYHO" role="doc-biblioref">31</a>,<a href="#ref-RhxfHs3z" role="doc-biblioref">32</a>,<a href="#ref-17mzOREgU" role="doc-biblioref">33</a>,<a href="#ref-ADEtV1CD" role="doc-biblioref">34</a>]</span>).
+Ensemble learning methods like random forests use <em>bagging</em> (bootstrap aggregation) of independent decision trees that use similar parameters but different paths to form a consensus about the important predictive features <span class="citation" data-cites="16uxtBBBG 14J3u9pnR 7ueKyz71 eFWTLOhH mQ50J5fV">[<a href="#ref-16uxtBBBG" role="doc-biblioref">30</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">35</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">36</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">37</a>,<a href="#ref-mQ50J5fV" role="doc-biblioref">38</a>]</span>.
+However, standard ensemble learning has shown limited success in rare disease datasets with substantial label-noise. [TODO: citation?]
+This has led to the adoption of cascade learning, a variant of ensemble learning, where multiple methods leveraging distinct underlying assumptions are used in tandem; and augmented with algorithms like AdaBoost (boosting) to capture stable patterns existing in silver standard data <span class="citation" data-cites="Q25GV92r ThoSnmu3 QEQ0NTvv">[<a href="#ref-Q25GV92r" role="doc-biblioref">39</a>,<a href="#ref-ThoSnmu3" role="doc-biblioref">40</a>,<a href="#ref-QEQ0NTvv" role="doc-biblioref">41</a>]</span>.
+For example, a cascade learning approach for identifying rare disease patients from electronic health record data utilized independent steps for feature extraction (word2vec <span class="citation" data-cites="arxiv:1301.3781v343">[<span class="citeproc-not-found" data-reference-id="arxiv:1301.3781v343"><strong>???</strong></span>]</span>), preliminary prediction with ensembled decision trees, and prediction refinement using data similarity metrics <span class="citation" data-cites="HWIKCkVI">[<a href="#ref-HWIKCkVI" role="doc-biblioref">42</a>]</span>.
 Combining these three methods resulted in better performance than other methods when implemented on the silver standard dataset in isolation.
-The presence of multiple phenotypes (or classes) in rare disease datasets further decreases the available data points per class.
+The presence of multiple phenotypes (or classes) in rare disease datasets also decreases the available data points per class.
 In such cases, a one-class-at-a-time cascade learning approach (where at each stage a binary classifier predicts a specific class against all others) has been found to produce simpler models that perform better compared to multi-class ensemble classifiers <span class="citation" data-cites="1DliWuO93">[<a href="#ref-1DliWuO93" role="doc-biblioref">43</a>]</span>. (Figure[<a href="#fig:2">2</a>]D)</p>
 <p>Regularization simplifies models by making the feature space proportionate with the sample space. (Figure[<a href="#fig:2">2</a>]C)
-Regularization can not only protect ML models from poor generalizability that results from overfitting (where the model performs well for the training data but poorly for new test data) <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">44</a>]</span>, but also help penalize model complexity and reduce the feature space to build simpler models using limited datasets.
-Among the three popular regularized methods, ridge regression can minimize the magnitude of the features, but cannot remove unimportant features.
-LASSO regression, on the other hand, works well for selecting few important features since it can minimize the magnitude of some features more than the others <span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">45</a>]</span>.
+Regularization can not only protect ML models from poor generalizability caused by overfitting (where the model performs well on held-out training data but poorly on new test data) <span class="citation" data-cites="186cKBcbp">[<a href="#ref-186cKBcbp" role="doc-biblioref">44</a>]</span>, but also reduces model complexity and the feature space to build simpler models.
+Three popular regularized methods, ridge regression, LASSO regression, and elastic-net regression, differ predominantly in how they modify features of the input data.
+Ridge regression can minimize the magnitude of the features, but cannot entirely remove features.
+LASSO regression, on the other hand, works well for selecting a few important features since it can minimize the magnitude of some features more than the others <span class="citation" data-cites="deMgWtfc">[<a href="#ref-deMgWtfc" role="doc-biblioref">45</a>]</span>.
 A combination of LASSO and ridge, elastic-net regression <span class="citation" data-cites="JZNkB8d7">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>]</span> selects the most useful features, especially in presence of a large number of correlated features.</p>
-<p>Rare variant discovery and immune cell signature discovery studies, like rare diseases, face challenges of the sparsity of observations (e.g. rare variants, or rare immune cells).
-In rare variant discovery, ridge regression has been utilized to combine rare variants into a single score to increase the signal of rare variants <span class="citation" data-cites="E0Iw45aG">[<a href="#ref-E0Iw45aG" role="doc-biblioref">47</a>]</span>, while LASSO was implemented along with group penalties to identify rare variants or low frequency predictors <span class="citation" data-cites="2gwD58B IX9EQ5gX">[<a href="#ref-2gwD58B" role="doc-biblioref">48</a>,<a href="#ref-IX9EQ5gX" role="doc-biblioref">49</a>]</span>.
-Hybrid applications of LASSO in rare variant discovery studies like capturing combinations of variants <span class="citation" data-cites="s907ofL2 fPp30wsy">[<a href="#ref-s907ofL2" role="doc-biblioref">50</a>,<a href="#ref-fPp30wsy" role="doc-biblioref">51</a>]</span>, integrating with a probabilistic logistic Bayesian approach <span class="citation" data-cites="XCL2dRoS">[<a href="#ref-XCL2dRoS" role="doc-biblioref">52</a>]</span>, combining feature selection methods with a generalized pooling strategy <span class="citation" data-cites="5Zx90ly9">[<a href="#ref-5Zx90ly9" role="doc-biblioref">53</a>]</span>, and incorporating prior knowledge into the regularization step to select driver genes in a pathway of interest <span class="citation" data-cites="13q9A5a95">[<a href="#ref-13q9A5a95" role="doc-biblioref">54</a>]</span> have proven beneficial.
-On the other hand, in immune cell signature discovery, elastic-net regression has been used to reduce the feature space and was found to outperform other regression approaches <span class="citation" data-cites="JZNkB8d7 lXiw1iso 1nCs3tvD JkWXgEgV">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>,<a href="#ref-lXiw1iso" role="doc-biblioref">55</a>,<a href="#ref-1nCs3tvD" role="doc-biblioref">56</a>,<a href="#ref-JkWXgEgV" role="doc-biblioref">57</a>]</span>.
-Regularization methods like LASSO or elastic-net have been methods of choice for making models simpler by reducing the feature space; these methods should be explored while working with rare disease datasets.</p>
-<p>Thus by employing bootstrapping, ensemble learning, and regularization methods, researchers may be able to better generate stable, simple models that identify reliable biological phenomena underlying rare diseases .</p>
+<p>Rare variant discovery and immune cell signature discovery studies, like rare diseases, face challenges of the sparsity of observations, and may be useful models for examining the utility of regularization in scenarios with limited signal.
+For example, ridge regression has been used to combine rare variants into a single score to increase the signal of these variants <span class="citation" data-cites="E0Iw45aG">[<a href="#ref-E0Iw45aG" role="doc-biblioref">47</a>]</span>, while LASSO has been implemented along with group penalties to identify gene variants <span class="citation" data-cites="2gwD58B IX9EQ5gX">[<a href="#ref-2gwD58B" role="doc-biblioref">48</a>,<a href="#ref-IX9EQ5gX" role="doc-biblioref">49</a>]</span>.
+Hybrid applications of LASSO in rare variant discovery studies like capturing combinations of variants <span class="citation" data-cites="s907ofL2 fPp30wsy">[<a href="#ref-s907ofL2" role="doc-biblioref">50</a>,<a href="#ref-fPp30wsy" role="doc-biblioref">51</a>]</span>, integrating with a probabilistic logistic Bayesian approach <span class="citation" data-cites="XCL2dRoS">[<a href="#ref-XCL2dRoS" role="doc-biblioref">52</a>]</span>, combining feature selection methods with a generalized pooling strategy <span class="citation" data-cites="5Zx90ly9">[<a href="#ref-5Zx90ly9" role="doc-biblioref">53</a>]</span>, and incorporating prior knowledge into the regularization step to select driver genes in a pathway of interest <span class="citation" data-cites="13q9A5a95">[<a href="#ref-13q9A5a95" role="doc-biblioref">54</a>]</span> have also proven beneficial.
+On the other hand, in the context of rare immune cell signature discovery, elastic-net regression was found to outperform other regression approaches <span class="citation" data-cites="JZNkB8d7 lXiw1iso 1nCs3tvD JkWXgEgV">[<a href="#ref-JZNkB8d7" role="doc-biblioref">46</a>,<a href="#ref-lXiw1iso" role="doc-biblioref">55</a>,<a href="#ref-1nCs3tvD" role="doc-biblioref">56</a>,<a href="#ref-JkWXgEgV" role="doc-biblioref">57</a>]</span>.
+Regularization methods like LASSO or elastic-net have been methods of choice for making models simpler by reducing the feature space in data with rare observations; use of these regularization approaches should be considered while working with rare disease datasets.</p>
+<p>By employing bootstrapping, ensembling, and regularization, researchers may be able to generate more stable and simpler models to characterize the biological phenomena underlying rare diseases.</p>
 <div id="fig:2" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/statistical-techniques.pdf" /><figcaption><span>Figure 2:</span> Strategies to simplify models and stabilize predictions preserve the value of machine learning in rare disease. A-B) Strategies to build confidence in model predictions; A) schematic showing the concept of bootstrap, B) schematic showing the concept of ensemble learning to converge on reliable models; C-D) Strategies to simplify models by penalizing complexity in ML models; C) schematic showing the concept of regularization to selectively learn relevant features, D)schematic showing the concept of one-class-at-a-time learning to select few features at a time. Horizontal bars represent health of a model, models are represented as a network of nodes (features) and edges (relationships), nodes with solid edges represent real patterns, nodes with broken edges represent spurious patterns</figcaption>
+<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/statistical-techniques.pdf" /><figcaption><span>Figure 2:</span> Strategies to simplify models and stabilize predictions preserve the value of machine learning in rare disease. A-B) Strategies to build confidence in model predictions; A) A schematic showing the concept of bootstrap, B) A schematic showing the concept of ensemble learning to converge on reliable models; C-D) Strategies to simplify models by penalizing complexity in ML models; C) A schematic showing the concept of regularization to selectively learn relevant features, D) A schematic showing the concept of one-class-at-a-time learning to select few features at a time. Horizontal bars represent health of a model, models are represented as a network of nodes (features) and edges (relationships), nodes with solid edges represent real patterns, nodes with broken edges represent spurious patterns</figcaption>
 </figure>
 </div>
 <h3 class="page_break_before" id="build-upon-prior-knowledge-and-indirectly-related-data">Build upon prior knowledge and indirectly related data</h3>
 <p>Rare diseases often lack large, normalized datasets, limiting our ability to study key attributes of these diseases.
-Evaluating genotype-phenotype relationships or repurposing drugs using knowledge graphs can greatly benefit rare disease.
-Knowledge graphs (KGs) integrate related-but-different data types, creating a rich data source (e.g. Monarch Graph Database<span class="citation" data-cites="5cHHEM6Q">[<a href="#ref-5cHHEM6Q" role="doc-biblioref">58</a>]</span>, hetionet<span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">59</a>]</span>, PheKnowLator<span class="citation" data-cites="1H2nqqKV7">[<a href="#ref-1H2nqqKV7" role="doc-biblioref">60</a>]</span>, and the Global Network of Biomedical Relationships<span class="citation" data-cites="CSiMoOrI">[<a href="#ref-CSiMoOrI" role="doc-biblioref">61</a>]</span>, Orphanet<span class="citation" data-cites="wjHFUHNC">[<a href="#ref-wjHFUHNC" role="doc-biblioref">62</a>]</span>).
-These graphs connect genetic, functional, chemical, clinical, and ontological data to enable the exploration of relationships of data with disease phenotypes through manual review<span class="citation" data-cites="1DCdPxaef">[<a href="#ref-1DCdPxaef" role="doc-biblioref">63</a>]</span> or computational methods<span class="citation" data-cites="JPGFYfNO gVNjawAX">[<a href="#ref-JPGFYfNO" role="doc-biblioref">64</a>,<a href="#ref-gVNjawAX" role="doc-biblioref">65</a>]</span>.(Figure[<a href="#fig:3">3</a>]a)
-KGs may include links or nodes that are specific to the rare disease of interest (e.g., an FDA approved treatment would be a specific disease-compound link in the KG ) as well as links that are more generalized (e.g., gene-gene interactions noted in the literature for a different disease).</p>
+Evaluating genotype-phenotype relationships or repurposing drugs using knowledge graphs may greatly benefit rare disease research.
+Knowledge graphs (KGs) integrate related-but-different data types, creating a rich data source (e.g. Monarch Graph Database <span class="citation" data-cites="5cHHEM6Q">[<a href="#ref-5cHHEM6Q" role="doc-biblioref">58</a>]</span>, hetionet <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">59</a>]</span>, PheKnowLator <span class="citation" data-cites="1H2nqqKV7">[<a href="#ref-1H2nqqKV7" role="doc-biblioref">60</a>]</span>, and the Global Network of Biomedical Relationships <span class="citation" data-cites="CSiMoOrI">[<a href="#ref-CSiMoOrI" role="doc-biblioref">61</a>]</span>, Orphanet <span class="citation" data-cites="wjHFUHNC">[<a href="#ref-wjHFUHNC" role="doc-biblioref">62</a>]</span>).
+These graphs connect genetic, functional, chemical, clinical, and ontological data to enable the exploration of relationships of data with disease phenotypes through manual review <span class="citation" data-cites="1DCdPxaef">[<a href="#ref-1DCdPxaef" role="doc-biblioref">63</a>]</span> or computational methods <span class="citation" data-cites="JPGFYfNO gVNjawAX">[<a href="#ref-JPGFYfNO" role="doc-biblioref">64</a>,<a href="#ref-gVNjawAX" role="doc-biblioref">65</a>]</span>.(Figure[<a href="#fig:3">3</a>]a)
+KGs may include links or nodes that are specific to the rare disease of interest (e.g., an FDA approved treatment would be a specific disease-compound link in the KG) as well as links that are more generalized (e.g., gene-gene interactions noted in the literature for a different disease).</p>
 <p>Rare disease researchers can leverage the entities and relationships in a knowledge graph outside of the specific disease-context <span class="citation" data-cites="JPGFYfNO">[<a href="#ref-JPGFYfNO" role="doc-biblioref">64</a>]</span>.
-Such approaches have been used in rare disease research in areas such as drug repurposing<span class="citation" data-cites="JPGFYfNO">[<a href="#ref-JPGFYfNO" role="doc-biblioref">64</a>]</span> and disease classification<span class="citation" data-cites="gVNjawAX">[<a href="#ref-gVNjawAX" role="doc-biblioref">65</a>]</span>.
+Such approaches have been used in rare disease research in areas such as drug repurposing <span class="citation" data-cites="JPGFYfNO">[<a href="#ref-JPGFYfNO" role="doc-biblioref">64</a>]</span> and disease classification <span class="citation" data-cites="gVNjawAX">[<a href="#ref-gVNjawAX" role="doc-biblioref">65</a>]</span>.
 Identifying KG encoding methods that can provide actionable insights for a specific rare disease application is an active area of research.</p>
 <p>Other approaches that build upon prior knowledge and large volumes of related data include transfer learning, multitask learning, and few-shot learning approaches.
-These approaches leverage shared features, e.g., normal developmental processes that are aberrant in disease or an imaging anomaly present in rare and common diseases, for advancing our understanding of rare diseases.
+These approaches leverage shared features, e.g., normal developmental processes that are aberrant in disease or an imaging anomaly present in both rare and common diseases, to advance our understanding of rare diseases.
 Transfer learning, where a model trained for one task or domain (source domain) is applied to another related task or domain (target domain), can be supervised or unsupervised.
 Among various types of transfer learning, feature-representation-transfer approaches learn representations from the source domain and apply them to a target domain <span class="citation" data-cites="12JtL2o6T">[<a href="#ref-12JtL2o6T" role="doc-biblioref">66</a>]</span> (Figure[<a href="#fig:3">3</a>]b).
-For example, low-dimensional representations can be learned from tumor transcriptomic data and transferred to describe patterns associated with genetic alterations in cell line data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.
+For example, low-dimensional representations can be learned from tumor transcriptomic data and transferred to describe patterns associated with genetic alterations in cell line data <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>]</span>.
 Alternatively, multitask and few-shot learning are forms of supervised learning that often rely on deep neural networks.</p>
-<p>While multitask learning classifiers use shared representations to learn multiple related but individual predictions (tasks) simultaneously <span class="citation" data-cites="9k4OKrXL">[<a href="#ref-9k4OKrXL" role="doc-biblioref">67</a>]</span>, few-shot learning generalizes a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease) <span class="citation" data-cites="1BROsCrcR 1BKt1nbeF 3uj9giYH">[<a href="#ref-1BROsCrcR" role="doc-biblioref">68</a>,<a href="#ref-1BKt1nbeF" role="doc-biblioref">69</a>,<a href="#ref-3uj9giYH" role="doc-biblioref">70</a>]</span> (Figure<span class="citation" data-cites="fig3">[<span class="citeproc-not-found" data-reference-id="fig3"><strong>???</strong></span>]</span>c-d).
-Smaller datasets tended to benefit from multitask learning (due to task relatedness, <em>multitask effect</em>) <span class="citation" data-cites="1JkwCtaO">[<a href="#ref-1JkwCtaO" role="doc-biblioref">71</a>]</span>, and the performance gains were generally context-dependent, i.e., multitask neural networks outperformed single-task networks for predicting complex rare phenotypes from EHR data or predicting drug sensitivity in rare cancer cell lines [<span class="citation" data-cites="Rp6PiLtV"><a href="#ref-Rp6PiLtV" role="doc-biblioref">72</a></span>; TODO: CTD-squared Chemogenomic DREAM Challenge citation].
-In contrast, one-shot or few-shot learning used prior knowledge to generalize a distance metric learned from input data to compare with a low number of new examples for prediction <span class="citation" data-cites="3uj9giYH P4ixsM8i">[<a href="#ref-3uj9giYH" role="doc-biblioref">70</a>,<a href="#ref-P4ixsM8i" role="doc-biblioref">73</a>]</span>.
-In another study, a few-shot learning approach had a performance advantage over multitask learning, since predicting common conditions simultaneously resulted in a loss of performance for the multitask learner <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">12</a>]</span>.
+<p>While multitask learning classifiers use shared representations to learn multiple related but individual predictions (tasks) simultaneously <span class="citation" data-cites="11mJOo5c8">[<a href="#ref-11mJOo5c8" role="doc-biblioref">67</a>]</span>, few-shot learning generalizes a model trained on related tasks to a new task with limited labeled data (e.g., the detection of a patient with a rare disease from a low number of examples of that rare disease) <span class="citation" data-cites="1BROsCrcR 1BKt1nbeF 3uj9giYH">[<a href="#ref-1BROsCrcR" role="doc-biblioref">68</a>,<a href="#ref-1BKt1nbeF" role="doc-biblioref">69</a>,<a href="#ref-3uj9giYH" role="doc-biblioref">70</a>]</span> (Figure[<a href="#fig:3">3</a>]c-d).
+Smaller datasets tended to benefit from multitask learning (due to task relatedness, <em>multitask effect</em>) <span class="citation" data-cites="1JkwCtaO">[<a href="#ref-1JkwCtaO" role="doc-biblioref">71</a>]</span>, and the performance gains were generally context-dependent, i.e., multitask neural networks outperformed single-task networks for predicting complex rare phenotypes from EHR data or predicting drug sensitivity in rare cancer cell lines <span class="citation" data-cites="Rp6PiLtV 13XoCCX8C">[<a href="#ref-Rp6PiLtV" role="doc-biblioref">72</a>,<a href="#ref-13XoCCX8C" role="doc-biblioref">73</a>]</span>.
+In contrast, one-shot or few-shot learning used prior knowledge to generalize a distance metric learned from input data to compare with a low number of new examples for prediction <span class="citation" data-cites="3uj9giYH P4ixsM8i">[<a href="#ref-3uj9giYH" role="doc-biblioref">70</a>,<a href="#ref-P4ixsM8i" role="doc-biblioref">74</a>]</span>.
+In another study, a few-shot learning approach had a performance advantage over multitask learning, since predicting common conditions simultaneously resulted in a loss of performance for the multitask learner <span class="citation" data-cites="1Ak4JFhvU">[<a href="#ref-1Ak4JFhvU" role="doc-biblioref">11</a>]</span>.
 Thus, transfer, multi-task, and few-shot learning are appealing approaches for rare disease applications, but their limits and potential utility are still open research questions.</p>
 <div id="fig:3" class="fignos">
 <figure>
@@ -236,71 +239,69 @@ Thus, transfer, multi-task, and few-shot learning are appealing approaches for r
 <h3 id="using-composite-approaches-can-be-a-powerful-strategy">Using composite approaches can be a powerful strategy</h3>
 <p>We have described multiple approaches for maximizing the success of ML applications in rare disease, but it is rarely sufficient to use any of these techniques in isolation.
 Below, we highlight two recent works in the rare disease domain that draw on concepts of feature-representation-transfer, use of prior data, and regularization.</p>
-<p>A large public dataset of acute myeloid leukemia (AML) patient samples with no drug response data and a small <em>in vitro</em> experiment with drug response data form the basis of our first example <span class="citation" data-cites="160WNxTq0">[<a href="#ref-160WNxTq0" role="doc-biblioref">74</a>]</span>.
+<p>A large public dataset of acute myeloid leukemia (AML) patient samples with no drug response data and a small <em>in vitro</em> experiment with drug response data form the basis of our first example <span class="citation" data-cites="160WNxTq0">[<a href="#ref-160WNxTq0" role="doc-biblioref">75</a>]</span>.
 Training an ML model on the small <em>in vitro</em> dataset alone faced the <em>curse of dimensionality</em> and the dataset size prohibited representation learning.
-Dincer et al. trained a variational autoencoder on the large AML patient dataset (VAE; see <a href="#definitions">definitions</a>) to learn meaningful representations in an approach termed DeepProfile <span class="citation" data-cites="RKTCW7RT">[<a href="#ref-RKTCW7RT" role="doc-biblioref">75</a>]</span> (Figure[<a href="#fig:4">4</a>]a).
+Dincer et al. trained a variational autoencoder on the large AML patient dataset (VAE; see <a href="#definitions">definitions</a>) to learn meaningful representations in an approach termed DeepProfile <span class="citation" data-cites="doi:10.1101/278739v2">[<span class="citeproc-not-found" data-reference-id="doi:10.1101/278739v2"><strong>???</strong></span>]</span> (Figure[<a href="#fig:4">4</a>]a).
 The representations or <em>encodings</em> learned by the VAE were then <em>transferred</em> to the small <em>in vitro</em> dataset reducing it’s number of features from thousands to eight, and improving the performance of the final LASSO linear regression model.
 In addition to improvement in performance, the <em>encodings</em> learned by the VAE captured more biological pathways than PCA, which may be attributable to the constraints on the encodings imposed during the training process <a href="#definitions">definitions</a>.
-Similar results were observed for prediction of histopathology in another rare cancer dataset <span class="citation" data-cites="RKTCW7RT">[<a href="#ref-RKTCW7RT" role="doc-biblioref">75</a>]</span>.</p>
+Similar results were observed for prediction of histopathology in another rare cancer dataset <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">76</a>]</span>.</p>
 <p>While DeepProfile was centered on training on an individual disease and tissue combination, some rare diseases affect multiple tissues that a researcher may be interested in studying together for the purpose of biological discovery.
 Studying multiple tissues poses significant challenges and a cross-tissue analysis may require an analyst to compare representations from multiple models.
 Models trained on a low number of samples may learn representations that “lump together” multiple biological signals, reducing the interpretability of the results.
-To address these challenges, Taroni et al. trained a Pathway-Level Information ExtractoR (PLIER) (a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways) on a large generic collection of human transcriptomic data <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">76</a>]</span>.
+To address these challenges, Taroni et al. trained a Pathway-Level Information ExtractoR (PLIER) (a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways) on a large generic collection of human transcriptomic data <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">77</a>]</span>.
 PLIER used constraints (regularization) that learned <em>latent variables</em> aligned with a small number of input gene sets, making it suitable for biological discovery or description of rare disease data.
-The authors <em>transferred</em> the representations or <em>latent variables</em> learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">77</a>]</span>. (Figure[<a href="#fig:4">4</a>]b)
+The authors <em>transferred</em> the representations or <em>latent variables</em> learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">78</a>]</span>. (Figure[<a href="#fig:4">4</a>]b)
 MultiPLIER used one model to describe multiple datasets instead of reconciling output from multiple models, thus making it possible to identify commonalities among disease manifestations or affected tissues.</p>
-<p>Taken together, DeepProfile <span class="citation" data-cites="doi:10.1101/278739v2">[<span class="citeproc-not-found" data-reference-id="doi:10.1101/278739v2"><strong>???</strong></span>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">77</a>]</span> suggest a combination of the techniques discussed throughout this article can be capitalized on for rare disease research.
+<p>Taken together, DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">76</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">78</a>]</span> suggest a combination of the techniques discussed throughout this article can be capitalized on for rare disease research.
 In cases where we have a few samples from our disease of interest with the required phenotypic labels, we can leverage prior knowledge if we select the models with the right attributes.
 DeepProfile and MultiPLIER capitalizes on the fact that biological processes can be shared between biological contexts and that the methods underlying the approaches can effectively learn about those processes.</p>
 <div id="fig:4" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/multiplier-DeepProfile.pdf" /><figcaption><span>Figure 4:</span> Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="RKTCW7RT">[<a href="#ref-RKTCW7RT" role="doc-biblioref">75</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">76</a>]</span>.</figcaption>
+<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/multiplier-DeepProfile.pdf" /><figcaption><span>Figure 4:</span> Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">76</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">77</a>]</span>.</figcaption>
 </figure>
 </div>
 <h3 id="outlook">Outlook</h3>
-<p>Throughout this perspective, we have highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
+<p>Throughout this perspective, we highlighted various challenges in applying ML methods to rare disease data as well as examples of approaches that address these challenges.
 Small sample size, while significant, is not the only roadblock towards application of ML in rare disease data.
 The high dimensionality of modern data requires creative approaches, such as learning new representations of the data, to manage the curse of dimensionality.
 Leveraging prior knowledge and transfer learning methods to appropriately interpret data is also required.
-Anyone applying machine learning methods on rare disease data should use techniques that increase confidence (i.e., bootstrapping) and penalize complexity of the resultant models (i.e., regularization) to enhance the generalizability of their work.</p>
-<p>All of the approaches highlighted in this perspective come with certain challenges or weaknesses that may undermine investigators’ confidence in using these powerful techniques for rare disease research.
-We believe that the same challenges that are currently considered major pitfalls in applying ML to rare disease can be great opportunities for data generation and method development going forward.
-During our journey through the various challenges, we identified two major areas where mindful strategies can immeasurably enhance the power of machine learning in rare disease and move the field forward.</p>
+Furthermore, we posit that researchers applying machine learning methods on rare disease data should use techniques that increase confidence (i.e., bootstrapping) and penalize complexity of the resultant models (i.e., regularization) to enhance the generalizability of their work.</p>
+<p>All of the approaches highlighted in this perspective come with weaknesses that may undermine investigators’ confidence in using these techniques for rare disease research.
+We believe that the challenges in applying ML to rare disease are opportunities for data generation and method development going forward.
+In particular, we identified two areas where that that the field should explore to increase the utility of machine learning in rare disease.</p>
 <p><em>Emphasis on not just “more n” but “more meaningful n”</em></p>
 <p>Mindful addition of data is key for powering the next generation of analysis in rare disease data.
-While there are many techniques to collate rare data from different sources, incorrect data generation may hurt the end goal even if it adds to the size of the dataset.
-In our experience, collaboration with domain experts have proved to be critical in gaining insight into potential sources of variation in the datasets.
-As an example, an neurofibromatosis type 1 (NF1) dataset was found to contain samples collected using vastly different surgical techniques (laser ablation and excision vs standard excision). <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">29</a>]</span>
-While the integrative analysis in the study using transfer learning techniques was able to minimize technique related signals <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">77</a>]</span>, a more traditional analysis may have resulted in surfacing of substantial biological differences that are a consequence of process (e.g. activation of heat shock protein related pathways), not disease related biology.
-Such instances underline the fact that continuous collaboration with domain experts is needed to generate robust datasets in the future.
-A few such collaborations are beginning to show promise in generating valuable datasets for future use.<span class="citation" data-cites="ZBisfR4Q">[<a href="#ref-ZBisfR4Q" role="doc-biblioref">78</a>]</span></p>
+While there are many techniques to collate rare data from different sources, low-quality data may hurt the end goal even if it adds to the size of the dataset.
+In our experience, collaboration with domain experts has proved to be critical in gaining insight into potential sources of variation in the datasets.
+An anecdotal example from the authors’ personal experience: conversations with a rare disease clinician revealed that samples in a particular tumor dataset were collected using vastly different surgical techniques (laser ablation and excision vs standard excision).
+This information that was not readily available to non-experts, but was obvious the clinician.
+Such instances underline the fact that continuous collaboration with domain experts is needed to generate robust datasets in the future.</p>
 <p>In addition to sample scarcity, there is a dearth of comprehensive phenotypic-genotypic databases in rare disease.
-With the ubiquity of sequencing platforms, genomic data has been, relatively speaking, easy to gather for rare disease patients.<span class="citation" data-cites="15UbILeOM LSggBya9 6lu5irln">[<a href="#ref-15UbILeOM" role="doc-biblioref">79</a>,<a href="#ref-LSggBya9" role="doc-biblioref">80</a>,<a href="#ref-6lu5irln" role="doc-biblioref">81</a>]</span>
-An important next step is to develop comprehensive comprehensive genomics-driven genotype-phenotype databases that can fuel interpretation of features extracted using ML methods.
+Rare disease studies that collect genomic and phenotypic data are becoming more common. <span class="citation" data-cites="15UbILeOM LSggBya9 6lu5irln">[<a href="#ref-15UbILeOM" role="doc-biblioref">79</a>,<a href="#ref-LSggBya9" role="doc-biblioref">80</a>,<a href="#ref-6lu5irln" role="doc-biblioref">81</a>]</span>
+However, an important next step is to develop comprehensive genomics-based genotype-phenotype databases that prioritize clinical and genomics data standards in order to fuel interpretation of features extracted using ML methods.
 Finally, mindful sharing of data with proper metadata and attribution to enable prompt data reuse is of utmost important in building datasets that can be of great value in rare disease. <span class="citation" data-cites="6uid5yCL">[<a href="#ref-6uid5yCL" role="doc-biblioref">82</a>]</span></p>
 <p><em>Development of methods that reliably support mechanistic interrogation of specific rare diseases</em></p>
 <p>The majority of ML methods for rare disease that we have investigated are applied to classification tasks.
 Conversely, we’ve found few examples of methodologies that interrogate biological mechanisms of rare diseases.
 This is likely a consequence of a dearth of methods that can tolerate the constraints imposed by rare disease research such as phenotypic heterogeneity and limited data.
 An intentional push towards developing methods or analytical workflows that address this will be critical to apply machine learning approaches to rare disease data.</p>
-<p>Method development with rare disease applications in mind requires the developers to bear the responsibility of ensuring that the resulting model is <em>trustworthy</em>.
-The field of natural language processing has a few examples of how this can be achieved.<span class="citation" data-cites="8fgQiEzK">[<a href="#ref-8fgQiEzK" role="doc-biblioref">83</a>]</span>
-One way to increase trust in a developed model is by helping users understand the behavior of the developed model through providing explanations regarding why a certain model made certain predictions.<span class="citation" data-cites="8fgQiEzK">[<a href="#ref-8fgQiEzK" role="doc-biblioref">83</a>]</span>
-Another approach is to provide robust <em>error analysis</em> for newly developed models to help users understand the strengths and weaknesses of a model.<span class="citation" data-cites="aD6MDG21 sa8SP0BL uvZAopDf">[<a href="#ref-aD6MDG21" role="doc-biblioref">84</a>,<a href="#ref-sa8SP0BL" role="doc-biblioref">85</a>,<a href="#ref-uvZAopDf" role="doc-biblioref">86</a>]</span>
-Adoption of these kind of approaches into biological data and analysis is still limited but is quickly becoming necessary as machine learning approaches become mainstream in biomedicine.</p>
-<p>Finally, methods that can reliably integrate disparate datasets will always remain a need in rare disease research.
-Moreover, combining data that originated from diverse modalities to create a complete picture of the disease related biology is increasingly becoming common.
-To facilitate such analyses in rare disease, methods that rely on finding structural correspondences between datasets (“anchors”) may be able to transform the status-quo of using machine learning methods in rare disease.[<span class="citation" data-cites="p9Zp4gOC"><a href="#ref-p9Zp4gOC" role="doc-biblioref">87</a></span>; <span class="citation" data-cites="E9WUYMxk"><a href="#ref-E9WUYMxk" role="doc-biblioref">88</a></span>/~mahadeva/papers/IJCAI2011-DA.pdf; https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8]
-Overall, we speculate that this an important and burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare diseases.</p>
+<p>Method development with rare disease applications in mind requires the developers to bear the responsibility of ensuring that the resulting model is trustworthy.
+The field of natural language processing has a few examples of how this can be achieved.<span class="citation" data-cites="q5rxB78C">[<a href="#ref-q5rxB78C" role="doc-biblioref">83</a>]</span>
+One way to increase trust in a developed model is by helping users understand the behavior of the developed model through providing explanations regarding why a certain model made certain predictions.<span class="citation" data-cites="q5rxB78C">[<a href="#ref-q5rxB78C" role="doc-biblioref">83</a>]</span>
+Another approach is to provide robust <em>error analysis</em> for newly developed models to help users understand the strengths and weaknesses of a model.<span class="citation" data-cites="HovsEtqX sa8SP0BL uvZAopDf">[<a href="#ref-HovsEtqX" role="doc-biblioref">84</a>,<a href="#ref-sa8SP0BL" role="doc-biblioref">85</a>,<a href="#ref-uvZAopDf" role="doc-biblioref">86</a>]</span>
+Adoption of these approaches into biomedical ML is quickly becoming necessary as machine learning approaches become mainstream in research and clinical settings.</p>
+<p>Finally, methods that can reliably integrate disparate datasets will likely always remain a need in rare disease research.
+To facilitate such analyses in rare disease, methods that rely on finding structural correspondences between datasets (“anchors”) may be able to transform the status-quo of using machine learning methods in rare disease.<span class="citation" data-cites="16wWzu3NO oZmhjP9I bOT9Zmn2">[<a href="#ref-16wWzu3NO" role="doc-biblioref">87</a>,<a href="#ref-oZmhjP9I" role="doc-biblioref">88</a>,<a href="#ref-bOT9Zmn2" role="doc-biblioref">89</a>]</span>
+We speculate that this an important and burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare diseases.</p>
 <h2 class="page_break_before" id="definitions">Definitions</h2>
 <h3 id="unsupervised-learning">Unsupervised learning:</h3>
-<p>Machine learning algorithms which can learn features from unlabeled training data (e.g. datasets where the samples do not have disease or phenotype labels) to predict the class or phenotype of new or unseen test data are part of unsupervised learning. Examples of unsupervised learning include principal component analyses, multidimensional scaling, UMAP, t-SNE, k-means clustering etc [TODO - add REFs].</p>
+<p>Machine learning algorithms which can learn features from unlabeled training data (e.g. datasets where the samples do not have disease or phenotype labels) to predict the class or phenotype of new or unseen test data are part of unsupervised learning. Examples of unsupervised learning include principal component analyses, multidimensional scaling, UMAP, t-SNE, and k-means clustering <span class="citation" data-cites="1HICCTHVj qRi1wkz4 BsfyICXU">[<a href="#ref-1HICCTHVj" role="doc-biblioref">7</a>,<a href="#ref-qRi1wkz4" role="doc-biblioref">8</a>,<a href="#ref-BsfyICXU" role="doc-biblioref">9</a>]</span>.</p>
 <h3 id="supervised-learning">Supervised learning:</h3>
 <p>Machine learning algorithms that require training data with specific phenotype labels are part of supervised learning.
 Such algorithms learn correlations of features with the phenotype labels and use the learned correlations to predict the phenotype labels of unseen or new test data.</p>
 <h3 id="vae">VAE:</h3>
 <p>Variational Autoencoders or VAEs are unsupervised neural networks that use hidden layers to learn or encode representations from available data while mapping the input data to the output data.
-VAEs are distinct from other autoencoders since the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">18</a>]</span>.</p>
+VAEs are distinct from other autoencoders since the distribution of the encodings are regularized such that they are close to a normal distribution, which may contribute to learning more biologically relevant signals <span class="citation" data-cites="NsW0qxZF">[<a href="#ref-NsW0qxZF" role="doc-biblioref">17</a>]</span>.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
@@ -310,186 +311,189 @@ Julia Schaefer, Moritz Lehne, Josef Schepers, Fabian Prasser, Sylvia Thun<br />
 <em>Orphanet Journal of Rare Diseases</em> (2020-06-09) <a href="https://doi.org/ghb3wx">https://doi.org/ghb3wx</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13023-020-01424-6">10.1186/s13023-020-01424-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32517778">32517778</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7285453">PMC7285453</a></p>
 </div>
-<div id="ref-wwF0mDld">
-<p>2. <br />
-Potomac Publishing<br />
-(2018-10-08) <a href="https://www.fda.gov/media/99546/download">https://www.fda.gov/media/99546/download</a></p>
-</div>
 <div id="ref-G5HC64pk">
-<p>3. <strong>Learning statistical models of phenotypes using noisy labeled training data</strong> <br />
+<p>2. <strong>Learning statistical models of phenotypes using noisy labeled training data</strong> <br />
 Vibhu Agarwal, Tanya Podchiyska, Juan M Banda, Veena Goel, Tiffany I Leung, Evan P Minty, Timothy E Sweeney, Elsie Gyang, Nigam H Shah<br />
 <em>Journal of the American Medical Informatics Association</em> (2016-11) <a href="https://doi.org/f9bxf9">https://doi.org/f9bxf9</a> <br />
 DOI: <a href="https://doi.org/10.1093/jamia/ocw028">10.1093/jamia/ocw028</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27174893">27174893</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523">PMC5070523</a></p>
 </div>
 <div id="ref-16kfJJap4">
-<p>4. <strong>Classification in the Presence of Label Noise: A Survey</strong> <br />
+<p>3. <strong>Classification in the Presence of Label Noise: A Survey</strong> <br />
 Benoit Frenay, Michel Verleysen<br />
 <em>IEEE Transactions on Neural Networks and Learning Systems</em> (2014-05) <a href="https://doi.org/f5zdgq">https://doi.org/f5zdgq</a> <br />
 DOI: <a href="https://doi.org/10.1109/tnnls.2013.2292894">10.1109/tnnls.2013.2292894</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24808033">24808033</a></p>
 </div>
 <div id="ref-Zoj0hKzb">
-<p>5. <strong>Looking beyond the hype: Applied AI and machine learning in translational medicine</strong> <br />
+<p>4. <strong>Looking beyond the hype: Applied AI and machine learning in translational medicine</strong> <br />
 Tzen S. Toh, Frank Dondelinger, Dennis Wang<br />
 <em>EBioMedicine</em> (2019-09) <a href="https://doi.org/gg9dcx">https://doi.org/gg9dcx</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.ebiom.2019.08.027">10.1016/j.ebiom.2019.08.027</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31466916">31466916</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6796516">PMC6796516</a></p>
 </div>
 <div id="ref-KOD2gdVS">
-<p>6. <strong>The properties of high-dimensional data spaces: implications for exploring gene and protein expression data</strong> <br />
+<p>5. <strong>The properties of high-dimensional data spaces: implications for exploring gene and protein expression data</strong> <br />
 Robert Clarke, Habtom W. Ressom, Antai Wang, Jianhua Xuan, Minetta C. Liu, Edmund A. Gehan, Yue Wang<br />
 <em>Nature Reviews Cancer</em> (2008-01) <a href="https://doi.org/ffksnf">https://doi.org/ffksnf</a> <br />
 DOI: <a href="https://doi.org/10.1038/nrc2294">10.1038/nrc2294</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18097463">18097463</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238676">PMC2238676</a></p>
 </div>
 <div id="ref-c6DKSPdm">
-<p>7. <strong>The curse(s) of dimensionality</strong> <br />
+<p>6. <strong>The curse(s) of dimensionality</strong> <br />
 Naomi Altman, Martin Krzywinski<br />
 <em>Nature Methods</em> (2018-05-31) <a href="https://doi.org/ghrqhp">https://doi.org/ghrqhp</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41592-018-0019-x">10.1038/s41592-018-0019-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29855577">29855577</a></p>
 </div>
 <div id="ref-1HICCTHVj">
-<p>8. <strong>Handbook of Data Visualization</strong> <br />
+<p>7. <strong>Handbook of Data Visualization</strong> <br />
 Chun-houh Chen, Wolfgang Härdle, Antony Unwin<br />
 <em>Springer Science and Business Media LLC</em> (2008) <a href="https://doi.org/ckmkfp">https://doi.org/ckmkfp</a> <br />
 DOI: <a href="https://doi.org/10.1007/978-3-540-33037-0">10.1007/978-3-540-33037-0</a></p>
 </div>
 <div id="ref-qRi1wkz4">
-<p>9. <strong>Principal component analysis: a review and recent developments</strong> <br />
+<p>8. <strong>Principal component analysis: a review and recent developments</strong> <br />
 Ian T. Jolliffe, Jorge Cadima<br />
 <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> (2016-04-13) <a href="https://doi.org/gcsfk7">https://doi.org/gcsfk7</a> <br />
 DOI: <a href="https://doi.org/10.1098/rsta.2015.0202">10.1098/rsta.2015.0202</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26953178">26953178</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792409">PMC4792409</a></p>
 </div>
 <div id="ref-BsfyICXU">
-<p>10. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong> <br />
+<p>9. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong> <br />
 Leland McInnes, John Healy, James Melville<br />
 <em>arXiv:1802.03426 [cs, stat]</em> (2020-09-17) <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
 </div>
-<div id="ref-c46n3STN">
-<p>11. (2020-06-01) <a href="https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf">https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf</a></p>
+<div id="ref-skX0eEFg">
+<p>10. <strong>Visualizing Data using t-SNE</strong> <br />
+Laurens van der Maaten, Geoffrey Hinton<br />
+<em>Journal of Machine Learning Research</em> (2008) <a href="http://jmlr.org/papers/v9/vandermaaten08a.html">http://jmlr.org/papers/v9/vandermaaten08a.html</a></p>
 </div>
 <div id="ref-1Ak4JFhvU">
-<p>12. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong> <br />
+<p>11. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong> <br />
 Gwenolé Quellec, Mathieu Lamard, Pierre-Henri Conze, Pascale Massin, Béatrice Cochener<br />
 <em>Medical Image Analysis</em> (2020-04) <a href="https://doi.org/ggsrc7">https://doi.org/ggsrc7</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.media.2020.101660">10.1016/j.media.2020.101660</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32028213">32028213</a></p>
 </div>
 <div id="ref-gqTS2Uy7">
-<p>13. <strong>Sensitive detection of rare disease-associated cell subsets via representation learning</strong> <br />
+<p>12. <strong>Sensitive detection of rare disease-associated cell subsets via representation learning</strong> <br />
 Eirini Arvaniti, Manfred Claassen<br />
 <em>Nature Communications</em> (2017-04-06) <a href="https://doi.org/gf9t7w">https://doi.org/gf9t7w</a> <br />
 DOI: <a href="https://doi.org/10.1038/ncomms14825">10.1038/ncomms14825</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28382969">28382969</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5384229">PMC5384229</a></p>
 </div>
 <div id="ref-AZCOtvbC">
-<p>14. <strong>The art of using t-SNE for single-cell transcriptomics</strong> <br />
+<p>13. <strong>The art of using t-SNE for single-cell transcriptomics</strong> <br />
 Dmitry Kobak, Philipp Berens<br />
 <em>Nature Communications</em> (2019-11-28) <a href="https://doi.org/ggdrfz">https://doi.org/ggdrfz</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-019-13056-x">10.1038/s41467-019-13056-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31780648">31780648</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6882829">PMC6882829</a></p>
 </div>
 <div id="ref-12XiicejZ">
-<p>15. <strong>Dimensionality reduction by UMAP to visualize physical and genetic interactions</strong> <br />
+<p>14. <strong>Dimensionality reduction by UMAP to visualize physical and genetic interactions</strong> <br />
 Michael W. Dorrity, Lauren M. Saunders, Christine Queitsch, Stanley Fields, Cole Trapnell<br />
 <em>Nature Communications</em> (2020-03-24) <a href="https://doi.org/ggqcqp">https://doi.org/ggqcqp</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-020-15351-4">10.1038/s41467-020-15351-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32210240">32210240</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7093466">PMC7093466</a></p>
 </div>
 <div id="ref-15yIhkDpY">
-<p>16. <strong>Feature Selection</strong> <br />
+<p>15. <strong>Feature Selection</strong> <br />
 Rama Chellappa, Pavan Turaga<br />
 <em>Springer Science and Business Media LLC</em> (2020) <a href="https://doi.org/ghgqb9">https://doi.org/ghgqb9</a> <br />
 DOI: <a href="https://doi.org/10.1007/978-3-030-03243-2_299-1">10.1007/978-3-030-03243-2_299-1</a></p>
 </div>
 <div id="ref-Lby4PmSX">
-<p>17. <strong>How to Use t-SNE Effectively</strong> <br />
+<p>16. <strong>How to Use t-SNE Effectively</strong> <br />
 Martin Wattenberg, Fernanda Viégas, Ian Johnson<br />
 <em>Distill</em> (2016-10-13) <a href="https://doi.org/gffk7g">https://doi.org/gffk7g</a> <br />
 DOI: <a href="https://doi.org/10.23915/distill.00002">10.23915/distill.00002</a></p>
 </div>
 <div id="ref-NsW0qxZF">
-<p>18. <strong>Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations</strong> <br />
+<p>17. <strong>Compressing gene expression data using multiple latent space dimensionalities learns complementary biological representations</strong> <br />
 Gregory P. Way, Michael Zietz, Vincent Rubinetti, Daniel S. Himmelstein, Casey S. Greene<br />
 <em>Genome Biology</em> (2020-05-11) <a href="https://doi.org/gg2mjh">https://doi.org/gg2mjh</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-020-02021-3">10.1186/s13059-020-02021-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32393369">32393369</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7212571">PMC7212571</a></p>
 </div>
 <div id="ref-Pyg7FNxd">
-<p>19. <strong>Ten quick tips for effective dimensionality reduction</strong> <br />
+<p>18. <strong>Ten quick tips for effective dimensionality reduction</strong> <br />
 Lan Huong Nguyen, Susan Holmes<br />
 <em>PLOS Computational Biology</em> (2019-06-20) <a href="https://doi.org/gf3583">https://doi.org/gf3583</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1006907">10.1371/journal.pcbi.1006907</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31220072">31220072</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6586259">PMC6586259</a></p>
 </div>
 <div id="ref-11QYztxcm">
-<p>20. <strong>Clustering cancer gene expression data: a comparative study</strong> <br />
+<p>19. <strong>Clustering cancer gene expression data: a comparative study</strong> <br />
 Marcilio CP de Souto, Ivan G Costa, Daniel SA de Araujo, Teresa B Ludermir, Alexander Schliep<br />
 <em>BMC Bioinformatics</em> (2008-11-27) <a href="https://doi.org/dqqbn6">https://doi.org/dqqbn6</a> <br />
 DOI: <a href="https://doi.org/10.1186/1471-2105-9-497">10.1186/1471-2105-9-497</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19038021">19038021</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2632677">PMC2632677</a></p>
 </div>
 <div id="ref-U2RMvmE5">
-<p>21. <strong>Removing Batch Effects From Histopathological Images for Enhanced Cancer Diagnosis</strong> <br />
+<p>20. <strong>Removing Batch Effects From Histopathological Images for Enhanced Cancer Diagnosis</strong> <br />
 Sonal Kothari, John H. Phan, Todd H. Stokes, Adeboye O. Osunkoya, Andrew N. Young, May D. Wang<br />
 <em>IEEE Journal of Biomedical and Health Informatics</em> (2014-05) <a href="https://doi.org/gdm9jd">https://doi.org/gdm9jd</a> <br />
 DOI: <a href="https://doi.org/10.1109/jbhi.2013.2276766">10.1109/jbhi.2013.2276766</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24808220">24808220</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5003052">PMC5003052</a></p>
 </div>
 <div id="ref-1HahRBkyb">
-<p>22. <strong>Adjusting batch effects in microarray expression data using empirical Bayes methods</strong> <br />
+<p>21. <strong>Adjusting batch effects in microarray expression data using empirical Bayes methods</strong> <br />
 W. Evan Johnson, Cheng Li, Ariel Rabinovic<br />
 <em>Biostatistics</em> (2007-01) <a href="https://doi.org/dsf386">https://doi.org/dsf386</a> <br />
 DOI: <a href="https://doi.org/10.1093/biostatistics/kxj037">10.1093/biostatistics/kxj037</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16632515">16632515</a></p>
 </div>
 <div id="ref-XJiH4M02">
-<p>23. <strong>svaseq: removing batch effects and other unwanted noise from sequencing data</strong> <br />
+<p>22. <strong>svaseq: removing batch effects and other unwanted noise from sequencing data</strong> <br />
 Jeffrey T. Leek<br />
 <em>Nucleic Acids Research</em> (2014-12-01) <a href="https://doi.org/f8k8kf">https://doi.org/f8k8kf</a> <br />
 DOI: <a href="https://doi.org/10.1093/nar/gku864">10.1093/nar/gku864</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25294822">25294822</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4245966">PMC4245966</a></p>
 </div>
 <div id="ref-19neBSN5B">
-<p>24. <strong>A scaling normalization method for differential expression analysis of RNA-seq data</strong> <br />
+<p>23. <strong>A scaling normalization method for differential expression analysis of RNA-seq data</strong> <br />
 Mark D Robinson, Alicia Oshlack<br />
 <em>Genome Biology</em> (2010) <a href="https://doi.org/cq6f8b">https://doi.org/cq6f8b</a> <br />
 DOI: <a href="https://doi.org/10.1186/gb-2010-11-3-r25">10.1186/gb-2010-11-3-r25</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20196867">20196867</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2864565">PMC2864565</a></p>
 </div>
 <div id="ref-ChpTIk5j">
-<p>25. <strong>Deriving disease modules from the compressed transcriptional space embedded in a deep autoencoder</strong> <br />
+<p>24. <strong>Deriving disease modules from the compressed transcriptional space embedded in a deep autoencoder</strong> <br />
 Sanjiv K. Dwivedi, Andreas Tjärnberg, Jesper Tegnér, Mika Gustafsson<br />
 <em>Nature Communications</em> (2020-02-12) <a href="https://doi.org/gg7krm">https://doi.org/gg7krm</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-020-14666-6">10.1038/s41467-020-14666-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32051402">32051402</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7016183">PMC7016183</a></p>
 </div>
 <div id="ref-1DrhKLdVp">
-<p>26. <strong>CoGAPS: an R/C++ package to identify patterns and biological process activity in transcriptomic data</strong> <br />
+<p>25. <strong>CoGAPS: an R/C++ package to identify patterns and biological process activity in transcriptomic data</strong> <br />
 Elana J. Fertig, Jie Ding, Alexander V. Favorov, Giovanni Parmigiani, Michael F. Ochs<br />
 <em>Bioinformatics</em> (2010-11-01) <a href="https://doi.org/cwqsv4">https://doi.org/cwqsv4</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btq503">10.1093/bioinformatics/btq503</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20810601">20810601</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3025742">PMC3025742</a></p>
 </div>
 <div id="ref-biC8xxbd">
-<p>27. <strong>Regularized Machine Learning in the Genetic Prediction of Complex Traits</strong> <br />
+<p>26. <strong>Regularized Machine Learning in the Genetic Prediction of Complex Traits</strong> <br />
 Sebastian Okser, Tapio Pahikkala, Antti Airola, Tapio Salakoski, Samuli Ripatti, Tero Aittokallio<br />
 <em>PLoS Genetics</em> (2014-11-13) <a href="https://doi.org/ghrqhq">https://doi.org/ghrqhq</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pgen.1004754">10.1371/journal.pgen.1004754</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25393026">25393026</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230844">PMC4230844</a></p>
 </div>
 <div id="ref-rfLLR7gS">
-<p>28. <strong>Review and evaluation of penalised regression methods for risk prediction in low‐dimensional data with few events</strong> <br />
+<p>27. <strong>Review and evaluation of penalised regression methods for risk prediction in low‐dimensional data with few events</strong> <br />
 Menelaos Pavlou, Gareth Ambler, Shaun Seaman, Maria De Iorio, Rumana Z Omar<br />
 <em>Statistics in Medicine</em> (2015-10-29) <a href="https://doi.org/ggn9zg">https://doi.org/ggn9zg</a> <br />
 DOI: <a href="https://doi.org/10.1002/sim.6782">10.1002/sim.6782</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26514699">26514699</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4982098">PMC4982098</a></p>
 </div>
 <div id="ref-wv3oXzet">
-<p>29. <strong>Integrative Analysis Identifies Candidate Tumor Microenvironment and Intracellular Signaling Pathways that Define Tumor Heterogeneity in NF1</strong> <br />
+<p>28. <strong>Integrative Analysis Identifies Candidate Tumor Microenvironment and Intracellular Signaling Pathways that Define Tumor Heterogeneity in NF1</strong> <br />
 Jineta Banerjee, Robert J Allaway, Jaclyn N Taroni, Aaron Baker, Xiaochun Zhang, Chang In Moon, Christine A Pratilas, Jaishri O Blakeley, Justin Guinney, Angela Hirbe, … Sara JC Gosline<br />
 <em>Genes</em> (2020-02-21) <a href="https://doi.org/gg4rbj">https://doi.org/gg4rbj</a> <br />
 DOI: <a href="https://doi.org/10.3390/genes11020226">10.3390/genes11020226</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32098059">32098059</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7073563">PMC7073563</a></p>
 </div>
 <div id="ref-9EM1Mzod">
-<p>30. <strong>Improvements on Cross-Validation: The 632+ Bootstrap Method</strong> <br />
+<p>29. <strong>Improvements on Cross-Validation: The 632+ Bootstrap Method</strong> <br />
 Bradley Efron, Robert Tibshirani<br />
 <em>Journal of the American Statistical Association</em> (1997-06) <a href="https://doi.org/gfts5c">https://doi.org/gfts5c</a> <br />
 DOI: <a href="https://doi.org/10.1080/01621459.1997.10474007">10.1080/01621459.1997.10474007</a></p>
 </div>
-<div id="ref-Uy4oESDl">
-<p>31.<strong>:(unav)</strong> <br />
+<div id="ref-16uxtBBBG">
+<p>30. <strong>Random Forests</strong> <br />
 Leo Breiman<br />
-<em>Machine Learning</em> (2001) <a href="https://doi.org/d8zjwq">https://doi.org/d8zjwq</a> <br />
-DOI: <a href="https://doi.org/10.1023/a:1010933404324">10.1023/a:1010933404324</a></p>
+<em>Machine Learning</em> (2001-10-01) <a href="https://doi.org/10.1023/A:1010933404324">https://doi.org/10.1023/A:1010933404324</a> <br />
+DOI: <a href="https://doi.org/10.1023/A:1010933404324">10.1023/a:1010933404324</a></p>
 </div>
 <div id="ref-SS9DjYHO">
-<p>32. <strong>Bootstrap Methods for Developing Predictive Models</strong> <br />
+<p>31. <strong>Bootstrap Methods for Developing Predictive Models</strong> <br />
 Peter C Austin, Jack V Tu<br />
 <em>The American Statistician</em> (2004-05) <a href="https://doi.org/bzjjxt">https://doi.org/bzjjxt</a> <br />
 DOI: <a href="https://doi.org/10.1198/0003130043277">10.1198/0003130043277</a></p>
+</div>
+<div id="ref-RhxfHs3z">
+<p>32. <strong>Bootstrap for neural model selection</strong> <br />
+Riadh Kallel, Marie Cottrell, Vincent Vigneron<br />
+<em>Neurocomputing</em> (2002-10) <a href="https://doi.org/c8xpqz">https://doi.org/c8xpqz</a> <br />
+DOI: <a href="https://doi.org/10.1016/s0925-2312(01)00650-6">10.1016/s0925-2312(01)00650-6</a></p>
 </div>
 <div id="ref-17mzOREgU">
 <p>33. <strong>Fast bootstrap methodology for regression model selection</strong> <br />
@@ -521,26 +525,29 @@ David G. Kiely, Orla Doyle, Edmund Drage, Harvey Jenner, Valentina Salvatelli, F
 <em>Pulmonary Circulation</em> (2019-11-20) <a href="https://doi.org/gg4jc7">https://doi.org/gg4jc7</a> <br />
 DOI: <a href="https://doi.org/10.1177/2045894019890549">10.1177/2045894019890549</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31798836">31798836</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6868581">PMC6868581</a></p>
 </div>
+<div id="ref-mQ50J5fV">
+<p>38. <strong>Double-bagging: combining classifiers by bootstrap aggregation</strong> <br />
+Torsten Hothorn, Berthold Lausen<br />
+<em>Pattern Recognition</em> (2003-06) <a href="https://doi.org/btzfh6">https://doi.org/btzfh6</a> <br />
+DOI: <a href="https://doi.org/10.1016/s0031-3203(02)00169-3">10.1016/s0031-3203(02)00169-3</a></p>
+</div>
 <div id="ref-Q25GV92r">
-<p>38. <strong>Component-based face detection</strong> <br />
+<p>39. <strong>Component-based face detection</strong> <br />
 B. Heiselet, T. Serre, M. Pontil, T. Poggio<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2005-08-25) <a href="https://doi.org/c89p2b">https://doi.org/c89p2b</a> <br />
 DOI: <a href="https://doi.org/10.1109/cvpr.2001.990537">10.1109/cvpr.2001.990537</a></p>
 </div>
 <div id="ref-ThoSnmu3">
-<p>39. <strong>The Architecture of the Face and Eyes Detection System Based on Cascade Classifiers</strong> <br />
+<p>40. <strong>The Architecture of the Face and Eyes Detection System Based on Cascade Classifiers</strong> <br />
 Andrzej Kasinski, Adam Schmidt<br />
 <em>Advances in Soft Computing</em> (2007) <a href="https://doi.org/cbzq9n">https://doi.org/cbzq9n</a> <br />
 DOI: <a href="https://doi.org/10.1007/978-3-540-75175-5_16">10.1007/978-3-540-75175-5_16</a></p>
 </div>
 <div id="ref-QEQ0NTvv">
-<p>40. <strong>Real time facial expression recognition with AdaBoost</strong> <br />
+<p>41. <strong>Real time facial expression recognition with AdaBoost</strong> <br />
 Yubo Wang, Haizhou Ai, Bo Wu, Chang Huang<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2004) <a href="https://doi.org/crv3sq">https://doi.org/crv3sq</a> <br />
 DOI: <a href="https://doi.org/10.1109/icpr.2004.1334680">10.1109/icpr.2004.1334680</a></p>
-</div>
-<div id="ref-Q9kdxmQd">
-<p>41. <a href="https://arxiv.org/abs/1301.3781v343">https://arxiv.org/abs/1301.3781v343</a></p>
 </div>
 <div id="ref-HWIKCkVI">
 <p>42. <strong>Learning to Identify Rare Disease Patients from Electronic Health Records.</strong> <br />
@@ -689,11 +696,11 @@ Sinno Jialin Pan, Qiang Yang<br />
 <em>IEEE Transactions on Knowledge and Data Engineering</em> (2010-10) <a href="https://doi.org/bc4vws">https://doi.org/bc4vws</a> <br />
 DOI: <a href="https://doi.org/10.1109/tkde.2009.191">10.1109/tkde.2009.191</a></p>
 </div>
-<div id="ref-9k4OKrXL">
-<p>67.<strong>:(unav)</strong> <br />
+<div id="ref-11mJOo5c8">
+<p>67. <strong>Multitask Learning</strong> <br />
 Rich Caruana<br />
-<em>Machine Learning</em> (1997) <a href="https://doi.org/d3gsgj">https://doi.org/d3gsgj</a> <br />
-DOI: <a href="https://doi.org/10.1023/a:1007379606734">10.1023/a:1007379606734</a></p>
+<em>Machine Learning</em> (1997-07-01) <a href="https://doi.org/10.1023/A:1007379606734">https://doi.org/10.1023/A:1007379606734</a> <br />
+DOI: <a href="https://doi.org/10.1023/A:1007379606734">10.1023/a:1007379606734</a></p>
 </div>
 <div id="ref-1BROsCrcR">
 <p>68. <strong>An Overview of Multi-Task Learning in Deep Neural Networks</strong> <br />
@@ -720,41 +727,41 @@ Steven Kearnes, Brian Goldman, Vijay Pande<br />
 Daisy Yi Ding, Chloé Simpson, Stephen Pfohl, Dave C. Kale, Kenneth Jung, Nigam H. Shah<br />
 <em>arXiv:1808.03331 [cs, stat]</em> (2019-01-05) <a href="http://arxiv.org/abs/1808.03331">http://arxiv.org/abs/1808.03331</a></p>
 </div>
+<div id="ref-13XoCCX8C">
+<p>73. <strong>A Community Challenge for Pancancer Drug Mechanism of Action Inference from Perturbational Profile Data</strong> <br />
+Eugene F. Douglass, Robert J Allaway, Bence Szalai, Wenyu Wang, Tingzhong Tian, Adrià Fernández-Torras, Ron Realubit, Charles Karan, Shuyu Zheng, Alberto Pessia, … DREAM CTD-squared Pancancer Drug Activity Challenge Consortium<br />
+<em>Cold Spring Harbor Laboratory</em> (2020-12-22) <a href="https://doi.org/ghxxk4">https://doi.org/ghxxk4</a> <br />
+DOI: <a href="https://doi.org/10.1101/2020.12.21.423514">10.1101/2020.12.21.423514</a></p>
+</div>
 <div id="ref-P4ixsM8i">
-<p>73. <strong>Low Data Drug Discovery with One-Shot Learning</strong> <br />
+<p>74. <strong>Low Data Drug Discovery with One-Shot Learning</strong> <br />
 Han Altae-Tran, Bharath Ramsundar, Aneesh S. Pappu, Vijay Pande<br />
 <em>ACS Central Science</em> (2017-04-03) <a href="https://doi.org/f95dnd">https://doi.org/f95dnd</a> <br />
 DOI: <a href="https://doi.org/10.1021/acscentsci.6b00367">10.1021/acscentsci.6b00367</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28470045">28470045</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408335">PMC5408335</a></p>
 </div>
 <div id="ref-160WNxTq0">
-<p>74. <strong>A machine learning approach to integrate big data for precision medicine in acute myeloid leukemia</strong> <br />
+<p>75. <strong>A machine learning approach to integrate big data for precision medicine in acute myeloid leukemia</strong> <br />
 Su-In Lee, Safiye Celik, Benjamin A. Logsdon, Scott M. Lundberg, Timothy J. Martins, Vivian G. Oehler, Elihu H. Estey, Chris P. Miller, Sylvia Chien, Jin Dai, … Pamela S. Becker<br />
 <em>Nature Communications</em> (2018-01-03) <a href="https://doi.org/gcpx72">https://doi.org/gcpx72</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-017-02465-5">10.1038/s41467-017-02465-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29298978">29298978</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752671">PMC5752671</a></p>
 </div>
-<div id="ref-RKTCW7RT">
-<p>75. <strong>DeepProfile: Deep learning of cancer molecular profiles for precision medicine</strong> <br />
+<div id="ref-17HK9o457">
+<p>76. <strong>DeepProfile: Deep learning of cancer molecular profiles for precision medicine</strong> <br />
 Ayse Berceste Dincer, Safiye Celik, Naozumi Hiranuma, Su-In Lee<br />
-<em>bioRxiv</em> (2018-05-26) <a href="https://www.biorxiv.org/content/10.1101/278739v2">https://www.biorxiv.org/content/10.1101/278739v2</a> <br />
+<em>Cold Spring Harbor Laboratory</em> (2018-05-26) <a href="https://doi.org/gdj2j4">https://doi.org/gdj2j4</a> <br />
 DOI: <a href="https://doi.org/10.1101/278739">10.1101/278739</a></p>
 </div>
 <div id="ref-Ki2ij7zE">
-<p>76. <strong>Pathway-level information extractor (PLIER) for gene expression data</strong> <br />
+<p>77. <strong>Pathway-level information extractor (PLIER) for gene expression data</strong> <br />
 Weiguang Mao, Elena Zaslavsky, Boris M. Hartmann, Stuart C. Sealfon, Maria Chikina<br />
 <em>Nature Methods</em> (2019-06-27) <a href="https://doi.org/gf75g6">https://doi.org/gf75g6</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41592-019-0456-1">10.1038/s41592-019-0456-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31249421">31249421</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7262669">PMC7262669</a></p>
 </div>
 <div id="ref-14rnBunuZ">
-<p>77. <strong>MultiPLIER: A Transfer Learning Framework for Transcriptomics Reveals Systemic Features of Rare Disease</strong> <br />
+<p>78. <strong>MultiPLIER: A Transfer Learning Framework for Transcriptomics Reveals Systemic Features of Rare Disease</strong> <br />
 Jaclyn N. Taroni, Peter C. Grayson, Qiwen Hu, Sean Eddy, Matthias Kretzler, Peter A. Merkel, Casey S. Greene<br />
 <em>Cell Systems</em> (2019-05) <a href="https://doi.org/gf75g5">https://doi.org/gf75g5</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.cels.2019.04.003">10.1016/j.cels.2019.04.003</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31121115">31121115</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6538307">PMC6538307</a></p>
-</div>
-<div id="ref-ZBisfR4Q">
-<p>78. <strong>A clinically and genomically annotated nerve sheath tumor biospecimen repository</strong> <br />
-Kai Pollard, Jineta Banerjee, Xengie Doan, Jiawan Wang, Xindi Guo, Robert Allaway, Shannon Langmead, Bronwyn Slobogean, Christian F. Meyer, David M. Loeb, … Christine A. Pratilas<br />
-<em>Scientific Data</em> (2020-06-19) <a href="https://doi.org/ghv6ch">https://doi.org/ghv6ch</a> <br />
-DOI: <a href="https://doi.org/10.1038/s41597-020-0508-5">10.1038/s41597-020-0508-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32561749">32561749</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7305302">PMC7305302</a></p>
 </div>
 <div id="ref-15UbILeOM">
 <p>79. <strong>Rare-disease genetics in the era of next-generation sequencing: discovery to translation</strong> <br />
@@ -780,11 +787,17 @@ James Brian Byrd, Anna C. Greene, Deepashree Venkatesh Prasad, Xiaoqian Jiang, C
 <em>Nature Reviews Genetics</em> (2020-10) <a href="https://www.nature.com/articles/s41576-020-0257-5">https://www.nature.com/articles/s41576-020-0257-5</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41576-020-0257-5">10.1038/s41576-020-0257-5</a></p>
 </div>
-<div id="ref-8fgQiEzK">
-<p>83. (2016-06-16) <a href="https://www.aclweb.org/anthology/N16-3020.pdf">https://www.aclweb.org/anthology/N16-3020.pdf</a></p>
+<div id="ref-q5rxB78C">
+<p>83. <strong>“Why Should I Trust You?”: Explaining the Predictions of Any Classifier</strong> <br />
+Marco Ribeiro, Sameer Singh, Carlos Guestrin<br />
+<em>Association for Computational Linguistics (ACL)</em> (2016) <a href="https://doi.org/gg8ggh">https://doi.org/gg8ggh</a> <br />
+DOI: <a href="https://doi.org/10.18653/v1/n16-3020">10.18653/v1/n16-3020</a></p>
 </div>
-<div id="ref-aD6MDG21">
-<p>84. (2019-07-15) <a href="https://www.aclweb.org/anthology/P19-1073.pdf">https://www.aclweb.org/anthology/P19-1073.pdf</a></p>
+<div id="ref-HovsEtqX">
+<p>84. <strong>Errudite: Scalable, Reproducible, and Testable Error Analysis</strong> <br />
+Tongshuang Wu, Marco Tulio Ribeiro, Jeffrey Heer, Daniel Weld<br />
+<em>Association for Computational Linguistics (ACL)</em> (2019) <a href="https://doi.org/ggb9kk">https://doi.org/ggb9kk</a> <br />
+DOI: <a href="https://doi.org/10.18653/v1/p19-1073">10.18653/v1/p19-1073</a></p>
 </div>
 <div id="ref-sa8SP0BL">
 <p>85. <strong>Towards Automatic Error Analysis of Machine Translation Output</strong> <br />
@@ -798,13 +811,27 @@ G. Zhou, J. Zhang, J. Su, D. Shen, C. Tan<br />
 <em>Bioinformatics</em> (2004-02-10) <a href="https://doi.org/bxts7r">https://doi.org/bxts7r</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bth060">10.1093/bioinformatics/bth060</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14871877">14871877</a></p>
 </div>
-<div id="ref-p9Zp4gOC">
-<p>87. (2010-06-15) <a href="https://www.aclweb.org/anthology/W06-1615.pdf">https://www.aclweb.org/anthology/W06-1615.pdf</a></p>
+<div id="ref-16wWzu3NO">
+<p>87. <strong>Domain Adaptation with Structural Correspondence Learning</strong> <br />
+John Blitzer, Ryan McDonald, Fernando Pereira<br />
+<em>Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing</em> (2006-07) <a href="https://www.aclweb.org/anthology/W06-1615">https://www.aclweb.org/anthology/W06-1615</a></p>
 </div>
-<div id="ref-E9WUYMxk">
-<p>88. <strong>College of Information &amp; Computer Sciences</strong> <br />
-College of Information &amp; Computer Sciences<br />
-<a href="https://www.cics.umass.edu/">https://www.cics.umass.edu/</a></p>
+<div id="ref-oZmhjP9I">
+<p>88. <strong>Heterogeneous domain adaptation using manifold alignment</strong> <br />
+Chang Wang, Sridhar Mahadevan<br />
+<em>Proceedings of the Twenty-Second international joint conference on Artificial Intelligence - Volume Volume Two</em> (2011-07-16) <a href="https://dl.acm.org/doi/10.5555/2283516.2283652">https://dl.acm.org/doi/10.5555/2283516.2283652</a> <br />
+ISBN: <a href="https://worldcat.org/isbn/9781577355144">9781577355144</a></p>
+</div>
+<div id="ref-bOT9Zmn2">
+<p>89. <strong>Comprehensive Integration of Single-Cell Data</strong> <br />
+Tim Stuart, Andrew Butler, Paul Hoffman, Christoph Hafemeister, Efthymia Papalexi, William M. Mauck, Yuhan Hao, Marlon Stoeckius, Peter Smibert, Rahul Satija<br />
+<em>Cell</em> (2019-06) <a href="https://doi.org/gf3sxv">https://doi.org/gf3sxv</a> <br />
+DOI: <a href="https://doi.org/10.1016/j.cell.2019.05.031">10.1016/j.cell.2019.05.031</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31178118">31178118</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6687398">PMC6687398</a></p>
+</div>
+<div id="ref-Q1a8ce9I">
+<p>90. <strong>Some methods for classification and analysis of multivariate observations</strong> <br />
+J. MacQueen<br />
+<em>The Regents of the University of California</em> (1967) <a href="https://projecteuclid.org/euclid.bsmsp/1200512992">https://projecteuclid.org/euclid.bsmsp/1200512992</a></p>
 </div>
 </div>
 <!-- default theme -->
