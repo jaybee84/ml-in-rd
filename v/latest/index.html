@@ -63,9 +63,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/c35732b1d793e482ef7c1881e7eb6696ed4e7758/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c35732b1d793e482ef7c1881e7eb6696ed4e7758/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c35732b1d793e482ef7c1881e7eb6696ed4e7758/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/fc4bebbc50a4d9c9e1a0025fe400d78fcfa84c9b/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/fc4bebbc50a4d9c9e1a0025fe400d78fcfa84c9b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/fc4bebbc50a4d9c9e1a0025fe400d78fcfa84c9b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/c35732b1d793e482ef7c1881e7eb6696ed4e7758/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/fc4bebbc50a4d9c9e1a0025fe400d78fcfa84c9b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/c35732b1d793e482ef7c1881e7eb6696ed4e7758">jaybee84/ml-in-rd@c35732b</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/fc4bebbc50a4d9c9e1a0025fe400d78fcfa84c9b">jaybee84/ml-in-rd@fc4bebb</a>
 on February 9, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -176,7 +176,7 @@ However, it can be a powerful tool to learn low-dimensional patterns from large 
 In later sections, we will discuss this method of leveraging large datasets to reduce dimensionality in smaller datasets, also known as feature-representation-transfer learning.</p>
 <div id="fig:1" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/dimensionality-reduction.pdf" /><figcaption><span>Figure 1:</span> Dimension reduction can help manage the curse of dimensionality in rare disease data. A) Multiple datasets (shapes) with multiple phenotypes (purple, green) are combined for an analysis. The data (e.g., transcriptomic data) are highly dimensional, having thousands of features (f1-f100000). B) Evaluating the features, it appears that a combination of features (e.g., expressed genes) partition the purple samples from the green samples. C) Applying a dimensionality reduction method (e.g., PCA) condenses these features into new features (e.g., New Feature 1, a combination of f1, f2 …. f100000, and New Feature 2, a different combination of f1, f2 …. f100000). New Feature 1 describes the difference in input dataset (shapes) while New Feature 2 describes the difference in phenotype (color). D) New features (F1-F1000) can be used to interrogate the biology of the input samples, develop classification models, or use other analytical techniques that would have been more difficult with the original dataset dimensions.</figcaption>
+<img src="images/figures/pdfs/dimensionality-reduction.png" alt="" /><figcaption><span>Figure 1:</span> Dimension reduction can help manage the curse of dimensionality in rare disease data. A) Multiple datasets (shapes) with multiple phenotypes (purple, green) are combined for an analysis. The data (e.g., transcriptomic data) are highly dimensional, having thousands of features (f1-f100000). B) Evaluating the features, it appears that a combination of features (e.g., expressed genes) partition the purple samples from the green samples. C) Applying a dimensionality reduction method (e.g., PCA) condenses these features into new features (e.g., New Feature 1, a combination of f1, f2 …. f100000, and New Feature 2, a different combination of f1, f2 …. f100000). New Feature 1 describes the difference in input dataset (shapes) while New Feature 2 describes the difference in phenotype (color). D) New features (F1-F1000) can be used to interrogate the biology of the input samples, develop classification models, or use other analytical techniques that would have been more difficult with the original dataset dimensions.</figcaption>
 </figure>
 </div>
 <h3 id="manage-model-complexity-while-preserving-the-value-of-machine-learning">Manage model complexity while preserving the value of machine learning</h3>
@@ -207,7 +207,7 @@ Regularization methods like LASSO or elastic-net have been methods of choice for
 <p>By employing bootstrapping, ensembling, and regularization, researchers may be able to generate more stable and simpler models to characterize the biological phenomena underlying rare diseases.</p>
 <div id="fig:2" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/statistical-techniques.pdf" /><figcaption><span>Figure 2:</span> Strategies to simplify models and stabilize predictions preserve the value of machine learning in rare disease. A-B) Strategies to build confidence in model predictions; A) A schematic showing the concept of bootstrap, B) A schematic showing the concept of ensemble learning to converge on reliable models; C-D) Strategies to simplify models by penalizing complexity in ML models; C) A schematic showing the concept of regularization to selectively learn relevant features, D) A schematic showing the concept of one-class-at-a-time learning to select few features at a time. Horizontal bars represent health of a model, models are represented as a network of nodes (features) and edges (relationships), nodes with solid edges represent real patterns, nodes with broken edges represent spurious patterns</figcaption>
+<img src="images/figures/pdfs/statistical-techniques.png" alt="" /><figcaption><span>Figure 2:</span> Strategies to simplify models and stabilize predictions preserve the value of machine learning in rare disease. A-B) Strategies to build confidence in model predictions; A) A schematic showing the concept of bootstrap, B) A schematic showing the concept of ensemble learning to converge on reliable models; C-D) Strategies to simplify models by penalizing complexity in ML models; C) A schematic showing the concept of regularization to selectively learn relevant features, D) A schematic showing the concept of one-class-at-a-time learning to select few features at a time. Horizontal bars represent health of a model, models are represented as a network of nodes (features) and edges (relationships), nodes with solid edges represent real patterns, nodes with broken edges represent spurious patterns</figcaption>
 </figure>
 </div>
 <h3 class="page_break_before" id="build-upon-prior-knowledge-and-indirectly-related-data">Build upon prior knowledge and indirectly related data</h3>
@@ -232,7 +232,7 @@ In another study, a few-shot learning approach had a performance advantage over 
 Thus, transfer, multi-task, and few-shot learning are appealing approaches for rare disease applications, but their limits and potential utility are still open research questions.</p>
 <div id="fig:3" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/prior-knowledge.pdf" /><figcaption><span>Figure 3:</span> Strategies that build upon prior knowledge help ML models learn patterns in rare disease datasets. A) Knowledge graphs integrate different data types and may allow models to learn from connections that are rare disease-specific or happen in many biomedical contexts. B) Transfer learning is when a model trained in for one task or domain is applied to another, related task. C) Multitask learning uses models that learn and leverage shared representations to predict multiple, related tasks. D) Few-shot learning generalizes a previously trained model to predict a new, related task with a limited number of samples.</figcaption>
+<img src="images/figures/pdfs/prior-knowledge.png" alt="" /><figcaption><span>Figure 3:</span> Strategies that build upon prior knowledge help ML models learn patterns in rare disease datasets. A) Knowledge graphs integrate different data types and may allow models to learn from connections that are rare disease-specific or happen in many biomedical contexts. B) Transfer learning is when a model trained in for one task or domain is applied to another, related task. C) Multitask learning uses models that learn and leverage shared representations to predict multiple, related tasks. D) Few-shot learning generalizes a previously trained model to predict a new, related task with a limited number of samples.</figcaption>
 </figure>
 </div>
 <h3 id="using-composite-approaches-can-be-a-powerful-strategy">Using composite approaches can be a powerful strategy</h3>
@@ -256,7 +256,7 @@ In cases where we have a few samples from our disease of interest with the requi
 DeepProfile and MultiPLIER capitalizes on the fact that biological processes can be shared between biological contexts and that the methods underlying the approaches can effectively learn about those processes.</p>
 <div id="fig:4" class="fignos">
 <figure>
-<embed src="https://github.com/jaybee84/ml-in-rd/blob/draft-branch/content/images/figures/pdfs/multiplier-DeepProfile.pdf" /><figcaption><span>Figure 4:</span> Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">77</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">78</a>]</span>.</figcaption>
+<img src="images/figures/pdfs/multiplier-DeepProfile.png" alt="" /><figcaption><span>Figure 4:</span> Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">77</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">78</a>]</span>.</figcaption>
 </figure>
 </div>
 <h3 id="outlook">Outlook</h3>
@@ -355,7 +355,7 @@ DOI: <a href="https://doi.org/10.1098/rsta.2015.0202">10.1098/rsta.2015.0202</a>
 <div id="ref-BsfyICXU">
 <p>9. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong> <br />
 Leland McInnes, John Healy, James Melville<br />
-(2018-02-09) <a href="https://arxiv.org/abs/1802.03426v3">https://arxiv.org/abs/1802.03426v3</a></p>
+<em>arXiv:1802.03426 [cs, stat]</em> (2020-09-17) <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
 </div>
 <div id="ref-skX0eEFg">
 <p>10. <strong>Visualizing Data using t-SNE</strong> <br />
@@ -710,27 +710,27 @@ DOI: <a href="https://doi.org/10.1023/A:1007379606734">10.1023/a:1007379606734</
 <div id="ref-1BROsCrcR">
 <p>69. <strong>An Overview of Multi-Task Learning in Deep Neural Networks</strong> <br />
 Sebastian Ruder<br />
-(2017-06-15) <a href="https://arxiv.org/abs/1706.05098v1">https://arxiv.org/abs/1706.05098v1</a></p>
+<em>arXiv:1706.05098 [cs, stat]</em> (2017-06-15) <a href="http://arxiv.org/abs/1706.05098">http://arxiv.org/abs/1706.05098</a></p>
 </div>
 <div id="ref-1BKt1nbeF">
 <p>70. <strong>A Survey on Multi-Task Learning</strong> <br />
 Yu Zhang, Qiang Yang<br />
-(2017-07-25) <a href="https://arxiv.org/abs/1707.08114v2">https://arxiv.org/abs/1707.08114v2</a></p>
+<em>arXiv:1707.08114 [cs]</em> (2018-07-26) <a href="http://arxiv.org/abs/1707.08114">http://arxiv.org/abs/1707.08114</a></p>
 </div>
 <div id="ref-3uj9giYH">
 <p>71. <strong>Generalizing from a Few Examples: A Survey on Few-Shot Learning</strong> <br />
 Yaqing Wang, Quanming Yao, James Kwok, Lionel M. Ni<br />
-(2019-04-10) <a href="https://arxiv.org/abs/1904.05046v3">https://arxiv.org/abs/1904.05046v3</a></p>
+<em>arXiv:1904.05046 [cs]</em> (2020-03-29) <a href="http://arxiv.org/abs/1904.05046">http://arxiv.org/abs/1904.05046</a></p>
 </div>
 <div id="ref-1JkwCtaO">
 <p>72. <strong>Modeling Industrial ADMET Data with Multitask Networks</strong> <br />
 Steven Kearnes, Brian Goldman, Vijay Pande<br />
-(2016-06-28) <a href="https://arxiv.org/abs/1606.08793v3">https://arxiv.org/abs/1606.08793v3</a></p>
+<em>arXiv:1606.08793 [stat]</em> (2017-01-12) <a href="http://arxiv.org/abs/1606.08793">http://arxiv.org/abs/1606.08793</a></p>
 </div>
 <div id="ref-Rp6PiLtV">
 <p>73. <strong>The Effectiveness of Multitask Learning for Phenotyping with Electronic Health Records Data</strong> <br />
 Daisy Yi Ding, Chloé Simpson, Stephen Pfohl, Dave C. Kale, Kenneth Jung, Nigam H. Shah<br />
-(2018-08-09) <a href="https://arxiv.org/abs/1808.03331v3">https://arxiv.org/abs/1808.03331v3</a></p>
+<em>arXiv:1808.03331 [cs, stat]</em> (2019-01-05) <a href="http://arxiv.org/abs/1808.03331">http://arxiv.org/abs/1808.03331</a></p>
 </div>
 <div id="ref-13XoCCX8C">
 <p>74. <strong>A Community Challenge for Pancancer Drug Mechanism of Action Inference from Perturbational Profile Data</strong> <br />
