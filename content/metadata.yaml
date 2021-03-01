@@ -1,14 +1,14 @@
 ---
-title: "Machine learning methods for rare diseases"
+title: "Machine learning in rare disease"
 keywords:
   - rare disease
   - machine learning
   - transfer learning
 lang: en-US
-authors:  #Below is a randomised order of authors. The author order will be decided through discussion and mutual consent
+authors:  
   -
     github: jaybee84
-    name: Jineta Banerjee
+    name: Jineta Banerjee [1]
     initials: JB
     orcid: 0000-0002-1775-3645
     #twitter: johndoe
@@ -18,6 +18,23 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    contributions:
+      - Co-first author
+      - Conceptualization
+      - Writing manuscript
+      - Editing manuscript
+  -
+    github: jaclyn-taroni
+    name: Jaclyn N Taroni [1]
+    initials: JNT
+    orcid: 0000-0003-4734-4508
+    email: jaclyn.n.taroni@gmail.com
+    affiliations:
+      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+    contributions:
+      - Co-first author
+      - Writing manuscript
+      - Editing manuscript
   -
     github: allaway
     name: Robert J Allaway
@@ -30,14 +47,10 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
-  -
-    github: jaclyn-taroni
-    name: Jaclyn N Taroni
-    initials: JNT
-    orcid: 0000-0003-4734-4508
-    email: jaclyn.n.taroni@gmail.com
-    affiliations:
-      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+    contributions:
+      - Writing manuscript
+      - Editing manuscript
+      - Critical review
   -
     github: dvenprasad
     name: Deepashree Venkatesh Prasad
@@ -46,18 +59,11 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     email: dv.prasad991@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation 
-  -
-    github: cgreene
-    name: Casey Greene
-    initials: CG
-    orcid: 0000-0001-8713-9213
-    email: greenescientist@gmail.com
-    affiliations:
-      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
-      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+    contributions:
+      - Illustration
   -
     github: jguinney
-    name: Justin Guinney
+    name: Justin Guinney *
     initials: JG
     orcid: 0000-0003-1477-1888
     email: justin.guinney@sagebionetworks.org
@@ -66,3 +72,20 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    contributions:
+      - Co-corresponding author
+      - Critical review
+    
+  -
+    github: cgreene
+    name: Casey Greene *
+    initials: CG
+    orcid: 0000-0001-8713-9213
+    email: greenescientist@gmail.com
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
+      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation  
+    contributions:
+      - Co-corresponding author
+      - Supervision
+      - Critical review
