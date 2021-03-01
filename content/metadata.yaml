@@ -8,7 +8,7 @@ lang: en-US
 authors:  
   -
     github: jaybee84
-    name: Jineta Banerjee
+    name: Jineta Banerjee [1]
     initials: JB
     orcid: 0000-0002-1775-3645
     #twitter: johndoe
@@ -20,7 +20,7 @@ authors:
       - Children's Tumor Foundation
   -
     github: jaclyn-taroni
-    name: Jaclyn N Taroni
+    name: Jaclyn N Taroni [1]
     initials: JNT
     orcid: 0000-0003-4734-4508
     email: jaclyn.n.taroni@gmail.com
@@ -48,7 +48,7 @@ authors:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation 
   -
     github: jguinney
-    name: Justin Guinney
+    name: Justin Guinney *
     initials: JG
     orcid: 0000-0003-1477-1888
     email: justin.guinney@sagebionetworks.org
@@ -59,7 +59,7 @@ authors:
       - Children's Tumor Foundation
   -
     github: cgreene
-    name: Casey Greene
+    name: Casey Greene *
     initials: CG
     orcid: 0000-0001-8713-9213
     email: greenescientist@gmail.com
@@ -67,3 +67,6 @@ authors:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation  
     
+    
+    [1] The authors contributed equally to the work
+    * Co-corresponding authors
