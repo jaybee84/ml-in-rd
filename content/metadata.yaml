@@ -18,6 +18,11 @@ authors:
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    contributions:
+      - Co-first author
+      - Conceptualization
+      - Writing manuscript
+      - Editing manuscript
   -
     github: jaclyn-taroni
     name: Jaclyn N Taroni [1]
@@ -26,6 +31,10 @@ authors:
     email: jaclyn.n.taroni@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+    contributions:
+      - Co-first author
+      - Writing manuscript
+      - Editing manuscript
   -
     github: allaway
     name: Robert J Allaway
@@ -38,6 +47,10 @@ authors:
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    contributions:
+      - Writing manuscript
+      - Editing manuscript
+      - Critical review
   -
     github: dvenprasad
     name: Deepashree Venkatesh Prasad
@@ -46,6 +59,8 @@ authors:
     email: dv.prasad991@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation 
+    contributions:
+      - Illustration
   -
     github: jguinney
     name: Justin Guinney *
@@ -57,6 +72,10 @@ authors:
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    contributions:
+      - Co-corresponding author
+      - Critical review
+    
   -
     github: cgreene
     name: Casey Greene *
@@ -66,7 +85,7 @@ authors:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation  
-    
-    
-    [1] The authors contributed equally to the work
-    * Co-corresponding authors
+    contributions:
+      - Co-corresponding author
+      - Supervision
+      - Critical review
