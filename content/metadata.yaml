@@ -39,6 +39,14 @@ authors:  #Below is a randomised order of authors. The author order will be deci
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
   -
+    github: dvenprasad
+    name: Deepashree Venkatesh Prasad
+    initials: DVP
+    orcid: 0000-0001-5756-4083
+    email: dv.prasad991@gmail.com
+    affiliations:
+      - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation 
+  -
     github: cgreene
     name: Casey Greene
     initials: CG
