@@ -8,13 +8,14 @@ lang: en-US
 authors:  
   -
     github: jaybee84
-    name: Jineta Banerjee [1]
+    name: Jineta Banerjee
     initials: JB
     orcid: 0000-0002-1775-3645
     #twitter: johndoe
     email: jineta.banerjee@sagebionetworks.org
     affiliations:
       - Sage Bionetworks
+    symbol_str: "☯"
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
@@ -25,12 +26,13 @@ authors:
       - Editing manuscript
   -
     github: jaclyn-taroni
-    name: Jaclyn N Taroni [1]
+    name: Jaclyn N Taroni
     initials: JNT
     orcid: 0000-0003-4734-4508
     email: jaclyn.n.taroni@gmail.com
     affiliations:
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation
+    symbol_str: "☯"
     contributions:
       - Co-first author
       - Writing manuscript
@@ -72,6 +74,7 @@ authors:
     funders:
       - Neurofibromatosis Therapeutic Acceleration Program
       - Children's Tumor Foundation
+    symbol_str: "✉"
     contributions:
       - Co-corresponding author
       - Critical review
@@ -85,8 +88,8 @@ authors:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania
       - Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation  
+    symbol_str: "✉"
     contributions:
       - Co-corresponding author
       - Supervision
       - Critical review
-    correspondence: true
