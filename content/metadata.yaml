@@ -63,7 +63,7 @@ authors:
       - Illustration
   -
     github: jguinney
-    name: Justin Guinney *
+    name: Justin Guinney
     initials: JG
     orcid: 0000-0003-1477-1888
     email: justin.guinney@sagebionetworks.org
@@ -78,7 +78,7 @@ authors:
     
   -
     github: cgreene
-    name: Casey Greene *
+    name: Casey Greene
     initials: CG
     orcid: 0000-0001-8713-9213
     email: greenescientist@gmail.com
@@ -89,3 +89,4 @@ authors:
       - Co-corresponding author
       - Supervision
       - Critical review
+    correspondence: true
