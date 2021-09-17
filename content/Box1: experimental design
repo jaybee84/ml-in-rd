@@ -13,7 +13,7 @@ To make sure that both training and testing dataset have similar patterns in the
 Furthermore, the training phase of an algorithm is an iterative phase, where the model learns some patterns and then uses a process called crossvalidation where it uses a small part of the training dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_ or _model tuning_).
 Through iterative training and crossvalidation, the model tries to converge on an optimally learned pattern which can then be tested using the _hold-out test dataset_.
 To facilitate this, the training dataset is further split into a smaller _training dataset_ and a _validation dataset_.
-There are a few different ways to make the _training dataset_ and a _validation dataset_, e.g. leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation [doi:10.1007/978-1-4614-6849-3].
+There are a few different ways to make the _training dataset_ and a _validation dataset_, e.g. leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation [@doi:10.1007/978-1-4614-6849-3].
 The choice of how to split the training dataset typically depends on the amount of data available.
 
 In case of rare diseases, finding one dataset that can be split into _training set_, _validation set_, and _hold-out test set_, and still have enough samples for statistical power poses a significant problem, one that deters many computational scientists and statisticians away from such applications.
