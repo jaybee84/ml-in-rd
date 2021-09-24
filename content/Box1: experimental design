@@ -1,17 +1,16 @@
 # Designing experiments for applied machine learning
 
-Machine learning algorithms were and continue to be developed to identify patterns that explain or fit a given dataset.
-As a result, every machine learning algorithm goes through a training phase (where it tries to learn the patterns present in a dataset), and a testing phase (where a dataset unseen by the model is used to test whether the patterns learned by the model resemble real data).
+Machine learning algorithms identify patterns that explain or fit a given dataset.
+Machine learning algorithms go through a training phase (where it tries to learn the patterns present in a dataset) and a testing phase (where a new or unseen dataset is used to test whether the patterns learned by the model resemble real data).
 So every machine learning algorithm expects the following fundamental parts as input: 1. a training dataset, 2. a testing dataset.
-The training dataset typically consists of a matrix of a large number of samples and a large number of features, where the samples follow a specific pattern of the features which the algorithm tries to learn.
 The testing dataset typically is smaller than the training set, but is expected to contain similar patterns of features that are present in the training set.
 The testing set is generally never exposed to the model during its training phase (_hold-out test dataset_).
 Once a model has completed learning the patterns from the training set, only then it is allowed to use the testing set as input.
-The error of a model on the test set is key to understanding how well the model has learned patterns in a given dataset and how generalizable it may be.
+The performance of a model on the test set is key to understanding how well the model has learned patterns in a given dataset and how generalizable it may be.
 
-To make sure that both training and testing dataset have similar patterns in the data, in most cases, a single dataset is split such that 75% of the data is used as the training set, and 25% of the data is withheld to be used as the testing set.
-Furthermore, the training phase of an algorithm is an iterative phase, where the model learns some patterns and then uses a process called crossvalidation where it uses a small part of the training dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_ or _model tuning_).
-Through iterative training and crossvalidation, the model tries to converge on an optimally learned pattern which can then be tested using the _hold-out test dataset_.
+To make sure that both training and testing dataset have similar patterns in the data, in many cases, a single dataset is split such that 75% of the data is used as the training set, and 25% of the data is withheld to be used as the testing set.
+Furthermore, the training phase of an algorithm is an iterative phase, where the model learns some patterns and then uses a process called cross-validation where it uses a small part of the training dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_ or _model tuning_).
+Through iterative training and cross-validation, the model tries to converge on an optimally learned pattern which can then be tested using the _hold-out test dataset_.
 To facilitate this, the training dataset is further split into a smaller _training dataset_ and a _validation dataset_.
 There are a few different ways to make the _training dataset_ and a _validation dataset_, e.g. leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation [@doi:10.1007/978-1-4614-6849-3].
 The choice of how to split the training dataset typically depends on the amount of data available.
