@@ -1,22 +1,25 @@
-# Designing experiments for applied machine learning
+# Understanding experimental design of machine learning to inform requirements for data
 
+Component of ML experiments
 Machine learning algorithms identify patterns that explain or fit a given dataset.
-Machine learning algorithms go through a training phase (where it tries to learn the patterns present in a dataset) and a testing phase (where a new or unseen dataset is used to test whether the patterns learned by the model resemble real data).
-So every machine learning algorithm expects the following fundamental parts as input: 1. a training dataset, 2. a testing dataset.
-The testing dataset typically is smaller than the training set, but is expected to contain similar patterns of features that are present in the training set.
-The testing set is generally never exposed to the model during its training phase (_hold-out test dataset_).
-Once a model has completed learning the patterns from the training set, only then it is allowed to use the testing set as input.
-The performance of a model on the test set is key to understanding how well the model has learned patterns in a given dataset and how generalizable it may be.
+So every machine learning algorithm (_model_) expects the following fundamental parts as input: 1. a _training dataset_ , 2. a _cross-validation dataset_ , 3. a _hold-out validation dataset_ .
+A _training dataset_ is used to expose the model to underlying patterns present in the data of interest.
+A _cross-validation dataset_ is a smaller dataset which is used during training of the model to help update its parameters (_model tuning_).
+A _hold-out validation set_ is a new or unseen dataset that is used to test whether the patterns learned by the model can be generalized to new data points.
+While the cross-validation dataset helps the model iteratively update its parameters to learn important patterns in the training data, the hold-out validation set helps test the generalizability of the model.
+Generalizability of a model is its ability to recognize patterns that can help predict the class or an outcome for previously unseen data.
+High generalizability of a model on previously unseen data suggest that the model has identified fundamental patterns in the data that may also inform our knowledge regarding the question of interest for which the experiment was designed.
 
-To make sure that both training and testing dataset have similar patterns in the data, in many cases, a single dataset is split such that 75% of the data is used as the training set, and 25% of the data is withheld to be used as the testing set.
-Furthermore, the training phase of an algorithm is an iterative phase, where the model learns some patterns and then uses a process called cross-validation where it uses a small part of the training dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_ or _model tuning_).
-Through iterative training and cross-validation, the model tries to converge on an optimally learned pattern which can then be tested using the _hold-out test dataset_.
-To facilitate this, the training dataset is further split into a smaller _training dataset_ and a _validation dataset_.
-There are a few different ways to make the _training dataset_ and a _validation dataset_, e.g. leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation [@doi:10.1007/978-1-4614-6849-3].
-The choice of how to split the training dataset typically depends on the amount of data available.
+Training and testing
+The design of a machine learning experiment begins with splitting a single dataset of interest such that 70% of the data is used as the _training dataset_, 20% of the data is used as the _cross-validation dataset_, and remaining 10% of the data is used as the _hold-out validation dataset_.
+This makes sure that all the datasets involved in training and testing a model maintain uniformity in the features.
+In case of rare diseases where multiple datasets may be combined to make a large enough training dataset, special care is taken to standardize the features and the patterns therein.
+The iterative training stage helps the model learn important patterns in the training dataset and then use the cross-validation dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_ or _model tuning_).
+Multiple approaches exist for cross-validation e.g. leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation [@doi:10.1007/978-1-4614-6849-3].
+In case of k-fold cross-validation, a given dataset is shuffled randomly and split into _k_ parts.
+One of the _k_ parts is reserved as the _cross-validation dataset_ and the rest are used for training.
+In the next iteration, a different part is used as the _cross-validation dataset_, while the rest are used for training.
+In cases where training data is limited, the k-fold cross validation approach can help maximal utilization of the available data.
 
-In case of rare diseases, finding one dataset that can be split into _training set_, _validation set_, and _hold-out test set_, and still have enough samples for statistical power poses a significant problem, one that deters many computational scientists and statisticians away from such applications.
-In view of this one may wonder, why cant we use one small dataset for training, and a separate dataset for testing?
-Specially, in context of rare disease where a small cohort is being treated in one hospital and another small cohort may be treated in a different site leading to generation of two separate datasets, the ability to use two different datasets can be very useful.
-However, the principles of machine learning require that patterns in the training, validation, and testing datasets be uniform, so that the model can identify similar patterns in the testing dataset that it learned in the training dataset.
-Thus it is imperative that either both testing and training datasets originate from the same bigger dataset, or in case where two or more datasets are combined (as may happen in case of rare diseases), special care is taken to standardize the features and the patterns therein.
+Hyperparameter tuning
+TBD
