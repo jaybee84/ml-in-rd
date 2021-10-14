@@ -8,7 +8,7 @@ So every model should be provided with the following fundamental parts as input:
 Typically each of these input datasets consists of a matrix (or dataframe or table) where features form the rows and samples form the columns.
 A _training dataset_ is used to expose the model to underlying patterns among the features present in the data of interest.
 An _evaluation dataset_ is a small test dataset which is used during the training phase to help the model iteratively update its parameters (i.e., _hyperparameter_tuning_ or _model tuning_).
-A large training set may be subdivided to form a smaller training dataset and the evaluation dataset and both used to train the model (see next section for more details on cross-validation).
+In many cases, a large training set may be subdivided to form a smaller training dataset and the evaluation dataset and both used to train the model (see next section for more details on cross-validation).
 In the testing phase, a new or unseen test dataset or _held-out validation set_ is used to test whether the patterns learned by the model can be generalized to new data points.
 While the evaluation dataset helps the model iteratively update its parameters to learn important patterns in the training data, the held-out validation set helps test the generalizability of the model.
 Generalizability of a model is its ability to recognize patterns that can help predict the class or an outcome for previously unseen data.
