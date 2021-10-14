@@ -1,6 +1,6 @@
 # Understanding experimental design of machine learning to inform requirements for data
 
-### Component of ML experiments
+### Components of ML experiments
 
 Machine learning algorithms identify patterns that explain or fit a given dataset.
 Thus every machine learning algorithm (_model_) goes through a _training_ phase where it identifies underlying patterns in a given dataset, and a _testing_ phase where the model applies the identified patterns to unseen data points.
