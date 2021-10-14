@@ -7,8 +7,8 @@ Thus every machine learning algorithm (_model_) goes through a _training_ phase 
 So every model should be provided with the following fundamental parts as input: 1. a _training dataset_ , 2. an _evaluation dataset_ , 3. a _held-out validation dataset_ .
 Typically each of these input datasets consists of a matrix (or dataframe or table) where features form the rows and samples form the columns.
 A _training dataset_ is used to expose the model to underlying patterns among the features present in the data of interest.
-An _evaluation dataset_ is a small test dataset which is used during training of the model to iteratively update its parameters (i.e., _hyperparameter_tuning_ or _model tuning_).
-A large training set may be subdivided to form a smaller training dataset and the evaluation dataset and both used during the training phase (see cross-validation for more details).
+An _evaluation dataset_ is a small test dataset which is used during the training phase to help the model iteratively update its parameters (i.e., _hyperparameter_tuning_ or _model tuning_).
+A large training set may be subdivided to form a smaller training dataset and the evaluation dataset and both used to train the model (see next section for more details on cross-validation).
 In the testing phase, a new or unseen test dataset or _held-out validation set_ is used to test whether the patterns learned by the model can be generalized to new data points.
 While the evaluation dataset helps the model iteratively update its parameters to learn important patterns in the training data, the held-out validation set helps test the generalizability of the model.
 Generalizability of a model is its ability to recognize patterns that can help predict the class or an outcome for previously unseen data.
@@ -20,7 +20,7 @@ Specifically in cases of rare genetic diseases where many samples can contain fa
 
 ### Training and testing
 
-The implementation of a machine learning experiment begins with splitting a single dataset of interest such that 90% of the data is used for training (generally subdivided into the _training dataset_ and the _evaluation dataset_), and remaining 10% of the data is used as the _held-out validation dataset_.
+The implementation of a machine learning experiment begins with splitting a single dataset of interest such that 90% of the data is used for training (generally subdivided into the _training dataset_ and the _evaluation dataset_), and remaining 10% of the data is used for testing or validation (as the _held-out validation dataset_).
 This makes sure that all the datasets involved in training and testing a model maintain uniformity in the features.
 In case of rare diseases where multiple datasets may be combined to make a large enough training dataset, special care is taken to standardize the features and the patterns therein.
 The iterative training stage helps the model learn important patterns in the training dataset and then use the evaluation dataset to test for errors in prediction and update its learning parameters (_hyperparameter tuning_).
