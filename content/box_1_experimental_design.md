@@ -3,7 +3,7 @@
 ### Components of ML experiments
 
 Machine learning algorithms identify patterns that explain or fit a given dataset.
-Thus every machine learning algorithm (_model_) goes through a _training_ phase where it identifies underlying patterns in a given dataset, and a _testing_ phase where the model applies the identified patterns to unseen data points.
+Every machine learning algorithm (_model_) goes through a _training_ phase where it identifies underlying patterns in a given dataset, and a _testing_ phase where the model applies the identified patterns to unseen data points.
 So every model should be provided with the following fundamental parts as input: 1. a _training dataset_ , 2. an _evaluation dataset_ , 3. a _held-out validation dataset_ .
 Typically each of these input datasets consists of a matrix (or dataframe or table) where features form the rows and samples form the columns.
 A _training dataset_ is used to expose the model to underlying patterns among the features present in the data of interest.
