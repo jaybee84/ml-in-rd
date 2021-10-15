@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/e9788d5f4105b30383e679095f7b11f8618fbb16/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e9788d5f4105b30383e679095f7b11f8618fbb16/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e9788d5f4105b30383e679095f7b11f8618fbb16/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/711b5d7baf856fa8e68f26b989f76fb0e138d6f4/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/711b5d7baf856fa8e68f26b989f76fb0e138d6f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/711b5d7baf856fa8e68f26b989f76fb0e138d6f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/e9788d5f4105b30383e679095f7b11f8618fbb16/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/711b5d7baf856fa8e68f26b989f76fb0e138d6f4/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/e9788d5f4105b30383e679095f7b11f8618fbb16">jaybee84/ml-in-rd@e9788d5</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/711b5d7baf856fa8e68f26b989f76fb0e138d6f4">jaybee84/ml-in-rd@711b5d7</a>
 on October 15, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -204,8 +204,8 @@ Addition of this kind of important metadata or labels to the samples can greatly
 Such instances underline the fact that continuous collaboration with domain experts and the sharing of well-annotated data is needed to generate robust datasets in the future.
 Ideally, structure in the composite datasets under study will be aligned with variables of interest, such as phenotype labels if available; if instead samples from the same cohort tend to group together regardless of phenotype, revisiting the construction of the dataset is warranted.
 In the next section, we will discuss approaches that can aid in identifying and visualizing structure in datasets.</p>
-<h1 id="understanding-experimental-design-of-machine-learning-to-inform-requirements-for-data">Understanding experimental design of machine learning to inform requirements for data</h1>
-<h3 id="components-of-ml-experiments">Components of ML experiments</h3>
+<h4 id="box-1-understanding-experimental-design-of-machine-learning-to-inform-requirements-for-data">Box 1: Understanding experimental design of machine learning to inform requirements for data</h4>
+<h5 id="components-of-ml-experiments">Components of ML experiments</h5>
 <p>Machine learning algorithms identify patterns that explain or fit a given dataset.
 Every machine learning algorithm (<em>model</em>) goes through a <em>training</em> phase where it identifies underlying patterns in a given dataset, and a <em>testing</em> phase where the model applies the identified patterns to unseen data points.
 So every model should be provided with the following fundamental parts as input: 1. a <em>training dataset</em> , 2. an <em>evaluation dataset</em> , 3. a <em>held-out validation dataset</em> .
@@ -220,7 +220,7 @@ High generalizability of a model on previously unseen data suggest that the mode
 Generalizability can be affected if <em>data leakage</em> occurs during training of the model, i.e., if a model is exposed to the same or similar data points in both the training set and the held-out test set.
 Ensuring absence of any overlap or relatedness among data points or samples (e.g., samples with familial relationship, samples from same patient) used in the training set and held-out test set is important to avoid <em>data leakage</em> during model training.
 Specifically in cases of rare genetic diseases where many samples can contain familial relationships, special care should be taken while crafting the training and testing sets to ensure that no data leakage occurs and the trained model has high generalizability.</p>
-<h3 id="training-and-testing">Training and testing</h3>
+<h5 id="training-and-testing">Training and testing</h5>
 <p>The implementation of a machine learning experiment begins with splitting a single dataset of interest such that 90% of the data is used for training (generally subdivided into the <em>training dataset</em> and the <em>evaluation dataset</em>), and remaining 10% of the data is used for testing or validation (as the <em>held-out validation dataset</em>).
 This makes sure that all the datasets involved in training and testing a model maintain uniformity in the features.
 In case of rare diseases where multiple datasets may be combined to make a large enough training dataset, special care is taken to standardize the features and the patterns therein.
@@ -406,7 +406,7 @@ DOI: <a href="https://doi.org/10.1038/nrc2294">10.1038/nrc2294</a> · PMID: <a h
 <p>7. <strong>The curse(s) of dimensionality</strong> <br />
 Naomi Altman, Martin Krzywinski<br />
 <em>Nature Methods</em> (2018-05-31) <a href="https://doi.org/ghrqhp">https://doi.org/ghrqhp</a> <br />
-DOI: <a href="https://doi.org/10.1038/s41592-018-0019-x">10.1038/s41592-018-0019-x</a></p>
+DOI: <a href="https://doi.org/10.1038/s41592-018-0019-x">10.1038/s41592-018-0019-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29855577">29855577</a></p>
 </div>
 <div id="ref-1HahRBkyb">
 <p>8. <strong>Adjusting batch effects in microarray expression data using empirical Bayes methods</strong> <br />
