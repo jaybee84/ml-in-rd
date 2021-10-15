@@ -5,7 +5,7 @@
 Machine learning algorithms identify patterns that explain or fit a given dataset.
 Every machine learning algorithm (_model_) goes through a _training_ phase where it identifies underlying patterns in a given dataset, and a _testing_ phase where the model applies the identified patterns to unseen data points.
 So every model should be provided with the following fundamental parts as input: 1. a _training dataset_ , 2. an _evaluation dataset_ , 3. a _held-out validation dataset_ .
-Typically each of these input datasets consists of a matrix (or dataframe or table) where features form the rows and samples form the columns.
+Typically each of these input datasets consists of a matrix (or dataframe or table) where samples form the rows and features form the columns.
 A _training dataset_ is used to expose the model to underlying patterns among the features present in the data of interest.
 An _evaluation dataset_ is a small test dataset which is used during the training phase to help the model iteratively update its parameters (i.e., _hyperparameter_tuning_ or _model tuning_).
 In many cases, a large training set may be subdivided to form a smaller training dataset and the evaluation dataset and both used to train the model (see next section for more details on cross-validation).
