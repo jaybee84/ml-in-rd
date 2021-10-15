@@ -6,3 +6,5 @@ content/03.combining-datasets.md:5:TODO
 content/03.combining-datasets.md:8:collinearity
 content/03.combining-datasets.md:8:collinearity
 content/03.combining-datasets.md:9:TODO
+content/04. box_1_experimental_design.md:8:dataframe
+content/04. box_1_experimental_design.md:28:subsampling

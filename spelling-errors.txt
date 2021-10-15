@@ -1,5 +1,8 @@
 btzfh
 collinearity
+dataframe
+hyperparameter
 responder
+subsampling
 TODO
 xpqz
