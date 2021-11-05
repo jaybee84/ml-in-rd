@@ -8,3 +8,6 @@ content/03.combining-datasets.md:8:collinearity
 content/03.combining-datasets.md:9:TODO
 content/04. box_1_experimental_design.md:8:dataframe
 content/04. box_1_experimental_design.md:28:subsampling
+content/07.prior-knowledge.md:19:Rao
+content/07.prior-knowledge.md:19:Wikipathways
+content/07.prior-knowledge.md:21:availibility
