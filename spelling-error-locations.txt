@@ -1,16 +1,7 @@
 content/02.intro.md:6:TODO
-content/02.intro.md:9:responder
-content/02.intro.md:9:responder
 content/02.intro.md:16:TODO
 content/03.combining-datasets.md:5:TODO
-content/03.combining-datasets.md:8:collinearity
-content/03.combining-datasets.md:8:collinearity
 content/03.combining-datasets.md:9:TODO
-content/04. box_1_experimental_design.md:28:subsampling
 content/06.model-complexity.md:4:TODO
-content/06.model-complexity.md:13:accomodations
-content/06.model-complexity.md:13:reproducibility
-content/06.model-complexity.md:26:mis
-content/06.model-complexity.md:28:accomodate
-content/07.prior-knowledge.md:19:Rao
-content/07.prior-knowledge.md:19:Wikipathways
+content/07.prior-knowledge.md:19:HPO
+content/07.prior-knowledge.md:19:TODO
