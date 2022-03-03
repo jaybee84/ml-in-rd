@@ -34,3 +34,4 @@ dependencies:
     - python-bitcoinlib==0.10.2
     - requests-cache==0.5.2
     - weasyprint==0.42.3
+    - markupsafe==2.0.1
