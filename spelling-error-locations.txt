@@ -2,5 +2,8 @@ content/02.intro.md:6:TODO
 content/02.intro.md:16:TODO
 content/03.combining-datasets.md:5:TODO
 content/03.combining-datasets.md:9:TODO
-content/06.model-complexity.md:4:TODO
+content/06.model-complexity.md:28:recalibrated
+content/06.model-complexity.md:37:Kullback
+content/06.model-complexity.md:37:Leibler
+content/06.model-complexity.md:37:luekemia
 content/07.prior-knowledge.md:19:TODO

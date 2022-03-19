@@ -1,2 +1,6 @@
 btzfh
+Kullback
+Leibler
+luekemia
+recalibrated
 TODO
