@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/e6fe1438e97285a1c3e59aedfbafa2126cefe576/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e6fe1438e97285a1c3e59aedfbafa2126cefe576/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/e6fe1438e97285a1c3e59aedfbafa2126cefe576/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/30fb4141da4653dbd955d4eb04023142b51eabb0/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/30fb4141da4653dbd955d4eb04023142b51eabb0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/30fb4141da4653dbd955d4eb04023142b51eabb0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/e6fe1438e97285a1c3e59aedfbafa2126cefe576/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/30fb4141da4653dbd955d4eb04023142b51eabb0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/e6fe1438e97285a1c3e59aedfbafa2126cefe576">jaybee84/ml-in-rd@e6fe143</a>
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/30fb4141da4653dbd955d4eb04023142b51eabb0">jaybee84/ml-in-rd@30fb414</a>
 on March 22, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -336,7 +336,7 @@ In the next section, we will summarize specific instances of applying transfer l
 Below, we highlight two recent works in the rare disease domain that draw on concepts of feature-representation-transfer, use of prior data, and regularization.</p>
 <p>A large public dataset of acute myeloid leukemia (AML) patient samples with no drug response data and a small <em>in vitro</em> experiment with drug response data form the basis of our first example <span class="citation" data-cites="160WNxTq0">[<a href="#ref-160WNxTq0" role="doc-biblioref">61</a>]</span>.
 Training an ML model on the small <em>in vitro</em> dataset alone faced the <em>curse of dimensionality</em> and the dataset size prohibited representation learning.
-Dincer et al. trained a variational autoencoder on the large AML patient dataset (VAE; see <a href="#definitions">definitions</a>) to learn meaningful representations in an approach termed DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span> (Figure[<a href="#fig:4">5</a>]a).
+Dincer et al. trained a variational autoencoder on the large AML patient dataset (VAE; see <a href="#definitions">definitions</a>) to learn meaningful representations in an approach termed DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span> (Figure[<a href="#fig:4">4</a>]a).
 The representations or <em>encodings</em> learned by the VAE were then <em>transferred</em> to the small <em>in vitro</em> dataset reducing it’s number of features from thousands to eight, and improving the performance of the final LASSO linear regression model.
 In addition to improvement in performance, the <em>encodings</em> learned by the VAE captured more biological pathways than PCA, which may be attributable to the constraints on the encodings imposed during the training process (see <a href="#definitions">definitions</a>).
 Similar results were observed for prediction of histopathology in another rare cancer dataset <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span>.</p>
@@ -345,13 +345,13 @@ Studying multiple tissues poses significant challenges and a cross-tissue analys
 Models trained on a low number of samples may learn representations that “lump together” multiple biological signals, reducing the interpretability of the results.
 To address these challenges, Taroni et al. trained a Pathway-Level Information ExtractoR (PLIER) (a matrix factorization approach that takes prior knowledge in the form of gene sets or pathways) on a large generic collection of human transcriptomic data <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">62</a>]</span>.
 PLIER used constraints (regularization) that learned <em>latent variables</em> aligned with a small number of input gene sets, making it suitable for biological discovery or description of rare disease data.
-The authors <em>transferred</em> the representations or <em>latent variables</em> learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">63</a>]</span>. (Figure[<a href="#fig:4">5</a>]b)
+The authors <em>transferred</em> the representations or <em>latent variables</em> learned by the model to describe transcriptomic data from the unseen rare diseases antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) and medulloblastoma in an approach termed MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">63</a>]</span>. (Figure[<a href="#fig:4">4</a>]b)
 MultiPLIER used one model to describe multiple datasets instead of reconciling output from multiple models, thus making it possible to identify commonalities among disease manifestations or affected tissues.</p>
 <p>DeepProfile <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span> and MultiPLIER <span class="citation" data-cites="14rnBunuZ">[<a href="#ref-14rnBunuZ" role="doc-biblioref">63</a>]</span> exemplify modeling approaches that can incorporate prior knowledge – thereby constraining the model space according to plausible or expected biology – or that can share information across datasets.
 These two methods capitalize on the fact that similar biological processes are observed across different biological contexts and that the methods underlying the approaches can effectively learn about those processes.</p>
-<div id="fig:4" class="fignos">
+<div id="fig:5" class="fignos">
 <figure>
-<img src="images/figures/pdfs/multiplier-DeepProfile.png" alt="" /><figcaption><span>Figure 5:</span> Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">62</a>]</span>.</figcaption>
+<img src="images/figures/pdfs/multiplier-DeepProfile.png" alt="" /><figcaption><span>Figure 5:</span> OLD FIGURE (new on still WIP) Combining multiple strategies strengthens the performance of ML models in rare disease. A) The authors of DeepProfile trained a variational autoencoder (VAE) to learn a representation from acute myeloid leukemia data without phenotype labels, transferred those representations to a small dataset with phenotype labels, and found that it improved prediction performance <span class="citation" data-cites="17HK9o457">[<a href="#ref-17HK9o457" role="doc-biblioref">46</a>]</span>. B) The authors of MultiPLIER trained a Pathway-Level Information ExtractoR (PLIER) model on a large, heterogeneous collection of expression data and transferred the representations to multiple datasets from unseen rare diseases <span class="citation" data-cites="Ki2ij7zE">[<a href="#ref-Ki2ij7zE" role="doc-biblioref">62</a>]</span>.</figcaption>
 </figure>
 </div>
 <h3 id="outlook">Outlook</h3>
