@@ -10,7 +10,7 @@
   <meta name="author" content="Deepashree Venkatesh Prasad" />
   <meta name="author" content="Justin Guinney" />
   <meta name="author" content="Casey Greene" />
-  <meta name="dcterms.date" content="2022-04-13" />
+  <meta name="dcterms.date" content="2022-04-26" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning in rare disease</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Machine learning in rare disease" />
   <meta property="og:title" content="Machine learning in rare disease" />
   <meta property="twitter:title" content="Machine learning in rare disease" />
-  <meta name="dc.date" content="2022-04-13" />
-  <meta name="citation_publication_date" content="2022-04-13" />
+  <meta name="dc.date" content="2022-04-26" />
+  <meta name="citation_publication_date" content="2022-04-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/b4c8d032e1a1e6f92a76510655d64a92469e6af3/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b4c8d032e1a1e6f92a76510655d64a92469e6af3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/b4c8d032e1a1e6f92a76510655d64a92469e6af3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/b4c8d032e1a1e6f92a76510655d64a92469e6af3/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/b4c8d032e1a1e6f92a76510655d64a92469e6af3">jaybee84/ml-in-rd@b4c8d03</a>
-on April 13, 2022.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/c9b7824935f246393ad391f859f5b0c529ef6e84">jaybee84/ml-in-rd@c9b7824</a>
+on April 26, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -156,16 +156,16 @@ Department of Systems Pharmacology and Translational Therapeutics, Perelman Scho
 <p>(Instructions: Describe the background, basic structure of the article, list material to be covered indicating depth of coverage, how they are logically arranged, include recent pubs in the area, 300-500 words)</p>
 <p>The advent of high-throughput profiling methods such as genomics, transcriptomics, and other technologies has accelerated basic research and made deep characterization of patient samples routine.
 These approaches provide a rich portrait of genes, cellular pathways, and cell types involved in complex phenotypes.
-Machine learning is often a perfect fit for extracting disease-relevant patterns from these high dimensional datasets.
+Machine learning is often a remarkable fit for extracting disease-relevant patterns from these high dimensional datasets.
 However, machine learning methods require a large number of samples to identify recurrent and biologically meaningful patterns.
-With rare diseases, biological specimens, and consequently data, are inherently limited due to the rarity of the condition.
+With rare diseases, biological specimens or clinical cases, and consequently data, are inherently limited due to the rarity of the condition.
 Precision medicine also presents a similar challenge, where a common disease is partitioned into small subsets of patients with limited amount of data in each subset.
 In this perspective, we outline the challenges and emerging solutions for using machine learning in the context of small sample sets, specifically that of rare diseases.
 Advances from research of machine learning methods for rare disease are likely to be highly informative for applications well beyond rare diseases.
 We propose that the methods community prioritize development of machine learning techniques for rare disease research.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
 <p>Rare disease research is increasingly dependent on high-throughput profiling of samples and would greatly benefit from machine learning (ML).
-A systematic review of application of ML in rare disease uncovered 211 human data studies that used ML to study 74 different rare diseases over the last 10 years.<span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>]</span>
+A systematic review of the application of ML in rare diseases uncovered 211 human data studies that used ML to study 74 different rare diseases over the last 10 years.<span class="citation" data-cites="12bOkHKJU">[<a href="#ref-12bOkHKJU" role="doc-biblioref">1</a>]</span>
 Indeed, ML can be a powerful tool in biomedical research but it does not come without pitfalls, some of which are magnified in a rare disease context.<span class="citation" data-cites="1DlwO80sJ">[<a href="#ref-1DlwO80sJ" role="doc-biblioref">2</a>]</span>
 In this perspective, we will focus our discussion on considerations for two types of ML in the context of the study of rare diseases: supervised and unsupervised learning.</p>
 <p>ML algorithms are computational methods that can identify patterns in data, and can use information about these patterns to perform tasks (e.g., pick out important data points or predict outcomes when they are not yet known, among other tasks).
@@ -217,14 +217,14 @@ Every machine learning algorithm goes through a <em>training</em> phase where it
 Typically, a machine learning algorithm is provided with the following fundamental parts as input: 1. a <em>training dataset</em> , 2. an <em>evaluation dataset</em> , 3. a <em>held-out validation dataset</em> .
 These input data can be images, text, numbers, or other types of data which are typically encoded as a numerical representation of the input data.
 A <em>training dataset</em> is used to expose the model to underlying patterns among the features present in the data of interest.
-An <em>evaluation dataset</em> is a small test dataset which is used during the training phase to help the model iteratively update its parameters (i.e., <em>hyperparameter_tuning</em> or <em>model tuning</em>).
+An <em>evaluation dataset</em> is a small test dataset which is used during the training phase to help the model iteratively update its parameters (i.e., <em>hyperparameter tuning</em> or <em>model tuning</em>).
 In many cases, a large training set may be subdivided to form a smaller training dataset and the evaluation dataset, both of which are used to train the model.
 In the testing phase, a completely new or unseen test dataset or <em>held-out validation set</em> is used to test whether the patterns learned by the model hold true in new data (i.e., they are <em>generalizable</em>).
 While the evaluation dataset helps the model iteratively update its parameters to learn important patterns in the training data, the held-out validation set helps test the generalizability of the model.</p>
 <p>Generalizability of a model is its ability to recognize patterns that can help predict the class or an outcome for previously unseen data.
 High generalizability of a model on previously unseen data suggest that the model has identified fundamental patterns in the data that may also inform our knowledge regarding the question of interest for which the experiment was designed.
 Generalizability can be affected if <em>data leakage</em> occurs during training of the model, i.e., if a model is exposed to the same or similar data points in both the training set and the held-out test set.
-Ensuring absence of any overlap or relatedness among data points or samples (e.g., samples with familial relationship, samples from same patient) used in the training set and evaluation set is important to avoid <em>data leakage</em> during model training.
+Ensuring absence of any overlap or relatedness among data points or samples (e.g., samples with familial relationship, samples from same patient) used in the training set and evaluation set is important to avoid data leakage during model training.
 Specifically in cases of rare genetic diseases where many samples can contain familial relationships, special care should be taken while crafting the training and testing sets to ensure that no data leakage occurs and the trained model has high generalizability.</p>
 <h3 id="training-and-testing">Training and testing</h3>
 <p>The implementation of a machine learning experiment begins with splitting a single dataset of interest such that 90% of the data is used for training (generally subdivided into the <em>training dataset</em> and the <em>evaluation dataset</em>), and remaining 10% of the data is used for testing or validation (as the <em>held-out validation dataset</em>).
@@ -268,11 +268,11 @@ First, the dataset contains equal number of samples for all categories (no “cl
 Second, the dataset is complete; all samples have measurements for all variables in the dataset (i.e., the dataset is not “sparse”, meaning that it is not missing data for some of the samples).
 Third, there is no ambiguity about the labels for the samples in the dataset (i.e., no “label-noise”).</p>
 <p>Rare disease datasets, however, violate many of these assumptions.
-There is generally a high <em>class imbalance</em> due to small number of samples for specific classes (e.g., only a few patients with a particular rare disease in a health records dataset), the data are often <em>sparse,</em> and there may be abundant <em>label-noise</em> due to incomplete understanding of the disease.
+There is generally a high <em>class imbalance</em> due to small number of samples for specific classes (e.g., only a few patients with a particular rare disease in a health records dataset), the data are often <em>sparse</em>, and there may be abundant <em>label-noise</em> due to incomplete understanding of the disease.
 All of these contribute to low signal to noise ratio in rare disease datasets.
 Thus, applying ML to rare disease data without addressing the aforementioned shortcomings may lead to models that have low reproducibility or are hard to interpret.</p>
 <p>Class imbalance in datasets can be addressed using decision tree-based ensemble learning methods (e.g., random forests) (Figure[<a href="#fig:3">3</a>]a).
-Random forests use resampling (with replacement) based techniques to form a consensus about the important predictive features identified by the decision trees<span class="citation" data-cites="16uxtBBBG 14J3u9pnR 7ueKyz71 eFWTLOhH mQ50J5fV">[<a href="#ref-16uxtBBBG" role="doc-biblioref">29</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">30</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">31</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">32</a>,<a href="#ref-mQ50J5fV" role="doc-biblioref">33</a>]</span>.
+Random forests use resampling (with replacement) based techniques to form a consensus about the important predictive features identified by the decision trees <span class="citation" data-cites="16uxtBBBG 14J3u9pnR 7ueKyz71 eFWTLOhH mQ50J5fV">[<a href="#ref-16uxtBBBG" role="doc-biblioref">29</a>,<a href="#ref-14J3u9pnR" role="doc-biblioref">30</a>,<a href="#ref-7ueKyz71" role="doc-biblioref">31</a>,<a href="#ref-eFWTLOhH" role="doc-biblioref">32</a>,<a href="#ref-mQ50J5fV" role="doc-biblioref">33</a>]</span>.
 Additional approaches like combining random forests with resampling without replacement can generate confidence intervals for the model predictions by iteratively exposing the models to incomplete datasets, mimicking real world cases where most rare disease datasets are incomplete <span class="citation" data-cites="wv3oXzet">[<a href="#ref-wv3oXzet" role="doc-biblioref">34</a>]</span>.
 Resampling approaches are most helpful in constructing confidence intervals for algorithms that generate the same outcome every time they are run (i.e., deterministic models).
 For decision trees that choose features at random for selecting a path to the outcome (i.e., are non-deterministic), resampling approaches can be helpful in estimating the reproducibility of the model.</p>
