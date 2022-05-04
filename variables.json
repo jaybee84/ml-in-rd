@@ -7,7 +7,7 @@
       "transfer learning"
     ],
     "lang": "en-US",
-    "date-meta": "2022-04-26",
+    "date-meta": "2022-05-04",
     "author-meta": [
       "Jineta Banerjee",
       "Jaclyn N Taroni",
@@ -16,7 +16,7 @@
       "Justin Guinney",
       "Casey Greene"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning in rare disease\" />\n<meta name=\"citation_title\" content=\"Machine learning in rare disease\" />\n<meta property=\"og:title\" content=\"Machine learning in rare disease\" />\n<meta property=\"twitter:title\" content=\"Machine learning in rare disease\" />\n<meta name=\"dc.date\" content=\"2022-04-26\" />\n<meta name=\"citation_publication_date\" content=\"2022-04-26\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Deepashree Venkatesh Prasad\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5756-4083\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning in rare disease\" />\n<meta name=\"citation_title\" content=\"Machine learning in rare disease\" />\n<meta property=\"og:title\" content=\"Machine learning in rare disease\" />\n<meta property=\"twitter:title\" content=\"Machine learning in rare disease\" />\n<meta name=\"dc.date\" content=\"2022-05-04\" />\n<meta name=\"citation_publication_date\" content=\"2022-05-04\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Deepashree Venkatesh Prasad\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5756-4083\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex’s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -26,7 +26,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "April 26, 2022",
+    "date": "May 4, 2022",
     "authors": [
       {
         "github": "jaybee84",
@@ -172,19 +172,19 @@
       "repo_slug": "jaybee84/ml-in-rd",
       "repo_owner": "jaybee84",
       "repo_name": "ml-in-rd",
-      "commit": "c9b7824935f246393ad391f859f5b0c529ef6e84",
-      "triggering_commit": "c9b7824935f246393ad391f859f5b0c529ef6e84",
-      "build_url": "https://github.com/jaybee84/ml-in-rd/commit/c9b7824935f246393ad391f859f5b0c529ef6e84/checks",
+      "commit": "0a2ff2802d262f3d396f6b6e20af9dc6bb262152",
+      "triggering_commit": "0a2ff2802d262f3d396f6b6e20af9dc6bb262152",
+      "build_url": "https://github.com/jaybee84/ml-in-rd/commit/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/checks",
       "job_url": "https://github.com/jaybee84/ml-in-rd/runs/__run_3"
     },
     "html_url": "https://jaybee84.github.io/ml-in-rd/",
     "pdf_url": "https://jaybee84.github.io/ml-in-rd/manuscript.pdf",
-    "html_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/",
-    "pdf_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/c9b7824935f246393ad391f859f5b0c529ef6e84/manuscript.pdf",
+    "html_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/",
+    "pdf_url_versioned": "https://jaybee84.github.io/ml-in-rd/v/0a2ff2802d262f3d396f6b6e20af9dc6bb262152/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
-      "word_count": 6156
+      "word_count": 6203
     }
   }
 }
