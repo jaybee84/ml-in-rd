@@ -1,4 +1,4 @@
-content/02.intro.md:13:TODO
-content/06.model-complexity.md:40:WIP
-content/08.multiple-approaches-required.md:24:WIP
-content/09.outlook.md:17:TODO
+content/03.combining-datasets.md:24:TODO
+content/06.model-complexity.md:23:undersampling
+content/06.model-complexity.md:41:TODO
+content/06.model-complexity.md:41:WIP
