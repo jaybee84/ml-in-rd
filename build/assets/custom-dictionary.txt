@@ -161,3 +161,6 @@ multicollinearity
 neutropenia
 thrombocytopenia
 phenopackets
+resampled
+undersampling
+heatmap
