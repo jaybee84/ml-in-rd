@@ -164,3 +164,5 @@ phenopackets
 resampled
 undersampling
 heatmap
+pdfs
+png
