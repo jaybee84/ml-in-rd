@@ -1,4 +1,0 @@
-content/03.combining-datasets.md:24:TODO
-content/06.model-complexity.md:23:undersampling
-content/06.model-complexity.md:41:TODO
-content/06.model-complexity.md:41:WIP
