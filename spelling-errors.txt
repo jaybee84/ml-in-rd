@@ -3,3 +3,4 @@ ImageNet
 ontologies
 studyThis
 TODO
+undirected
