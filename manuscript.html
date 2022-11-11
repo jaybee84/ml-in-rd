@@ -10,7 +10,7 @@
   <meta name="author" content="Deepashree Venkatesh Prasad" />
   <meta name="author" content="Justin Guinney" />
   <meta name="author" content="Casey Greene" />
-  <meta name="dcterms.date" content="2022-10-06" />
+  <meta name="dcterms.date" content="2022-11-11" />
   <meta name="keywords" content="rare disease, machine learning, transfer learning" />
   <title>Machine learning in rare disease</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Machine learning in rare disease" />
   <meta property="og:title" content="Machine learning in rare disease" />
   <meta property="twitter:title" content="Machine learning in rare disease" />
-  <meta name="dc.date" content="2022-10-06" />
-  <meta name="citation_publication_date" content="2022-10-06" />
+  <meta name="dc.date" content="2022-11-11" />
+  <meta name="citation_publication_date" content="2022-11-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://jaybee84.github.io/ml-in-rd/" />
   <meta name="citation_pdf_url" content="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jaybee84.github.io/ml-in-rd/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/18ffea9cf6671946b1a4843e405c593cac0adf34/" />
-  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/18ffea9cf6671946b1a4843e405c593cac0adf34/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/18ffea9cf6671946b1a4843e405c593cac0adf34/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jaybee84.github.io/ml-in-rd/v/79368e66eda852f670894919959149a38f015f51/" />
+  <meta name="manubot_html_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/79368e66eda852f670894919959149a38f015f51/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jaybee84.github.io/ml-in-rd/v/79368e66eda852f670894919959149a38f015f51/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,10 +83,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://jaybee84.github.io/ml-in-rd/v/18ffea9cf6671946b1a4843e405c593cac0adf34/">permalink</a>)
+(<a href="https://jaybee84.github.io/ml-in-rd/v/79368e66eda852f670894919959149a38f015f51/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/jaybee84/ml-in-rd/tree/18ffea9cf6671946b1a4843e405c593cac0adf34">jaybee84/ml-in-rd@18ffea9</a>
-on October 6, 2022.
+from <a href="https://github.com/jaybee84/ml-in-rd/tree/79368e66eda852f670894919959149a38f015f51">jaybee84/ml-in-rd@79368e6</a>
+on November 11, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -206,7 +206,7 @@ If the samples from the same cohort tend to group together regardless of phenoty
 In the next section, we will discuss approaches that can aid in identifying and visualizing structure in datasets to determine whether composite rare disease datasets are appropriate for use in ML.</p>
 <div id="fig:1" class="fignos">
 <figure>
-<img src="content/images/figures/pdfs/figure-1-combining-datasets-resized.png" alt="" /><figcaption><span>Figure 1:</span> Combining datasets to increase data for training machine learning models. a) Appropriate methods are required to combine smaller datasets into a larger composite dataset: The left panel shows multiple small rare disease datasets that need to be combined to form a dataset of higher sample size. The color of the samples suggest classes or groups present in the datasets. The shape represents the dataset of origin. The middle panel shows methods that may be used to combine the datasets while accounting for dataset-specific technical differences. The right panel shows Principal Component Analysis of the combined datasets to verify proper integration of samples in the larger dataset. b) Composite datasets can be used to make training, evaluation, and validation datasets for machine learning: Left panel shows the division of the composite dataset into training dataset and a held-out validation dataset (top). Shapes indicate the study of origin. The held-out validation set is a separate study that has not been seen by the model. The training set is further divided into training and evaluation datasets for k-fold cross-validation (in this example k=4), where each fold contains all samples from an individual studyThis approach is termed study-wise cross validation, and supports the goal of training models that generalize to unseen cohorts.The panel on the right shows the class distribution of the training, evaluation, and held-out validation datasets.</figcaption>
+<img src="images/figures/pdfs/figure-1-combining-datasets-resized.png" alt="" /><figcaption><span>Figure 1:</span> Combining datasets to increase data for training machine learning models. a) Appropriate methods are required to combine smaller datasets into a larger composite dataset: The left panel shows multiple small rare disease datasets that need to be combined to form a dataset of higher sample size. The color of the samples suggest classes or groups present in the datasets. The shape represents the dataset of origin. The middle panel shows methods that may be used to combine the datasets while accounting for dataset-specific technical differences. The right panel shows Principal Component Analysis of the combined datasets to verify proper integration of samples in the larger dataset. b) Composite datasets can be used to make training, evaluation, and validation datasets for machine learning: Left panel shows the division of the composite dataset into training dataset and a held-out validation dataset (top). Shapes indicate the study of origin. The held-out validation set is a separate study that has not been seen by the model. The training set is further divided into training and evaluation datasets for k-fold cross-validation (in this example k=4), where each fold contains all samples from an individual studyThis approach is termed study-wise cross validation, and supports the goal of training models that generalize to unseen cohorts.The panel on the right shows the class distribution of the training, evaluation, and held-out validation datasets.</figcaption>
 </figure>
 </div>
 <h2 id="box-1-understanding-experimental-design-of-ml-to-inform-requirements-for-data">Box 1: Understanding experimental design of ML to inform requirements for data</h2>
@@ -529,7 +529,7 @@ DOI: <a href="https://doi.org/10.1098/rsta.2015.0202">10.1098/rsta.2015.0202</a>
 <div id="ref-BsfyICXU">
 <p>21. <strong>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</strong> <br />
 Leland McInnes, John Healy, James Melville<br />
-<em>arXiv:1802.03426 [cs, stat]</em> (2020-09-17) <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
+<em>arXiv</em> (2020-09-17) <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
 </div>
 <div id="ref-1Ak4JFhvU">
 <p>22. <strong>Automatic detection of rare pathologies in fundus photographs using few-shot learning</strong> <br />
@@ -597,7 +597,10 @@ Ikram Chaabane, Radhouane Guermazi, Mohamed Hammami<br />
 DOI: <a href="https://doi.org/10.1007/s11634-019-00354-x">10.1007/s11634-019-00354-x</a></p>
 </div>
 <div id="ref-16uxtBBBG">
-<p>33. <a href="https://doi.org/10.1023/A:1010933404324">https://doi.org/10.1023/A:1010933404324</a></p>
+<p>33. <strong>Random Forests</strong> <br />
+Leo Breiman<br />
+<em>Machine Learning</em> (2001-10-01) <a href="https://doi.org/10.1023/A:1010933404324">https://doi.org/10.1023/A:1010933404324</a> <br />
+DOI: <a href="https://doi.org/10.1023/A:1010933404324">10.1023/a:1010933404324</a></p>
 </div>
 <div id="ref-14J3u9pnR">
 <p>34. <strong>Evaluating predictive modeling algorithms to assess patient eligibility for clinical trials from routine data</strong> <br />
