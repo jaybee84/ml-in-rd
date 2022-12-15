@@ -1,6 +1,5 @@
 hoc
 ImageNet
 ontologies
-studyThis
 TODO
 undirected
