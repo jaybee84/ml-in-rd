@@ -129,16 +129,15 @@
         "given": "Sean"
       },
       {
-        "family": "DREAM Challenge Consortium",
-        "given": ""
+        "literal": "DREAM Challenge Consortium"
       },
       {
         "family": "Jujjavarapu",
         "given": "Chethan"
       },
       {
-        "family": "thomas",
-        "given": "jason"
+        "family": "Thomas",
+        "given": "Jason"
       },
       {
         "family": "Gunn",
@@ -256,8 +255,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -314,8 +313,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -358,8 +357,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -400,8 +399,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -444,8 +443,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -510,8 +509,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -556,8 +555,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -871,8 +870,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -948,8 +947,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1014,8 +1013,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1058,8 +1057,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1106,8 +1105,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1170,8 +1169,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1225,8 +1224,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1297,8 +1296,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1318,6 +1317,7 @@
   {
     "id": "gqTS2Uy7",
     "type": "article-journal",
+    "abstract": "Abstract\r\n            Rare cell populations play a pivotal role in the initiation and progression of diseases such as cancer. However, the identification of such subpopulations remains a difficult task. This work describes CellCnn, a representation learning approach to detect rare cell subsets associated with disease using high-dimensional single-cell measurements. Using CellCnn, we identify paracrine signalling-, AIDS onset- and rare CMV infection-associated cell subsets in peripheral blood, and extremely rare leukaemic blast populations in minimal residual disease-like situations with frequencies as low as 0.01%.",
     "container-title": "Nature Communications",
     "DOI": "10.1038/ncomms14825",
     "ISSN": "2041-1723",
@@ -1342,8 +1342,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1352,7 +1352,8 @@
       "date-parts": [
         [
           "2017",
-          4
+          4,
+          6
         ]
       ]
     },
@@ -1408,8 +1409,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1458,8 +1459,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1511,8 +1512,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1531,6 +1532,7 @@
   {
     "id": "160WNxTq0",
     "type": "article-journal",
+    "abstract": "Abstract\r\n            \r\n              Cancers that appear pathologically similar often respond differently to the same drug regimens. Methods to better match patients to drugs are in high demand. We demonstrate a promising approach to identify robust molecular markers for targeted treatment of acute myeloid leukemia (AML) by introducing: data from 30 AML patients including genome-wide gene expression profiles and in vitro sensitivity to 160 chemotherapy drugs, a computational method to identify reliable gene expression markers for drug sensitivity by incorporating multi-omic prior information relevant to each gene’s potential to drive cancer. We show that our method outperforms several state-of-the-art approaches in identifying molecular markers replicated in validation data and predicting drug sensitivity accurately. Finally, we identify\r\n              SMARCA4\r\n              as a marker and driver of sensitivity to topoisomerase II inhibitors, mitoxantrone, and etoposide, in AML by showing that cell lines transduced to have high\r\n               SMARCA4\r\n              expression reveal dramatically increased sensitivity to these agents.",
     "container-title": "Nature Communications",
     "DOI": "10.1038/s41467-017-02465-5",
     "ISSN": "2041-1723",
@@ -1599,8 +1601,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1609,7 +1611,8 @@
       "date-parts": [
         [
           "2018",
-          12
+          1,
+          3
         ]
       ]
     },
@@ -1645,8 +1648,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1655,7 +1658,8 @@
       "date-parts": [
         [
           "2019",
-          12
+          11,
+          28
         ]
       ]
     },
@@ -1699,8 +1703,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1758,8 +1762,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1812,8 +1816,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1856,8 +1860,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -1912,8 +1916,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2018,8 +2022,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2064,8 +2068,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2085,11 +2089,11 @@
   {
     "id": "uvZAopDf",
     "type": "article-journal",
+    "abstract": "Abstract\r\n            Motivation: With an overwhelming amount of textual information in molecular biology and biomedicine, there is a need for effective and efficient literature mining and knowledge discovery that can help biologists to gather and make use of the knowledge encoded in text documents. In order to make organized and structured information available, automatically recognizing biomedical entity names becomes critical and is important for information retrieval, information extraction and automated knowledge acquisition.\r\n            Results: In this paper, we present a named entity recognition system in the biomedical domain, called PowerBioNE. In order to deal with the special phenomena of naming conventions in the biomedical domain, we propose various evidential features: (1) word formation pattern; (2) morphological pattern, such as prefix and suffix; (3) part-of-speech; (4) head noun trigger; (5) special verb trigger and (6) name alias feature. All the features are integrated effectively and efficiently through a hidden Markov model (HMM) and a HMM-based named entity recognizer. In addition, a k-Nearest Neighbor (k-NN) algorithm is proposed to resolve the data sparseness problem in our system. Finally, we present a pattern-based post-processing to automatically extract rules from the training data to deal with the cascaded entity name phenomenon. From our best knowledge, PowerBioNE is the first system which deals with the cascaded entity name phenomenon. Evaluation shows that our system achieves the F-measure of 66.6 and 62.2 on the 23 classes of GENIA V3.0 and V1.1, respectively. In particular, our system achieves the F-measure of 75.8 on the ‘protein’ class of GENIA V3.0. For comparison, our system outperforms the best published result by 7.8 on GENIA V1.1, without help of any dictionaries. It also shows that our HMM and the k-NN algorithm outperform other models, such as back-off HMM, linear interpolated HMM, support vector machines, C4.5, C4.5 rules and RIPPER, by effectively capturing the local context dependency and resolving the data sparseness problem. Moreover, evaluation on GENIA V3.0 shows that the post-processing for the cascaded entity name phenomenon improves the F-measure by 3.9. Finally, error analysis shows that about half of the errors are caused by the strict annotation scheme and the annotation inconsistency in the GENIA corpus. This suggests that our system achieves an acceptable F-measure of 83.6 on the 23 classes of GENIA V3.0 and in particular 86.2 on the ‘protein’ class, without help of any dictionaries. We think that a F-measure of 90 on the 23 classes of GENIA V3.0 and in particular 92 on the ‘protein’ class, can be achieved through refining of the annotation scheme in the GENIA corpus, such as flexible annotation scheme and annotation consistency, and inclusion of a reasonable biomedical dictionary.\r\n            Availability: A demo system is available at http://textmining.i2r.a-star.edu.sg/NLS/demo.htm. Technology license is available upon the bilateral agreement.",
     "container-title": "Bioinformatics",
     "DOI": "10.1093/bioinformatics/bth060",
-    "ISSN": "1367-4803, 1460-2059",
+    "ISSN": "1367-4811, 1367-4803",
     "issue": "7",
-    "journalAbbreviation": "Bioinformatics",
     "language": "en",
     "page": "1178-1190",
     "source": "DOI.org (Crossref)",
@@ -2100,30 +2104,30 @@
     "author": [
       {
         "family": "Zhou",
-        "given": "G."
+        "given": "GuoDong"
       },
       {
         "family": "Zhang",
-        "given": "J."
+        "given": "Jie"
       },
       {
         "family": "Su",
-        "given": "J."
+        "given": "Jian"
       },
       {
         "family": "Shen",
-        "given": "D."
+        "given": "Dan"
       },
       {
         "family": "Tan",
-        "given": "C."
+        "given": "ChewLim"
       }
     ],
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2143,9 +2147,10 @@
   {
     "id": "1DrhKLdVp",
     "type": "article-journal",
+    "abstract": "Abstract\r\n            Summary: Coordinated Gene Activity in Pattern Sets (CoGAPS) provides an integrated package for isolating gene expression driven by a biological process, enhancing inference of biological processes from transcriptomic data. CoGAPS improves on other enrichment measurement methods by combining a Markov chain Monte Carlo (MCMC) matrix factorization algorithm (GAPS) with a threshold-independent statistic inferring activity on gene sets. The software is provided as open source C++ code built on top of JAGS software with an R interface.\r\n            Availability: The R package CoGAPS and the C++ package GAPS-JAGS are provided open source under the GNU Lesser Public License (GLPL) with a users manual containing installation and operating instructions. CoGAPS is available through Bioconductor and depends on the rjags package available through CRAN to interface CoGAPS with GAPS-JAGS.\r\n            URL:  http://www.cancerbiostats.onc.jhmi.edu/cogaps.cfm\r\n            Contact:  ejfertig@jhmi.edu; mfo@jhu.edu\r\n            Supplementary Information:  Supplementary data is available at Bioinformatics online.",
     "container-title": "Bioinformatics",
     "DOI": "10.1093/bioinformatics/btq503",
-    "ISSN": "1460-2059, 1367-4803",
+    "ISSN": "1367-4811, 1367-4803",
     "issue": "21",
     "language": "en",
     "page": "2792-2793",
@@ -2179,8 +2184,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2201,9 +2206,10 @@
   {
     "id": "CSiMoOrI",
     "type": "article-journal",
+    "abstract": "Abstract\r\n            \r\n              Motivation\r\n              The biomedical community’s collective understanding of how chemicals, genes and phenotypes interact is distributed across the text of over 24 million research articles. These interactions offer insights into the mechanisms behind higher order biochemical phenomena, such as drug-drug interactions and variations in drug response across individuals. To assist their curation at scale, we must understand what relationship types are possible and map unstructured natural language descriptions onto these structured classes. We used NCBI’s PubTator annotations to identify instances of chemical, gene and disease names in Medline abstracts and applied the Stanford dependency parser to find connecting dependency paths between pairs of entities in single sentences. We combined a published ensemble biclustering algorithm (EBC) with hierarchical clustering to group the dependency paths into semantically-related categories, which we annotated with labels, or ‘themes’ (‘inhibition’ and ‘activation’, for example). We evaluated our theme assignments against six human-curated databases: DrugBank, Reactome, SIDER, the Therapeutic Target Database, OMIM and PharmGKB.\r\n            \r\n            \r\n              Results\r\n              Clustering revealed 10 broad themes for chemical-gene relationships, 7 for chemical-disease, 10 for gene-disease and 9 for gene–gene. In most cases, enriched themes corresponded directly to known database relationships. Our final dataset, represented as a network, contained 37 491 thematically-labeled chemical-gene edges, 2 021 192 chemical-disease edges, 136 206 gene-disease edges and 41 418 gene–gene edges, each representing a single-sentence description of an interaction from somewhere in the literature.\r\n            \r\n            \r\n              Availability and implementation\r\n              The complete network is available on Zenodo (https://zenodo.org/record/1035500). We have also provided the full set of dependency paths connecting biomedical entities in Medline abstracts, with associated sentences, for future use by the biomedical research community.\r\n            \r\n            \r\n              Supplementary information\r\n              Supplementary data are available at Bioinformatics online.",
     "container-title": "Bioinformatics",
     "DOI": "10.1093/bioinformatics/bty114",
-    "ISSN": "1367-4803, 1460-2059",
+    "ISSN": "1367-4803, 1367-4811",
     "issue": "15",
     "language": "en",
     "page": "2614-2624",
@@ -2230,8 +2236,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2279,8 +2285,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2347,8 +2353,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2421,8 +2427,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2528,8 +2534,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2570,8 +2576,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2713,8 +2719,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2761,8 +2767,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2812,8 +2818,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2862,8 +2868,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2884,7 +2890,6 @@
     "type": "paper-conference",
     "container-title": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001",
     "DOI": "10.1109/cvpr.2001.990537",
-    "event": "2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001",
     "event-place": "Kauai, HI, USA",
     "ISBN": "9780769512723",
     "page": "I-657-I-662",
@@ -2915,8 +2920,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -2972,8 +2977,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3016,8 +3021,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3087,8 +3092,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3132,8 +3137,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3176,8 +3181,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3197,7 +3202,6 @@
     "type": "paper-conference",
     "container-title": "Biocomputing 2020",
     "DOI": "10.1142/9789811215636_0041",
-    "event": "Pacific Symposium on Biocomputing 2020",
     "event-place": "Kohala Coast, Hawaii, USA",
     "ISBN": "9789811215629",
     "language": "en",
@@ -3236,8 +3240,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3311,8 +3315,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3347,18 +3351,16 @@
     "volume": "9",
     "author": [
       {
-        "family": "Souto",
-        "given": "Marcilio CP",
-        "non-dropping-particle": "de"
+        "family": "De Souto",
+        "given": "Marcilio Cp"
       },
       {
         "family": "Costa",
         "given": "Ivan G"
       },
       {
-        "family": "Araujo",
-        "given": "Daniel SA",
-        "non-dropping-particle": "de"
+        "family": "De Araujo",
+        "given": "Daniel Sa"
       },
       {
         "family": "Ludermir",
@@ -3372,8 +3374,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3445,8 +3447,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3507,8 +3509,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3552,8 +3554,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3600,8 +3602,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3665,8 +3667,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3727,8 +3729,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3777,8 +3779,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3838,8 +3840,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3897,8 +3899,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -3946,8 +3948,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4004,8 +4006,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4049,8 +4051,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4102,8 +4104,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4154,8 +4156,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4222,8 +4224,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4301,8 +4303,7 @@
         "given": "Jurriaan M."
       },
       {
-        "family": "on behalf of the TACERN Study Group",
-        "given": ""
+        "literal": "on behalf of the TACERN Study Group"
       }
     ],
     "editor": [
@@ -4314,8 +4315,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4338,7 +4339,6 @@
     "type": "paper-conference",
     "container-title": "Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations",
     "DOI": "10.18653/v1/n16-3020",
-    "event": "Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations",
     "event-place": "San Diego, California",
     "language": "en",
     "page": "97-101",
@@ -4365,8 +4365,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4385,7 +4385,6 @@
     "type": "paper-conference",
     "container-title": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
     "DOI": "10.18653/v1/p19-1073",
-    "event": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
     "event-place": "Florence, Italy",
     "language": "en",
     "page": "747-763",
@@ -4416,8 +4415,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4460,8 +4459,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4515,8 +4514,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4596,14 +4595,14 @@
       },
       {
         "family": "Gosline",
-        "given": "Sara JC"
+        "given": "Sara Jc"
       }
     ],
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4740,8 +4739,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -4799,8 +4798,8 @@
     "accessed": {
       "date-parts": [
         [
-          2022,
-          12,
+          2023,
+          2,
           15
         ]
       ]
@@ -4851,9 +4850,9 @@
     "accessed": {
       "date-parts": [
         [
-          2022,
-          12,
-          14
+          2023,
+          2,
+          15
         ]
       ]
     },
@@ -5093,9 +5092,9 @@
     "accessed": {
       "date-parts": [
         [
-          2022,
-          12,
-          14
+          2023,
+          2,
+          15
         ]
       ]
     },
@@ -5150,8 +5149,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5160,10 +5159,10 @@
   },
   {
     "id": "BsfyICXU",
-    "type": "report",
+    "type": "article",
     "abstract": "UMAP (Uniform Manifold Approximation and Projection) is a novel manifold learning technique for dimension reduction. UMAP is constructed from a theoretical framework based in Riemannian geometry and algebraic topology. The result is a practical scalable algorithm that applies to real world data. The UMAP algorithm is competitive with t-SNE for visualization quality, and arguably preserves more of the global structure with superior run time performance. Furthermore, UMAP has no computational restrictions on embedding dimension, making it viable as a general purpose dimension reduction technique for machine learning.",
-    "note": "arXiv:1802.03426 [cs, stat]\ntype: article\nThis CSL JSON Item was automatically generated by Manubot v0.4.1 using citation-by-identifier.\nstandard_id: url:https://arxiv.org/abs/1802.03426",
-    "number": "arXiv:1802.03426",
+    "DOI": "10.48550/arXiv.1802.03426",
+    "note": "arXiv:1802.03426 [cs, stat]\nThis CSL JSON Item was automatically generated by Manubot v0.4.1 using citation-by-identifier.\nstandard_id: url:https://arxiv.org/abs/1802.03426",
     "publisher": "arXiv",
     "source": "arXiv.org",
     "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
@@ -5186,8 +5185,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5228,8 +5227,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5270,8 +5269,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5322,8 +5321,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5349,8 +5348,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5365,8 +5364,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5377,7 +5376,6 @@
     "id": "16wWzu3NO",
     "type": "paper-conference",
     "container-title": "Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing",
-    "event": "EMNLP 2006",
     "event-place": "Sydney, Australia",
     "page": "120–128",
     "publisher": "Association for Computational Linguistics",
@@ -5402,8 +5400,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5432,8 +5430,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5466,8 +5464,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
@@ -5483,43 +5481,14 @@
   },
   {
     "id": "sa8SP0BL",
-    "type": "article-journal",
-    "abstract": "Evaluation and error analysis of machine translation output are important but difficult tasks. In this article, we propose a framework for automatic error analysis and classification based on the identification of actual erroneous words using the algorithms for computation of Word Error Rate (WER) and Position-independent word Error Rate (PER), which is just a very first step towards development of automatic evaluation measures that provide more specific information of certain translation problems. The proposed approach enables the use of various types of linguistic knowledge in order to classify translation errors in many different ways. This work focuses on one possible set-up, namely, on five error categories: inflectional errors, errors due to wrong word order, missing words, extra words, and incorrect lexical choices. For each of the categories, we analyze the contribution of various POS classes. We compared the results of automatic error analysis with the results of human error analysis in order to investigate two possible applications: estimating the contribution of each error type in a given translation output in order to identify the main sources of errors for a given translation system, and comparing different translation outputs using the introduced error categories in order to obtain more information about advantages and disadvantages of different systems and possibilites for improvements, as well as about advantages and disadvantages of applied methods for improvements. We used Arabic–English Newswire and Broadcast News and Chinese–English Newswire outputs created in the framework of the GALE project, several Spanish and English European Parliament outputs generated during the TC-Star project, and three German–English outputs generated in the framework of the fourth Machine Translation Workshop. We show that our results correlate very well with the results of a human error analysis, and that all our metrics except the extra words reflect well the differences between different versions of the same translation system as well as the differences between different translation systems.",
-    "container-title": "Computational Linguistics",
-    "DOI": "10.1162/COLI_a_00072",
-    "ISSN": "0891-2017, 1530-9312",
-    "issue": "4",
-    "journalAbbreviation": "Computational Linguistics",
-    "language": "en",
-    "page": "657-688",
-    "source": "DOI.org (Crossref)",
-    "title": "Towards Automatic Error Analysis of Machine Translation Output",
-    "URL": "https://direct.mit.edu/coli/article/37/4/657-688/2124",
-    "volume": "37",
-    "author": [
-      {
-        "family": "Popović",
-        "given": "Maja"
-      },
-      {
-        "family": "Ney",
-        "given": "Hermann"
-      }
-    ],
+    "type": "webpage",
+    "URL": "https://direct.mit.edu/coli/article/37/4/657/2124/Towards-Automatic-Error-Analysis-of-Machine",
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
-        ]
-      ]
-    },
-    "issued": {
-      "date-parts": [
-        [
-          "2011",
-          12
         ]
       ]
     },
@@ -5565,8 +5534,8 @@
     "accessed": {
       "date-parts": [
         [
-          "2022",
-          12,
+          "2023",
+          2,
           15
         ]
       ]
