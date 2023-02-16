@@ -1,5 +1,5 @@
 content/02.intro.md:17:TODO
 content/03.combining-datasets.md:7:hoc
 content/03.combining-datasets.md:13:ontologies
-content/10. box_2_definitions.md:13:ImageNet
-content/10. box_2_definitions.md:23:undirected
+content/12. box_2_definitions.md:13:ImageNet
+content/12. box_2_definitions.md:23:undirected

@@ -8,8 +8,8 @@ author-meta:
 - Casey Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2023-02-15'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning in rare disease\" />\n<meta name=\"citation_title\" content=\"Machine learning in rare disease\" />\n<meta property=\"og:title\" content=\"Machine learning in rare disease\" />\n<meta property=\"twitter:title\" content=\"Machine learning in rare disease\" />\n<meta name=\"dc.date\" content=\"2023-02-15\" />\n<meta name=\"citation_publication_date\" content=\"2023-02-15\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Deepashree Venkatesh Prasad\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5756-4083\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/3a3060794caadb27ebee2adce2a518fa845577b6/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/3a3060794caadb27ebee2adce2a518fa845577b6/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/3a3060794caadb27ebee2adce2a518fa845577b6/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2023-02-16'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Machine learning in rare disease\" />\n<meta name=\"citation_title\" content=\"Machine learning in rare disease\" />\n<meta property=\"og:title\" content=\"Machine learning in rare disease\" />\n<meta property=\"twitter:title\" content=\"Machine learning in rare disease\" />\n<meta name=\"dc.date\" content=\"2023-02-16\" />\n<meta name=\"citation_publication_date\" content=\"2023-02-16\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jineta Banerjee\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1775-3645\" />\n<meta name=\"citation_author\" content=\"Jaclyn N Taroni\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4734-4508\" />\n<meta name=\"citation_author\" content=\"Robert J Allaway\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3573-3565\" />\n<meta name=\"twitter:creator\" content=\"@allawayr\" />\n<meta name=\"citation_author\" content=\"Deepashree Venkatesh Prasad\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5756-4083\" />\n<meta name=\"citation_author\" content=\"Justin Guinney\" />\n<meta name=\"citation_author_institution\" content=\"Sage Bionetworks\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1477-1888\" />\n<meta name=\"citation_author\" content=\"Casey Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex\u2019s Lemonade Stand Foundation\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"og:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta property=\"twitter:url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jaybee84.github.io/ml-in-rd/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jaybee84.github.io/ml-in-rd/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jaybee84.github.io/ml-in-rd/v/2f01c307427ff8534730106550d2a4f2e60e8376/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/2f01c307427ff8534730106550d2a4f2e60e8376/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jaybee84.github.io/ml-in-rd/v/2f01c307427ff8534730106550d2a4f2e60e8376/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - rare disease
 - machine learning
@@ -29,10 +29,10 @@ title: Machine learning in rare disease
 
 <small><em>
 This manuscript
-([permalink](https://jaybee84.github.io/ml-in-rd/v/3a3060794caadb27ebee2adce2a518fa845577b6/))
+([permalink](https://jaybee84.github.io/ml-in-rd/v/2f01c307427ff8534730106550d2a4f2e60e8376/))
 was automatically generated
-from [jaybee84/ml-in-rd@3a30607](https://github.com/jaybee84/ml-in-rd/tree/3a3060794caadb27ebee2adce2a518fa845577b6)
-on February 15, 2023.
+from [jaybee84/ml-in-rd@2f01c30](https://github.com/jaybee84/ml-in-rd/tree/2f01c307427ff8534730106550d2a4f2e60e8376)
+on February 16, 2023.
 </em></small>
 
 ## Authors
@@ -109,7 +109,7 @@ on February 15, 2023.
 <sup>✉</sup>: Corresponding author; Please address your emails to <casey.s.greene@cuanschutz.edu>.
 
 
-## Synopsis {.page_break_before}
+## Abstract {.page_break_before}
 
 The advent of high-throughput profiling methods such as genomics and other technologies has accelerated basic research and made deep molecular characterization of patient samples routine. 
 These approaches provide a rich portrait of genes, molecular pathways, and cell types involved in complex phenotypes. 
@@ -176,46 +176,6 @@ In the next section, we will discuss approaches that can aid in identifying and 
 
 ![Combining datasets to increase data for training machine learning models. a) Appropriate methods are required to combine smaller datasets into a larger composite dataset: The left panel shows multiple small rare disease datasets that need to be combined to form a dataset of higher sample size. The color of the samples suggest classes or groups present in the datasets. The shape represents the dataset of origin. The middle panel shows methods that may be used to combine the datasets while accounting for dataset-specific technical differences. The right panel shows Principal Component Analysis of the combined datasets to verify proper integration of samples in the larger dataset. b) Composite datasets can be used to make training, evaluation, and validation datasets for machine learning: Left panel shows the division of the composite dataset into training dataset and a held-out validation dataset (top). Shapes indicate the study of origin. The held-out validation set is a separate study that has not been seen by the model. The training set is further divided into training and evaluation datasets for k-fold cross-validation (in this example k=4), where each fold contains all samples from an individual study. This approach is termed study-wise cross validation, and supports the goal of training models that generalize to unseen cohorts.The panel on the right shows the class distribution of the training, evaluation, and held-out validation datasets.](images/figures/lower-res-figures/figure-1-combining-datasets.png){#fig:1}
 
-
-## Box 1: Understanding experimental design of ML to inform requirements for data
-
-### Components of ML experiments
-
-Machine learning (ML) algorithms identify patterns that explain or fit a given dataset. 
-Every ML algorithm goes through _training_, where it identifies underlying patterns in a given dataset to create a “trained” algorithm (a model), and _testing_, where the model applies the identified patterns to unseen data points. 
-Typically, a ML algorithm is provided with: 1. a _training dataset_ , 2. an _evaluation dataset_ , 3. a _held-out validation dataset_. 
-These input data can be images, text, numbers, or other types of data which are typically encoded as a numerical representation of the input data. 
-A training dataset is used by the model to learn underlying patterns from the features present in the data of interest. 
-An evaluation dataset is a small and previously unused dataset which is used during the training phase to help the model iteratively update its parameters (i.e., _hyperparameter tuning_ or _model tuning_). 
-In many cases, a large training set may be subdivided to form a smaller training dataset and the evaluation dataset, both of which are used to train the model. 
-In the testing phase, a completely new or unseen test dataset or held-out validation set is used to test whether the patterns learned by the model hold true in new data (i.e., they are _generalizable_). 
-While the evaluation dataset helps us refine a model’s fit to patterns in the training data, the held-out validation set helps us test the generalizability of the model.
-
-If a model is generalizable, it is able to make accurate predictions on new data. 
-High generalizability of a model on previously unseen data suggests that the model has identified important patterns in the data that are not unique to the data used for training and tuning. 
-Generalizability can be affected if _data leakage_ occurs during training of the model, i.e., if a model is exposed to the same or related data points in both the training set and the held-out test set. 
-Ensuring absence of any overlap or relatedness among data points or samples used in the training set and evaluation set is important to avoid data leakage during model training. 
-Specifically, in cases of rare genetic diseases where, for example, many samples can contain familial relationships or data from the same patient could be collected by multiple specialists at different clinical facilities, special care should be taken while crafting the training and testing sets to ensure that no data leakage occurs and the trained model has high generalizability.
-
-### Training and testing
-
-The implementation of a ML experiment begins with splitting a single dataset of interest such that a large proportion of the data (e.g., 70-90%) is used for training (generally subdivided into the training dataset and the evaluation dataset), and the remaining data is used for testing or validation (as the held-out validation dataset). 
-Ideally, a _held-out validation dataset_ is an entirely new study or cohort, as researchers typically aim to build models that generalize to unseen, newly generated data. 
-In rare diseases where multiple datasets may be combined to make a large enough training dataset, special care should be taken to standardize the features and the patterns therein. 
-Although ML algorithms generally expect that datasets have uniform features, normalizing training and testing data together may introduce similarities between samples (causing inadvertent data leakage) that hamper the goal of training models that are highly generalizable.
-
-The iterative training phase helps the model learn important patterns in the training dataset and then use the evaluation dataset to test for errors in prediction and update its learning parameters (hyperparameter tuning). 
-The method by which the evaluation dataset tests the performance of the trained model and helps update the hyperparameters is called cross-validation. 
-There are multiple approaches that can be deployed to maximally utilize the available data when generating training and evaluation datasets e.g., leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation.[@doi:10.1007/978-1-4614-6849-3]
-In the case of k-fold cross-validation, a given dataset is shuffled randomly and split into _k_ parts. 
-One of the k parts is reserved as the _evaluation dataset_ and the rest are cumulatively used as the _training dataset_. 
-In the next iteration, a different part is used as the evaluation dataset, while the rest are used for training. 
-To avoid data leakage, and to promote generalization of models to new studies, researchers can use _study-wise cross-validation_, such that all samples from a study are in the same fold and no individual study is represented in both the training and evaluation datasets. 
-Once the model has iterated through all k parts of the training and evaluation datasets, it is ready to be tested on the held-out validation dataset.(Figure {@fig:1}b)
-
-The held-out validation dataset is exposed to the model only once to estimate the accuracy of the model. 
-High accuracy of a model during cross-validation but low accuracy on the held-out dataset is a sign that the model has become overfit to the training set and has low generalizability. 
-If this is encountered, researchers should revisit the construction of the dataset to make sure they meet the best practices outlined above.
 
 ## Learning representations from rare disease data
 
@@ -391,6 +351,54 @@ To facilitate such analyses in rare disease, methods that rely on finding struct
 We speculate that this an important and burgeoning area of research, and we are optimistic about the future of applying machine learning approaches to rare diseases.
 
 
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
+
+
+
+
+## Box 1: Understanding experimental design of ML to inform requirements for data
+
+### Components of ML experiments
+
+Machine learning (ML) algorithms identify patterns that explain or fit a given dataset. 
+Every ML algorithm goes through _training_, where it identifies underlying patterns in a given dataset to create a “trained” algorithm (a model), and _testing_, where the model applies the identified patterns to unseen data points. 
+Typically, a ML algorithm is provided with: 1. a _training dataset_ , 2. an _evaluation dataset_ , 3. a _held-out validation dataset_. 
+These input data can be images, text, numbers, or other types of data which are typically encoded as a numerical representation of the input data. 
+A training dataset is used by the model to learn underlying patterns from the features present in the data of interest. 
+An evaluation dataset is a small and previously unused dataset which is used during the training phase to help the model iteratively update its parameters (i.e., _hyperparameter tuning_ or _model tuning_). 
+In many cases, a large training set may be subdivided to form a smaller training dataset and the evaluation dataset, both of which are used to train the model. 
+In the testing phase, a completely new or unseen test dataset or held-out validation set is used to test whether the patterns learned by the model hold true in new data (i.e., they are _generalizable_). 
+While the evaluation dataset helps us refine a model’s fit to patterns in the training data, the held-out validation set helps us test the generalizability of the model.
+
+If a model is generalizable, it is able to make accurate predictions on new data. 
+High generalizability of a model on previously unseen data suggests that the model has identified important patterns in the data that are not unique to the data used for training and tuning. 
+Generalizability can be affected if _data leakage_ occurs during training of the model, i.e., if a model is exposed to the same or related data points in both the training set and the held-out test set. 
+Ensuring absence of any overlap or relatedness among data points or samples used in the training set and evaluation set is important to avoid data leakage during model training. 
+Specifically, in cases of rare genetic diseases where, for example, many samples can contain familial relationships or data from the same patient could be collected by multiple specialists at different clinical facilities, special care should be taken while crafting the training and testing sets to ensure that no data leakage occurs and the trained model has high generalizability.
+
+### Training and testing
+
+The implementation of a ML experiment begins with splitting a single dataset of interest such that a large proportion of the data (e.g., 70-90%) is used for training (generally subdivided into the training dataset and the evaluation dataset), and the remaining data is used for testing or validation (as the held-out validation dataset). 
+Ideally, a _held-out validation dataset_ is an entirely new study or cohort, as researchers typically aim to build models that generalize to unseen, newly generated data. 
+In rare diseases where multiple datasets may be combined to make a large enough training dataset, special care should be taken to standardize the features and the patterns therein. 
+Although ML algorithms generally expect that datasets have uniform features, normalizing training and testing data together may introduce similarities between samples (causing inadvertent data leakage) that hamper the goal of training models that are highly generalizable.
+
+The iterative training phase helps the model learn important patterns in the training dataset and then use the evaluation dataset to test for errors in prediction and update its learning parameters (hyperparameter tuning). 
+The method by which the evaluation dataset tests the performance of the trained model and helps update the hyperparameters is called cross-validation. 
+There are multiple approaches that can be deployed to maximally utilize the available data when generating training and evaluation datasets e.g., leave-p-out cross-validation, leave-one-out cross-validation, k-fold cross-validation, Monte-Carlo random subsampling cross-validation.[@doi:10.1007/978-1-4614-6849-3]
+In the case of k-fold cross-validation, a given dataset is shuffled randomly and split into _k_ parts. 
+One of the k parts is reserved as the _evaluation dataset_ and the rest are cumulatively used as the _training dataset_. 
+In the next iteration, a different part is used as the evaluation dataset, while the rest are used for training. 
+To avoid data leakage, and to promote generalization of models to new studies, researchers can use _study-wise cross-validation_, such that all samples from a study are in the same fold and no individual study is represented in both the training and evaluation datasets. 
+Once the model has iterated through all k parts of the training and evaluation datasets, it is ready to be tested on the held-out validation dataset.(Figure {@fig:1}b)
+
+The held-out validation dataset is exposed to the model only once to estimate the accuracy of the model. 
+High accuracy of a model during cross-validation but low accuracy on the held-out dataset is a sign that the model has become overfit to the training set and has low generalizability. 
+If this is encountered, researchers should revisit the construction of the dataset to make sure they meet the best practices outlined above.
+
 ## Definitions {.page_break_before}
 
 ### VAE 
@@ -422,7 +430,3 @@ According to the Orphan Drug Act[@https://www.fda.gov/media/99546/download] of U
 The European Union defines a disease as rare when it affects less than 1 in 2,000 people.
 
 
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
