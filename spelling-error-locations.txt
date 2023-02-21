@@ -1,4 +1,14 @@
 content/03.combining-datasets.md:7:hoc
 content/03.combining-datasets.md:13:ontologies
-content/12. box_2_definitions.md:13:ImageNet
-content/12. box_2_definitions.md:23:undirected
+content/05.model-complexity.md:32:ALS
+content/05.model-complexity.md:32:amyotrophic
+content/05.model-complexity.md:33:ALS
+content/09. ethics_declaration.md:3:Tempus
+content/11. author_contributions.md:3:ICMJE
+content/11. author_contributions.md:5:curation
+content/13. figure_legends.md:3:Barplot
+content/14. box_1_MLtasks.md:21:subtyping
+content/14. box_1_MLtasks.md:23:heterogenous
+content/14. box_1_MLtasks.md:33:subpopulations
+content/16. box_3_definitions.md:8:undirected
+content/16. box_3_definitions.md:27:ImageNet

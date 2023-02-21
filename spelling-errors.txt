@@ -1,4 +1,13 @@
+ALS
+amyotrophic
+Barplot
+curation
+heterogenous
 hoc
+ICMJE
 ImageNet
 ontologies
+subpopulations
+subtyping
+Tempus
 undirected
