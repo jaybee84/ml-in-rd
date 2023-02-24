@@ -1,6 +1,5 @@
 content/03.combining-datasets.md:7:hoc
 content/03.combining-datasets.md:13:ontologies
-content/03.combining-datasets.md:15:dataset's
 content/05.model-complexity.md:31:ALS
 content/05.model-complexity.md:31:amyotrophic
 content/09. ethics_declaration.md:3:Tempus
@@ -12,3 +11,11 @@ content/14. box_1_MLtasks.md:23:heterogenous
 content/14. box_1_MLtasks.md:33:subpopulations
 content/16. box_3_definitions.md:8:undirected
 content/16. box_3_definitions.md:27:ImageNet
+content/17. ref-snippets.md:5:Frénay
+content/17. ref-snippets.md:5:Verleysen
+content/17. ref-snippets.md:12:Breiman
+content/17. ref-snippets.md:16:transcriptional
+content/17. ref-snippets.md:20:Dwivedi
+content/17. ref-snippets.md:28:mutiple
+content/17. ref-snippets.md:41:colleages
+content/17. ref-snippets.md:41:pubished
