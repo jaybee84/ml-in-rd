@@ -6,6 +6,7 @@ colleages
 curation
 Dwivedi
 Frénay
+funder
 heterogenous
 hoc
 ICMJE
