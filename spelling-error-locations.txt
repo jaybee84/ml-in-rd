@@ -1,7 +1,10 @@
+content/03.combining-datasets.md:3:transcriptome
+content/03.combining-datasets.md:5:missingness
 content/03.combining-datasets.md:7:hoc
 content/03.combining-datasets.md:13:ontologies
 content/05.model-complexity.md:31:ALS
 content/05.model-complexity.md:31:amyotrophic
+content/08.outlook.md:35:explainability
 content/09. ethics_declaration.md:3:Tempus
 content/09. ethics_declaration.md:4:funder
 content/11. author_contributions.md:3:ICMJE

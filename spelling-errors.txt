@@ -5,12 +5,14 @@ Breiman
 colleages
 curation
 Dwivedi
+explainability
 Frénay
 funder
 heterogenous
 hoc
 ICMJE
 ImageNet
+missingness
 mutiple
 ontologies
 pubished
@@ -18,5 +20,6 @@ subpopulations
 subtyping
 Tempus
 transcriptional
+transcriptome
 undirected
 Verleysen
