@@ -9,6 +9,7 @@ content/09. ethics_declaration.md:3:Tempus
 content/09. ethics_declaration.md:4:funder
 content/11. author_contributions.md:3:ICMJE
 content/11. author_contributions.md:5:curation
+content/11. author_contributions.md:20:Shriver
 content/13. figure_legends.md:3:Barplot
 content/14. box_1_MLtasks.md:21:subtyping
 content/14. box_1_MLtasks.md:23:heterogenous

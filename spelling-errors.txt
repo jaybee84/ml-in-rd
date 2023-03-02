@@ -8,6 +8,7 @@ Dwivedi
 explainability
 Frénay
 funder
+HD
 heterogenous
 hoc
 ICMJE
@@ -16,6 +17,7 @@ missingness
 mutiple
 ontologies
 pubished
+Shriver
 subpopulations
 subtyping
 Tempus
